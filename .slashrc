@@ -224,8 +224,9 @@ class MediaPlugin(slash.plugins.PluginInterface):
 
     # Begin system capture for test (i.e. dmesg).
     # NOTE: syscapture is not accurate for parallel runs
-    if slash.config.root.parallel.worker_id is None:
-      self.syscapture.checkpoint()
+    # NOTE: removed by chipsnmedia. it is for INTEL codec
+    # if slash.config.root.parallel.worker_id is None:
+    #   self.syscapture.checkpoint()
 
     # enable call timeout tracking during test function execution (see test_end)
     self.cta_enabled = True
@@ -250,23 +251,24 @@ class MediaPlugin(slash.plugins.PluginInterface):
 
     # Process system capture result (i.e. dmesg)
     # NOTE: syscapture is not accurate for parallel runs
-    if slash.config.root.parallel.worker_id is None:
-      capture = self.syscapture.checkpoint()
-      hangmsgs = [
-        r"\[.*\] i915 .*: \[drm\] Resetting .* after gpu hang",
-        r"\[.*\] i915 .*: \[drm\] Resetting .* for hang on .*",
-        r"\[.*\] i915 .*: \[drm\] .*GPU HANG",
-        r"\[.*\] i915 .*: \[drm\] .*GPU hang",
-        r"\[.*\] i915 .*: \[drm\] Resetting .* time out",
-      ]
-      for msg in hangmsgs:
-        if re.search(msg, capture, re.MULTILINE) is not None:
-          slash.logger.error("GPU HANG DETECTED!")
-      if re.search(r"\[.*\] i915 .*: \[drm\] .*Failed to reset", capture, re.MULTILINE) is not None:
-        result.add_error('GPU RESET FAILED')
-      for line in capture.split('\n'):
-        if len(line):
-          slash.logger.info(line)
+    # NOTE: removed by chipsnmedia. it is for INTEL codec
+    # if slash.config.root.parallel.worker_id is None:
+    #   capture = self.syscapture.checkpoint()
+    #   hangmsgs = [
+    #     r"\[.*\] i915 .*: \[drm\] Resetting .* after gpu hang",
+    #     r"\[.*\] i915 .*: \[drm\] Resetting .* for hang on .*",
+    #     r"\[.*\] i915 .*: \[drm\] .*GPU HANG",
+    #     r"\[.*\] i915 .*: \[drm\] .*GPU hang",
+    #     r"\[.*\] i915 .*: \[drm\] Resetting .* time out",
+    #   ]
+    #   for msg in hangmsgs:
+    #     if re.search(msg, capture, re.MULTILINE) is not None:
+    #       slash.logger.error("GPU HANG DETECTED!")
+    #   if re.search(r"\[.*\] i915 .*: \[drm\] .*Failed to reset", capture, re.MULTILINE) is not None:
+    #     result.add_error('GPU RESET FAILED')
+    #   for line in capture.split('\n'):
+    #     if len(line):
+    #       slash.logger.info(line)
 
     # Finally, calculate test execution time
     result.data.update(test_end = dt.now())
