@@ -89,6 +89,7 @@ media._get_test_spec("hevc", "decode", "8bit").update({
     format = "I420", width = 416, height = 240, frames = 2,
     metric = dict(type = "md5", expect = "ed985932fef2aa8a74ded970070bdab2")),
   "CONFWIN_A_Sony_1" : dict(
+    #  looks ffmpeg issue. intel media-driver also mismatch happens.
     source = find_conformance_stream("CONFWIN_A_Sony_1.bit"),
     format = "I420", width = 414, height = 238, frames = 60,
     metric = dict(type = "md5", expect = "a3ce3f936ff69ff1ec2621a622dd37ac")),
@@ -583,7 +584,7 @@ media._get_test_spec("hevc", "decode", "10bit").update({
     format = "I010", width = 416, height = 240, frames = 90,
     metric = dict(type = "md5", expect = "f63c71e5f6b9c6ddf2b080524f9f14b1")),
   "TSUNEQBD_A_MAIN10_Technicolor_2" : dict(
-    # bit-depth-luma=10 bit-depth-chroma = 9
+  # ffmpeg error due to bit-depth-luma=10 bit-depth-chroma = 9
     source = find_conformance_stream("TSUNEQBD_A_MAIN10_Technicolor_2.bit"),
     format = "I010", width = 1024, height = 768, frames = 8,
     metric = dict(type = "md5", expect = "1bed23df7253170eeb8efc3fd1b740a3")),
