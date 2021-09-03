@@ -7,10 +7,11 @@
 
 # av1 Bitstreams
 media._get_test_spec("av1", "decode", "8bit").update({
-  "Main_8bits_450_HighRes_720x576_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_450_HighRes_720x576_r6009.ivf"),
-    format = "I420", width = 720, height = 576, frames = 10,
-    metric = dict(type = "md5", expect = "ee4c2fadba359589d5147846c72670ca")),
+#   "Main_8bits_450_HighRes_720x576_r6009" : dict(
+#     # ffmpeg
+#     source = find_conformance_stream("Main_8bits_450_HighRes_720x576_r6009.ivf"),
+#     format = "I420", width = 720, height = 576, frames = 10,
+#     metric = dict(type = "md5", expect = "ee4c2fadba359589d5147846c72670ca")),
   
  "Main_8bits_451_HighRes_1280x720_r6009" : dict(
     source = find_conformance_stream("Main_8bits_451_HighRes_1280x720_r6009.ivf"),
@@ -19,28 +20,30 @@ media._get_test_spec("av1", "decode", "8bit").update({
  
  "Main_8bits_452_HighRes_1920x1080_r6009" : dict(
     source = find_conformance_stream("Main_8bits_452_HighRes_1920x1080_r6009.ivf"),
-    format = "I420", width = 720, height = 576, frames = 10,
+    format = "I420", width = 1920, height = 1080, frames = 10,
     metric = dict(type = "md5", expect = "de0cc86eb7c510f5b0265aad54bbdf36")),
  
- "Main_8bits_453_HighRes_1929x128_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_453_HighRes_1929x128_r6009.ivf"),
-    format = "I420", width = 1929, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "c228c902d07fc6915a722eaa32a68af8")),
+#  "Main_8bits_453_HighRes_1929x128_r6009" : dict(
+#     source = find_conformance_stream("Main_8bits_453_HighRes_1929x128_r6009.ivf"),
+#     format = "I420", width = 1929, height = 128, frames = 10,
+#     metric = dict(type = "md5", expect = "c228c902d07fc6915a722eaa32a68af8")),
  
- "Main_8bits_454_HighRes_1929x128_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_454_HighRes_1929x128_r6009.ivf"),
-    format = "I420", width = 1929, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "5dfaab590c747e52697e975c5fda2495")),
+#  "Main_8bits_454_HighRes_1929x128_r6009" : dict(
+#    # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_454_HighRes_1929x128_r6009.ivf"),
+#     format = "I420", width = 1929, height = 128, frames = 10,
+#     metric = dict(type = "md5", expect = "5dfaab590c747e52697e975c5fda2495")),
  
- "Main_8bits_455_HighRes_1929x128_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_455_HighRes_1929x128_r6009.ivf"),
-    format = "I420", width = 1929, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "61aad5aac76c4badde641b90826959d7")),
+#  "Main_8bits_455_HighRes_1929x128_r6009" : dict(
+#     source = find_conformance_stream("Main_8bits_455_HighRes_1929x128_r6009.ivf"),
+#     format = "I420", width = 1929, height = 128, frames = 10,
+#     metric = dict(type = "md5", expect = "61aad5aac76c4badde641b90826959d7")),
  
- "Main_8bits_456_HighRes_1929x128_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_456_HighRes_1929x128_r6009.ivf"),
-    format = "I420", width =1929, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "c2d431827bf454bcefe17d516b4deef9")),
+#  "Main_8bits_456_HighRes_1929x128_r6009" : dict(
+#  # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_456_HighRes_1929x128_r6009.ivf"),
+#     format = "I420", width =1929, height = 128, frames = 10,
+#     metric = dict(type = "md5", expect = "c2d431827bf454bcefe17d516b4deef9")),
  
  "Main_8bits_457_HighRes_2048x1088_r6009" : dict(
     source = find_conformance_stream("Main_8bits_457_HighRes_2048x1088_r6009.ivf"),
@@ -52,10 +55,11 @@ media._get_test_spec("av1", "decode", "8bit").update({
     format = "I420", width = 2048, height = 1088, frames = 10,
     metric = dict(type = "md5", expect = "347ba106219dcd6dce216e51d3187bc5")),
 
- "Main_8bits_459_HighRes_2048x1088_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_459_HighRes_2048x1088_r6009.ivf"),
-    format = "I420", width = 2048, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "e6ed2186e9ee0843f56aeef416879b2d")),
+#  "Main_8bits_459_HighRes_2048x1088_r6009" : dict(
+#  # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_459_HighRes_2048x1088_r6009.ivf"),
+#     format = "I420", width = 2048, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "e6ed2186e9ee0843f56aeef416879b2d")),
 
  "Main_8bits_460_HighRes_2048x1088_r6009" : dict(
     source = find_conformance_stream("Main_8bits_460_HighRes_2048x1088_r6009.ivf"),
@@ -67,20 +71,22 @@ media._get_test_spec("av1", "decode", "8bit").update({
     format = "I420", width = 2048, height = 1088, frames = 10,
     metric = dict(type = "md5", expect = "47debc9479a93dde425d7947a1d7ef20")),
 
- "Main_8bits_462_HighRes_2048x1088_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_462_HighRes_2048x1088_r6009.ivf"),
-    format = "I420", width = 2048, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "94873910a6b746fe9f306c1caa5b5d8d")),
+#  "Main_8bits_462_HighRes_2048x1088_r6009" : dict(
+# #note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_462_HighRes_2048x1088_r6009.ivf"),
+#     format = "I420", width = 2048, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "94873910a6b746fe9f306c1caa5b5d8d")),
 
  "Main_8bits_463_HighRes_2048x1088_r6009" : dict(
     source = find_conformance_stream("Main_8bits_463_HighRes_2048x1088_r6009.ivf"),
     format = "I420", width = 2048, height = 1088, frames = 10,
     metric = dict(type = "md5", expect = "1db9963e0589d139f5180db35a63fc03")),
 
- "Main_8bits_464_HighRes_2048x1088_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_464_HighRes_2048x1088_r6009.ivf"),
-    format = "I420", width = 2048, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "aa6a18ca8ae1082211f456b98619aa7c")),
+#  "Main_8bits_464_HighRes_2048x1088_r6009" : dict(
+#      #note : resolution change
+#     source = find_conformance_stream("Main_8bits_464_HighRes_2048x1088_r6009.ivf"),
+#     format = "I420", width = 2048, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "aa6a18ca8ae1082211f456b98619aa7c")),
 
  "Main_8bits_465_HighRes_1088x2048_r6009" : dict(
     source = find_conformance_stream("Main_8bits_465_HighRes_1088x2048_r6009.ivf"),
@@ -92,10 +98,11 @@ media._get_test_spec("av1", "decode", "8bit").update({
     format = "I420", width = 1088, height = 2048, frames = 10,
     metric = dict(type = "md5", expect = "020857742bc26649a1dcabc55ee1c165")),
 
- "Main_8bits_467_HighRes_1088x2048_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_467_HighRes_1088x2048_r6009.ivf"),
-    format = "I420", width = 1088, height = 2048, frames = 10,
-    metric = dict(type = "md5", expect = "eb35355a823af149c9b0edcd3e91537d")),
+#  "Main_8bits_467_HighRes_1088x2048_r6009" : dict(
+#     #note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_467_HighRes_1088x2048_r6009.ivf"),
+#     format = "I420", width = 1088, height = 2048, frames = 10,
+#     metric = dict(type = "md5", expect = "eb35355a823af149c9b0edcd3e91537d")),
 
 "Main_8bits_468_HighRes_1088x2048_r6009" : dict(
     source = find_conformance_stream("Main_8bits_468_HighRes_1088x2048_r6009.ivf"),
@@ -172,10 +179,11 @@ media._get_test_spec("av1", "decode", "8bit").update({
     format = "I420", width = 682, height = 3456, frames = 10,
     metric = dict(type = "md5", expect = "6f1fcc49a362a64853d640c140689777")),
 
-"Main_8bits_482_HighRes_3840x2160_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_482_HighRes_3840x2160_r6009.ivf"),
-    format = "I420", width = 3840, height = 2160, frames = 10,
-    metric = dict(type = "md5", expect = "a80543cabb54fed47bfb65c8892ea858")),
+# "Main_8bits_482_HighRes_3840x2160_r6009" : dict(
+# #note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_482_HighRes_3840x2160_r6009.ivf"),
+#     format = "I420", width = 3840, height = 2160, frames = 10,
+#     metric = dict(type = "md5", expect = "a80543cabb54fed47bfb65c8892ea858")),
 
 "Main_8bits_483_HighRes_3840x2160_r6009" : dict(
     source = find_conformance_stream("Main_8bits_483_HighRes_3840x2160_r6009.ivf"),
@@ -187,110 +195,120 @@ media._get_test_spec("av1", "decode", "8bit").update({
     format = "I420", width = 3840, height = 2160, frames = 10,
     metric = dict(type = "md5", expect = "999d78e5b0ca9ee5276dd2ba790a880")),
 
-"Main_8bits_485_HighRes_3840x2160_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_485_HighRes_3840x2160_r6009.ivf"),
-    format = "I420", width = 3840, height = 2160, frames = 10,
-    metric = dict(type = "md5", expect = "bb8ef6572d70ce477ae375495be88d21")),
+# "Main_8bits_485_HighRes_3840x2160_r6009" : dict(
+# #note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_485_HighRes_3840x2160_r6009.ivf"),
+#     format = "I420", width = 3840, height = 2160, frames = 10,
+#     metric = dict(type = "md5", expect = "bb8ef6572d70ce477ae375495be88d21")),
 
 "Main_8bits_486_HighRes_3470x128_r6009" : dict(
     source = find_conformance_stream("Main_8bits_486_HighRes_3470x128_r6009.ivf"),
     format = "I420", width = 3470, height = 128, frames = 10,
     metric = dict(type = "md5", expect = "a53e2e4215d24f7a8144348c6361f6b5")),
 
-# "Main_8bits_487_HighRes_4096x2176_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_487_HighRes_4096x2176_r6009.ivf"),
-#     format = "I420", width = 4096, height = 2176, frames = 10,
-#     metric = dict(type = "md5", expect = "8889b9ffb47092e3e575249c81693c1e")),
+"Main_8bits_487_HighRes_4096x2176_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_487_HighRes_4096x2176_r6009.ivf"),
+    format = "I420", width = 4096, height = 2176, frames = 10,
+    metric = dict(type = "md5", expect = "8889b9ffb47092e3e575249c81693c1e")),
 
 # "Main_8bits_488_HighRes_4096x2176_r6009" : dict(
+#  #note : ffmpeg error with Error while opening decoder
 #     source = find_conformance_stream("Main_8bits_488_HighRes_4096x2176_r6009.ivf"),
 #     format = "I420", width = 4096, height = 2176, frames = 10,
 #     metric = dict(type = "md5", expect = "6bb04a9f7bbd24999b10741f6df164c9")),
 
 # "Main_8bits_489_HighRes_4096x2176_r6009" : dict(
+#   #note : ffmpeg error with Error while opening decoder
 #     source = find_conformance_stream("Main_8bits_489_HighRes_4096x2176_r6009.ivf"),
 #     format = "I420", width =4096, height = 2176, frames = 10,
 #     metric = dict(type = "md5", expect = "9927bf5efef6911a982a3ca040e4285c")),
 
 # "Main_8bits_490_HighRes_4096x2176_r6009" : dict(
+#  #  #note : ffmpeg error with Error while opening decoder
 #     source = find_conformance_stream("Main_8bits_490_HighRes_4096x2176_r6009.ivf"),
 #     format = "I420", width =4096, height = 2176, frames = 10,
 #     metric = dict(type = "md5", expect = "022838378cd1cb161ddfe86ec3d58e10")),
 
-# "Main_8bits_491_HighRes_4096x2176_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_491_HighRes_4096x2176_r6009.ivf"),
-#     format = "I420", width = 4096, height = 2176, frames = 10,
-#     metric = dict(type = "md5", expect = "c131c276721537a44e75edbeb3d82c4b")),
+"Main_8bits_491_HighRes_4096x2176_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_491_HighRes_4096x2176_r6009.ivf"),
+    format = "I420", width = 4096, height = 2176, frames = 10,
+    metric = dict(type = "md5", expect = "c131c276721537a44e75edbeb3d82c4b")),
 
-# "Main_8bits_492_HighRes_4096x2176_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_492_HighRes_4096x2176_r6009.ivf"),
-#     format = "I420", width = 4096, height = 2176, frames = 10,
-#     metric = dict(type = "md5", expect = "57e46976303c8ec1bdd3399cdd77e6d2")),
+"Main_8bits_492_HighRes_4096x2176_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_492_HighRes_4096x2176_r6009.ivf"),
+    format = "I420", width = 4096, height = 2176, frames = 10,
+    metric = dict(type = "md5", expect = "57e46976303c8ec1bdd3399cdd77e6d2")),
 
-# "Main_8bits_493_HighRes_4096x2176_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_493_HighRes_4096x2176_r6009.ivf"),
-#     format = "I420", width = 4096, height = 2176, frames = 10,
-#     metric = dict(type = "md5", expect = "32dac45497df8fabf93488e7223cce30")),
+"Main_8bits_493_HighRes_4096x2176_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_493_HighRes_4096x2176_r6009.ivf"),
+    format = "I420", width = 4096, height = 2176, frames = 10,
+    metric = dict(type = "md5", expect = "32dac45497df8fabf93488e7223cce30")),
 
-# "Main_8bits_494_HighRes_4096x2176_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_494_HighRes_4096x2176_r6009.ivf"),
-#     format = "I420", width = 4096, height = 2176, frames = 10,
-#     metric = dict(type = "md5", expect = "aa42cd14c668251535152f576f58e83d")),
+"Main_8bits_494_HighRes_4096x2176_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_494_HighRes_4096x2176_r6009.ivf"),
+    format = "I420", width = 4096, height = 2176, frames = 10,
+    metric = dict(type = "md5", expect = "aa42cd14c668251535152f576f58e83d")),
 
-# "Main_8bits_495_HighRes_2176x4096_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_495_HighRes_2176x4096_r6009.ivf"),
-#     format = "I420", width = 2176, height = 4096, frames = 10,
-#     metric = dict(type = "md5", expect = "fa18686aa31930ff30ac62cb033c4e2d")),
+"Main_8bits_495_HighRes_2176x4096_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_495_HighRes_2176x4096_r6009.ivf"),
+    format = "I420", width = 2176, height = 4096, frames = 10,
+    metric = dict(type = "md5", expect = "fa18686aa31930ff30ac62cb033c4e2d")),
 
-# "Main_8bits_496_HighRes_2176x4096_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_496_HighRes_2176x4096_r6009.ivf"),
-#     format = "I420", width = 2176, height = 4096, frames = 10,
-#     metric = dict(type = "md5", expect = "3fcf9f1ff1825cbaae8a506a89f6dc88")),
+"Main_8bits_496_HighRes_2176x4096_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_496_HighRes_2176x4096_r6009.ivf"),
+    format = "I420", width = 2176, height = 4096, frames = 10,
+    metric = dict(type = "md5", expect = "3fcf9f1ff1825cbaae8a506a89f6dc88")),
 
-# "Main_8bits_497_HighRes_2176x4096_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_497_HighRes_2176x4096_r6009.ivf"),
-#     format = "I420", width = 2176, height = 4096, frames = 10,
-#     metric = dict(type = "md5", expect = "0ba26c718ea9c30b64374def00c4887b")),
+"Main_8bits_497_HighRes_2176x4096_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_497_HighRes_2176x4096_r6009.ivf"),
+    format = "I420", width = 2176, height = 4096, frames = 10,
+    metric = dict(type = "md5", expect = "0ba26c718ea9c30b64374def00c4887b")),
 
 # "Main_8bits_498_HighRes_2176x4096_r6009" : dict(
+#  #note : ffmpeg error with Error while opening decoder
 #     source = find_conformance_stream("Main_8bits_498_HighRes_2176x4096_r6009.ivf"),
 #     format = "I420", width = 2176, height = 4096, frames = 10,
 #     metric = dict(type = "md5", expect = "45f6e452594e7b51472ecea27a48a7e6")),
 
-"Main_8bits_499_HighRes_7061x128_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_499_HighRes_7061x128_r6009.ivf"),
-    format = "I420", width = 7061, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "9ed0e9b4d7f31d2aa564cbfc04d7f976")),
+# "Main_8bits_499_HighRes_7061x128_r6009" : dict(
+#  # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_499_HighRes_7061x128_r6009.ivf"),
+#     format = "I420", width = 7061, height = 128, frames = 10,
+#     metric = dict(type = "md5", expect = "9ed0e9b4d7f31d2aa564cbfc04d7f976")),
 
 "Main_8bits_500_HighRes_8192x1088_r6009" : dict(
     source = find_conformance_stream("Main_8bits_500_HighRes_8192x1088_r6009.ivf"),
     format = "I420", width = 8192, height = 1088, frames = 10,
     metric = dict(type = "md5", expect = "6ef59a403509dc2c8c98cc8320b0c067")),
 
-"Main_8bits_501_HighRes_8192x1088_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_501_HighRes_8192x1088_r6009.ivf"),
-    format = "I420", width = 8192, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "2aeea553d6990b7260811a91bf86ee90")),
+# "Main_8bits_501_HighRes_8192x1088_r6009" : dict(
+#  # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_501_HighRes_8192x1088_r6009.ivf"),
+#     format = "I420", width = 8192, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "2aeea553d6990b7260811a91bf86ee90")),
 
-"Main_8bits_502_HighRes_8192x1088_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_502_HighRes_8192x1088_r6009.ivf"),
-    format = "I420", width = 8192, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "565bf9d4742fcd751def22eb16052f75")),
+# "Main_8bits_502_HighRes_8192x1088_r6009" : dict(
+#  # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_502_HighRes_8192x1088_r6009.ivf"),
+#     format = "I420", width = 8192, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "565bf9d4742fcd751def22eb16052f75")),
 
 "Main_8bits_503_HighRes_8192x1088_r6009" : dict(
     source = find_conformance_stream("Main_8bits_503_HighRes_8192x1088_r6009.ivf"),
     format = "I420", width = 8192, height = 1088, frames = 10,
     metric = dict(type = "md5", expect = "7cb326b1164e20c14cfeed27f93e9213")),
 
-"Main_8bits_504_HighRes_8192x1088_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_504_HighRes_8192x1088_r6009.ivf"),
-    format = "I420", width = 8192, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "183836ea9b36458c717fd5bfcaedb536")),
+# "Main_8bits_504_HighRes_8192x1088_r6009" : dict(
+#  # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_504_HighRes_8192x1088_r6009.ivf"),
+#     format = "I420", width = 8192, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "183836ea9b36458c717fd5bfcaedb536")),
 
-"Main_8bits_505_HighRes_8192x1088_r6009" : dict(
-    source = find_conformance_stream("Main_8bits_505_HighRes_8192x1088_r6009.ivf"),
-    format = "I420", width = 8192, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "84ad0fb0120933a54592220ca38ed65e")),
+# "Main_8bits_505_HighRes_8192x1088_r6009" : dict(
+#  # note : ffmpeg error with Error while opening decoder
+#     source = find_conformance_stream("Main_8bits_505_HighRes_8192x1088_r6009.ivf"),
+#     format = "I420", width = 8192, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "84ad0fb0120933a54592220ca38ed65e")),
 
 "Main_8bits_506_HighRes_8192x1088_r6009" : dict(
     source = find_conformance_stream("Main_8bits_506_HighRes_8192x1088_r6009.ivf"),
@@ -322,250 +340,251 @@ media._get_test_spec("av1", "decode", "8bit").update({
     format = "I420", width = 2048, height = 4352, frames = 10,
     metric = dict(type = "md5", expect = "87cde00b9a13860a105836a144126292")),
 
-# "Main_8bits_545_HighRes_4096x4608_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_545_HighRes_4096x4608_r6009.ivf"),
-#     format = "I420", width = 4096, height = 4608, frames = 10,
-#     metric = dict(type = "md5", expect = "f09dbc23fd230e9013196b0b34bba5a1")),
+"Main_8bits_545_HighRes_4096x4608_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_545_HighRes_4096x4608_r6009.ivf"),
+    format = "I420", width = 4096, height = 4608, frames = 10,
+    metric = dict(type = "md5", expect = "f09dbc23fd230e9013196b0b34bba5a1")),
 
-# "Main_8bits_546_HighRes_4096x4608_r6009" : dict(
-#     source = find_conformance_stream("Main_8bits_546_HighRes_4096x4608_r6009.ivf"),
-#     format = "I420", width = 4096, height = 4608, frames = 10,
-#     metric = dict(type = "md5", expect = "7a1526a0eb5bd785066bdc239a02ecb0")),
+"Main_8bits_546_HighRes_4096x4608_r6009" : dict(
+    source = find_conformance_stream("Main_8bits_546_HighRes_4096x4608_r6009.ivf"),
+    format = "I420", width = 4096, height = 4608, frames = 10,
+    metric = dict(type = "md5", expect = "7a1526a0eb5bd785066bdc239a02ecb0")),
 
-"test10051" : dict(
-    source = find_conformance_stream("test10051.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# ffmpeg can't decode .obu streams
+# "test10051" : dict(
+#     source = find_conformance_stream("test10051.obu"),
+#     format = "I420", width = 8192, height = 1088, frames = 10,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10062" : dict(
-    source = find_conformance_stream("test10062.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10062" : dict(
+#     source = find_conformance_stream("test10062.obu"),
+#     format = "I420", width = 5307, height = 200, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10075" : dict(
-    source = find_conformance_stream("test10075.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10075" : dict(
+#     source = find_conformance_stream("test10075.obu"),
+#     format = "I420", width = 682, height = 3456, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10111" : dict(
-    source = find_conformance_stream("test10111.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10111" : dict(
+#     source = find_conformance_stream("test10111.obu"),
+#     format = "I420", width = 272, height = 2448, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10147" : dict(
-    source = find_conformance_stream("test10147.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10147" : dict(
+#     source = find_conformance_stream("test10147.obu"),
+#     format = "I420", width = 128, height = 4352, frames = 7,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10186" : dict(
-    source = find_conformance_stream("test10186.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10186" : dict(
+#     source = find_conformance_stream("test10186.obu"),
+#     format = "I420", width = 6144, height = 384, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10202" : dict(
-    source = find_conformance_stream("test10202.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10202" : dict(
+#     source = find_conformance_stream("test10202.obu"),
+#     format = "I420", width = 382, height = 2792, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d ")),
 
-"test10222" : dict(
-    source = find_conformance_stream("test10222.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10222" : dict(
+#     source = find_conformance_stream("test10222.obu"),
+#     format = "I420", width = 175, height = 2272, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10255" : dict(
-    source = find_conformance_stream("test10255.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10255" : dict(
+#     source = find_conformance_stream("test10255.obu"),
+#     format = "I420", width = 3840, height = 173, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10290" : dict(
-    source = find_conformance_stream("test10290.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10290" : dict(
+#     source = find_conformance_stream("test10290.obu"),
+#     format = "I420", width = 3840, height = 2160, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10291" : dict(
-    source = find_conformance_stream("test10291.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10291" : dict(
+#     source = find_conformance_stream("test10291.obu"),
+#     format = "I420", width = 3840, height = 2160, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10325" : dict(
-    source = find_conformance_stream("test10325.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10325" : dict(
+#     source = find_conformance_stream("test10325.obu"),
+#     format = "I420", width = 512, height = 512, frames = 4,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10383" : dict(
-    source = find_conformance_stream("test10383.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10383" : dict(
+#     source = find_conformance_stream("test10383.obu"),
+#     format = "I420", width = 512, height = 512, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10407" : dict(
-    source = find_conformance_stream("test10407.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10407" : dict(
+#     source = find_conformance_stream("test10407.obu"),
+#     format = "I420", width = 512, height = 512, frames = 5,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10421" : dict(
-    source = find_conformance_stream("test10421.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10421" : dict(
+#     source = find_conformance_stream("test10421.obu"),
+#     format = "I420", width = 512, height = 512, frames = 6,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10440" : dict(
-    source = find_conformance_stream("test10440.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10440" : dict(
+#     source = find_conformance_stream("test10440.obu"),
+#     format = "I420", width = 682, height = 3456, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10461" : dict(
-    source = find_conformance_stream("test10461.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10461" : dict(
+#     source = find_conformance_stream("test10461.obu"),
+#     format = "I420", width = 113, height = 2920, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10485" : dict(
-    source = find_conformance_stream("test10485.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10485" : dict(
+#     source = find_conformance_stream("test10485.obu"),
+#     format = "I420", width = 297, height = 3096, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10487" : dict(
-    source = find_conformance_stream("test10487.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10487" : dict(
+#     source = find_conformance_stream("test10487.obu"),
+#     format = "I420", width = 344, height = 3096, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10516" : dict(
-    source = find_conformance_stream("test10516.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10516" : dict(
+#     source = find_conformance_stream("test10516.obu"),
+#     format = "I420", width = 6144, height = 230, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10606_10978_10646" : dict(
-    source = find_conformance_stream("test10606_10978_10646.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10606_10978_10646" : dict(
+#     source = find_conformance_stream("test10606_10978_10646.obu"),
+#     format = "I420", width = 1024, height = 512, frames = 15,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10717" : dict(
-    source = find_conformance_stream("test10717.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10717" : dict(
+#     source = find_conformance_stream("test10717.obu"),
+#     format = "I420", width = 1024, height = 512, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10722_10822_10854" : dict(
-    source = find_conformance_stream("test10722_10822_10854.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# # "test10722_10822_10854" : dict(
+# #     source = find_conformance_stream("test10722_10822_10854.obu"),
+# #     format = "I420", width = 1024, height = height, frames = 23,
+# #     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10770" : dict(
-    source = find_conformance_stream("test10770.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10770" : dict(
+#     source = find_conformance_stream("test10770.obu"),
+#     format = "I420", width = 1024, height = 512, frames = 10,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10804" : dict(
-    source = find_conformance_stream("test10804.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10804" : dict(
+#     source = find_conformance_stream("test10804.obu"),
+#     format = "I420", width = 1024, height = 512, frames = 10,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10824" : dict(
-    source = find_conformance_stream("test10824.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10824" : dict(
+#     source = find_conformance_stream("test10824.obu"),
+#     format = "I420", width = 1024, height = 512, frames = 10,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10872" : dict(
-    source = find_conformance_stream("test10872.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10872" : dict(
+#     source = find_conformance_stream("test10872.obu"),
+#     format = "I420", width = 1024, height = 512, frames = 6,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test10951" : dict(
-    source = find_conformance_stream("test10951.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test10951" : dict(
+#     source = find_conformance_stream("test10951.obu"),
+#     format = "I420", width = 1024, height = 512, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test20047" : dict(
-    source = find_conformance_stream("test20047.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test20047" : dict(
+#     source = find_conformance_stream("test20047.obu"),
+#     format = "I420", width = 1096, height = 8136, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test20049" : dict(
-    source = find_conformance_stream("test20049.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test20049" : dict(
+#     source = find_conformance_stream("test20049.obu"),
+#     format = "I420", width = 1096, height = 8136, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test5257" : dict(
-    source = find_conformance_stream("test5257.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test5257" : dict(
+#     source = find_conformance_stream("test5257.obu"),
+#     format = "I420", width = 2048, height = 70, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test5413" : dict(
-    source = find_conformance_stream("test5413.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test5413" : dict(
+#     source = find_conformance_stream("test5413.obu"),
+#     format = "I420", width = 189, height = 750, frames = 6,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test5420" : dict(
-    source = find_conformance_stream("test5420.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test5420" : dict(
+#     source = find_conformance_stream("test5420.obu"),
+#     format = "I420", width = 153, height = 962, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test5421" : dict(
-    source = find_conformance_stream("test5421.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test5421" : dict(
+#     source = find_conformance_stream("test5421.obu"),
+#     format = "I420", width = 183, height = 453, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test5784" : dict(
-    source = find_conformance_stream("test5784.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test5784" : dict(
+#     source = find_conformance_stream("test5784.obu"),
+#     format = "I420", width = 111, height = 1152, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test6618" : dict(
-    source = find_conformance_stream("test6618.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test6618" : dict(
+#     source = find_conformance_stream("test6618.obu"),
+#     format = "I420", width = 165, height = 893, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test7150" : dict(
-    source = find_conformance_stream("test7150.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test7150" : dict(
+#     source = find_conformance_stream("test7150.obu"),
+#     format = "I420", width = 2048, height = 72, frames = 1,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test7573" : dict(
-    source = find_conformance_stream("test7573.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test7573" : dict(
+#     source = find_conformance_stream("test7573.obu"),
+#     format = "I420", width = 238, height = 617, frames = 5,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test8300" : dict(
-    source = find_conformance_stream("test8300.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test8300" : dict(
+#     source = find_conformance_stream("test8300.obu"),
+#     format = "I420", width = 1225, height = 120, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test8625" : dict(
-    source = find_conformance_stream("test8625.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test8625" : dict(
+#     source = find_conformance_stream("test8625.obu"),
+#     format = "I420", width = 288, height = 511, frames = 7,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test9203" : dict(
-    source = find_conformance_stream("test9203.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test9203" : dict(
+#     source = find_conformance_stream("test9203.obu"),
+#     format = "I420", width = 112, height = 1152, frames = 7,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test9355" : dict(
-    source = find_conformance_stream("test9355.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test9355" : dict(
+#     source = find_conformance_stream("test9355.obu"),
+#     format = "I420", width = 87, height = 864, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test9793" : dict(
-    source = find_conformance_stream("test9793.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test9793" : dict(
+#     source = find_conformance_stream("test9793.obu"),
+#     format = "I420", width = 104, height = 1152, frames = 4,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test17" : dict(
-    source = find_conformance_stream("test17.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test17" : dict(
+#     source = find_conformance_stream("test17.obu"),
+#     format = "I420", width = 8192, height = 4320, frames = 10,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test18" : dict(
-    source = find_conformance_stream("test18.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test18" : dict(
+#     source = find_conformance_stream("test18.obu"),
+#     format = "I420", width = 8192, height = 4320, frames = 8,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test53" : dict(
-    source = find_conformance_stream("test53.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test53" : dict(
+#     source = find_conformance_stream("test53.obu"),
+#     format = "I420", width = 7680, height = 4320, frames = 9,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
-"test55" : dict(
-    source = find_conformance_stream("test55.obu"),
-    format = "I420", width = 0, height = 0, frames = 3,
-    metric = dict(type = "md5", expect = "d41d8cd98f00b204e9800998ecf8427e")),
+# "test55" : dict(
+#     source = find_conformance_stream("test55.obu"),
+#     format = "I420", width = 8192, height = 4352, frames = 6,
+#     metric = dict(type = "md5", expect = "2c466668f6987e29c4a058f0cd92603d")),
 
 
 "av1_noise_rand_size_204" : dict(
