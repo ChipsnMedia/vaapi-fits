@@ -839,14 +839,656 @@ media._get_test_spec("av1", "decode", "8bit").update({
         source=find_conformance_stream("av1_noise_rand_size_25.ivf"),
         format="I420", width=5186, height=861, frames=3,
         metric=dict(type="md5", expect="958a6a773b0a843e9e29652f0a74a2c0")),
+
+    "av1-1-b8-00-quantizer-00"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-00.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "5306e7f80a3b0d57d751c842e4299f48")),
+    
+    "av1-1-b8-00-quantizer-01"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-01.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "0e62f195d2e28bce4e5956428fd0d0bf")),
+    
+    "av1-1-b8-00-quantizer-02"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-02.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "8f554aec9f48fe59ec2e9dfeaf2eab86")),
+    
+    "av1-1-b8-00-quantizer-03"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-03.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "0dbedc47c56b6f681fede767cfe5e0a6")),
+    
+    "av1-1-b8-00-quantizer-04"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-04.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "fea157bf1451c9db59c17f823113a340")),
+    
+    "av1-1-b8-00-quantizer-05"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-05.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "d7a40cb9e12900a492ffe7ce2a164931")),
+    
+    "av1-1-b8-00-quantizer-06"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-06.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "12153ecdf74ab1cf7a6354a16d8f472d")),
+    
+    "av1-1-b8-00-quantizer-07"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-07.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "fae32ead04160e1c6cf7ead61aa24bf2")),
+    
+    "av1-1-b8-00-quantizer-08"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-08.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "c4e3f6472b12d64e3c4593bd28f16eba")),
+    
+    "av1-1-b8-00-quantizer-09"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-09.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "c1c385b89e79b372b2b335fc8cbabd12")),
+    
+    "av1-1-b8-00-quantizer-10"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-10.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "3807656c87ffd14ff797015c141bdee8")),
+    
+    "av1-1-b8-00-quantizer-11"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-11.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "d5047ba5a149a8673352291f38270385")),
+    
+    "av1-1-b8-00-quantizer-12"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-12.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "d962782613dbed89bf261eab45222400")),
+    
+    "av1-1-b8-00-quantizer-13"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-13.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "d5a9c2b1ef5860bc78f5baa4aca594a2")),
+    
+    "av1-1-b8-00-quantizer-14"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-14.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "32546915ddf79f21c7ec97fe4019bb15")),
+    
+    "av1-1-b8-00-quantizer-15"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-15.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "9f1820803e8913cdb38129c527fa8ddb")),
+    
+    "av1-1-b8-00-quantizer-16"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-16.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "39621a3edebc59514af83da5eb0f47e1")),
+    
+    "av1-1-b8-00-quantizer-17"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-17.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "689f5841061cd3ce7fa507a4125a6e94")),
+    
+    "av1-1-b8-00-quantizer-18"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-18.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "4b7d32f43443a88af5fef7b767ccb85b")),
+    
+    "av1-1-b8-00-quantizer-19"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-19.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "d544e8884f447043fc3d0267269db036")),
+    
+    "av1-1-b8-00-quantizer-20"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-20.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "0de0adfd3b6ebe2fa98eeedba9ff2e20")),
+    
+    "av1-1-b8-00-quantizer-21"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-21.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "f44561202aa0e2152371ab12cf9f05be")),
+    
+    "av1-1-b8-00-quantizer-22"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-22.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "162714f0b301a18000947aa8e7e428fb")),
+    
+    "av1-1-b8-00-quantizer-23"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-23.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "7dec374ab0aa0c9a828eba119f8ac877")),
+    
+    "av1-1-b8-00-quantizer-24"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-24.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "361869eb168919facc445f099d39a3a1")),
+    
+    "av1-1-b8-00-quantizer-25"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-25.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "ecc4242bdd2a8c42b8dfd89c40fb798d")),
+    
+    "av1-1-b8-00-quantizer-26"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-26.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "8aafc63a2493b4ecc5c7bda2f1f74486")),
+    
+    "av1-1-b8-00-quantizer-27"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-27.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "9815386f30ac2141d22f08e27bb36429")),
+    
+    "av1-1-b8-00-quantizer-28"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-28.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "09389e12564fc4e0c365b11269d80c18")),
+    
+    "av1-1-b8-00-quantizer-29"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-29.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "35757efa0df087c3b026f63941f636ab")),
+    
+    "av1-1-b8-00-quantizer-30"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-30.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "47520d21726c5580bdf19bfdb9f349f5")),
+    
+    "av1-1-b8-00-quantizer-31"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-31.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "853cc6f04758d2448cf13f581237c483")),
+    
+    "av1-1-b8-00-quantizer-32"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-32.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "5d7b65619f24c25c5f6e480b99357891")),
+    
+    "av1-1-b8-00-quantizer-33"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-33.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "8c8c0f061746c9bf4f7b0dac73b3c894")),
+    
+    "av1-1-b8-00-quantizer-34"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-34.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "e2f44febbd5f97ae39fdb6f2628179ca")),
+    
+    "av1-1-b8-00-quantizer-35"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-35.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "e5b24445ecf53b3d1b45f3f3c4be23d3")),
+    
+    "av1-1-b8-00-quantizer-36"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-36.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "f544a0c76d97055714f9bf5bd027b305")),
+    
+    "av1-1-b8-00-quantizer-37"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-37.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "2235cb6e2691a303692a1987dbee66e9")),
+    
+    "av1-1-b8-00-quantizer-38"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-38.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "1b0b9eb7a6205fd7993c57c522a4907b")),
+    
+    "av1-1-b8-00-quantizer-39"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-39.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "e2b088ea535390fc253afe48aa87f96c")),
+    
+    "av1-1-b8-00-quantizer-40"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-40.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "74752aaa8e561e5b2dd1ffb92ee453df")),
+    
+    "av1-1-b8-00-quantizer-41"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-41.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "c02a137af44771f9e2f5c61adc535deb")),
+    
+    "av1-1-b8-00-quantizer-42"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-42.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "aadea3262b1f5e8e255208d413f02264")),
+    
+    "av1-1-b8-00-quantizer-43"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-43.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "67b29dc956ca9cbdf1e5da63917a6f01")),
+    
+    "av1-1-b8-00-quantizer-44"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-44.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "900bd18b2c74ec8942da2659074999e1")),
+    
+    "av1-1-b8-00-quantizer-45"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-45.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "840c070446c54ab9ab2c40a4a97d7a89")),
+    
+    "av1-1-b8-00-quantizer-46"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-46.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "6f1d905bbeff9d71500bfee3463cc619")),
+    
+    "av1-1-b8-00-quantizer-47"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-47.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "2dceaabc74c8a2a8b62a10734f80831d")),
+    
+    "av1-1-b8-00-quantizer-48"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-48.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "f3abdad30cf8fc019a5d9699f676e275")),
+    
+    "av1-1-b8-00-quantizer-49"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-49.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "3b3de8bb56589c5b244c844f9f176bed")),
+    
+    "av1-1-b8-00-quantizer-50"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-50.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "548107963e1dda19ebbe984a9750d60a")),
+    
+    "av1-1-b8-00-quantizer-51"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-51.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "fe42d9aaadae496ea3ad592b8b9a9c4d")),
+    
+    "av1-1-b8-00-quantizer-52"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-52.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "0c2bdd07dfc4c52cd73a09d7a1c8bcfd")),
+    
+    "av1-1-b8-00-quantizer-53"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-53.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "31b66cf4e32e87c036cce8d6a570c98c")),
+    
+    "av1-1-b8-00-quantizer-54"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-54.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "a04da7fb248fc013c24661de0aceabb7")),
+    
+    "av1-1-b8-00-quantizer-55"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-55.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "fecb142875ec89df3ca2695366dfb77a")),
+    
+    "av1-1-b8-00-quantizer-56"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-56.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "3619ce78f6e8975766e639a1d29eb70b")),
+    
+    "av1-1-b8-00-quantizer-57"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-57.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "9cd00611b5bb6bf43a1e97503c7806c5")),
+    
+    "av1-1-b8-00-quantizer-58"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-58.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "bc9c57d1794c3339872299d7677998ad")),
+    
+    "av1-1-b8-00-quantizer-59"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-59.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "e10186b8f16a0eb71555eb4b0f694f6e")),
+    
+    "av1-1-b8-00-quantizer-60"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-60.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "f725e361a56fb31389d5dc2fcd74e7b9")),
+    
+    "av1-1-b8-00-quantizer-61"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-61.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "25775c888515c20cbdfda551a0171d3b")),
+    
+    "av1-1-b8-00-quantizer-62"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-62.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "978f9a5c7c42cc6633ecfd1ca77cfff4")),
+    
+    "av1-1-b8-00-quantizer-63"  : dict(
+        source = find_conformance_stream("av1-1-b8-00-quantizer-63.ivf"),
+        format = "I420", width = 352, height = 288, frames = 2,
+        metric = dict(type = "md5", expect = "4f26fa331cd661e833d3d94e6b0e0e4e")),
 })
 
 media._get_test_spec("av1", "decode", "10bit").update({
-    #   "DBLK_A_MAIN10_VIXS_4" : dict(
-    #     source = find_conformance_stream("DBLK_A_MAIN10_VIXS_4.bit"),
-    #     format = "I010", width = 176, height = 144, frames = 8,
-    #     metric = dict(type = "md5", expect = "c4594956bb9e8303f1662f9eb1bcdf50")),
+    "av1-1-b10-00-quantizer-00"  : dict(
+        source = find_conformance_stream("av1-1-b10-00-quantizer-00.ivf"),
+        format = "I010", width = 640, height = 360, frames = 2,
+        metric = dict(type = "md5", expect = "8b834b72fe9c5dbd24c0869370f38157")),
+    
+    # "av1-1-b10-00-quantizer-01"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-01.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "57897599b284e73ad15bab304ba60c49")),
+    
+    # "av1-1-b10-00-quantizer-02"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-02.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "628c9237205c34327cb964fea1df2f39")),
+    
+    # "av1-1-b10-00-quantizer-03"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-03.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "fdcef1fbc21ce9ddc83c6b362d155801")),
+    
+    # "av1-1-b10-00-quantizer-04"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-04.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "ad1b12a6a0cbad1454655f529eb01ee7")),
+    
+    # "av1-1-b10-00-quantizer-05"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-05.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "dc91c70dbff3e4b29b61bbc72984f662")),
+    
+    # "av1-1-b10-00-quantizer-06"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-06.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "92cf05c5e9f765131632b3c23fef9d03")),
+    
+    # "av1-1-b10-00-quantizer-07"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-07.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "7477fc4e6b8594c99882ff39fc890c17")),
+    
+    # "av1-1-b10-00-quantizer-08"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-08.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "dd28c75562a3a66754a4e9c2333257ae")),
+    
+    # "av1-1-b10-00-quantizer-09"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-09.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "ebc0eeaab20e4760ac2ed0735aaba9d6")),
+    
+    # "av1-1-b10-00-quantizer-10"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-10.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "2387e415ebed841a1a6a3c3c070ebdcb")),
+    
+    # "av1-1-b10-00-quantizer-11"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-11.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "a5b8e3891e1fdb046018878cc3220c6f")),
+    
+    # "av1-1-b10-00-quantizer-12"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-12.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "2f6738252f8050d5fdcfd1c96e12b3df")),
+    
+    # "av1-1-b10-00-quantizer-13"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-13.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "3fc9986d441720eebbd83037fec89b62")),
+    
+    # "av1-1-b10-00-quantizer-14"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-14.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "eb08b8cc797306afa84c884ac53e5948")),
+    
+    # "av1-1-b10-00-quantizer-15"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-15.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "0df1d0fd054ee0efa091add7cd9f6963")),
+    
+    # "av1-1-b10-00-quantizer-16"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-16.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "e12361887c1fbcbcbd9267d68e9afb1e")),
+    
+    # "av1-1-b10-00-quantizer-17"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-17.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "7458a9278a04b2dfe1e69737dee05faf")),
+    
+    # "av1-1-b10-00-quantizer-18"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-18.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "9acd975ffa0a24c45c7f8ed28ed7713f")),
+    
+    # "av1-1-b10-00-quantizer-19"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-19.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "bcaef8ca235d140afd3803dd0cdded9f")),
+    
+    # "av1-1-b10-00-quantizer-20"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-20.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "2e7b859b62088c09c753828949b9ef1b")),
+    
+    # "av1-1-b10-00-quantizer-21"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-21.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "683ec2cb82937b8688cb9611238c59ad")),
+    
+    # "av1-1-b10-00-quantizer-22"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-22.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "397acee1e5aa84492256a49f27789dbb")),
+    
+    # "av1-1-b10-00-quantizer-23"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-23.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "119acc22d7f20a2cd43a0ab7474d4089")),
+    
+    # "av1-1-b10-00-quantizer-24"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-24.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "6ca1933add258b0236d9cbbdd9bcd8e4")),
+    
+    # "av1-1-b10-00-quantizer-25"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-25.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "2e43ab094e6c6e93655f11f68d2990d0")),
+    
+    # "av1-1-b10-00-quantizer-26"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-26.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "80ab8de4b5c151a848eaada9b4a348db")),
+    
+    # "av1-1-b10-00-quantizer-27"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-27.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "39202ccd503ede4544125b3051c1913f")),
+    
+    # "av1-1-b10-00-quantizer-28"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-28.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "718eca98a39315c735107898c2e0ceb3")),
+    
+    # "av1-1-b10-00-quantizer-29"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-29.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "a406b418d474b31f02a8807e8ca2b4a4")),
+    
+    # "av1-1-b10-00-quantizer-30"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-30.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "aa68b016e1c4151b49a6e7ec8865ec92")),
+    
+    # "av1-1-b10-00-quantizer-31"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-31.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "18da23bedef08352928852ae183bbf71")),
+    
+    # "av1-1-b10-00-quantizer-32"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-32.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "1de5e5c5b904ebcda24b03a186b39792")),
+    
+    # "av1-1-b10-00-quantizer-33"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-33.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "b37f6c6d4165c7a63ec12e134eabff5b")),
+    
+    # "av1-1-b10-00-quantizer-34"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-34.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "c90f00a0e1e72f834095d2c60b9c4b80")),
+    
+    # "av1-1-b10-00-quantizer-35"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-35.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "e3b8468fa7395ff12da67a0f07179c58")),
+    
+    # "av1-1-b10-00-quantizer-36"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-36.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "526d21a06b007c9e735640e6470e7888")),
+    
+    # "av1-1-b10-00-quantizer-37"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-37.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "ea4c6aa2e6437f9beffca95b395b5299")),
+    
+    # "av1-1-b10-00-quantizer-38"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-38.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "00d04f3f06ae3b6ee759566e0024741b")),
+    
+    # "av1-1-b10-00-quantizer-39"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-39.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "cbba192759fe0915ea56ed6732ba21cb")),
+    
+    # "av1-1-b10-00-quantizer-40"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-40.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "6854e82b96b1e16ee4b072fa5669b0e1")),
+    
+    # "av1-1-b10-00-quantizer-41"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-41.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "4b09c49eb1f9732584a22facf6a02a34")),
+    
+    # "av1-1-b10-00-quantizer-42"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-42.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "d22aa42a80f48e63d82080b26c48e3f3")),
+    
+    # "av1-1-b10-00-quantizer-43"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-43.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "da46c8cad4caf9c91bde58447c2651e8")),
+    
+    # "av1-1-b10-00-quantizer-44"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-44.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "ad1e1d026e0126373f64bbba2d85429f")),
+    
+    # "av1-1-b10-00-quantizer-45"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-45.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "04d10320af7d99b8ecbb40ca5c63681f")),
+    
+    # "av1-1-b10-00-quantizer-46"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-46.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "9c4a60481b7797059d7f6c166929e8d4")),
+    
+    # "av1-1-b10-00-quantizer-47"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-47.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "98a1821861dcae3ec77ab10a2dd0c4bb")),
+    
+    # "av1-1-b10-00-quantizer-48"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-48.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "3b87ce150d6746eb868b27a19fb86e7f")),
+    
+    # "av1-1-b10-00-quantizer-49"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-49.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "f5cbe85a504c93913c2d58d4b9c0a0c9")),
+    
+    # "av1-1-b10-00-quantizer-50"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-50.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "77258f68bb746a04bebf57fd23582b49")),
+    
+    # "av1-1-b10-00-quantizer-51"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-51.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "c0b2dbfeaba5f4f3b4501b1d118bc3d1")),
+    
+    # "av1-1-b10-00-quantizer-52"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-52.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "fdcdb83a737333ac30f13c4acd976fe1")),
+    
+    # "av1-1-b10-00-quantizer-53"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-53.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "d505ed81e470319d4acf7dce262323c2")),
+    
+    # "av1-1-b10-00-quantizer-54"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-54.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "8a6fd37547462a6e9ffd629eb4a9563e")),
+    
+    # "av1-1-b10-00-quantizer-55"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-55.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "bb08af0080f809b02fb34ccb38c6d20d")),
+    
+    # "av1-1-b10-00-quantizer-56"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-56.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "0aeb3a869af91f4ca58a6f67b488b6ae")),
+    
+    # "av1-1-b10-00-quantizer-57"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-57.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "34234be86e8522694f906ea8ccf2ca39")),
+    
+    # "av1-1-b10-00-quantizer-58"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-58.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "c9fbfffdc05090be19ce94e244002f6d")),
+    
+    # "av1-1-b10-00-quantizer-59"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-59.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "1908cfabb49b6b2c53d3d5b575e54b1e")),
+    
+    # "av1-1-b10-00-quantizer-60"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-60.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "30b16f739a40fea2b0f035acd27ea16f")),
+    
+    # "av1-1-b10-00-quantizer-61"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-61.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "33c469d4efc580705517f432f0b1ede9")),
+    
+    # "av1-1-b10-00-quantizer-62"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-62.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "d959b0257d18892af3c7524e65609d05")),
+    
+    # "av1-1-b10-00-quantizer-63"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-00-quantizer-63.ivf"),
+    #     format = "I010", width = 640, height = 360, frames = 2,
+    #     metric = dict(type = "md5", expect = "cd215b30e02ffe016f4fccb8feb5e375")),
+    
+    # "av1-1-b10-23-film_grain-50"  : dict(
+    #     source = find_conformance_stream("av1-1-b10-23-film_grain-50.ivf"),
+    #     format = "I010", width = 352, height = 288, frames = 10,
+    #     metric = dict(type = "md5", expect = "be596f5921854b9a9a5be81c302a5327")),
+    
 })
+
 ###
 ### kate: syntax python;
 ###
