@@ -924,59 +924,59 @@ media._get_test_spec("avc", "decode").update({
 
 # AVCv1 Bitstreams
 media._get_test_spec("avc", "decode","10b").update({
-  "Allegro_AVC_High_10_Residual_00_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Residual_00_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Residual_00_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 16,
   metric = dict(type = "md5", expect = "c197c3e3842eace33bf728c9db818d73")),
-  "Allegro_AVC_High_10_IntraLimit_00_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_IntraLimit_00_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_IntraLimit_00_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 60,
   metric = dict(type = "md5", expect = "0cfb13b90d94ffa00d159183ebf18879")),
-  "Allegro_AVC_High_10_Deblocking_00_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Deblocking_00_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Deblocking_00_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 30,
   metric = dict(type = "md5", expect = "6d828335daea38fc03b1ebc69f6dad34")),
-  "Allegro_AVC_High_10_IntraOnly_00_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_IntraOnly_00_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_IntraOnly_00_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 288,
   metric = dict(type = "md5", expect = "00065bb54cc29e5cafa9ccd733f42bd1")),
-  "Allegro_AVC_High_10_Intra_00_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Intra_00_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Intra_00_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 576,
   metric = dict(type = "md5", expect = "2b461e979f803edb30cbc0517e697eb1")),
-  "Allegro_AVC_High_10_Inter_05_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Inter_05_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Inter_05_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 450,
   metric = dict(type = "md5", expect = "bfb71307ee685cc6ddc2f6f303efd11c")),
-  "Allegro_AVC_High_10_Inter_01_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Inter_01_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Inter_01_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 450,
   metric = dict(type = "md5", expect = "22c7a8332de2611051e500c7ebf33dc7")),
-  "Allegro_AVC_High_10_Inter_02_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Inter_02_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Inter_02_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 450,
   metric = dict(type = "md5", expect = "524a1b2d91daf3a48d8cc3218c43e9b5")),
-  "Allegro_AVC_High_10_IntraOnly_05_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_IntraOnly_05_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_IntraOnly_05_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 225,
   metric = dict(type = "md5", expect = "9047337124d3e1a9716b756313cfcf54")),
-  "Allegro_AVC_High_10_IntraOnly_07_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_IntraOnly_07_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_IntraOnly_07_Cabac_80x96@30Hz_r5.7.264"),
   format = "I010", width = 80, height = 96, frames = 225,
   metric = dict(type = "md5", expect = "1a58ffe4945afeba8160a9dcad93378d")),
-  "Allegro_AVC_High_10_Intra_05_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Intra_05_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Intra_05_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 450,
   metric = dict(type = "md5", expect = "966436f653cc039919943b3bf762172f")),
-  "Allegro_AVC_High_10_Intra_07_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Intra_07_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Intra_07_Cabac_80x96@30Hz_r5.7.264"),
   format = "I010", width = 80, height = 96, frames = 450,
   metric = dict(type = "md5", expect = "ae3692682955659e9e1cf1153bb67252")),
-  "Allegro_AVC_High_10_Inter_04_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_Inter_04_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Inter_04_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 450,
   metric = dict(type = "md5", expect = "0b3e712690feb97d810e03245e7a1c7e")),
-  "Allegro_AVC_High_10_IntraOnly_02_Cabac_80x96@30Hz_r5" : dict(
+  "Allegro_AVC_High_10_IntraOnly_02_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_IntraOnly_02_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 225,
   metric = dict(type = "md5", expect = "fe6d2816fb9bd866374ffad3a06d6087")),

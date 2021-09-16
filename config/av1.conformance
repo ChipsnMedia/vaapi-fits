@@ -2519,7 +2519,7 @@ media._get_test_spec("av1", "decode", "10bit").update({
     source = find_conformance_stream("av1_noise_rand_size_10b_9.ivf"),
     format = "I010", width = 3756, height = 3120, frames = 3,
     metric = dict(type = "md5", expect = "d4ce906ba778b4e4ce4a3fb53d0ba426")),
-    "Jazz_3840x2160_08107_08219" : dict(
+    # "Jazz_3840x2160_08107_08219" : dict(
     # source = find_conformance_stream("Jazz_3840x2160_08107_08219.ivf"),
     # format = "I010", width = 3840, height = 2160, frames = 77,
     # metric = dict(type = "md5", expect = "d4ce906ba778b4e4ce4a3fb53d0ba426")),
