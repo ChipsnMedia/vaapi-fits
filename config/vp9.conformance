@@ -12,219 +12,219 @@ media._get_test_spec("vp9", "decode", "8bit").update({
     #     source=find_conformance_stream("seq1_3840x2160_420_100Mbps.ivf"),
     #     format="I420", width=3837, height=2157, frames=300,
     #     metric=dict(type="md5", expect="310286e8fa8fe3b11475f1c0eefd295f")),
-    
+
     # "seq2_3840x2160_420_100Mbps": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("seq2_3840x2160_420_100Mbps.ivf"),
     #     format="I420", width = 3840, height = 2160, frames=300,
     #     metric=dict(type="md5", expect="b4bcc0a4cc266ae5464cf0e7927c8693")),
 
     # "seq3_3840x2160_420_100Mbps": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("seq3_3840x2160_420_100Mbps.ivf"),
     #     format="I420", width=3840, height=2160, frames=300,
     #     metric=dict(type="md5", expect="09460a58776685afc952f4e2a7d818e4")),
-    
+
     # "seq4_3840x2160_420_100Mbps": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("seq4_3840x2160_420_100Mbps.ivf"),
     #     format="I420", width=3840, height=2160, frames=300,
     #     metric=dict(type="md5", expect="9012c9226bd67f8d3a15d7ad47f7eb28")),
 
     # "test1280x1024": dict(
-    #no crop    
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1280x1024.ivf"),
     #     format="I420", width=1280, height=1024, frames=9,
     #     metric=dict(type="md5", expect="2fb951cf781516d45220be03aa3f67f8")),
-    
+
     # "test1280x720": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1280x720.ivf"),
     #     format="I420", width=1280, height=720, frames=9,
     #     metric=dict(type="md5", expect="0df9bf8ff9512d9d081a1b50b77d1d54")),
 
     # "test1600x1200": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1600x1200.ivf"),
     #     format="I420", width=1600, height=1200, frames=8,
     #     metric=dict(type="md5", expect="c62bead439a4a26eba36325301ee0038")),
-    
+
     # "test1920x1080": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1920x1080.ivf"),
     #     format="I420", width=1920, height=1080, frames=7,
     #     metric=dict(type="md5", expect="c9d293f6106c97b2311247d8a5e4c5b5")),
 
     # "test1920x1080_267kbit": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1920x1080_267kbit.ivf"),
     #     format="I420", width=1920, height=1080, frames=6,
     #     metric=dict(type="md5", expect="f9f85aaf45162f1af5f109adb025c740")),
 
     # "test1920x1080_667kbit": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1920x1080_667kbit.ivf"),
     #     format="I420", width=1920, height=1080, frames=10,
     #     metric=dict(type="md5", expect="d8d484a4482321ee71cce325bf643c76")),
-    
+
     # "test2048x1080": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test2048x1080.ivf"),
     #     format="I420", width=1920, height=1080, frames=7,
     #     metric=dict(type="md5", expect="6e61b5de5ce9c639b36a9a29132d80eb")),
 
     # "test3840x2160": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test3840x2160.ivf"),
     #     format="I420", width=3840, height=2160, frames=9,
     #     metric=dict(type="md5", expect="0392104e1cdf9fb6959a88e6d9c3c4ec")),
-    
+
     # "test3840x2176": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test3840x2176.ivf"),
     #     format="I420", width=3840, height=2176, frames=7,
     #     metric=dict(type="md5", expect="d6470a418aeba4329e585f05fead01ee")),
 
     # "test4096x2048": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test4096x2048.ivf"),
     #     format="I420", width=4096, height=2048, frames=6,
     #     metric=dict(type="md5", expect="8ed1d88062e1cab9399e33263d699ff6")),
 
     # "test4096x2160": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test4096x2160.ivf"),
     #     format="I420", width=4096, height=2160, frames=8,
     #     metric=dict(type="md5", expect="1c5d3801b53e703ae39c1c2f137159de")),
- 
+
     # "test4096x2160_1Mbit": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test4096x2160_1Mbit.ivf"),
     #     format="I420", width=4096, height=2160, frames=8,
     #     metric=dict(type="md5", expect="e59c8660fa2a6f38d839261aea834925")),
 
     # "test4096x2160_500kbit": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test4096x2160_500kbit.ivf"),
     #     format="I420", width=4096, height=2160, frames=7,
     #     metric=dict(type="md5", expect="6f7d44ddefaca2bf61d0a77a3dc82d7a")),
 
     # "test4096x2176": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test4096x2176.ivf"),
     #     format="I420", width=4096, height=2176, frames=8,
     #     metric=dict(type="md5", expect="b8fd5181013f84bbf784fd7fa7679f94")),
 
     # "test4096x2304": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test4096x2304.ivf"),
     #     format="I420", width=4096, height=2304, frames=9,
     #     metric=dict(type="md5", expect="9adbf8d983d240c67b945b90f1cbef3d")),
 
     # "test720x480": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test720x480.ivf"),
     #     format="I420", width=720, height=480, frames=10,
     #     metric=dict(type="md5", expect="385b340b7fc98e2d16bf128448ff6d04")),
 
-    #"test1000_946": dict(
-    #no crop
+    # "test1000_946": dict(
+    # no crop
     # note : resolution change stream, no decoded result print
     #   source=find_conformance_stream("test1000_946.ivf"),
     #    format="I420", width=384, height=512, frames=18,
     #   metric=dict(type="md5", expect="930eb9a1fd8739c4838748115cefbca5")),
 
     # "test1007": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1007.ivf"),
     #     format="I420", width=424, height=216, frames=9,
     #     metric=dict(type="md5", expect="77db8b84c80ab229e68656a6b8c410d8")),
 
     # "test1010_572_1503": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1010_572_1503.ivf"),
     #     format="I420", width=224, height=368, frames=26,
     #     metric=dict(type="md5", expect="2ba6f7a8ec5601dbed40706d30935896")),
 
     # "test1012": dict(
-    #no crop
-    #note : resolution change stream, no decoded result print
+    # no crop
+    # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1012.ivf"),
     #     format="I420", width=512, height=384, frames=9,
     #     metric=dict(type="md5", expect="0eaa55607cbffcc829b1db27d175e156")),
 
     # "test1016": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1016.ivf"),
     #     format="I420", width=416, height=152, frames=9,
     #     metric=dict(type="md5", expect="e28e57e9be31906e35d1f2cc539c8dd9")),
 
     # "test1018_689_366": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1018_689_366.ivf"),
     #     format="I420", width=448, height=224, frames=24,
     #     metric=dict(type="md5", expect="a761bb50aa2a5ee6880a46afb7909464")),
 
     # "test1020_223_195": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1020_223_195.ivf"),
     #     format="I420", width=160, height=376, frames=25,
     #     metric=dict(type="md5", expect="bb03d7edfa72127f68223f60e444800b")),
 
     # "test1023": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1023.ivf"),
     #     format="I420", width=208, height=272, frames=10,
     #     metric=dict(type="md5", expect="95ac624c441e781d39d59e8cf27a64aa")),
 
     # "test1025": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1025.ivf"),
     #     format="I420", width=400, height=304, frames=10,
     #     metric=dict(type="md5", expect="fa374b196a0c64cbd5d01f10cc27855f")),
 
     # "test1038_965": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1038_965.ivf"),
     #     format="I420", width=272, height=456, frames=19,
     #     metric=dict(type="md5", expect="b058099c5b0f41af89d6ab3c4188e796")),
 
     # "test1039_917_1419": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test1039_917_1419.ivf"),
     #     format="I420", width=320, height=464, frames=26,
     #     metric=dict(type="md5", expect="71e3b38dddbbe1b7a4d5524bfb2e92ef")),
 
     # "test103": dict(
-    #no crop
+    # no crop
     # note : resolution change stream, no decoded result print
     #     source=find_conformance_stream("test103.ivf"),
     #     format="I420", width=384, height=224, frames=9,
@@ -1351,15 +1351,15 @@ media._get_test_spec("vp9", "decode", "8bit").update({
     #     source=find_conformance_stream("test5358_2363_678.ivf"),
     #     format="I420", width=464, height=296, frames=28,
     #     metric=dict(type="md5", expect="10315969f174087d1ac8ee7fa75d94df ")),
-    "1080p" : dict(
-    source = find_conformance_stream("1080p.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 50,
-    metric = dict(type = "md5", expect = "78b5e236ab69e47ef9fa8be6612e2de5")),
+    "1080p": dict(
+        source=find_conformance_stream("1080p.webm.es"),
+        format="I420", width=1920, height=1080, frames=50,
+        metric=dict(type="md5", expect="78b5e236ab69e47ef9fa8be6612e2de5")),
 
-    "720p" : dict(
-    source = find_conformance_stream("720p.webm.es"),
-    format = "I420", width = 1280, height = 720, frames = 50,
-    metric = dict(type = "md5", expect = "ad4791277fd13c99759fe8a987029b83")),
+    "720p": dict(
+        source=find_conformance_stream("720p.webm.es"),
+        format="I420", width=1280, height=720, frames=50,
+        metric=dict(type="md5", expect="ad4791277fd13c99759fe8a987029b83")),
     # "MSHDRef_Difficult_Edge_02_720x480i30f" : dict(
     # source = find_conformance_stream("MSHDRef_Difficult_Edge_02_720x480i30f.webm.es"),
     # format = "I420", width = 720, height = 480, frames = 900,
@@ -1385,766 +1385,765 @@ media._get_test_spec("vp9", "decode", "8bit").update({
     # format = "I420", width = 1920, height = 1080, frames = 720,
     # metric = dict(type = "md5", expect = "f0fb3e90f1606082c8e5ba2168793e04")),
 
-    "MSHDRef_Texture_SkinTones_05_352x288p25f" : dict(
-    source = find_conformance_stream("MSHDRef_Texture_SkinTones_05_352x288p25f.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 436,
-    metric = dict(type = "md5", expect = "f96ff607e362ebe98dbdb7774e234d50")),
-
-    "MSHDRef_Texture_SkinTones_08_320x240p24f" : dict(
-    source = find_conformance_stream("MSHDRef_Texture_SkinTones_08_320x240p24f.webm.es"),
-    format = "I420", width = 320, height = 240, frames = 720,
-    metric = dict(type = "md5", expect = "2a6e8e10240ae64a329d1ae953e12585")),
-
-    "QCIF" : dict(
-    source = find_conformance_stream("QCIF.webm.es"),
-    format = "I420", width = 176, height = 144, frames = 50,
-    metric = dict(type = "md5", expect = "b5d978fea83c578cc02356fa15528d08")),
-
-    "QVGA" : dict(
-    source = find_conformance_stream("QVGA.webm.es"),
-    format = "I420", width = 320, height = 240, frames = 50,
-    metric = dict(type = "md5", expect = "648bebc2d399e2b91f56fea060d6cbdf")),
-
-    "vp90-2-00-quantizer-00" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-00.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "e3b792ed5ed3a7c53d17db06bd437ad9")),
-
-    "vp90-2-00-quantizer-07" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-07.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "08437804c3537272c9cffdf8d6edc5bd")),
-
-    "vp90-2-00-quantizer-08" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-08.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "4ddddf21b899fa870e0f5afa6a172598")),
-
-    "vp90-2-00-quantizer-09" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-09.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "1b4ed73eedc6fc7c58d6d9059afd09ea")),
-
-    "vp90-2-00-quantizer-10" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-10.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "013064484be3dd09435439a8f7950849")),
-
-    "vp90-2-00-quantizer-11" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-11.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "581a4197f206c84af73a8932522c43ed")),
-
-    "vp90-2-00-quantizer-12" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-12.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "6195732fde030691110813c297115bc2")),
-
-    "vp90-2-00-quantizer-13" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-13.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "2c1e721b0af764bdd8f3f1ee459287e0")),
-
-    "vp90-2-00-quantizer-14" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-14.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "cba81faa5e696f7a242aa94e14ad61d3")),
-
-    "vp90-2-00-quantizer-15" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-15.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "6385da95530eb3f2581021012a3c3cf2")),
-
-    "vp90-2-00-quantizer-16" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-16.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "19d2ca4aaf1e06eb1e7fded38a2e3dd3")),
-
-    "vp90-2-00-quantizer-17" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-17.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "5fa4bc315bde47f56d9ec55c20ea0cc4")),
-
-    "vp90-2-00-quantizer-18" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-18.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "711346f8f1f307673f40b7fa35506ee5")),
-
-    "vp90-2-00-quantizer-19" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-19.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "da5887084a524cdc5265002d215818cf")),
-
-    "vp90-2-00-quantizer-20" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-20.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "7178e1942a881e80a78e3d45bd0b5284")),
-
-    "vp90-2-00-quantizer-21" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-21.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "e26f1c18a458cc102a26844804bc36ed")),
-
-    "vp90-2-00-quantizer-22" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-22.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "3114b7d71dfc2933695e9ff60461c1e7")),
-
-    "vp90-2-00-quantizer-23" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-23.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "19880f44288bb8a32ebed8ec02bb45d1")),
-
-    "vp90-2-00-quantizer-24" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-24.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "67c29e77e6c9464fba9ff3847f06112e")),
-
-    "vp90-2-00-quantizer-25" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-25.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "a9a75d2a6f9b1161574ddf2bbb0df180")),
-
-    "vp90-2-00-quantizer-26" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-26.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "7b95b0f2ee1b69488a756e4cd7c3f77a")),
-
-    "vp90-2-00-quantizer-27" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-27.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "ae66dde6f93a0562ef8c1f2f85243bc4")),
-
-    "vp90-2-00-quantizer-28" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-28.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "587a2106648019f2db4db3c29b69def0")),
-
-    "vp90-2-00-quantizer-29" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-29.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "3e2d90279f8e74293cb9cb9c8ae98050")),
-
-    "vp90-2-00-quantizer-30" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-30.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "ca2d26cc02429f656c3c2a4fae520961")),
-
-    "vp90-2-00-quantizer-31" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-31.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "447edbb2fd467dce1b3333e955d92d69")),
-
-    "vp90-2-00-quantizer-32" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-32.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "09e7b1a054f85dd53e143b5e358d74ac")),
-
-    "vp90-2-00-quantizer-33" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-33.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "d2f9c26e35361348248ac605df96e5c6")),
-
-    "vp90-2-00-quantizer-34" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-34.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "49c97610705696f95ec3ff4c4fefa438")),
-
-    "vp90-2-00-quantizer-35" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-35.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "fa856bab745e2b09bd8d48c8f812be2f")),
-
-    "vp90-2-00-quantizer-36" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-36.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "528dcfcdd2b93c80bb1abaf09ff55065")),
-
-    "vp90-2-00-quantizer-37" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-37.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "2be7ba06f5f2e250abe2cc98cf57b14d")),
-
-    "vp90-2-00-quantizer-38" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-38.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "b98a87047b1a86e3781cb121300b0e24")),
-
-    "vp90-2-00-quantizer-39" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-39.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "37a8e9daf1e75c84b7c4faf5bb062f72")),
-
-    "vp90-2-00-quantizer-40" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-40.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "16f726490342a7e7ddc685baf91dc8b6")),
-
-    "vp90-2-00-quantizer-41" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-41.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "f461942b47e1e66ad305e5f614aa21e7")),
-
-    "vp90-2-00-quantizer-42" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-42.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "adffb2d1233d4e6c468dd41989dff672")),
-
-    "vp90-2-00-quantizer-43" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-43.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "a4c9166087d526e2339e9b403497c21e")),
-
-    "vp90-2-00-quantizer-44" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-44.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "0c83cdcecffa83cca3697ca732bc6453")),
-
-    "vp90-2-00-quantizer-45" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-45.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "2b9f689dd496dba8e78db073b46ba7d4")),
-
-    "vp90-2-00-quantizer-46" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-46.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "2f530e64607290a2579e4df2cbbd23da")),
-
-    "vp90-2-00-quantizer-47" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-47.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "76dca70de9ba739eb8aebb133995a452")),
-
-    "vp90-2-00-quantizer-48" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-48.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "870b79169e587ae7e73e3604c890fc88")),
-
-    "vp90-2-00-quantizer-49" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-49.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "ce0c731a23aba957430cebf4bdb9837a")),
-
-    "vp90-2-00-quantizer-50" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-50.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "83e83e6d412944e1dd4c1aa3e7dbc05e")),
-
-    "vp90-2-00-quantizer-51" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-51.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "b2c812c1a0eb3d40f49501c84e920404")),
-
-    "vp90-2-00-quantizer-52" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-52.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "d066bc89586a43b190e19eea1ee2e303")),
-
-    "vp90-2-00-quantizer-53" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-53.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "b50ae79934ec93dfe69fe9df5377d9b5")),
-
-    "vp90-2-00-quantizer-54" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-54.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "12d104faaa1655a8f0be0b87321dab44")),
-
-    "vp90-2-00-quantizer-55" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-55.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "5ab6a84aa01a397a2ae357471511aa98")),
-
-    "vp90-2-00-quantizer-56" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-56.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "23212a0a9fcc9320f2238e6595fef9be")),
-
-    "vp90-2-00-quantizer-57" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-57.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "74b5871e183a4d259547c71c87f35da1")),
-
-    "vp90-2-00-quantizer-58" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-58.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "409be04f2bfa8f9495e4e83e23ef7b94")),
-
-    "vp90-2-00-quantizer-59" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-59.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "2336f3122f67f3c0fcf8e37730e83b63")),
-
-    "vp90-2-00-quantizer-60" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-60.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "9f38746cd53d5185fd26b440612986c0")),
-
-    "vp90-2-00-quantizer-61" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-61.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "6992869f9f38ea9354bb3ce9a886d377")),
-
-    "vp90-2-00-quantizer-62" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-62.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "1f541ef18a4dc8017541ea98296f6416")),
-
-    "vp90-2-00-quantizer-63" : dict(
-    source = find_conformance_stream("vp90-2-00-quantizer-63.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "8e8dedb818f27256ea5e03b4feccb1d8")),
-
-    "vp90-2-01-sharpness-1" : dict(
-    source = find_conformance_stream("vp90-2-01-sharpness-1.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "93933db89b51196bc742c3ffe9f1e1ac")),
-
-    "vp90-2-01-sharpness-2" : dict(
-    source = find_conformance_stream("vp90-2-01-sharpness-2.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "019995e68f2ef6ed183727f7755bdebe")),
-
-    "vp90-2-01-sharpness-3" : dict(
-    source = find_conformance_stream("vp90-2-01-sharpness-3.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "5fdf162f7c1d9b3f4925c85c56a2c686")),
-
-    "vp90-2-01-sharpness-4" : dict(
-    source = find_conformance_stream("vp90-2-01-sharpness-4.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "31b74b56d6b416a0bef47945d00f41c1")),
-
-    "vp90-2-01-sharpness-5" : dict(
-    source = find_conformance_stream("vp90-2-01-sharpness-5.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "88773e02a8419643bd1848543cf22da9")),
-
-    "vp90-2-01-sharpness-6" : dict(
-    source = find_conformance_stream("vp90-2-01-sharpness-6.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "4019ad1e487c347145a6a85a770eb425")),
-
-    "vp90-2-01-sharpness-7" : dict(
-    source = find_conformance_stream("vp90-2-01-sharpness-7.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "3ea4efa850800f14192276aeb98a6de3")),
-
-    "vp90-2-02-size-lf-1920x1080" : dict(
-    source = find_conformance_stream("vp90-2-02-size-lf-1920x1080.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 217,
-    metric = dict(type = "md5", expect = "41b1c1d30e4310b76d4e7847742b804c")),
-
-    "vp90-2-03-deltaq" : dict(
-    source = find_conformance_stream("vp90-2-03-deltaq.webm.es"),
-    format = "I420", width = 352, height = 240, frames = 2,
-    metric = dict(type = "md5", expect = "9d3dff8ec14e97eeb685581b22eb3035")),
-
-    "vp90-2-03-size-196x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x196.webm.es"),
-    format = "I420", width = 196, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "e603d0d5aa4b78baf68f163a4b229b5c")),
-
-    "vp90-2-03-size-196x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x198.webm.es"),
-    format = "I420", width = 196, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "fb6daa50641425268641e4ab5018017d")),
-
-    "vp90-2-03-size-196x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x200.webm.es"),
-    format = "I420", width = 196, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "25e4c65df33df838ffeb643d12613c16")),
-
-    "vp90-2-03-size-196x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x202.webm.es"),
-    format = "I420", width = 196, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "edf74671f25036d65fb38a1f1fbe2e08")),
-
-    "vp90-2-03-size-196x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x208.webm.es"),
-    format = "I420", width = 196, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "e0692f0f9812c0349b168283e0abe37d")),
-
-    "vp90-2-03-size-196x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x210.webm.es"),
-    format = "I420", width = 196, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "05aaf57268d84b9d0a76ac99080bd82a")),
-
-    "vp90-2-03-size-196x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x224.webm.es"),
-    format = "I420", width = 196, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "d495a54be415bb5a508f20c3263f78bc")),
-
-    "vp90-2-03-size-196x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-196x226.webm.es"),
-    format = "I420", width = 196, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "b9eab541a1855f0093f46ee4718dd80b")),
-
-    "vp90-2-03-size-198x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x196.webm.es"),
-    format = "I420", width = 198, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "efb774bdb7a520dc20bfce369c9ae66c")),
-
-    "vp90-2-03-size-198x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x198.webm.es"),
-    format = "I420", width = 198, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "a909b9693ec189cb4ae49b75952a0776")),
-
-    "vp90-2-03-size-198x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x200.webm.es"),
-    format = "I420", width = 198, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "81b4a214a547aad2be36396f64826707")),
-
-    "vp90-2-03-size-198x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x202.webm.es"),
-    format = "I420", width = 198, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "edb3180bd7126ee18519f244e283ae5e")),
-
-    "vp90-2-03-size-198x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x208.webm.es"),
-    format = "I420", width = 198, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "7aab93cb31d98724b6e988403d416639")),
-
-    "vp90-2-03-size-198x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x210.webm.es"),
-    format = "I420", width = 198, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "75844dc2bf0efa1d44e162c4c4d4e3d2")),
-
-
-    "vp90-2-03-size-198x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x224.webm.es"),
-    format = "I420", width = 198, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "1d8313f63c31c9c2c87d5092e0a28087")),
-
-    "vp90-2-03-size-198x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-198x226.webm.es"),
-    format = "I420", width = 198, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "f8e6578651d14a56f9a673042af86cc4")),
-
-    "vp90-2-03-size-200x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x196.webm.es"),
-    format = "I420", width = 200, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "165f30ddd55bcefd9bcc69a642f2c823")),
-
-    "vp90-2-03-size-200x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x198.webm.es"),
-    format = "I420", width = 200, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "0460dcd38e33cbdff10c404e1b5ec021")),
-
-    "vp90-2-03-size-200x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x200.webm.es"),
-    format = "I420", width = 200, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "09b5dcdc81aeab86758ecd1d8ea57bea")),
-
-    "vp90-2-03-size-200x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x202.webm.es"),
-    format = "I420", width = 200, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "de661c3eaebbda3656382134e792087f")),
-
-    "vp90-2-03-size-200x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x208.webm.es"),
-    format = "I420", width = 200, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "167879ff7bf868b5242a10d634e50154")),
-
-    "vp90-2-03-size-200x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x210.webm.es"),
-    format = "I420", width = 200, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "3c3f98afffb363913dcffb33a570023f")),
-
-    "vp90-2-03-size-200x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x224.webm.es"),
-    format = "I420", width = 200, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "f222aa2e6f265f51488172ee95aa03b6")),
-
-    "vp90-2-03-size-200x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-200x226.webm.es"),
-    format = "I420", width = 200, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "39298a38e0c71243710421e58946cc9a")),
-
-    "vp90-2-03-size-202x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x196.webm.es"),
-    format = "I420", width = 202, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "d8c57b91245bc2db96bd594b0e2ab3ef")),
-
-    "vp90-2-03-size-202x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x198.webm.es"),
-    format = "I420", width = 202, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "00bcb81e1524eece49f37afbff87071d")),
-
-    "vp90-2-03-size-202x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x200.webm.es"),
-    format = "I420", width = 202, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "848c1bf35901493639fbed07d03f69c7")),
-
-    "vp90-2-03-size-202x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x202.webm.es"),
-    format = "I420", width = 202, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "438ab414f9e2620e4ae318dd4b459d19")),
-
-    "vp90-2-03-size-202x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x208.webm.es"),
-    format = "I420", width = 202, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "30fba3979b2be4092a9c62d6c49189d0")),
-
-    "vp90-2-03-size-202x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x210.webm.es"),
-    format = "I420", width = 202, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "493781aaac018cedb7dd45fd101526ec")),
-
-    "vp90-2-03-size-202x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x224.webm.es"),
-    format = "I420", width = 202, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "feb741fa4015920013414c5b348e446d")),
-
-    "vp90-2-03-size-202x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-202x226.webm.es"),
-    format = "I420", width = 202, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "767f7bb90a3b544f14665766b3882bef")),
-
-    "vp90-2-03-size-208x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x196.webm.es"),
-    format = "I420", width = 208, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "cd433d55b30cedc1c5b89cfff067b474")),
-
-    "vp90-2-03-size-208x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x198.webm.es"),
-    format = "I420", width = 208, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "2805165b3d01043f56281acbd77a2fa0")),
-
-    "vp90-2-03-size-208x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x200.webm.es"),
-    format = "I420", width = 208, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "f332487f73fc4e97288be858939aea70")),
-
-    "vp90-2-03-size-208x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x202.webm.es"),
-    format = "I420", width = 208, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "06c7d396d1a2062b15d052eed18df4e2")),
-
-    "vp90-2-03-size-208x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x208.webm.es"),
-    format = "I420", width = 208, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "79cef9ed91d18d1edbfdfe23394cb542")),
-
-    "vp90-2-03-size-208x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x210.webm.es"),
-    format = "I420", width = 208, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "da923ee5d5de79bc727f7ec66bf71f28")),
-
-    "vp90-2-03-size-208x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x224.webm.es"),
-    format = "I420", width = 208, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "78001972567f6d511defc54a2b7818b8")),
-
-    "vp90-2-03-size-208x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-208x226.webm.es"),
-    format = "I420", width = 208, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "f156ce98802e6055fbca7f9dbebd793a")),
-
-    "vp90-2-03-size-210x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x196.webm.es"),
-    format = "I420", width = 210, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "30ba6826764ed05d94ac296825dd2deb")),
-
-    "vp90-2-03-size-210x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x198.webm.es"),
-    format = "I420", width = 210, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "dc1731f175c1885a507b1f463e41b9c3")),
-
-    "vp90-2-03-size-210x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x200.webm.es"),
-    format = "I420", width = 210, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "cbc5df97fac193648477bee47385adce")),
-
-    "vp90-2-03-size-210x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x202.webm.es"),
-    format = "I420", width = 210, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "7b528de599cd2ccfdebe51df8d6fc644")),
-
-    "vp90-2-03-size-210x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x208.webm.es"),
-    format = "I420", width = 210, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "4cd22a416c527524ebed13e2d4999ad5")),
-
-    "vp90-2-03-size-210x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x210.webm.es"),
-    format = "I420", width = 210, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "9a80c30350bd6ad6258a666ab0f1e2c8")),
-
-    "vp90-2-03-size-210x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x224.webm.es"),
-    format = "I420", width = 210, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "aec1599537730046cc338cafc4f13c5c")),
-
-    "vp90-2-03-size-210x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-210x226.webm.es"),
-    format = "I420", width = 210, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "a44565883047487a04f1efce80975616")),
-
-    "vp90-2-03-size-224x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x196.webm.es"),
-    format = "I420", width = 224, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "243e1f296e459668fce9c9db0fc47b9b")),
-
-    "vp90-2-03-size-224x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x198.webm.es"),
-    format = "I420", width = 224, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "8b013a05214aad792fda2bb97d60301f")),
-
-    "vp90-2-03-size-224x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x200.webm.es"),
-    format = "I420", width = 224, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "8ff880294d075a6fc4af56db39da92e8")),
-
-    "vp90-2-03-size-224x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x202.webm.es"),
-    format = "I420", width = 224, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "eab622f21328cccce6aa4ab38f4858b9")),
-
-    "vp90-2-03-size-224x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x208.webm.es"),
-    format = "I420", width = 224, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "f18c5e3feedd57422e07f94133b5e5cc")),
-
-    "vp90-2-03-size-224x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x210.webm.es"),
-    format = "I420", width = 224, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "057d188547e7134e8461cc3716c6b551")),
-
-    "vp90-2-03-size-224x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x224.webm.es"),
-    format = "I420", width = 224, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "894ab8824591ddee18ba1eacfe265a9a")),
-
-    "vp90-2-03-size-224x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-224x226.webm.es"),
-    format = "I420", width = 224, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "064f21e06434073f20f74e09d1f5b191")),
-
-    "vp90-2-03-size-226x196" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x196.webm.es"),
-    format = "I420", width = 226, height = 196, frames = 10,
-    metric = dict(type = "md5", expect = "3f1578b7421112161907b0c3cf68d36c")),
-
-    "vp90-2-03-size-226x198" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x198.webm.es"),
-    format = "I420", width = 226, height = 198, frames = 10,
-    metric = dict(type = "md5", expect = "a7f0cbaec547c9f80db06c8244d82c67")),
-
-    "vp90-2-03-size-226x200" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x200.webm.es"),
-    format = "I420", width = 226, height = 200, frames = 10,
-    metric = dict(type = "md5", expect = "80890c0ff46f6b3749b1a1f3a452d6a3")),
-
-    "vp90-2-03-size-226x202" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x202.webm.es"),
-    format = "I420", width = 226, height = 202, frames = 10,
-    metric = dict(type = "md5", expect = "14dc25a1100dd34a36580e8a99c47913")),
-
-    "vp90-2-03-size-226x208" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x208.webm.es"),
-    format = "I420", width = 226, height = 208, frames = 10,
-    metric = dict(type = "md5", expect = "c869cb1225e4b9614a2b091058e8be5e")),
-
-    "vp90-2-03-size-226x210" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x210.webm.es"),
-    format = "I420", width = 226, height = 210, frames = 10,
-    metric = dict(type = "md5", expect = "683efd9610c64fffc72a8d034df7c774")),
-
-    "vp90-2-03-size-226x224" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x224.webm.es"),
-    format = "I420", width = 226, height = 224, frames = 10,
-    metric = dict(type = "md5", expect = "0d68089e75a9a7c857bc7bf799a58b2d")),
-
-    "vp90-2-03-size-226x226" : dict(
-    source = find_conformance_stream("vp90-2-03-size-226x226.webm.es"),
-    format = "I420", width = 226, height = 226, frames = 10,
-    metric = dict(type = "md5", expect = "b35a1b707b28e82be025d960aba039bc")),
-
-    "vp90-2-03-size-352x288" : dict(
-    source = find_conformance_stream("vp90-2-03-size-352x288.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 2,
-    metric = dict(type = "md5", expect = "013064484be3dd09435439a8f7950849")),
-
-    "vp90-2-06-bilinear" : dict(
-    source = find_conformance_stream("vp90-2-06-bilinear.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "299923c8093e734f42b89594923c807f")),
-
-    "vp90-2-07-frame_parallel-1" : dict(
-    source = find_conformance_stream("vp90-2-07-frame_parallel-1.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 40,
-    metric = dict(type = "md5", expect = "8c9e048e5b60b379ab5a377c5ecfc97d")),
-
-    "vp90-2-07-frame_parallel" : dict(
-    source = find_conformance_stream("vp90-2-07-frame_parallel.webm.es"),
-    format = "I420", width = 352, height = 240, frames = 10,
-    metric = dict(type = "md5", expect = "6a48450207785d0be2922457f77a4bc4")),
-
-    "vp90-2-08-tile_1x2_frame_parallel" : dict(
-    source = find_conformance_stream("vp90-2-08-tile_1x2_frame_parallel.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 10,
-    metric = dict(type = "md5", expect = "68ede6abd66bae0a2edf2eb9232241b6")),
-
-    "vp90-2-08-tile_1x2" : dict(
-    source = find_conformance_stream("vp90-2-08-tile_1x2.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 10,
-    metric = dict(type = "md5", expect = "570b4a5d5a70d58b5359671668328a16")),
-
-    "vp90-2-08-tile_1x4_frame_parallel" : dict(
-    source = find_conformance_stream("vp90-2-08-tile_1x4_frame_parallel.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 10,
-    metric = dict(type = "md5", expect = "368ebc6ebf3a5e478d85b2c3149b2848")),
-
-    "vp90-2-08-tile_1x4" : dict(
-    source = find_conformance_stream("vp90-2-08-tile_1x4.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 10,
-    metric = dict(type = "md5", expect = "988d86049e884c66909d2d163a09841a")),
-
-    "vp90-2-08-tile_1x8_frame_parallel" : dict(
-    source = find_conformance_stream("vp90-2-08-tile_1x8_frame_parallel.webm.es"),
-    format = "I420", width = 3840, height = 2160, frames = 10,
-    metric = dict(type = "md5", expect = "17e439da2388aff3a0f69cb22579c6c1")),
-
-    "vp90-2-08-tile_1x8" : dict(
-    source = find_conformance_stream("vp90-2-08-tile_1x8.webm.es"),
-    format = "I420", width = 3840, height = 2160, frames = 10,
-    metric = dict(type = "md5", expect = "0941902a52e9092cb010905eab16364c")),
-
-    "vp90-2-08-tile-4x1" : dict(
-    source = find_conformance_stream("vp90-2-08-tile-4x1.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 5,
-    metric = dict(type = "md5", expect = "06505aade6647c583c8e00a2f582266f")),
-
-    "vp90-2-08-tile-4x4" : dict(
-    source = find_conformance_stream("vp90-2-08-tile-4x4.webm.es"),
-    format = "I420", width = 1920, height = 1080, frames = 5,
-    metric = dict(type = "md5", expect = "85c2299892460d76e2c600502d52bfe2")),
-
-    "vp90-2-09-aq2" : dict(
-    source = find_conformance_stream("vp90-2-09-aq2.webm.es"),
-    format = "I420", width = 352, height = 240, frames = 100,
-    metric = dict(type = "md5", expect = "daf228b24642c39c0519ec5fe66b06d4")),
-
-    "vp90-2-09-lf_deltas" : dict(
-    source = find_conformance_stream("vp90-2-09-lf_deltas.webm.es"),
-    format = "I420", width = 352, height = 240, frames = 30,
-    metric = dict(type = "md5", expect = "dacb7e056abb35d5fe5e7dfef1f207c1")),
-
-    "vp90-2-11-size-351x287" : dict(
-    source = find_conformance_stream("vp90-2-11-size-351x287.webm.es"),
-    format = "I420", width = 351, height = 287, frames = 10,
-    metric = dict(type = "md5", expect = "042a6a229a1020cafbe330622a7e4875")),
-
-    "vp90-2-11-size-351x288" : dict(
-    source = find_conformance_stream("vp90-2-11-size-351x288.webm.es"),
-    format = "I420", width = 351, height = 288, frames = 10,
-    metric = dict(type = "md5", expect = "ea267efd59fa75cd453e5a2a2afbdb22")),
-
-    "vp90-2-11-size-352x287" : dict(
-    source = find_conformance_stream("vp90-2-11-size-352x287.webm.es"),
-    format = "I420", width = 352, height = 287, frames = 10,
-    metric = dict(type = "md5", expect = "38e34f0ce2bb8e45471759eb1617d710")),
+    "MSHDRef_Texture_SkinTones_05_352x288p25f": dict(
+        source=find_conformance_stream("MSHDRef_Texture_SkinTones_05_352x288p25f.webm.es"),
+        format="I420", width=352, height=288, frames=436,
+        metric=dict(type="md5", expect="f96ff607e362ebe98dbdb7774e234d50")),
+
+    "MSHDRef_Texture_SkinTones_08_320x240p24f": dict(
+        source=find_conformance_stream("MSHDRef_Texture_SkinTones_08_320x240p24f.webm.es"),
+        format="I420", width=320, height=240, frames=720,
+        metric=dict(type="md5", expect="2a6e8e10240ae64a329d1ae953e12585")),
+
+    "QCIF": dict(
+        source=find_conformance_stream("QCIF.webm.es"),
+        format="I420", width=176, height=144, frames=50,
+        metric=dict(type="md5", expect="b5d978fea83c578cc02356fa15528d08")),
+
+    "QVGA": dict(
+        source=find_conformance_stream("QVGA.webm.es"),
+        format="I420", width=320, height=240, frames=50,
+        metric=dict(type="md5", expect="648bebc2d399e2b91f56fea060d6cbdf")),
+
+    "vp90-2-00-quantizer-00": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-00.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="e3b792ed5ed3a7c53d17db06bd437ad9")),
+
+    "vp90-2-00-quantizer-07": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-07.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="08437804c3537272c9cffdf8d6edc5bd")),
+
+    "vp90-2-00-quantizer-08": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-08.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="4ddddf21b899fa870e0f5afa6a172598")),
+
+    "vp90-2-00-quantizer-09": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-09.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="1b4ed73eedc6fc7c58d6d9059afd09ea")),
+
+    "vp90-2-00-quantizer-10": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-10.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="013064484be3dd09435439a8f7950849")),
+
+    "vp90-2-00-quantizer-11": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-11.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="581a4197f206c84af73a8932522c43ed")),
+
+    "vp90-2-00-quantizer-12": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-12.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="6195732fde030691110813c297115bc2")),
+
+    "vp90-2-00-quantizer-13": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-13.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="2c1e721b0af764bdd8f3f1ee459287e0")),
+
+    "vp90-2-00-quantizer-14": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-14.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="cba81faa5e696f7a242aa94e14ad61d3")),
+
+    "vp90-2-00-quantizer-15": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-15.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="6385da95530eb3f2581021012a3c3cf2")),
+
+    "vp90-2-00-quantizer-16": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-16.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="19d2ca4aaf1e06eb1e7fded38a2e3dd3")),
+
+    "vp90-2-00-quantizer-17": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-17.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="5fa4bc315bde47f56d9ec55c20ea0cc4")),
+
+    "vp90-2-00-quantizer-18": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-18.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="711346f8f1f307673f40b7fa35506ee5")),
+
+    "vp90-2-00-quantizer-19": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-19.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="da5887084a524cdc5265002d215818cf")),
+
+    "vp90-2-00-quantizer-20": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-20.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="7178e1942a881e80a78e3d45bd0b5284")),
+
+    "vp90-2-00-quantizer-21": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-21.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="e26f1c18a458cc102a26844804bc36ed")),
+
+    "vp90-2-00-quantizer-22": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-22.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="3114b7d71dfc2933695e9ff60461c1e7")),
+
+    "vp90-2-00-quantizer-23": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-23.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="19880f44288bb8a32ebed8ec02bb45d1")),
+
+    "vp90-2-00-quantizer-24": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-24.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="67c29e77e6c9464fba9ff3847f06112e")),
+
+    "vp90-2-00-quantizer-25": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-25.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="a9a75d2a6f9b1161574ddf2bbb0df180")),
+
+    "vp90-2-00-quantizer-26": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-26.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="7b95b0f2ee1b69488a756e4cd7c3f77a")),
+
+    "vp90-2-00-quantizer-27": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-27.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="ae66dde6f93a0562ef8c1f2f85243bc4")),
+
+    "vp90-2-00-quantizer-28": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-28.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="587a2106648019f2db4db3c29b69def0")),
+
+    "vp90-2-00-quantizer-29": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-29.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="3e2d90279f8e74293cb9cb9c8ae98050")),
+
+    "vp90-2-00-quantizer-30": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-30.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="ca2d26cc02429f656c3c2a4fae520961")),
+
+    "vp90-2-00-quantizer-31": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-31.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="447edbb2fd467dce1b3333e955d92d69")),
+
+    "vp90-2-00-quantizer-32": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-32.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="09e7b1a054f85dd53e143b5e358d74ac")),
+
+    "vp90-2-00-quantizer-33": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-33.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="d2f9c26e35361348248ac605df96e5c6")),
+
+    "vp90-2-00-quantizer-34": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-34.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="49c97610705696f95ec3ff4c4fefa438")),
+
+    "vp90-2-00-quantizer-35": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-35.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="fa856bab745e2b09bd8d48c8f812be2f")),
+
+    "vp90-2-00-quantizer-36": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-36.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="528dcfcdd2b93c80bb1abaf09ff55065")),
+
+    "vp90-2-00-quantizer-37": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-37.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="2be7ba06f5f2e250abe2cc98cf57b14d")),
+
+    "vp90-2-00-quantizer-38": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-38.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="b98a87047b1a86e3781cb121300b0e24")),
+
+    "vp90-2-00-quantizer-39": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-39.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="37a8e9daf1e75c84b7c4faf5bb062f72")),
+
+    "vp90-2-00-quantizer-40": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-40.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="16f726490342a7e7ddc685baf91dc8b6")),
+
+    "vp90-2-00-quantizer-41": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-41.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="f461942b47e1e66ad305e5f614aa21e7")),
+
+    "vp90-2-00-quantizer-42": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-42.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="adffb2d1233d4e6c468dd41989dff672")),
+
+    "vp90-2-00-quantizer-43": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-43.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="a4c9166087d526e2339e9b403497c21e")),
+
+    "vp90-2-00-quantizer-44": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-44.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="0c83cdcecffa83cca3697ca732bc6453")),
+
+    "vp90-2-00-quantizer-45": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-45.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="2b9f689dd496dba8e78db073b46ba7d4")),
+
+    "vp90-2-00-quantizer-46": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-46.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="2f530e64607290a2579e4df2cbbd23da")),
+
+    "vp90-2-00-quantizer-47": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-47.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="76dca70de9ba739eb8aebb133995a452")),
+
+    "vp90-2-00-quantizer-48": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-48.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="870b79169e587ae7e73e3604c890fc88")),
+
+    "vp90-2-00-quantizer-49": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-49.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="ce0c731a23aba957430cebf4bdb9837a")),
+
+    "vp90-2-00-quantizer-50": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-50.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="83e83e6d412944e1dd4c1aa3e7dbc05e")),
+
+    "vp90-2-00-quantizer-51": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-51.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="b2c812c1a0eb3d40f49501c84e920404")),
+
+    "vp90-2-00-quantizer-52": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-52.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="d066bc89586a43b190e19eea1ee2e303")),
+
+    "vp90-2-00-quantizer-53": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-53.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="b50ae79934ec93dfe69fe9df5377d9b5")),
+
+    "vp90-2-00-quantizer-54": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-54.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="12d104faaa1655a8f0be0b87321dab44")),
+
+    "vp90-2-00-quantizer-55": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-55.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="5ab6a84aa01a397a2ae357471511aa98")),
+
+    "vp90-2-00-quantizer-56": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-56.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="23212a0a9fcc9320f2238e6595fef9be")),
+
+    "vp90-2-00-quantizer-57": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-57.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="74b5871e183a4d259547c71c87f35da1")),
+
+    "vp90-2-00-quantizer-58": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-58.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="409be04f2bfa8f9495e4e83e23ef7b94")),
+
+    "vp90-2-00-quantizer-59": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-59.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="2336f3122f67f3c0fcf8e37730e83b63")),
+
+    "vp90-2-00-quantizer-60": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-60.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="9f38746cd53d5185fd26b440612986c0")),
+
+    "vp90-2-00-quantizer-61": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-61.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="6992869f9f38ea9354bb3ce9a886d377")),
+
+    "vp90-2-00-quantizer-62": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-62.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="1f541ef18a4dc8017541ea98296f6416")),
+
+    "vp90-2-00-quantizer-63": dict(
+        source=find_conformance_stream("vp90-2-00-quantizer-63.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="8e8dedb818f27256ea5e03b4feccb1d8")),
+
+    "vp90-2-01-sharpness-1": dict(
+        source=find_conformance_stream("vp90-2-01-sharpness-1.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="93933db89b51196bc742c3ffe9f1e1ac")),
+
+    "vp90-2-01-sharpness-2": dict(
+        source=find_conformance_stream("vp90-2-01-sharpness-2.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="019995e68f2ef6ed183727f7755bdebe")),
+
+    "vp90-2-01-sharpness-3": dict(
+        source=find_conformance_stream("vp90-2-01-sharpness-3.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="5fdf162f7c1d9b3f4925c85c56a2c686")),
+
+    "vp90-2-01-sharpness-4": dict(
+        source=find_conformance_stream("vp90-2-01-sharpness-4.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="31b74b56d6b416a0bef47945d00f41c1")),
+
+    "vp90-2-01-sharpness-5": dict(
+        source=find_conformance_stream("vp90-2-01-sharpness-5.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="88773e02a8419643bd1848543cf22da9")),
+
+    "vp90-2-01-sharpness-6": dict(
+        source=find_conformance_stream("vp90-2-01-sharpness-6.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="4019ad1e487c347145a6a85a770eb425")),
+
+    "vp90-2-01-sharpness-7": dict(
+        source=find_conformance_stream("vp90-2-01-sharpness-7.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="3ea4efa850800f14192276aeb98a6de3")),
+
+    "vp90-2-02-size-lf-1920x1080": dict(
+        source=find_conformance_stream("vp90-2-02-size-lf-1920x1080.webm.es"),
+        format="I420", width=1920, height=1080, frames=217,
+        metric=dict(type="md5", expect="41b1c1d30e4310b76d4e7847742b804c")),
+
+    "vp90-2-03-deltaq": dict(
+        source=find_conformance_stream("vp90-2-03-deltaq.webm.es"),
+        format="I420", width=352, height=240, frames=2,
+        metric=dict(type="md5", expect="9d3dff8ec14e97eeb685581b22eb3035")),
+
+    "vp90-2-03-size-196x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x196.webm.es"),
+        format="I420", width=196, height=196, frames=10,
+        metric=dict(type="md5", expect="e603d0d5aa4b78baf68f163a4b229b5c")),
+
+    "vp90-2-03-size-196x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x198.webm.es"),
+        format="I420", width=196, height=198, frames=10,
+        metric=dict(type="md5", expect="fb6daa50641425268641e4ab5018017d")),
+
+    "vp90-2-03-size-196x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x200.webm.es"),
+        format="I420", width=196, height=200, frames=10,
+        metric=dict(type="md5", expect="25e4c65df33df838ffeb643d12613c16")),
+
+    "vp90-2-03-size-196x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x202.webm.es"),
+        format="I420", width=196, height=202, frames=10,
+        metric=dict(type="md5", expect="edf74671f25036d65fb38a1f1fbe2e08")),
+
+    "vp90-2-03-size-196x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x208.webm.es"),
+        format="I420", width=196, height=208, frames=10,
+        metric=dict(type="md5", expect="e0692f0f9812c0349b168283e0abe37d")),
+
+    "vp90-2-03-size-196x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x210.webm.es"),
+        format="I420", width=196, height=210, frames=10,
+        metric=dict(type="md5", expect="05aaf57268d84b9d0a76ac99080bd82a")),
+
+    "vp90-2-03-size-196x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x224.webm.es"),
+        format="I420", width=196, height=224, frames=10,
+        metric=dict(type="md5", expect="d495a54be415bb5a508f20c3263f78bc")),
+
+    "vp90-2-03-size-196x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-196x226.webm.es"),
+        format="I420", width=196, height=226, frames=10,
+        metric=dict(type="md5", expect="b9eab541a1855f0093f46ee4718dd80b")),
+
+    "vp90-2-03-size-198x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x196.webm.es"),
+        format="I420", width=198, height=196, frames=10,
+        metric=dict(type="md5", expect="efb774bdb7a520dc20bfce369c9ae66c")),
+
+    "vp90-2-03-size-198x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x198.webm.es"),
+        format="I420", width=198, height=198, frames=10,
+        metric=dict(type="md5", expect="a909b9693ec189cb4ae49b75952a0776")),
+
+    "vp90-2-03-size-198x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x200.webm.es"),
+        format="I420", width=198, height=200, frames=10,
+        metric=dict(type="md5", expect="81b4a214a547aad2be36396f64826707")),
+
+    "vp90-2-03-size-198x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x202.webm.es"),
+        format="I420", width=198, height=202, frames=10,
+        metric=dict(type="md5", expect="edb3180bd7126ee18519f244e283ae5e")),
+
+    "vp90-2-03-size-198x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x208.webm.es"),
+        format="I420", width=198, height=208, frames=10,
+        metric=dict(type="md5", expect="7aab93cb31d98724b6e988403d416639")),
+
+    "vp90-2-03-size-198x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x210.webm.es"),
+        format="I420", width=198, height=210, frames=10,
+        metric=dict(type="md5", expect="75844dc2bf0efa1d44e162c4c4d4e3d2")),
+
+    "vp90-2-03-size-198x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x224.webm.es"),
+        format="I420", width=198, height=224, frames=10,
+        metric=dict(type="md5", expect="1d8313f63c31c9c2c87d5092e0a28087")),
+
+    "vp90-2-03-size-198x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-198x226.webm.es"),
+        format="I420", width=198, height=226, frames=10,
+        metric=dict(type="md5", expect="f8e6578651d14a56f9a673042af86cc4")),
+
+    "vp90-2-03-size-200x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x196.webm.es"),
+        format="I420", width=200, height=196, frames=10,
+        metric=dict(type="md5", expect="165f30ddd55bcefd9bcc69a642f2c823")),
+
+    "vp90-2-03-size-200x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x198.webm.es"),
+        format="I420", width=200, height=198, frames=10,
+        metric=dict(type="md5", expect="0460dcd38e33cbdff10c404e1b5ec021")),
+
+    "vp90-2-03-size-200x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x200.webm.es"),
+        format="I420", width=200, height=200, frames=10,
+        metric=dict(type="md5", expect="09b5dcdc81aeab86758ecd1d8ea57bea")),
+
+    "vp90-2-03-size-200x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x202.webm.es"),
+        format="I420", width=200, height=202, frames=10,
+        metric=dict(type="md5", expect="de661c3eaebbda3656382134e792087f")),
+
+    "vp90-2-03-size-200x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x208.webm.es"),
+        format="I420", width=200, height=208, frames=10,
+        metric=dict(type="md5", expect="167879ff7bf868b5242a10d634e50154")),
+
+    "vp90-2-03-size-200x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x210.webm.es"),
+        format="I420", width=200, height=210, frames=10,
+        metric=dict(type="md5", expect="3c3f98afffb363913dcffb33a570023f")),
+
+    "vp90-2-03-size-200x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x224.webm.es"),
+        format="I420", width=200, height=224, frames=10,
+        metric=dict(type="md5", expect="f222aa2e6f265f51488172ee95aa03b6")),
+
+    "vp90-2-03-size-200x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-200x226.webm.es"),
+        format="I420", width=200, height=226, frames=10,
+        metric=dict(type="md5", expect="39298a38e0c71243710421e58946cc9a")),
+
+    "vp90-2-03-size-202x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x196.webm.es"),
+        format="I420", width=202, height=196, frames=10,
+        metric=dict(type="md5", expect="d8c57b91245bc2db96bd594b0e2ab3ef")),
+
+    "vp90-2-03-size-202x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x198.webm.es"),
+        format="I420", width=202, height=198, frames=10,
+        metric=dict(type="md5", expect="00bcb81e1524eece49f37afbff87071d")),
+
+    "vp90-2-03-size-202x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x200.webm.es"),
+        format="I420", width=202, height=200, frames=10,
+        metric=dict(type="md5", expect="848c1bf35901493639fbed07d03f69c7")),
+
+    "vp90-2-03-size-202x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x202.webm.es"),
+        format="I420", width=202, height=202, frames=10,
+        metric=dict(type="md5", expect="438ab414f9e2620e4ae318dd4b459d19")),
+
+    "vp90-2-03-size-202x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x208.webm.es"),
+        format="I420", width=202, height=208, frames=10,
+        metric=dict(type="md5", expect="30fba3979b2be4092a9c62d6c49189d0")),
+
+    "vp90-2-03-size-202x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x210.webm.es"),
+        format="I420", width=202, height=210, frames=10,
+        metric=dict(type="md5", expect="493781aaac018cedb7dd45fd101526ec")),
+
+    "vp90-2-03-size-202x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x224.webm.es"),
+        format="I420", width=202, height=224, frames=10,
+        metric=dict(type="md5", expect="feb741fa4015920013414c5b348e446d")),
+
+    "vp90-2-03-size-202x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-202x226.webm.es"),
+        format="I420", width=202, height=226, frames=10,
+        metric=dict(type="md5", expect="767f7bb90a3b544f14665766b3882bef")),
+
+    "vp90-2-03-size-208x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x196.webm.es"),
+        format="I420", width=208, height=196, frames=10,
+        metric=dict(type="md5", expect="cd433d55b30cedc1c5b89cfff067b474")),
+
+    "vp90-2-03-size-208x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x198.webm.es"),
+        format="I420", width=208, height=198, frames=10,
+        metric=dict(type="md5", expect="2805165b3d01043f56281acbd77a2fa0")),
+
+    "vp90-2-03-size-208x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x200.webm.es"),
+        format="I420", width=208, height=200, frames=10,
+        metric=dict(type="md5", expect="f332487f73fc4e97288be858939aea70")),
+
+    "vp90-2-03-size-208x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x202.webm.es"),
+        format="I420", width=208, height=202, frames=10,
+        metric=dict(type="md5", expect="06c7d396d1a2062b15d052eed18df4e2")),
+
+    "vp90-2-03-size-208x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x208.webm.es"),
+        format="I420", width=208, height=208, frames=10,
+        metric=dict(type="md5", expect="79cef9ed91d18d1edbfdfe23394cb542")),
+
+    "vp90-2-03-size-208x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x210.webm.es"),
+        format="I420", width=208, height=210, frames=10,
+        metric=dict(type="md5", expect="da923ee5d5de79bc727f7ec66bf71f28")),
+
+    "vp90-2-03-size-208x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x224.webm.es"),
+        format="I420", width=208, height=224, frames=10,
+        metric=dict(type="md5", expect="78001972567f6d511defc54a2b7818b8")),
+
+    "vp90-2-03-size-208x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-208x226.webm.es"),
+        format="I420", width=208, height=226, frames=10,
+        metric=dict(type="md5", expect="f156ce98802e6055fbca7f9dbebd793a")),
+
+    "vp90-2-03-size-210x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x196.webm.es"),
+        format="I420", width=210, height=196, frames=10,
+        metric=dict(type="md5", expect="30ba6826764ed05d94ac296825dd2deb")),
+
+    "vp90-2-03-size-210x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x198.webm.es"),
+        format="I420", width=210, height=198, frames=10,
+        metric=dict(type="md5", expect="dc1731f175c1885a507b1f463e41b9c3")),
+
+    "vp90-2-03-size-210x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x200.webm.es"),
+        format="I420", width=210, height=200, frames=10,
+        metric=dict(type="md5", expect="cbc5df97fac193648477bee47385adce")),
+
+    "vp90-2-03-size-210x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x202.webm.es"),
+        format="I420", width=210, height=202, frames=10,
+        metric=dict(type="md5", expect="7b528de599cd2ccfdebe51df8d6fc644")),
+
+    "vp90-2-03-size-210x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x208.webm.es"),
+        format="I420", width=210, height=208, frames=10,
+        metric=dict(type="md5", expect="4cd22a416c527524ebed13e2d4999ad5")),
+
+    "vp90-2-03-size-210x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x210.webm.es"),
+        format="I420", width=210, height=210, frames=10,
+        metric=dict(type="md5", expect="9a80c30350bd6ad6258a666ab0f1e2c8")),
+
+    "vp90-2-03-size-210x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x224.webm.es"),
+        format="I420", width=210, height=224, frames=10,
+        metric=dict(type="md5", expect="aec1599537730046cc338cafc4f13c5c")),
+
+    "vp90-2-03-size-210x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-210x226.webm.es"),
+        format="I420", width=210, height=226, frames=10,
+        metric=dict(type="md5", expect="a44565883047487a04f1efce80975616")),
+
+    "vp90-2-03-size-224x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x196.webm.es"),
+        format="I420", width=224, height=196, frames=10,
+        metric=dict(type="md5", expect="243e1f296e459668fce9c9db0fc47b9b")),
+
+    "vp90-2-03-size-224x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x198.webm.es"),
+        format="I420", width=224, height=198, frames=10,
+        metric=dict(type="md5", expect="8b013a05214aad792fda2bb97d60301f")),
+
+    "vp90-2-03-size-224x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x200.webm.es"),
+        format="I420", width=224, height=200, frames=10,
+        metric=dict(type="md5", expect="8ff880294d075a6fc4af56db39da92e8")),
+
+    "vp90-2-03-size-224x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x202.webm.es"),
+        format="I420", width=224, height=202, frames=10,
+        metric=dict(type="md5", expect="eab622f21328cccce6aa4ab38f4858b9")),
+
+    "vp90-2-03-size-224x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x208.webm.es"),
+        format="I420", width=224, height=208, frames=10,
+        metric=dict(type="md5", expect="f18c5e3feedd57422e07f94133b5e5cc")),
+
+    "vp90-2-03-size-224x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x210.webm.es"),
+        format="I420", width=224, height=210, frames=10,
+        metric=dict(type="md5", expect="057d188547e7134e8461cc3716c6b551")),
+
+    "vp90-2-03-size-224x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x224.webm.es"),
+        format="I420", width=224, height=224, frames=10,
+        metric=dict(type="md5", expect="894ab8824591ddee18ba1eacfe265a9a")),
+
+    "vp90-2-03-size-224x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-224x226.webm.es"),
+        format="I420", width=224, height=226, frames=10,
+        metric=dict(type="md5", expect="064f21e06434073f20f74e09d1f5b191")),
+
+    "vp90-2-03-size-226x196": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x196.webm.es"),
+        format="I420", width=226, height=196, frames=10,
+        metric=dict(type="md5", expect="3f1578b7421112161907b0c3cf68d36c")),
+
+    "vp90-2-03-size-226x198": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x198.webm.es"),
+        format="I420", width=226, height=198, frames=10,
+        metric=dict(type="md5", expect="a7f0cbaec547c9f80db06c8244d82c67")),
+
+    "vp90-2-03-size-226x200": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x200.webm.es"),
+        format="I420", width=226, height=200, frames=10,
+        metric=dict(type="md5", expect="80890c0ff46f6b3749b1a1f3a452d6a3")),
+
+    "vp90-2-03-size-226x202": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x202.webm.es"),
+        format="I420", width=226, height=202, frames=10,
+        metric=dict(type="md5", expect="14dc25a1100dd34a36580e8a99c47913")),
+
+    "vp90-2-03-size-226x208": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x208.webm.es"),
+        format="I420", width=226, height=208, frames=10,
+        metric=dict(type="md5", expect="c869cb1225e4b9614a2b091058e8be5e")),
+
+    "vp90-2-03-size-226x210": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x210.webm.es"),
+        format="I420", width=226, height=210, frames=10,
+        metric=dict(type="md5", expect="683efd9610c64fffc72a8d034df7c774")),
+
+    "vp90-2-03-size-226x224": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x224.webm.es"),
+        format="I420", width=226, height=224, frames=10,
+        metric=dict(type="md5", expect="0d68089e75a9a7c857bc7bf799a58b2d")),
+
+    "vp90-2-03-size-226x226": dict(
+        source=find_conformance_stream("vp90-2-03-size-226x226.webm.es"),
+        format="I420", width=226, height=226, frames=10,
+        metric=dict(type="md5", expect="b35a1b707b28e82be025d960aba039bc")),
+
+    "vp90-2-03-size-352x288": dict(
+        source=find_conformance_stream("vp90-2-03-size-352x288.webm.es"),
+        format="I420", width=352, height=288, frames=2,
+        metric=dict(type="md5", expect="013064484be3dd09435439a8f7950849")),
+
+    "vp90-2-06-bilinear": dict(
+        source=find_conformance_stream("vp90-2-06-bilinear.webm.es"),
+        format="I420", width=352, height=288, frames=10,
+        metric=dict(type="md5", expect="299923c8093e734f42b89594923c807f")),
+
+    "vp90-2-07-frame_parallel-1": dict(
+        source=find_conformance_stream("vp90-2-07-frame_parallel-1.webm.es"),
+        format="I420", width=352, height=288, frames=40,
+        metric=dict(type="md5", expect="8c9e048e5b60b379ab5a377c5ecfc97d")),
+
+    "vp90-2-07-frame_parallel": dict(
+        source=find_conformance_stream("vp90-2-07-frame_parallel.webm.es"),
+        format="I420", width=352, height=240, frames=10,
+        metric=dict(type="md5", expect="6a48450207785d0be2922457f77a4bc4")),
+
+    "vp90-2-08-tile_1x2_frame_parallel": dict(
+        source=find_conformance_stream("vp90-2-08-tile_1x2_frame_parallel.webm.es"),
+        format="I420", width=1920, height=1080, frames=10,
+        metric=dict(type="md5", expect="68ede6abd66bae0a2edf2eb9232241b6")),
+
+    "vp90-2-08-tile_1x2": dict(
+        source=find_conformance_stream("vp90-2-08-tile_1x2.webm.es"),
+        format="I420", width=1920, height=1080, frames=10,
+        metric=dict(type="md5", expect="570b4a5d5a70d58b5359671668328a16")),
+
+    "vp90-2-08-tile_1x4_frame_parallel": dict(
+        source=find_conformance_stream("vp90-2-08-tile_1x4_frame_parallel.webm.es"),
+        format="I420", width=1920, height=1080, frames=10,
+        metric=dict(type="md5", expect="368ebc6ebf3a5e478d85b2c3149b2848")),
+
+    "vp90-2-08-tile_1x4": dict(
+        source=find_conformance_stream("vp90-2-08-tile_1x4.webm.es"),
+        format="I420", width=1920, height=1080, frames=10,
+        metric=dict(type="md5", expect="988d86049e884c66909d2d163a09841a")),
+
+    "vp90-2-08-tile_1x8_frame_parallel": dict(
+        source=find_conformance_stream("vp90-2-08-tile_1x8_frame_parallel.webm.es"),
+        format="I420", width=3840, height=2160, frames=10,
+        metric=dict(type="md5", expect="17e439da2388aff3a0f69cb22579c6c1")),
+
+    "vp90-2-08-tile_1x8": dict(
+        source=find_conformance_stream("vp90-2-08-tile_1x8.webm.es"),
+        format="I420", width=3840, height=2160, frames=10,
+        metric=dict(type="md5", expect="0941902a52e9092cb010905eab16364c")),
+
+    "vp90-2-08-tile-4x1": dict(
+        source=find_conformance_stream("vp90-2-08-tile-4x1.webm.es"),
+        format="I420", width=1920, height=1080, frames=5,
+        metric=dict(type="md5", expect="06505aade6647c583c8e00a2f582266f")),
+
+    "vp90-2-08-tile-4x4": dict(
+        source=find_conformance_stream("vp90-2-08-tile-4x4.webm.es"),
+        format="I420", width=1920, height=1080, frames=5,
+        metric=dict(type="md5", expect="85c2299892460d76e2c600502d52bfe2")),
+
+    "vp90-2-09-aq2": dict(
+        source=find_conformance_stream("vp90-2-09-aq2.webm.es"),
+        format="I420", width=352, height=240, frames=100,
+        metric=dict(type="md5", expect="daf228b24642c39c0519ec5fe66b06d4")),
+
+    "vp90-2-09-lf_deltas": dict(
+        source=find_conformance_stream("vp90-2-09-lf_deltas.webm.es"),
+        format="I420", width=352, height=240, frames=30,
+        metric=dict(type="md5", expect="dacb7e056abb35d5fe5e7dfef1f207c1")),
+
+    "vp90-2-11-size-351x287": dict(
+        source=find_conformance_stream("vp90-2-11-size-351x287.webm.es"),
+        format="I420", width=351, height=287, frames=10,
+        metric=dict(type="md5", expect="042a6a229a1020cafbe330622a7e4875")),
+
+    "vp90-2-11-size-351x288": dict(
+        source=find_conformance_stream("vp90-2-11-size-351x288.webm.es"),
+        format="I420", width=351, height=288, frames=10,
+        metric=dict(type="md5", expect="ea267efd59fa75cd453e5a2a2afbdb22")),
+
+    "vp90-2-11-size-352x287": dict(
+        source=find_conformance_stream("vp90-2-11-size-352x287.webm.es"),
+        format="I420", width=352, height=287, frames=10,
+        metric=dict(type="md5", expect="38e34f0ce2bb8e45471759eb1617d710")),
 
     # "vp90-2-14-resize-10frames-fp-tiles-1-2-4-8" : dict(
     # resolution change
@@ -2350,40 +2349,40 @@ media._get_test_spec("vp9", "decode", "8bit").update({
     # format = "I420", width = 3840, height = 2160, frames = 18,
     # metric = dict(type = "md5", expect = "3eb4f24f10640d42218f7fd7b9fd30d4")),
 
-    "vp90-2-15-segkey_adpq" : dict(
-    source = find_conformance_stream("vp90-2-15-segkey_adpq.webm.es"),
-    format = "I420", width = 852, height = 480, frames = 150,
-    metric = dict(type = "md5", expect = "56723549fb468a0031e1c9ee4ab63e9d")),
+    "vp90-2-15-segkey_adpq": dict(
+        source=find_conformance_stream("vp90-2-15-segkey_adpq.webm.es"),
+        format="I420", width=852, height=480, frames=150,
+        metric=dict(type="md5", expect="56723549fb468a0031e1c9ee4ab63e9d")),
 
-    "vp90-2-15-segkey" : dict(
-    source = find_conformance_stream("vp90-2-15-segkey.webm.es"),
-    format = "I420", width = 1280, height = 720, frames = 1,
-    metric = dict(type = "md5", expect = "d3805a0d832b9bdd69ad99d68490be7b")),
+    "vp90-2-15-segkey": dict(
+        source=find_conformance_stream("vp90-2-15-segkey.webm.es"),
+        format="I420", width=1280, height=720, frames=1,
+        metric=dict(type="md5", expect="d3805a0d832b9bdd69ad99d68490be7b")),
 
-    "vp90-2-19-skip-01" : dict(
-    source = find_conformance_stream("vp90-2-19-skip-01.webm.es"),
-    format = "I420", width = 208, height = 144, frames = 60,
-    metric = dict(type = "md5", expect = "02df67098851988b9a0023c8237a0857")),
+    "vp90-2-19-skip-01": dict(
+        source=find_conformance_stream("vp90-2-19-skip-01.webm.es"),
+        format="I420", width=208, height=144, frames=60,
+        metric=dict(type="md5", expect="02df67098851988b9a0023c8237a0857")),
 
-    "vp90-2-19-skip-02" : dict(
-    source = find_conformance_stream("vp90-2-19-skip-02.webm.es"),
-    format = "I420", width = 208, height = 144, frames = 12,
-    metric = dict(type = "md5", expect = "50ed22bf9e109b891c5d8505a4126baa")),
+    "vp90-2-19-skip-02": dict(
+        source=find_conformance_stream("vp90-2-19-skip-02.webm.es"),
+        format="I420", width=208, height=144, frames=12,
+        metric=dict(type="md5", expect="50ed22bf9e109b891c5d8505a4126baa")),
 
-    "vp90-2-19-skip" : dict(
-    source = find_conformance_stream("vp90-2-19-skip.webm.es"),
-    format = "I420", width = 208, height = 144, frames = 60,
-    metric = dict(type = "md5", expect = "c2d6e7e425d883f2c2cce7c80711c566")),
+    "vp90-2-19-skip": dict(
+        source=find_conformance_stream("vp90-2-19-skip.webm.es"),
+        format="I420", width=208, height=144, frames=60,
+        metric=dict(type="md5", expect="c2d6e7e425d883f2c2cce7c80711c566")),
 
-    "vp90-2-20-big_superframe-01" : dict(
-    source = find_conformance_stream("vp90-2-20-big_superframe-01.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 13,
-    metric = dict(type = "md5", expect = "046c079a2b05c0ce951817c1b5fde3ef")),
+    "vp90-2-20-big_superframe-01": dict(
+        source=find_conformance_stream("vp90-2-20-big_superframe-01.webm.es"),
+        format="I420", width=352, height=288, frames=13,
+        metric=dict(type="md5", expect="046c079a2b05c0ce951817c1b5fde3ef")),
 
-    "vp90-2-20-big_superframe-02" : dict(
-    source = find_conformance_stream("vp90-2-20-big_superframe-02.webm.es"),
-    format = "I420", width = 352, height = 288, frames = 18,
-    metric = dict(type = "md5", expect = "49c72adf5f991344051275e232fa79ca")),
+    "vp90-2-20-big_superframe-02": dict(
+        source=find_conformance_stream("vp90-2-20-big_superframe-02.webm.es"),
+        format="I420", width=352, height=288, frames=18,
+        metric=dict(type="md5", expect="49c72adf5f991344051275e232fa79ca")),
 
     # "vp90-2-21-resize_inter_1280x720_5_1-2" : dict(
     # resolution change
@@ -2523,19 +2522,1197 @@ media._get_test_spec("vp9", "decode", "8bit").update({
     # format = "I420", width = 640, height = 480, frames = 30,
     # metric = dict(type = "md5", expect = "1474a79fffdbc3faef27a28d41538a7a")),
 
-    "vp90-2-22-svc_1280x720_1" : dict(
-    source = find_conformance_stream("vp90-2-22-svc_1280x720_1.webm.es"),
-    format = "I420", width = 1280, height = 720, frames = 400,
-    metric = dict(type = "md5", expect = "b6d457471ee2f7407674d874bc4d2a9d")),
+    "vp90-2-22-svc_1280x720_1": dict(
+        source=find_conformance_stream("vp90-2-22-svc_1280x720_1.webm.es"),
+        format="I420", width=1280, height=720, frames=400,
+        metric=dict(type="md5", expect="b6d457471ee2f7407674d874bc4d2a9d")),
 })
 
 ###vp9 10bit###
-media._get_test_spec("vp9", "decode", "10bit").update({
-#   "seq1_3840x2160_420_100Mbps" : dict(
-#     source = find_conformance_stream("seq1_3840x2160_420_100Mbps.ivf"),
-#     format = "I420", width = 3840 , height = 2160, frames = 300,
-#     metric = dict(type = "md5", expect = "310286e8fa8fe3b11475f1c0eefd295f")),
-})   
+# AVCv1 Bitstreams
+media._get_test_spec("vp9", "decode", "10b").update({
+    # "test9995": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9995.ivf"),
+    #     format="I010", width=374, height=96, frames=8,
+    #     metric=dict(type="md5", expect="286ccdc0f18ce1cea2588bdf2c35c647")),
+    "test9990": dict(
+        source=find_conformance_stream("test9990.ivf"),
+        format="I010", width=167, height=150, frames=7,
+        metric=dict(type="md5", expect="683e766c02e8aace82cc49f67de8a94f")),
+    # "test9971_9697_8728": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9971_9697_8728.ivf"),
+    #     format="I010", width=437, height=215, frames=25,
+    #     metric=dict(type="md5", expect="7652191ff1cba2ce7901bc6afcb967b6")),
+    # "test9963_5593": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9963_5593.ivf"),
+    #     format="I010", width=63, height=178, frames=18,
+    #     metric=dict(type="md5", expect="414f92aa929ed99ca9a0f54616f43cb9")),
+    "test996": dict(
+        source=find_conformance_stream("test996.ivf"),
+        format="I010", width=400, height=493, frames=8,
+        metric=dict(type="md5", expect="9ace4aae7efee4c34bdcbac5c4769ff6")),
+    # "test9957_15235_1991": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9957_15235_1991.ivf"),
+    #     format="I010", width=109, height=233, frames=29,
+    #     metric=dict(type="md5", expect="05e7d3351ec9eb6b400f2d4c5ad52782")),
+    # "test9953_15386": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9953_15386.ivf"),
+    #     format="I010", width=240, height=15, frames=19,
+    #     metric=dict(type="md5", expect="d6ae85a137c560de79fe450c2cd2e9c8")),
+    # "test9949_8681": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9949_8681.ivf"),
+    #     format="I010", width=160, height=88, frames=18,
+    #     metric=dict(type="md5", expect="9d5157ea22d001d1338a82fa90061bfa")),
+    # "test9927_11132_6437": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9927_11132_6437.ivf"),
+    #     format="I010", width=22, height=80, frames=27,
+    #     metric=dict(type="md5", expect="e57af0c5fbdff257ed96c216f8c1ce14")),
+    # "test9916_9074_6349": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9916_9074_6349.ivf"),
+    #     format="I010", width=237, height=39, frames=24,
+    #     metric=dict(type="md5", expect="66fd0314f0e6cf4ce019a5500b5ec3d2")),
+    # "test9909_9037_12755": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9909_9037_12755.ivf"),
+    #     format="I010", width=416, height=104, frames=26,
+    #     metric=dict(type="md5", expect="d9e94fa9fee021f2fb76de40fbd37705")),
+    # "test9892_11303_10034": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9892_11303_10034.ivf"),
+    #     format="I010", width=312, height=107, frames=25,
+    #     metric=dict(type="md5", expect="c341f32a2c7a782ccc62c2fba6c1f652")),
+    # "test9873": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9873.ivf"),
+    #     format="I010", width=361, height=40, frames=9,
+    #     metric=dict(type="md5", expect="fc7a637dd44f25a9aa9707fa5b0e70f1")),
+    # "test9866_5671": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9866_5671.ivf"),
+    #     format="I010", width=330, height=11, frames=19,
+    #     metric=dict(type="md5", expect="b1277b96626ee6740f0410aab423c496")),
+    # "test985_2401_3178": dict(
+    # resolution change
+    #     source=find_conformance_stream("test985_2401_3178.ivf"),
+    #     format="I010", width=504, height=299, frames=27,
+    #     metric=dict(type="md5", expect="75a31c83aac08f166cff157cc2161028")),
+    # "test9829_14548": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9829_14548.ivf"),
+    #     format="I010", width=480, height=64, frames=17,
+    #     metric=dict(type="md5", expect="54ab9c7289c83fe6e46498b8e185b9ba")),
+    # "test9813_609": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9813_609.ivf"),
+    #     format="I010", width=304, height=76, frames=18,
+    #     metric=dict(type="md5", expect="3a3ef1e1a4db81c3a1d9e802ec359717")),
+    # "test9809_6289_9097": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9809_6289_9097.ivf"),
+    #     format="I010", width=129, height=128, frames=27,
+    #     metric=dict(type="md5", expect="b8fd48ec7fcccb0483f0642059abb5ad")),
+    # "test9793": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9793.ivf"),
+    #     format="I010", width=24, height=79, frames=10,
+    #     metric=dict(type="md5", expect="0f58b37b053246db157b2dd2a92138c9")),
+    # "test9787_474_6212": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9787_474_6212.ivf"),
+    #     format="I010", width=32, height=128, frames=26,
+    #     metric=dict(type="md5", expect="63a9885678921af425e9fad4e4aa1b14")),
+    # "test9783_3084": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9783_3084.ivf"),
+    #     format="I010", width=66, height=216, frames=18,
+    #     metric=dict(type="md5", expect="97a5216742112896ac4a28875ffd8dc9")),
+    # "test978_13319": dict(
+    # resolution change
+    #     source=find_conformance_stream("test978_13319.ivf"),
+    #     format="I010", width=376, height=418, frames=17,
+    #     metric=dict(type="md5", expect="77206e108ed2a68af4c0b56194c7aadc")),
+    # "test9765": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9765.ivf"),
+    #     format="I010", width=104, height=112, frames=9,
+    #     metric=dict(type="md5", expect="1b609da63b69db5689153cb1324376b6")),
+    # "test9759": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9759.ivf"),
+    #     format="I010", width=56, height=34, frames=10,
+    #     metric=dict(type="md5", expect="bc730be9afeaa2272ede186960d38d48")),
+    # "test9741": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9741.ivf"),
+    #     format="I010", width=208, height=40, frames=7,
+    #     metric=dict(type="md5", expect="ae19e4bd64b680c3c2ffe4d1e8271c3f")),
+    # "test9723_15252": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9723_15252.ivf"),
+    #     format="I010", width=448, height=50, frames=20,
+    #     metric=dict(type="md5", expect="95b4ca3a9f622e616246b89ea86e6705")),
+    # "test9722": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9722.ivf"),
+    #     format="I010", width=117, height=24, frames=10,
+    #     metric=dict(type="md5", expect="8666cd23a4104cd43e02aeb119d4ea61")),
+    "test9705": dict(
+        source=find_conformance_stream("test9705.ivf"),
+        format="I010", width=489, height=146, frames=9,
+        metric=dict(type="md5", expect="61f619528ed77b088f3a2d681edae7e1")),
+    "test9676": dict(
+        source=find_conformance_stream("test9676.ivf"),
+        format="I010", width=486, height=36, frames=9,
+        metric=dict(type="md5", expect="59b9de59d9ebf3b04f872489861e8948")),
+    # "test9663_15196_14082": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9663_15196_14082.ivf"),
+    #     format="I010", width=363, height=110, frames=30,
+    #     metric=dict(type="md5", expect="5aa55400c45ab46e85fe886d1ad40903")),
+    # "test9662": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9662.ivf"),
+    #     format="I010", width=199, height=24, frames=10,
+    #     metric=dict(type="md5", expect="415a7e4eea735e1eef0d1faccb671ceb")),
+    # "test965": dict(
+    # resolution change
+    #     source=find_conformance_stream("test965.ivf"),
+    #     format="I010", width=297, height=93, frames=10,
+    #     metric=dict(type="md5", expect="30cdd3bd8dbf727f9573bdaa6894b020")),
+    "test9649": dict(
+        source=find_conformance_stream("test9649.ivf"),
+        format="I010", width=110, height=112, frames=10,
+        metric=dict(type="md5", expect="ed2ea17e98d393455d704b1542ab565b")),
+    # "test9648_2763": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9648_2763.ivf"),
+    #     format="I010", width=113, height=232, frames=17,
+    #     metric=dict(type="md5", expect="2458ccd9b93e3e66e759a151cfb3f8e2")),
+    "test9644": dict(
+        source=find_conformance_stream("test9644.ivf"),
+        format="I010", width=385, height=182, frames=9,
+        metric=dict(type="md5", expect="fac50c00d673c9314439c7d5638b9c3b")),
+    "test9643": dict(
+        source=find_conformance_stream("test9643.ivf"),
+        format="I010", width=511, height=145, frames=8,
+        metric=dict(type="md5", expect="998d5a3fa5f0bbb7fa9159fd2eb34c4d")),
+    # "test9640_2205": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9640_2205.ivf"),
+    #     format="I010", width=390, height=24, frames=16,
+    #     metric=dict(type="md5", expect="8ddc0a7c6fad6273342d515803fc7737")),
+    # "test9628_693": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9628_693.ivf"),
+    #     format="I010", width=432, height=64, frames=19,
+    #     metric=dict(type="md5", expect="63f7e4ab9390ddd99973b940c0d0bb60")),
+    # "test962_14631": dict(
+    # resolution change
+    #     source=find_conformance_stream("test962_14631.ivf"),
+    #     format="I010", width=445, height=452, frames=17,
+    #     metric=dict(type="md5", expect="12600ee5b408f05e804bab6cbebcf5ce")),
+    # "test9615": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9615.ivf"),
+    #     format="I010", width=363, height=56, frames=7,
+    #     metric=dict(type="md5", expect="e2aea0ab9ced65e722835a180cf4a0f8")),
+    # "test9614_12120": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9614_12120.ivf"),
+    #     format="I010", width=414, height=256, frames=17,
+    #     metric=dict(type="md5", expect="cf764df74bc2236c09a3bae5d81c77fd")),
+    # "test9607_8326_5125": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9607_8326_5125.ivf"),
+    #     format="I010", width=256, height=125, frames=27,
+    #     metric=dict(type="md5", expect="1614f026487d052131e822ba96ba8f86")),
+    # "test96_8850_6267": dict(
+    # resolution change
+    #     source=find_conformance_stream("test96_8850_6267.ivf"),
+    #     format="I010", width=103, height=8, frames=25,
+    #     metric=dict(type="md5", expect="c88f3909eb5290902d9062ef6f687be8")),
+    # "test9564": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9564.ivf"),
+    #     format="I010", width=11, height=28, frames=9,
+    #     metric=dict(type="md5", expect="4046bf27d81f337bb9dcdc6d36001ed6")),
+    "test9550": dict(
+        source=find_conformance_stream("test9550.ivf"),
+        format="I010", width=361, height=102, frames=9,
+        metric=dict(type="md5", expect="ee11c1ca978f1279bee0f09010d1713a")),
+    # "test9539": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9539.ivf"),
+    #     format="I010", width=416, height=4, frames=7,
+    #     metric=dict(type="md5", expect="927c3fa63a2b8527b0cf2f939654c063")),
+    # "test9538_10101": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9538_10101.ivf"),
+    #     format="I010", width=280, height=80, frames=19,
+    #     metric=dict(type="md5", expect="093819cb195d2b4d18cd4aa2e8ab6b77")),
+    "test9512": dict(
+        source=find_conformance_stream("test9512.ivf"),
+        format="I010", width=110, height=61, frames=9,
+        metric=dict(type="md5", expect="13531b4a0531635926e7480df84ecda5")),
+    # "test9511_14707": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9511_14707.ivf"),
+    #     format="I010", width=192, height=4, frames=18,
+    #     metric=dict(type="md5", expect="2f1c58cd207f659b54ba154087c7f784")),
+    # "test9506_9890_11648": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9506_9890_11648.ivf"),
+    #     format="I010", width=466, height=48, frames=26,
+    #     metric=dict(type="md5", expect="d6a80b45b29355c946143084d5e256ca")),
+    # "test9497_7612_13830": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9497_7612_13830.ivf"),
+    #     format="I010", width=383, height=92, frames=26,
+    #     metric=dict(type="md5", expect="cc4fefbc0734a4a7964dbc92662b19eb")),
+    # "test9461_2063": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9461_2063.ivf"),
+    #     format="I010", width=442, height=203, frames=18,
+    #     metric=dict(type="md5", expect="227d9f6d0a6c197418246e4f84c6a404")),
+    # "test9449_11833_752": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9449_11833_752.ivf"),
+    #     format="I010", width=377, height=64, frames=29,
+    #     metric=dict(type="md5", expect="1621b16525d388f1b7ed63c121673619")),
+    "test9442": dict(
+        source=find_conformance_stream("test9442.ivf"),
+        format="I010", width=272, height=241, frames=10,
+        metric=dict(type="md5", expect="4cf0fe8b39ae767264422a4f513c12b7")),
+    # "test9420": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9420.ivf"),
+    #     format="I010", width=173, height=128, frames=9,
+    #     metric=dict(type="md5", expect="ccf2a31de9617ef0122524c71d679b5e")),
+    # "test9416_1019": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9416_1019.ivf"),
+    #     format="I010", width=59, height=56, frames=18,
+    #     metric=dict(type="md5", expect="09b2b83d4c581bb8d59e22cc1d862dc4")),
+    # "test9408_11193_6806": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9408_11193_6806.ivf"),
+    #     format="I010", width=73, height=80, frames=24,
+    #     metric=dict(type="md5", expect="09bde762a585633aab91659fd0862995")),
+    "test9399": dict(
+        source=find_conformance_stream("test9399.ivf"),
+        format="I010", width=448, height=239, frames=10,
+        metric=dict(type="md5", expect="ea42c62d9ae78279d8315cb94d649e47")),
+    # "test9381_12301_14909": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9381_12301_14909.ivf"),
+    #     format="I010", width=355, height=56, frames=28,
+    #     metric=dict(type="md5", expect="25d4d4aa661d59a7ceceb9c5bb3ec3b3")),
+    "test9380": dict(
+        source=find_conformance_stream("test9380.ivf"),
+        format="I010", width=288, height=226, frames=8,
+        metric=dict(type="md5", expect="ab1dd3311166c4d19b76d7b25047b84c")),
+    "test9364": dict(
+        source=find_conformance_stream("test9364.ivf"),
+        format="I010", width=480, height=116, frames=10,
+        metric=dict(type="md5", expect="5f6ea3682faa1e680b5e00a82b075418")),
+    # "test9346_15295_10311": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9346_15295_10311.ivf"),
+    #     format="I010", width=40, height=64, frames=27,
+    #     metric=dict(type="md5", expect="45559bde1655a110fec9a12049bd6839")),
+    # "test9333_1578_8276": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9333_1578_8276.ivf"),
+    #     format="I010", width=400, height=128, frames=27,
+    #     metric=dict(type="md5", expect="4ff6f93e498626a18127dc21704308ff")),
+    "test9324": dict(
+        source=find_conformance_stream("test9324.ivf"),
+        format="I010", width=354, height=247, frames=8,
+        metric=dict(type="md5", expect="a99f386e1eaad7143e1200d9a6064caf")),
+    "test932": dict(
+        source=find_conformance_stream("test932.ivf"),
+        format="I010", width=434, height=365, frames=8,
+        metric=dict(type="md5", expect="d48cee925ffb2c4ab59fbb4c85dacce0")),
+    # "test9318_15199_8683": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9318_15199_8683.ivf"),
+    #     format="I010", width=296, height=120, frames=27,
+    #     metric=dict(type="md5", expect="51779071ecaad327e444f84275fb04ce")),
+    # "test9314_5539": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9314_5539.ivf"),
+    #     format="I010", width=444, height=100, frames=18,
+    #     metric=dict(type="md5", expect="e2db8823ad835870291ee1826af5aeb4")),
+    # "test9297_14739": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9297_14739.ivf"),
+    #     format="I010", width=253, height=48, frames=16,
+    #     metric=dict(type="md5", expect="d29e837ed23407671bac43946e595689")),
+    # "test929": dict(
+    # resolution change
+    #     source=find_conformance_stream("test929.ivf"),
+    #     format="I010", width=470, height=72, frames=10,
+    #     metric=dict(type="md5", expect="bc529c47a256c763a5433b0f335a4cb9")),
+    # "test9281_6459": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9281_6459.ivf"),
+    #     format="I010", width=296, height=223, frames=17,
+    #     metric=dict(type="md5", expect="11056cc8e043afcad11970fa46575e26")),
+    # "test9280_15209_5362": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9280_15209_5362.ivf"),
+    #     format="I010", width=56, height=48, frames=29,
+    #     metric=dict(type="md5", expect="f164a31e00815ebbd61f6dfc0904915f")),
+    # "test9274": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9274.ivf"),
+    #     format="I010", width=360, height=24, frames=8,
+    #     metric=dict(type="md5", expect="9fa3a0ae12c9967699ff9fe4133b8bf4")),
+    # "test9255_115": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9255_115.ivf"),
+    #     format="I010", width=112, height=102, frames=16,
+    #     metric=dict(type="md5", expect="0c40b086787f86e1be8ce99cc22ef540")),
+    # "test9246_10404_4047": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9246_10404_4047.ivf"),
+    #     format="I010", width=256, height=186, frames=27,
+    #     metric=dict(type="md5", expect="036b27e098d16cc8400eb9c6deeef891")),
+    # "test9232_10555_13658": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9232_10555_13658.ivf"),
+    #     format="I010", width=232, height=42, frames=25,
+    #     metric=dict(type="md5", expect="5195483d8b99d611de5c5089f3087c3d")),
+    # "test9228_7643": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9228_7643.ivf"),
+    #     format="I010", width=32, height=121, frames=16,
+    #     metric=dict(type="md5", expect="e24ed335e26e2e58796823d5a1ab0028")),
+    # "test9213": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9213.ivf"),
+    #     format="I010", width=465, height=165, frames=9,
+    #     metric=dict(type="md5", expect="a0e800706e660166fa3b8dd1af027284")),
+    # "test9208_294_15229": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9208_294_15229.ivf"),
+    #     format="I010", width=332, height=120, frames=27,
+    #     metric=dict(type="md5", expect="ba10ade921ec975bceda1d86634e3ebb")),
+    # "test9200_2947": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9200_2947.ivf"),
+    #     format="I010", width=366, height=104, frames=15,
+    #     metric=dict(type="md5", expect="822e959f848103e2fe3a33c604cd2041")),
+    # "test9182_1639_675": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9182_1639_675.ivf"),
+    #     format="I010", width=128, height=96, frames=26,
+    #     metric=dict(type="md5", expect="7df36e6f6726aed29f70a339f2ae75da")),
+    # "test9164": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9164.ivf"),
+    #     format="I010", width=56, height=16, frames=8,
+    #     metric=dict(type="md5", expect="3b5e5be730f740407f0608b71d517271")),
+    # "test9163": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9163.ivf"),
+    #     format="I010", width=40, height=76, frames=10,
+    #     metric=dict(type="md5", expect="634f3b22a2b5ba4ed41b3814efc905f1")),
+    # "test9155": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9155.ivf"),
+    #     format="I010", width=136, height=108, frames=9,
+    #     metric=dict(type="md5", expect="11daf8dd69808282b153d3f42e7869b7")),
+    "test9153": dict(
+        source=find_conformance_stream("test9153.ivf"),
+        format="I010", width=227, height=223, frames=9,
+        metric=dict(type="md5", expect="b6cf3c650368771727ae1186eb1179b8")),
+    "test9148": dict(
+        source=find_conformance_stream("test9148.ivf"),
+        format="I010", width=492, height=38, frames=8,
+        metric=dict(type="md5", expect="47b7578022dc36cf58a80002512eb44d")),
+    # "test9147_15266": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9147_15266.ivf"),
+    #     format="I010", width=100, height=111, frames=19,
+    #     metric=dict(type="md5", expect="0fd351c4243dc1f1d3bf540768781e2d")),
+    # "test9145_5341": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9145_5341.ivf"),
+    #     format="I010", width=318, height=118, frames=19,
+    #     metric=dict(type="md5", expect="00dca42fc10b4b64cca99e02ee01961f")),
+    # "test9135_8108_5507": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9135_8108_5507.ivf"),
+    #     format="I010", width=186, height=52, frames=24,
+    #     metric=dict(type="md5", expect="eb3b4047635276a32f2392498d0e21ff")),
+    # "test9134_7334_1335": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9134_7334_1335.ivf"),
+    #     format="I010", width=432, height=108, frames=26,
+    #     metric=dict(type="md5", expect="70b8632a11f135622d1a396fafd537dc")),
+    # "test9091_3591_15357": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9091_3591_15357.ivf"),
+    #     format="I010", width=490, height=80, frames=25,
+    #     metric=dict(type="md5", expect="35c81cf77ac265e15979516d94b87748")),
+    # "test9090_14201_5276": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9090_14201_5276.ivf"),
+    #     format="I010", width=102, height=241, frames=26,
+    #     metric=dict(type="md5", expect="a319d8f933c2552573bab5a26f3ae6df")),
+    # "test9088_13266": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9088_13266.ivf"),
+    #     format="I010", width=487, height=8, frames=18,
+    #     metric=dict(type="md5", expect="8149b6cf863b0a5ee4690282d864b29b")),
+    # "test9076": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9076.ivf"),
+    #     format="I010", width=157, height=181, frames=9,
+    #     metric=dict(type="md5", expect="237ab6baaed9bc4679cc7deac4ce3b17")),
+    # "test9075_2786_9933": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9075_2786_9933.ivf"),
+    #     format="I010", width=301, height=182, frames=29,
+    #     metric=dict(type="md5", expect="a287fcbc3dddc9c7dc7cbfa1fbf81c35")),
+    "test9070_10714": dict(
+        source=find_conformance_stream("test9070_10714.ivf"),
+        format="I010", width=256, height=217, frames=19,
+        metric=dict(type="md5", expect="d203cd0fc75842214411102692359fc7")),
+    "test9061": dict(
+        source=find_conformance_stream("test9061.ivf"),
+        format="I010", width=335, height=57, frames=9,
+        metric=dict(type="md5", expect="baeb77f98f2c172fc46a1de57f46fff7")),
+    "test9057": dict(
+        source=find_conformance_stream("test9057.ivf"),
+        format="I010", width=114, height=210, frames=8,
+        metric=dict(type="md5", expect="2a66fc5ec1fbb8a0b9543fa58408faad")),
+    # "test9046_13161_10871": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9046_13161_10871.ivf"),
+    #     format="I010", width=483, height=111, frames=30,
+    #     metric=dict(type="md5", expect="75ba2ad43d4e70d11fb89cc03c73045f")),
+    # "test9036_3561_9713": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9036_3561_9713.ivf"),
+    #     format="I010", width=447, height=88, frames=25,
+    #     metric=dict(type="md5", expect="2910ebac17f8260950b5a3e838802e8e")),
+    # "test9023_5807_14635": dict(
+    # resolution change
+    #     source=find_conformance_stream("test9023_5807_14635.ivf"),
+    #     format="I010", width=96, height=61, frames=28,
+    #     metric=dict(type="md5", expect="d0d44caa91a623e267ba883b349214a8")),
+    "crowd_run_1080X504_fr30_bd10_odd_size_l3": dict(
+        source=find_conformance_stream("crowd_run_1080X504_fr30_bd10_odd_size_l3.ivf"),
+        format="I010", width=1080, height=504, frames=300,
+        metric=dict(type="md5", expect="d52b50b3a519531b501d3ea17fd1eacf")),
+    # "crowd_run_1080X512_fr30_bd10_8buf_l3": dict(
+    # resolution change
+    #     source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_8buf_l3.ivf"),
+    #     format="I010", width=1080, height=512, frames=300,
+    #     metric=dict(type="md5", expect="bec2d1d44025c440107eac029d5f89d7")),
+    # "crowd_run_1080X512_fr30_bd10_frm_resize_l3": dict(
+    # resolution change
+    #     source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_frm_resize_l3.ivf"),
+    #     format="I010", width=1080, height=512, frames=300,
+    #     metric=dict(type="md5", expect="e636d2789fde24813af4c8fb23465183")),
+    "crowd_run_1080X512_fr30_bd10_gf_dist_4_l3": dict(
+        source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_gf_dist_4_l3.ivf"),
+        format="I010", width=1080, height=512, frames=300,
+        metric=dict(type="md5", expect="91e69bf425fbd78a7e04c2a71b8f1d7b")),
+    "crowd_run_1080X512_fr30_bd10_sub8X8_l3": dict(
+        source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_sub8X8_l3.ivf"),
+        format="I010", width=1080, height=512, frames=300,
+        metric=dict(type="md5", expect="32581754f403ed6409bef3121a0b4893")),
+    "crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3": dict(
+        source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3.ivf"),
+        format="I010", width=1080, height=512, frames=300,
+        metric=dict(type="md5", expect="8415c3ab72dea45e52378166f638dfc3")),
+    "crowd_run_1280X768_fr30_bd10_8buf_l31": dict(
+        source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_8buf_l31.ivf"),
+        format="I010", width=1280, height=768, frames=300,
+        metric=dict(type="md5", expect="8912fecfa4a5186ae9b8728ffd624c22")),
+    # "crowd_run_1280X768_fr30_bd10_frm_resize_l31": dict(
+    # resolution change
+    #     source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_frm_resize_l31.ivf"),
+    #     format="I010", width=1280, height=768, frames=300,
+    #     metric=dict(type="md5", expect="454d99248b0099246383a3f0b60c6492")),
+    "crowd_run_1280X768_fr30_bd10_gf_dist_4_l31": dict(
+        source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_gf_dist_4_l31.ivf"),
+        format="I010", width=1280, height=768, frames=300,
+        metric=dict(type="md5", expect="67ac32b2dc55c887c74b0cf906e744ea")),
+    "crowd_run_1280X768_fr30_bd10_odd_size_l31": dict(
+        source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_odd_size_l31.ivf"),
+        format="I010", width=1280, height=768, frames=300,
+        metric=dict(type="md5", expect="27d245ad9446dbf54841874a1444415b")),
+    "crowd_run_1280X768_fr30_bd10_sub8X8_l31": dict(
+        source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_sub8X8_l31.ivf"),
+        format="I010", width=1280, height=768, frames=300,
+        metric=dict(type="md5", expect="393dcc7cdaaae22e17d280de5288d155")),
+    # "crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31": dict(
+    # resolution change
+    #     source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31.ivf"),
+    #     format="I010", width=1280, height=768, frames=300,
+    #     metric=dict(type="md5", expect="da6d8966def5d3f72d5bb7eda6cda22a")),
+    "crowd_run_4088X2168_fr30_bd10_odd_size_l5_from136": dict(
+        source=find_conformance_stream("crowd_run_4088X2168_fr30_bd10_odd_size_l5_from136.ivf"),
+        format="I010", width=4088, height=2168, frames=59,
+        metric=dict(type="md5", expect="7de1298dfc129b663581f598337cc66d")),
+    "case_17000": dict(
+        source=find_conformance_stream("case_17000.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="02472e13e0ff949d517676683b3023cc")),
+    "case_17001": dict(
+        source=find_conformance_stream("case_17001.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="ed6b5e19343a0a3d44c73e26e28da9bf")),
+    "case_17002": dict(
+        source=find_conformance_stream("case_17002.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="7a5110245fdf409761eb46046e13b308")),
+    "case_17003": dict(
+        source=find_conformance_stream("case_17003.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="1949f90f276e0fd6c1d294708b444d94")),
+    "case_17004": dict(
+        source=find_conformance_stream("case_17004.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="8338038ae9947784296ec13a48a0aa95")),
+    "case_17005": dict(
+        source=find_conformance_stream("case_17005.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="7907dbc0dfadcc4e01ad3fb831430665")),
+    "case_17006": dict(
+        source=find_conformance_stream("case_17006.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="e42010d1377f4fa1085d16a338e77d74")),
+    "case_17007": dict(
+        source=find_conformance_stream("case_17007.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="bebe11e36406379177c3e82265a20bfb")),
+    "case_17008": dict(
+        source=find_conformance_stream("case_17008.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="bebe11e36406379177c3e82265a20bfb")),
+    "case_17009": dict(
+        source=find_conformance_stream("case_17009.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="bebe11e36406379177c3e82265a20bfb")),
+    "case_17010": dict(
+        source=find_conformance_stream("case_17010.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="bebe11e36406379177c3e82265a20bfb")),
+    "case_17011": dict(
+        source=find_conformance_stream("case_17011.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="bebe11e36406379177c3e82265a20bfb")),
+    "case_17012": dict(
+        source=find_conformance_stream("case_17012.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="bebe11e36406379177c3e82265a20bfb")),
+    "case_17013": dict(
+        source=find_conformance_stream("case_17013.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="bebe11e36406379177c3e82265a20bfb")),
+    "case_17014": dict(
+        source=find_conformance_stream("case_17014.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="70ef9dc8acebcf8183e3a28b7b31f3d8")),
+    "case_17015": dict(
+        source=find_conformance_stream("case_17015.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="d2069feddf7ce2c1150c32d574b7502b")),
+    "case_17016": dict(
+        source=find_conformance_stream("case_17016.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="403c3a021ead858bc46165c8129778d6")),
+    "case_17017": dict(
+        source=find_conformance_stream("case_17017.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="a1223670745ad739ba21b74d7dd8549a")),
+    "case_17018": dict(
+        source=find_conformance_stream("case_17018.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="4d24e396b83f32aead6923727485ba38")),
+    "case_17019": dict(
+        source=find_conformance_stream("case_17019.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="9201c7ffad52028942af1e2d9c181fce")),
+    "case_17020": dict(
+        source=find_conformance_stream("case_17020.vp9"),
+        format="I010", width=640, height=360, frames=20,
+        metric=dict(type="md5", expect="c995fc041b2afab84abec5c8fc26c2b5")),
+    "case_17021": dict(
+        source=find_conformance_stream("case_17021.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="4232936b62c1f0afc593db20f0a52912")),
+    "case_17023": dict(
+        source=find_conformance_stream("case_17023.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="f7ac2f26c749b376bcab3484c7e9db59")),
+    "case_17024": dict(
+        source=find_conformance_stream("case_17024.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="72471f30b7ef4fb629e6b7d0f6ff9554")),
+    "case_17025": dict(
+        source=find_conformance_stream("case_17025.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="9b445fc74421cfeb59c655b8b355ac2f")),
+    "case_17026": dict(
+        source=find_conformance_stream("case_17026.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="f30dd4c6d94ededbc91eb5d43b35e43e")),
+    "case_17027": dict(
+        source=find_conformance_stream("case_17027.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="3db3d7ea2110d9c09c9b0d7448ee7ff1")),
+    "case_17028": dict(
+        source=find_conformance_stream("case_17028.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="9c43500027e0992446325fd3a9f9342b")),
+    "case_17029": dict(
+        source=find_conformance_stream("case_17029.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="a5ad5fb0280f36031c786616da76b04b")),
+    "case_17030": dict(
+        source=find_conformance_stream("case_17030.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="5d86afccf3f5ebb4ed681ae17207989f")),
+    "case_17031": dict(
+        source=find_conformance_stream("case_17031.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="b56a614cf12d164620ff9e1bd85921d5")),
+    "case_17032": dict(
+        source=find_conformance_stream("case_17032.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="d23bcb8503af6d0b5cb60c37ff66c99f")),
+    "case_17033": dict(
+        source=find_conformance_stream("case_17033.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="12a73789a5cbd69fcdcf952b7aca3a74")),
+    "case_17034": dict(
+        source=find_conformance_stream("case_17034.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="a17f2d62e6b05edc05b8e8c2cd0cf799")),
+    "case_17035": dict(
+        source=find_conformance_stream("case_17035.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="065467a2308b1956de344fc967cc4315")),
+    "case_17036": dict(
+        source=find_conformance_stream("case_17036.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="5cfab7691df445c00c1b7089e0edbd2a")),
+    "case_17037": dict(
+        source=find_conformance_stream("case_17037.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="b8f874e2363061d9c792bde5d7ace950")),
+    "case_17038": dict(
+        source=find_conformance_stream("case_17038.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="caf7d3013c53751db353edaa3f9b8567")),
+    "case_17039": dict(
+        source=find_conformance_stream("case_17039.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="7712dfac6ab7c5f103050473cc9d53fd")),
+    "case_17040": dict(
+        source=find_conformance_stream("case_17040.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="5f2eaf36b8dccde82b5dc6289142e22a")),
+    "case_17041": dict(
+        source=find_conformance_stream("case_17041.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="4a21071a0600286b9b3c6c64f0d4ad05")),
+    "case_17042": dict(
+        source=find_conformance_stream("case_17042.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="2cbcd8c39f6867508b50f2b4151c5f33")),
+    "case_17043": dict(
+        source=find_conformance_stream("case_17043.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="5471048c5c3bcee077cd91de3eafd53f")),
+    "case_17044": dict(
+        source=find_conformance_stream("case_17044.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="f9bf1118f39b37a72cc89521f078661a")),
+    "case_17045": dict(
+        source=find_conformance_stream("case_17045.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="05685894d2823afb09b13c86db2afd13")),
+    "case_17046": dict(
+        source=find_conformance_stream("case_17046.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="6722a62bd6dd0cb44ca068864df53db7")),
+    "case_17047": dict(
+        source=find_conformance_stream("case_17047.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="096394cb0748e2f8553a81788ebb1056")),
+    "case_17048": dict(
+        source=find_conformance_stream("case_17048.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="a91de85cca0c3999152dabde77a4ff49")),
+    "case_17049": dict(
+        source=find_conformance_stream("case_17049.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="57a6dbfb98c811d4d7300f9ece1910d8")),
+    "case_17050": dict(
+        source=find_conformance_stream("case_17050.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="23552e026204a4662eaf170d2bf00445")),
+    "case_17051": dict(
+        source=find_conformance_stream("case_17051.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="84a24ce9f01250b3c23b5438b88eeda4")),
+    "case_17052": dict(
+        source=find_conformance_stream("case_17052.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="5e566dd6591e2d6451992613b78aedc7")),
+    "case_17053": dict(
+        source=find_conformance_stream("case_17053.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="93f7f92d34db7d8ea7f5c8dd9f3a724a")),
+    "case_17054": dict(
+        source=find_conformance_stream("case_17054.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="a0f0cc52f8d396d7940b265f5a0bd23d")),
+    "case_17055": dict(
+        source=find_conformance_stream("case_17055.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="bf599f45c898252604190d0bef5e265c")),
+    "case_17056": dict(
+        source=find_conformance_stream("case_17056.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="73abfc5073563026262e204ae41ad82f")),
+    "case_17057": dict(
+        source=find_conformance_stream("case_17057.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="91f84a6171c97592b034a59cb0a40aad")),
+    "case_17058": dict(
+        source=find_conformance_stream("case_17058.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="15c4abe08345f09e663f312133b72ff4")),
+    "case_17059": dict(
+        source=find_conformance_stream("case_17059.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="3636cfc2385f96741c7b1e9f505856a5")),
+    "case_17060": dict(
+        source=find_conformance_stream("case_17060.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="bc42f7cb6824dfb611bbd3b2d713e332")),
+    "case_17061": dict(
+        source=find_conformance_stream("case_17061.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="01a07ce5b84396030308eda1a9f9c5bb")),
+    "case_17062": dict(
+        source=find_conformance_stream("case_17062.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="39ff96afb69f60721e2834feb85c3d5e")),
+    "case_17063": dict(
+        source=find_conformance_stream("case_17063.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="e13f333acd32db74c437dd238b20af8c")),
+    "case_17064": dict(
+        source=find_conformance_stream("case_17064.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="c505ee2c3707c1d5485f922e5981eaed")),
+    "case_17065": dict(
+        source=find_conformance_stream("case_17065.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="aeeee02962950a7b80d608ec5ca5619a")),
+    "case_17066": dict(
+        source=find_conformance_stream("case_17066.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="1fabafe625e7b327a1d3fc68836c5bed")),
+    "case_17067": dict(
+        source=find_conformance_stream("case_17067.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="fcc8caf691ee79d7baa3778b37cb1dcd")),
+    "case_17068": dict(
+        source=find_conformance_stream("case_17068.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="ec9df9825387b1c8e4dde45dd239c46a")),
+    "case_17069": dict(
+        source=find_conformance_stream("case_17069.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="665704d2cd48eeaca7916fa5b580f9ab")),
+    "case_17070": dict(
+        source=find_conformance_stream("case_17070.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="78c4beaee5e60474ee808ad4be941402")),
+    "case_17071": dict(
+        source=find_conformance_stream("case_17071.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="597dca16c82ff9c0cd1c81b06017810a")),
+    "case_17072": dict(
+        source=find_conformance_stream("case_17072.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="a67f021b4d52b002bfb57f568817d577")),
+    "case_17073": dict(
+        source=find_conformance_stream("case_17073.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="b65eaa749d912ab750b50e72fbb1bff0")),
+    "case_17074": dict(
+        source=find_conformance_stream("case_17074.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="abe6d4d6a87861706c0b879d14651d23")),
+    "case_17075": dict(
+        source=find_conformance_stream("case_17075.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="1c6f97f35be55718107b4e7d0d052a5e")),
+    "case_17076": dict(
+        source=find_conformance_stream("case_17076.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="ffb534112eed7da8dd5636a52a488ee3")),
+    "case_17077": dict(
+        source=find_conformance_stream("case_17077.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="f1e0f54c75ddc71298bd47989e3830ae")),
+    "case_17078": dict(
+        source=find_conformance_stream("case_17078.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="0936ec1adc051fe05d12aff4f3058083")),
+    "case_17079": dict(
+        source=find_conformance_stream("case_17079.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="a1caf99c5b2dfaf9e13571315aba8e43")),
+    "case_17080": dict(
+        source=find_conformance_stream("case_17080.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="04e98395214822eb370357207531ec7c")),
+    "case_17081": dict(
+        source=find_conformance_stream("case_17081.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="8d4fc876b66bea103a869a317f6acbcf")),
+    "case_17082": dict(
+        source=find_conformance_stream("case_17082.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="c24b222a649ce6c3dba612c0e6a28d02")),
+    "case_17083": dict(
+        source=find_conformance_stream("case_17083.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="b07cd4746c9eb722e6c2b569dc0ebe92")),
+    "case_17084": dict(
+        source=find_conformance_stream("case_17084.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="39d5ffc220a2c3a63527d9f81e5247d0")),
+    "case_17085": dict(
+        source=find_conformance_stream("case_17085.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="c82df230124864821f814f34007c4742")),
+    "case_17086": dict(
+        source=find_conformance_stream("case_17086.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="336c1805944f69cfcd79d7ccd4d267d3")),
+    "case_17087": dict(
+        source=find_conformance_stream("case_17087.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="e56b5a9a78e2e953a66c712198fff77a")),
+    "case_17089": dict(
+        source=find_conformance_stream("case_17089.vp9"),
+        format="I010", width=640, height=360, frames=10,
+        metric=dict(type="md5", expect="28a6d6b91daddb7af58823547fa5457b")),
+    "case_17090": dict(
+        source=find_conformance_stream("case_17090.vp9"),
+        format="I010", width=1920, height=1080, frames=10,
+        metric=dict(type="md5", expect="99c76fa9a7236318457f2cef23e35fe3")),
+    "case_17093": dict(
+        source=find_conformance_stream("case_17093.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="18843390bb555d39b987c39799abe556")),
+    "case_17095": dict(
+        source=find_conformance_stream("case_17095.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="329cdda2fe01c52616ac0fc4834da4c4")),
+    "case_17096": dict(
+        source=find_conformance_stream("case_17096.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="2092d3631b4469433537c1a7328e7ea4")),
+    "case_17097": dict(
+        source=find_conformance_stream("case_17097.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="40bc0810fe732ea3051ef59b5c22427c")),
+    "case_17098": dict(
+        source=find_conformance_stream("case_17098.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="8f44c67c1d01057112441c5e06897cc5")),
+    "case_17099": dict(
+        source=find_conformance_stream("case_17099.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="d6990ed6a00a94d114efadc9988a005c")),
+    "case_17100": dict(
+        source=find_conformance_stream("case_17100.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="10876c112e8590d6815aa33c258dd2f8")),
+    "case_17101": dict(
+        source=find_conformance_stream("case_17101.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="9b5c94ba84d87ca535d42165bd9ea3bc")),
+    "case_17102": dict(
+        source=find_conformance_stream("case_17102.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="45d649a9a201bf02ea29bd7a4cbd25fe")),
+    "case_17103": dict(
+        source=find_conformance_stream("case_17103.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="27ab4b10ab902c5b91256f6a61b25184")),
+    "case_17104": dict(
+        source=find_conformance_stream("case_17104.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="2e1001af3a961871ffc466a3f6489df9")),
+    "case_17105": dict(
+        source=find_conformance_stream("case_17105.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="ab27bbc305c24a85530cba0332f6f536")),
+    "case_17106": dict(
+        source=find_conformance_stream("case_17106.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="78fb434efaafde1bfa3fb0eaefaf3258")),
+    "case_17107": dict(
+        source=find_conformance_stream("case_17107.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="a4db41ae02d0ecfcbd23196231b56c46")),
+    "case_17108": dict(
+        source=find_conformance_stream("case_17108.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="4e8e58d4dc68b1b9a3b239d27e54e11c")),
+    "case_17109": dict(
+        source=find_conformance_stream("case_17109.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="c28db87f8bdc571fa6336a6b47686454")),
+    "case_17110": dict(
+        source=find_conformance_stream("case_17110.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="f56153448a1131958fe4adc5d3843f4a")),
+    "case_17111": dict(
+        source=find_conformance_stream("case_17111.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="1fa30963f2eaebaf911b33fefac8f996")),
+    "case_17112": dict(
+        source=find_conformance_stream("case_17112.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="65585e000192982aa14e06732482b2d2")),
+    "case_17113": dict(
+        source=find_conformance_stream("case_17113.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="cb1a39509cdb303772d0588d610f81a9")),
+    "case_17114": dict(
+        source=find_conformance_stream("case_17114.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="65b6035ab6703ac05667982150700902")),
+    "case_17115": dict(
+        source=find_conformance_stream("case_17115.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="edffd563e27f4d8f0e4ef9715fa49dc0")),
+    "case_17116": dict(
+        source=find_conformance_stream("case_17116.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="43926b66c6f35e413e5b7432cbec15e7")),
+    "case_17117": dict(
+        source=find_conformance_stream("case_17117.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="fca77873e66f10768d977ca86c9100b5")),
+    "case_17118": dict(
+        source=find_conformance_stream("case_17118.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="40e47fc8e3105411bc9afd676bf3a3d5")),
+    "case_17119": dict(
+        source=find_conformance_stream("case_17119.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="fbbbf743f543a824052b80f54c5ba16d")),
+    "case_17120": dict(
+        source=find_conformance_stream("case_17120.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="a09313578c8d3031da43675f265a4fbb")),
+    "case_17121": dict(
+        source=find_conformance_stream("case_17121.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="1ba290ba2ff6e7a1927774c9364d0df1")),
+    "case_17122": dict(
+        source=find_conformance_stream("case_17122.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="d625f43aea9ba78bdcd5ef16cf823112")),
+    "case_17123": dict(
+        source=find_conformance_stream("case_17123.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="76fb647d8bb714e94da40017891f0d67")),
+    "case_17124": dict(
+        source=find_conformance_stream("case_17124.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="16734ae6403f5b8e5273953802ea2c9c")),
+    "case_17125": dict(
+        source=find_conformance_stream("case_17125.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="076efe00145239e11e13c25f2c6f4959")),
+    "case_17126": dict(
+        source=find_conformance_stream("case_17126.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="2772d51da59c0f6978a7d212129b6937")),
+    "case_17127": dict(
+        source=find_conformance_stream("case_17127.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="cbbb3dc233c986a9b2a3c40b4d0372c8")),
+    "case_17128": dict(
+        source=find_conformance_stream("case_17128.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="4136c65a76328737b892867919b9823b")),
+    "case_17129": dict(
+        source=find_conformance_stream("case_17129.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="25e16e1c77ba9af06ae78a44d98bfbee")),
+    "case_17130": dict(
+        source=find_conformance_stream("case_17130.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="0e3b2561bc0dd8351a2863d4172a3849")),
+    "case_17131": dict(
+        source=find_conformance_stream("case_17131.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="a06a9d59cd1f7f3f6c5101aa150482ff")),
+    "case_17132": dict(
+        source=find_conformance_stream("case_17132.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="e62ec02c53de43b96057764333f5630e")),
+    "case_17133": dict(
+        source=find_conformance_stream("case_17133.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="6b8d83b8132106e366c4179e7ee8ddc0")),
+    "case_17134": dict(
+        source=find_conformance_stream("case_17134.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="6ae3862daff19260eaca6632865fe797")),
+    "case_17135": dict(
+        source=find_conformance_stream("case_17135.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="55b1ed7a4c9e694946337aadb0796007")),
+    "case_17136": dict(
+        source=find_conformance_stream("case_17136.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="fe5406c3a4237f13bc9dfe8a98cc4c47")),
+    "case_17137": dict(
+        source=find_conformance_stream("case_17137.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="fefa5245fb76d54fe15bc5b8e4f580fe")),
+    "case_17138": dict(
+        source=find_conformance_stream("case_17138.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="5ef6096d9120ed37033946e891db0025")),
+    "case_17139": dict(
+        source=find_conformance_stream("case_17139.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="2d064f3098423e56fac516df796b9948")),
+    "case_17140": dict(
+        source=find_conformance_stream("case_17140.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="3a61e8024a23d1ea1715e8b8e50196f9")),
+    "case_17141": dict(
+        source=find_conformance_stream("case_17141.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="13ce1913836c9b77a0c7ba35c9542fbf")),
+    "case_17142": dict(
+        source=find_conformance_stream("case_17142.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="f4ca6e88d890bb72b8c3beca56008b51")),
+    "case_17143": dict(
+        source=find_conformance_stream("case_17143.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="f52867c10221d78df1336c9887f5e0f0")),
+    "case_17144": dict(
+        source=find_conformance_stream("case_17144.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="22fcaf1f3aaa59839f616f9d81c89b02")),
+    "case_17145": dict(
+        source=find_conformance_stream("case_17145.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="bf8a23f0780dca4beed8982cb406a628")),
+    "case_17146": dict(
+        source=find_conformance_stream("case_17146.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="cb433684876055af04e56d0507d0f92d")),
+    "case_17147": dict(
+        source=find_conformance_stream("case_17147.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="e89dda03e4358ac8bf532161020201ea")),
+    "case_17148": dict(
+        source=find_conformance_stream("case_17148.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="fb18e3d0e5110474906048fb5bccff1b")),
+    "case_17149": dict(
+        source=find_conformance_stream("case_17149.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="b771f6b83cfae9c1706f8d2b24d78721")),
+    "case_17150": dict(
+        source=find_conformance_stream("case_17150.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="f3ebbeeda503241428724d1fa8959a6a")),
+    "case_17151": dict(
+        source=find_conformance_stream("case_17151.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="7c5dffb82334221b8f78628914ac5fcc")),
+    "case_17152": dict(
+        source=find_conformance_stream("case_17152.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="7e0799c863d5ab93c6367c8b2c1caedc")),
+    "case_17153": dict(
+        source=find_conformance_stream("case_17153.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="742dbc4b37cc1a12c7017b2b8c013b8b")),
+    "case_17154": dict(
+        source=find_conformance_stream("case_17154.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="7530b1b8b7b15180631a3a9dab8660af")),
+    "case_17155": dict(
+        source=find_conformance_stream("case_17155.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="e3fb6e9506a49ea7848e1b48f6ddc5df")),
+    "case_17156": dict(
+        source=find_conformance_stream("case_17156.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="7bf8406c17ca4907db42938d1342e4ed")),
+    "case_17157": dict(
+        source=find_conformance_stream("case_17157.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="2cb9ae602776c7fe47bbfdfdcbcb7167")),
+    "case_17158": dict(
+        source=find_conformance_stream("case_17158.vp9"),
+        format="I010", width=640, height=360, frames=1,
+        metric=dict(type="md5", expect="c821674a60c0def134ec3922f2f9df55")),
+    "case_17159": dict(
+        source=find_conformance_stream("case_17159.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="52b11f83547196bd89707ba00cc6defb")),
+    "case_17161": dict(
+        source=find_conformance_stream("case_17161.vp9"),
+        format="I010", width=640, height=360, frames=5,
+        metric=dict(type="md5", expect="905b8dfd93fc408a40294e0e6aa07e9d")),
+    "case_17162": dict(
+        source=find_conformance_stream("case_17162.vp9"),
+        format="I010", width=1920, height=1080, frames=5,
+        metric=dict(type="md5", expect="a96878583e69306369d8b46ae4341ae1")),
+    "case_17200": dict(
+        source=find_conformance_stream("case_17200.vp9"),
+        format="I010", width=640, height=360, frames=60,
+        metric=dict(type="md5", expect="b903303fae2ea2d3448212eb0c6fcace")),
+    "case_17201": dict(
+        source=find_conformance_stream("case_17201.vp9"),
+        format="I010", width=640, height=360, frames=60,
+        metric=dict(type="md5", expect="2281961b0bc2b141445d4db26f7b79bf")),
+    "case_17202": dict(
+        source=find_conformance_stream("case_17202.vp9"),
+        format="I010", width=1920, height=1080, frames=60,
+        metric=dict(type="md5", expect="f853475c7f355fbe323d2644691af8a6")),
+    "case_17203": dict(
+        source=find_conformance_stream("case_17203.vp9"),
+        format="I010", width=1920, height=1080, frames=60,
+        metric=dict(type="md5", expect="77729f90124bc5630bba22ef9630a80a")),
+
+})
 ###
 ### kate: syntax python;
 ###

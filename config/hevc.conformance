@@ -567,6 +567,33 @@ media._get_test_spec("hevc", "decode", "8bit").update({
     source = find_conformance_stream("WP_B_Toshiba_3.bit"),
     format = "I420", width = 416, height = 240, frames = 256,
     metric = dict(type = "md5", expect = "82d39f8cd09e532b8fa9d35894c96258")),
+
+  #updated by brant
+  "Allegro_HEVC_Main_HT50_INTRA_02_192x200@60Hz_3" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main_HT50_INTRA_02_192x200@60Hz_3.0.bin"),
+  format = "I420", width = 192, height = 200, frames = 1200,
+  metric = dict(type = "md5", expect = "1455335a632079beec44ef622d1d6c05")),
+
+  "Allegro_HEVC_Main_HT50_INTRA_03_192x200@60Hz_2" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main_HT50_INTRA_03_192x200@60Hz_2.9.bin"),
+  format = "I420", width = 192, height = 200, frames = 1200,
+  metric = dict(type = "md5", expect = "ac8c03a56837705c96be0baa53d50dcf")),
+
+  "Allegro_HEVC_Main_HT50_INTER_03_192x200@60Hz_3" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main_HT50_INTER_03_192x200@60Hz_3.1.bin"),
+  format = "I420", width = 192, height = 200, frames = 800,
+  metric = dict(type = "md5", expect = "143886b0495a0e82a305850ea16175d8")),
+
+  "Allegro_HEVC_Main_HT50_INTER_04_192x200@60Hz_3" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main_HT50_INTER_04_192x200@60Hz_3.1.bin"),
+  format = "I420", width = 192, height = 200, frames = 600,
+  metric = dict(type = "md5", expect = "630464d7f16662e1bad08af4f8b9b952")),
+
+  "Allegro_HEVC_Main_HT50_INTER_05_192x200@60Hz_3" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main_HT50_INTER_05_192x200@60Hz_3.2.bin"),
+  format = "I420", width = 192, height = 256, frames = 700,
+  metric = dict(type = "md5", expect = "8e57522ad27d06e75e724bf979952ca0")),
+
 })
 
 # RExt Bitstreams - 8 bit
@@ -621,6 +648,33 @@ media._get_test_spec("hevc", "decode", "10bit").update({
     source = find_conformance_stream("WP_MAIN10_B_Toshiba_3.bit"),
     format = "I010", width = 416, height = 240, frames = 256,
     metric = dict(type = "md5", expect = "ed891c60a17f5cbc64e1848f0ea9cf45")),
+
+  #update by brant
+  "Allegro_HEVC_Main10_MT51_INTRA_02_192x200@60Hz_1" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main10_MT51_INTRA_02_192x200@60Hz_1.5.bin"),
+  format = "I010", width = 192, height = 200, frames = 1800,
+  metric = dict(type = "md5", expect = "fa6535b2a60378035e1fa2526dc508fb")),
+
+  "Allegro_HEVC_Main10_MT51_INTRA_03_192x200@60Hz_1" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main10_MT51_INTRA_03_192x200@60Hz_1.4.bin"),
+  format = "I010", width = 192, height = 200, frames = 2400,
+  metric = dict(type = "md5", expect = "fac6c4f2eddcd9745e7a9c610e2d71d9")),
+
+  "Allegro_HEVC_Main10_MT51_INTER_00_192x200@60Hz_1" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main10_MT51_INTER_00_192x200@60Hz_1.4.bin"),
+  format = "I010", width = 192, height = 200, frames = 768,
+  metric = dict(type = "md5", expect = "74bd2e35bc6321661198bf9731aa039a")),
+
+  "Allegro_HEVC_Main10_MT51_INTER_01_192x200@60Hz_1" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main10_MT51_INTER_01_192x200@60Hz_1.5.bin"),
+  format = "I010", width = 192, height = 200, frames = 640,
+  metric = dict(type = "md5", expect = "236b07f03453349f17ec8db1dd892e6a")),
+
+  "Allegro_HEVC_Main10_MT51_INTER_02_192x200@60Hz_1" : dict(
+  source = find_conformance_stream("Allegro_HEVC_Main10_MT51_INTER_02_192x200@60Hz_1.4.bin"),
+  format = "I010", width = 192, height = 256, frames = 888,
+  metric = dict(type = "md5", expect = "d8342d922c84b8380fb495e6185360ce")),
+
 })
 
 # # RExt Bitstreams - 10 bit
