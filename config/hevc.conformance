@@ -590,7 +590,7 @@ media._get_test_spec("hevc", "decode", "8bit").update({
 
   "Allegro_HEVC_Main_HT50_INTER_05_192x200_60Hz_3" : dict(
   source = find_conformance_stream("Allegro_HEVC_Main_HT50_INTER_05_192x200@60Hz_3.2.bin"),
-  format = "I420", width = 192, height = 256, frames = 700,
+  format = "I420", width = 192, height = 200, frames = 700,
   metric = dict(type = "md5", expect = "8e57522ad27d06e75e724bf979952ca0")),
 
 })
@@ -671,7 +671,7 @@ media._get_test_spec("hevc", "decode", "10bit").update({
 
   "Allegro_HEVC_Main10_MT51_INTER_02_192x200_60Hz_1" : dict(
   source = find_conformance_stream("Allegro_HEVC_Main10_MT51_INTER_02_192x200@60Hz_1.4.bin"),
-  format = "I010", width = 192, height = 256, frames = 888,
+  format = "I010", width = 192, height = 200, frames = 888,
   metric = dict(type = "md5", expect = "d8342d922c84b8380fb495e6185360ce")),
 
 })

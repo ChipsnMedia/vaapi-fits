@@ -826,104 +826,10 @@ media._get_test_spec("avc", "decode").update({
   #   source = find_conformance_stream("HVLCPFF0_Sony_B.264"),
   #   format = "I420", width = 720, height = 480, frames = 19,
   #   metric = dict(type = "md5", expect = "b52bbf8e5eba495c08b678e2c1f1196f")),
-
-  #update by brant
-  "freh3" : dict(
-  source = find_conformance_stream("freh3.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "6f1772152386e2897b539956a5e66c6e")),
-  "freh8" : dict(
-  source = find_conformance_stream("freh8.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "611587da4a5bcbe01724572980520cf4")),
-  "freh9" : dict(
-  source = find_conformance_stream("freh9.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "71e874caa1acb2dc1c2b4b169bc24335")),
-  "Freh1_B" : dict(
-  source = find_conformance_stream("Freh1_B.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "db518876d19957db06d0558a5ed06415")),
-  "Freh2_B" : dict(
-  source = find_conformance_stream("Freh2_B.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "29a932cf3b6bcdfa3280bdea3d29e683")),
-  "Freh12_B" : dict(
-  source = find_conformance_stream("Freh12_B.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "b0f76e8d4d7ee32ac2e755416eb50dd8")),
-  "FRExt1_Panasonic" : dict(
-  source = find_conformance_stream("FRExt1_Panasonic.avc"),
-  format = "I420", width = 352, height = 288, frames = 8,
-  metric = dict(type = "md5", expect = "f7023a3a93cc98c0c8d83c1deaf11048")),
-  "FRExt3_Panasonic" : dict(
-  source = find_conformance_stream("FRExt3_Panasonic.avc"),
-  format = "I420", width = 352, height = 288, frames = 11,
-  metric = dict(type = "md5", expect = "231e4f3105f75a3602161ec484bbd8e3")),
-  "FRExt_MMCO4_Sony_B" : dict(
-  source = find_conformance_stream("FRExt_MMCO4_Sony_B.264"),
-  format = "I420", width = 352, height = 288, frames = 60,
-  metric = dict(type = "md5", expect = "b10b53b906890855c0d8c36b58791957")),
-  "HCAFR1_HHI" : dict(
-  source = find_conformance_stream("HCAFR1_HHI.264"),
-  format = "I420", width = 352, height = 288, frames = 10,
-  metric = dict(type = "md5", expect = "a8720257ffe53ce4bb0861e3ae72dbf2")),
-  "HCAFR2_HHI" : dict(
-  source = find_conformance_stream("HCAFR2_HHI.264"),
-  format = "I420", width = 352, height = 288, frames = 10,
-  metric = dict(type = "md5", expect = "2cf79df7dd8b0d9796250e0e219fdebb")),
-  "HCAFR3_HHI" : dict(
-  source = find_conformance_stream("HCAFR3_HHI.264"),
-  format = "I420", width = 352, height = 288, frames = 10,
-  metric = dict(type = "md5", expect = "06471784550ffe7d8aae9a274db35b5c")),
-  "HCAFR4_HHI" : dict(
-  source = find_conformance_stream("HCAFR4_HHI.264"),
-  format = "I420", width = 352, height = 288, frames = 10,
-  metric = dict(type = "md5", expect = "e590be1546b7093ea3bdcc5978d7594d")),
-  "HCHP1_HHI_B" : dict(
-  source = find_conformance_stream("HCHP1_HHI_B.264"),
-  format = "I420", width = 352, height = 288, frames = 250,
-  metric = dict(type = "md5", expect = "4e507bfebb3893259ba94dc53c5ea1e3")),
-  "HCHP2_HHI_A" : dict(
-  source = find_conformance_stream("HCHP2_HHI_A.264"),
-  format = "I420", width = 352, height = 288, frames = 250,
-  metric = dict(type = "md5", expect = "e0a122b8b531a046dbb2f9e454c95162")),
-  "HPCA_BRCM_C" : dict(
-  source = find_conformance_stream("HPCA_BRCM_C.264"),
-  format = "I420", width = 352, height = 288, frames = 300,
-  metric = dict(type = "md5", expect = "5eafc104844211893e1d8af0b8b66ed6")),
-  "HPCADQ_BRCM_B" : dict(
-  source = find_conformance_stream("HPCADQ_BRCM_B.264"),
-  format = "I420", width = 352, height = 288, frames = 300,
-  metric = dict(type = "md5", expect = "41d1fba4e8f8c9b56c172dbe6d6bea23")),
-  "HPCALQ_BRCM_B" : dict(
-  source = find_conformance_stream("HPCALQ_BRCM_B.264"),
-  format = "I420", width = 352, height = 288, frames = 300,
-  metric = dict(type = "md5", expect = "41d1fba4e8f8c9b56c172dbe6d6bea23")),
-  "HPCAMOLQ_BRCM_B" : dict(
-  source = find_conformance_stream("HPCAMOLQ_BRCM_B.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "c35cea73183a4fd8f92e7d863391b2bc")),
-  "HPCANL_BRCM_C" : dict(
-  source = find_conformance_stream("HPCANL_BRCM_C.264"),
-  format = "I420", width = 352, height = 288, frames = 300,
-  metric = dict(type = "md5", expect = "b1660f91e5047adaae5204a5309d57b8")),
-  "HPCAQ2LQ_BRCM_B" : dict(
-  source = find_conformance_stream("HPCAQ2LQ_BRCM_B.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "cf81785c89930d5b1c191a1ef4cb9e83")),
-  "HPCV_BRCM_A" : dict(
-  source = find_conformance_stream("HPCV_BRCM_A.264"),
-  format = "I420", width = 352, height = 288, frames = 300,
-  metric = dict(type = "md5", expect = "5eafc104844211893e1d8af0b8b66ed6")),
-  "HPCVMOLQ_BRCM_B" : dict(
-  source = find_conformance_stream("HPCVMOLQ_BRCM_B.264"),
-  format = "I420", width = 352, height = 288, frames = 100,
-  metric = dict(type = "md5", expect = "968232afb9ffe8335a8cedbdf9daf8e3")),
 })
 
 # AVCv1 Bitstreams
-media._get_test_spec("avc", "decode","10b").update({
+media._get_test_spec("avc", "decode","10bit").update({
   "Allegro_AVC_High_10_Residual_00_Cabac_80x96_30Hz_r5" : dict(
   source = find_conformance_stream("Allegro_AVC_High_10_Residual_00_Cabac_80x96@30Hz_r5.6.264"),
   format = "I010", width = 80, height = 96, frames = 16,
