@@ -89,6 +89,7 @@ class MediaPlugin(slash.plugins.PluginInterface):
     parser.add_argument("--parallel-metrics", action = "store_true")
     parser.add_argument("--platform", default = None, type = str, required = True)
     parser.add_argument("--device", default = '/dev/dri/renderD128', type = str, help = 'vaapi-fits run with render device')
+    parser.add_argument("--cnm_refc_dir", default = '', type = str, help = 'the folder name that cnm ref_c files exist. if the folder is the correct path, cnm ref_c testing will be exeucted instead of vaapi')
 
   def configure_from_parsed_args(self, args):
     self.baseline = Baseline(args.baseline_file, args.rebase)
@@ -99,6 +100,7 @@ class MediaPlugin(slash.plugins.PluginInterface):
     self.ctapr = args.ctapr
     self.platform = args.platform
     self.render_device = args.device
+    self.cnm_refc_dir = args.cnm_refc_dir
 
     assert not (args.rebase and slash.config.root.parallel.num_workers > 0), "rebase in parallel mode is not supported"
     assert not (args.ctapt != -1 and slash.config.root.parallel.num_workers > 0), "ctapt in parallel mode is not supported"
@@ -213,6 +215,9 @@ class MediaPlugin(slash.plugins.PluginInterface):
        return self.test_call_timeout
     else:
        return self.call_timeout
+
+  def _get_cnm_refc_dir(self):
+    return self.cnm_refc_dir
 
   def test_start(self):
     test = slash.context.test

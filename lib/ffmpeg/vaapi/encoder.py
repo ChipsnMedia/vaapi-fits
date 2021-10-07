@@ -119,6 +119,40 @@ class EncoderTest(slash.Test):
       "ffmpeg -hwaccel vaapi -vaapi_device {renderDevice} -v verbose"
       " {iopts} {oopts}".format(renderDevice = self.renderDevice, iopts = iopts, oopts = oopts))
 
+  def call_ffmpeg_va_stream(self, iopts, oopts):
+      stream_name = self.encoded
+      try:
+          file_name = os.path.basename(stream_name)
+          file_dir = os.path.dirname(stream_name)
+          if os.path.isdir(file_dir) == False:
+              os.mkdir(file_dir)
+          ivf_file_dir = self.cnm_refc_dir + "/ivf"
+          if os.path.isdir(ivf_file_dir) == False:
+              os.mkdir(ivf_file_dir)
+      except Exception as e:
+          print("Exception str=" + str(e))
+          pass
+      self.va_stream_name = ivf_file_dir + "/" + file_name + ".ivf" 
+      self.va_yuv_name = ivf_file_dir + "/" + file_name + ".enc.yuv" 
+      MY_LIBVA_DRIVERS_PATH = "/usr/lib/x86_64-linux-gnu/dri"
+      MY_LIBVA_DRIVER_NAME = "iHD"
+      os.putenv("LIBVA_DRIVERS_PATH", MY_LIBVA_DRIVERS_PATH)
+      os.putenv("LIBVA_DRIVER_NAME", MY_LIBVA_DRIVER_NAME)
+      os.putenv("LIBVA_TRACE", "libva_trace_file")
+      os.putenv("LIBVA_VA_BITSTREAM", self.va_stream_name)
+      os.putenv("LIBVA_TRACE_SURFACE", self.va_yuv_name)
+      os.system("echo $LIBVA_VA_BITSTREAM")
+      os.system("echo $LIBVA_TRACE_SURFACE")
+      cmd_str = "ffmpeg -hwaccel vaapi -vaapi_device {renderDevice} -v verbose {iopts} {oopts}".format(renderDevice = self.renderDevice, iopts = iopts, oopts = oopts)
+      print("run ffmpeg for va stream : " + cmd_str)
+      try:
+        self.output = call(cmd_str)
+          # if os.system(cmd_str) == 0:
+          #     ret = True
+      except Exception as e:
+          print("Exception str=" + str(e))
+          pass
+
   def validate_caps(self):
     # BUG: FFmpeg fails to support I420 hwupload even though i965 supports it.
     ifmts = list(set(self.caps["fmts"]) - set(["I420"]))
@@ -161,7 +195,62 @@ class EncoderTest(slash.Test):
     ext   = self.get_file_ext()
 
     self.encoded = get_media()._test_artifact("{}.{}".format(name, ext))
-    self.call_ffmpeg(iopts.format(**vars(self)), oopts.format(**vars(self)))
+
+    self.cnm_refc_dir = get_media()._get_cnm_refc_dir()
+    if self.cnm_refc_dir is not None and self.cnm_refc_dir != '':
+      # call ffmpeg for ivf generation
+      self.call_ffmpeg_va_stream(iopts.format(**vars(self)), oopts.format(**vars(self)))
+      # convert self.source NV12 to yuv420p
+      cmd_str = "ffmpeg -pix_fmt " + str(self.mformat) + " -s:v " + str(self.width) + "x" + str(self.height) + " -i " + str(self.va_yuv_name) + " -vframes " + str(self.frames) + " -c:v rawvideo -pix_fmt yuv420p " + str(self.va_yuv_name) + ".yuv420p.yuv -y"
+      try:
+        if os.system(cmd_str) == 0:
+            ret = True
+      except Exception as e:
+          print("Exception str=" + str(e))
+          pass
+      # make cmodel cfg
+      file_name = os.path.basename(self.encoded)
+      refc_outputFile = self.cnm_refc_dir + "/" + file_name
+      refc_cfgFile = self.cnm_refc_dir + "/" + file_name + ".vaenc.cfg"
+      refc_inputFile = str(self.va_yuv_name) + ".yuv420p.yuv"
+
+      f = open(refc_cfgFile, "w")
+      f.write("# CONFIG" + " \t\r\n")
+      f.write("#-------------------------------" + " \t\r\n")
+      f.write("InputFile                :        " + refc_inputFile + " \t\r\n")
+      f.write("FramesToBeEncoded        :        " + str(self.frames) + " \t\r\n") 
+      f.write("CodecStd                 :        3" + " \t\r\n")
+      f.write("NoLastFrameCheck         :        1" + " \t\r\n")
+      f.write("SourceWidth              :        " + str(self.width) + " \t\r\n")
+      f.write("SourceHeight             :        " + str(self.height) + " \t\r\n")
+      f.write("InputBitDepth            :        8  \t\r\n")      
+      if "cbr" == self.rcmode:
+        f.write("RateControl             :        2  \t\r\n")      
+      elif "vbr" == self.rcmode:
+        f.write("RateControl             :        1  \t\r\n")      
+      else:
+        f.write("RateControl             :        0  \t\r\n")      
+      f.close()
+      os.system("cat " + refc_cfgFile)
+      # make cmodel command 
+      cmd_str = self.cnm_refc_dir + "/Gaudi -i " + refc_cfgFile + " -o " + refc_outputFile + " -v " + str(self.va_stream_name) 
+      print("run ref-c : " + cmd_str)
+      try:
+        if os.system(cmd_str) == 0:
+            ret = True
+      except Exception as e:
+          print("Exception str=" + str(e))
+          pass
+      cmd_str = "cp -f " + refc_outputFile + " " + self.encoded
+      print("copy encoded file for ref-c: " + cmd_str)
+      try:
+        if os.system(cmd_str) == 0:
+            ret = True
+      except Exception as e:
+          print("Exception str=" + str(e))
+          pass
+    else:
+        self.call_ffmpeg(iopts.format(**vars(self)), oopts.format(**vars(self)))
 
     if vars(self).get("r2r", None) is not None:
       assert type(self.r2r) is int and self.r2r > 1, "invalid r2r value"
