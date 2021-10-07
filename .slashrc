@@ -25,7 +25,7 @@ __SCRIPT_DIR__ = os.path.abspath(os.path.dirname(__file__))
 # LibVA used to load the i965 driver by default, but now it loads the iHD driver
 # by default.  For backwards compatibility, explicitly set VAAPI driver to i965
 # via the user environment variable.
-os.environ.setdefault("LIBVA_DRIVER_NAME", "i965")
+os.environ.setdefault("LIBVA_DRIVER_NAME", "iHD")
 
 # We don't support any of the built-in slash plugins
 slash.plugins.manager.uninstall_all()
