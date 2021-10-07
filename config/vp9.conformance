@@ -3716,6 +3716,3 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         metric=dict(type="md5", expect="77729f90124bc5630bba22ef9630a80a")),
 
 })
-###
-### kate: syntax python;
-###
