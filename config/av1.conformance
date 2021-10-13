@@ -677,10 +677,9 @@ media._get_test_spec("av1", "decode", "8bit").update({
 	metric = dict(type = "md5", expect = "153560dc839c0f7b74d5b730034e5206")),
 
     "av1_noise_rand_size_21": dict(
-        #Mismatch md5
         source=find_conformance_stream("av1_noise_rand_size_21.ivf"),
         format="I420", width=2966, height=5609, frames=3,
-	metric = dict(type = "md5", expect = "6473d1c7f295f24ead578dd91004ed9e")),
+        metric=dict(type="md5", expect="6473d1c7f295f24ead578dd91004ed9e")),
 
     "av1_noise_rand_size_222": dict(
         source=find_conformance_stream("av1_noise_rand_size_222.ivf"),
@@ -738,7 +737,6 @@ media._get_test_spec("av1", "decode", "8bit").update({
         metric=dict(type="md5", expect="ab5dcf5c1bc8b356e06302d6652d6d8c")),
 
     "av1_noise_rand_size_235": dict(
-        #mismatch md5
         source=find_conformance_stream("av1_noise_rand_size_235.ivf"),
         format="I420", width=3237, height=7776, frames=3,
         metric=dict(type="md5", expect="93ecaa3288346dcedb42cc0870ca0386")),
@@ -774,7 +772,6 @@ media._get_test_spec("av1", "decode", "8bit").update({
         metric=dict(type="md5", expect="120bbeed2c142ccd964e460d382ea79c")),
 
     "av1_noise_rand_size_242": dict(
-        #mismatch md5
         source=find_conformance_stream("av1_noise_rand_size_242.ivf"),
         format="I420", width=4883, height=3745, frames=3,
         metric=dict(type="md5", expect="29ddc5d10b2779b4f4364c5ac219f886")),
@@ -790,13 +787,11 @@ media._get_test_spec("av1", "decode", "8bit").update({
         metric=dict(type="md5", expect="4a9e40817947d5458a812965abfafa11")),
 
     "av1_noise_rand_size_246": dict(
-        #mismatch md5
         source=find_conformance_stream("av1_noise_rand_size_246.ivf"),
         format="I420", width=2992, height=7153, frames=3,
         metric=dict(type="md5", expect="01ed4567bb9ea6333d20a04a459662b0")),
 
     "av1_noise_rand_size_247": dict(
-        #mismatch md5
         source=find_conformance_stream("av1_noise_rand_size_247.ivf"),
         format="I420", width=5807, height=2663, frames=3,
         metric=dict(type="md5", expect="169374ad23b680fec95120660b3cfc7d")),
@@ -1165,6 +1160,11 @@ media._get_test_spec("av1", "decode", "8bit").update({
         source = find_conformance_stream("av1-1-b8-22-svc-L2T1.ivf"),
         format = "I420", width = 1280, height = 720, frames = 8,
         metric = dict(type = "md5", expect = "f8305c4b796b620388fee614df3ebac6"), numbytes=-1),
+
+    "av1-1-b8-22-svc-L2T2"  : dict(
+        source = find_conformance_stream("av1-1-b8-22-svc-L2T2.ivf"),
+        format = "I420", width = 1280, height = 720, frames = 8,
+        metric = dict(type = "md5", expect = "4d86bc8f55bae0ac0e688fb7fa2fe741"), numbytes=-1),
 })
 
 media._get_test_spec("av1", "decode", "10bit").update({
@@ -1520,15 +1520,17 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # metric = dict(type = "md5", expect = "796991b20eabc27fe6dd31f570850a3c")),
     
     "Main_10bits_456_HighRes_1929x128_r6009" : dict(
-        #mismatch md5 or size 
+    #resolution change :  
     source = find_conformance_stream("Main_10bits_456_HighRes_1929x128_r6009.ivf"),
     format = "I010", width = 1929, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "571cde6cc7a99ab97ef9499c164d9103")),
+    metric = dict(type = "md5", expect = "571cde6cc7a99ab97ef9499c164d9103", numbytes=-1)),
+
     "Main_10bits_457_HighRes_1929x128_r6009" : dict(
-        #resolution change
+    #resolution change 
     source = find_conformance_stream("Main_10bits_457_HighRes_1929x128_r6009.ivf"),
     format = "I010", width = 1929, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "785b207a568dc2eb4a77c8280976be79", numbytes=-1)),
+    metric = dict(type = "md5", expect = "caf775828bbe1003af4a88c59870dcd2", numbytes=-1)),
+
     "Main_10bits_458_HighRes_2048x1088_r6009" : dict(
     source = find_conformance_stream("Main_10bits_458_HighRes_2048x1088_r6009.ivf"),
     format = "I010", width = 2048, height = 1088, frames = 10,
@@ -1621,10 +1623,10 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # format = "I010", width = 6144, height = 384, frames = 10,
     # metric = dict(type = "md5", expect = "53e3ead87ed26bf95a9c1a5503d8288f")),
     "Main_10bits_478_HighRes_6144x384_r6009" : dict(
-        #mismatch md5 or size
+    #resolution change :  
     source = find_conformance_stream("Main_10bits_478_HighRes_6144x384_r6009.ivf"),
     format = "I010", width = 6144, height = 384, frames = 10,
-    metric = dict(type = "md5", expect = "5097783f4060b41246a694a41629f3ba")),
+    metric = dict(type = "md5", expect = "2f132724ffa526ea151eb4526e60bf1a", numbytes=-1)),
 
     # "Main_10bits_479_HighRes_682x3456_r6009" : dict(
     # # ffmpeg error (Failed to read extradata.)
@@ -1651,16 +1653,17 @@ media._get_test_spec("av1", "decode", "10bit").update({
     source = find_conformance_stream("Main_10bits_483_HighRes_3840x2160_r6009.ivf"),
     format = "I010", width = 3840, height = 2160, frames = 10,
     metric = dict(type = "md5", expect = "7021fb901c9b531bf528b3b81905e864")),
+
     "Main_10bits_484_HighRes_3840x2160_r6009" : dict(
-        #mismatch md5
     source = find_conformance_stream("Main_10bits_484_HighRes_3840x2160_r6009.ivf"),
     format = "I010", width = 3840, height = 2160, frames = 10,
     metric = dict(type = "md5", expect = "013e9462e9bed90f73a2e97ab34fd2c0")),
+
     "Main_10bits_485_HighRes_3840x2160_r6009" : dict(
-        #mismatch md5
     source = find_conformance_stream("Main_10bits_485_HighRes_3840x2160_r6009.ivf"),
     format = "I010", width = 3840, height = 2160, frames = 10,
     metric = dict(type = "md5", expect = "dfde78aeec51e7812a36e4ff258abd9f")),
+
     # "Main_10bits_486_HighRes_3840x2160_r6009" : dict(
     # # ffmpeg error (Failed to read extradata.)
     # source = find_conformance_stream("Main_10bits_486_HighRes_3840x2160_r6009.ivf"),
@@ -1816,7 +1819,6 @@ media._get_test_spec("av1", "decode", "10bit").update({
     format = "I010", width = 2216, height = 638, frames = 3,
     metric = dict(type = "md5", expect = "b754f1fc5c80f7073296e98b166eee53")),
     "av1_noise_rand_size_10b_15" : dict(
-        #mismatch md5
     source = find_conformance_stream("av1_noise_rand_size_10b_15.ivf"),
     format = "I010", width = 3020, height = 2490, frames = 3,
     metric = dict(type = "md5", expect = "501b5357116a705cd6140e09573ae30b")),
@@ -1885,7 +1887,6 @@ media._get_test_spec("av1", "decode", "10bit").update({
     format = "I010", width = 3583, height = 818, frames = 3,
     metric = dict(type = "md5", expect = "5566dd52df909ffc40ca833d08d26f9a")),
     "av1_noise_rand_size_10b_30" : dict(
-        #mismatch md5
     source = find_conformance_stream("av1_noise_rand_size_10b_30.ivf"),
     format = "I010", width = 2935, height = 3313, frames = 3,
     metric = dict(type = "md5", expect = "c98e5b1f3a7142fd226a8041528235f7")),
@@ -1970,7 +1971,6 @@ media._get_test_spec("av1", "decode", "10bit").update({
     format = "I010", width = 2458, height = 2275, frames = 3,
     metric = dict(type = "md5", expect = "44eb48ac99fc52a9f16fff9ff90217bc")),
     "av1_noise_rand_size_10b_4" : dict(
-        #mismatch md5
     source = find_conformance_stream("av1_noise_rand_size_10b_4.ivf"),
     format = "I010", width = 2454, height = 3355, frames = 3,
     metric = dict(type = "md5", expect = "dc05deff43b2d7eb999be9927924cb34")),
@@ -1999,7 +1999,6 @@ media._get_test_spec("av1", "decode", "10bit").update({
     format = "I010", width = 3227, height = 1175, frames = 3,
     metric = dict(type = "md5", expect = "2a51d940c7800539770bd83fb4503f6b")),
     "av1_noise_rand_size_10b_56" : dict(
-        #mismatch md5
     source = find_conformance_stream("av1_noise_rand_size_10b_56.ivf"),
     format = "I010", width = 3264, height = 3669, frames = 3,
     metric = dict(type = "md5", expect = "315b44b442dbbd5b283c699cf43cf925")),
@@ -2020,7 +2019,6 @@ media._get_test_spec("av1", "decode", "10bit").update({
     format = "I010", width = 217, height = 3179, frames = 3,
     metric = dict(type = "md5", expect = "c879972d203b169260c2214c12d8f56f")),
     "av1_noise_rand_size_10b_60" : dict(
-        #mismatch md5
     source = find_conformance_stream("av1_noise_rand_size_10b_60.ivf"),
     format = "I010", width = 3630, height = 3025, frames = 3,
     metric = dict(type = "md5", expect = "3d83fff795448db4fc149c3c30e1c522")),
