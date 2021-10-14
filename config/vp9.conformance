@@ -7,207 +7,162 @@
 
 ###vp9###
 media._get_test_spec("vp9", "decode", "8bit").update({
+
     "test1280x1024": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print ?? really?
         source=find_conformance_stream("test1280x1024.ivf"),
         format="I420", width=1280, height=1024, frames=9,
         metric=dict(type="md5", expect="2fb951cf781516d45220be03aa3f67f8")),
 
     "test1280x720": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print really?
         source=find_conformance_stream("test1280x720.ivf"),
         format="I420", width=1280, height=720, frames=9,
         metric=dict(type="md5", expect="0df9bf8ff9512d9d081a1b50b77d1d54")),
 
     "test1600x1200": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print really?
         source=find_conformance_stream("test1600x1200.ivf"),
         format="I420", width=1600, height=1200, frames=8,
         metric=dict(type="md5", expect="c62bead439a4a26eba36325301ee0038")),
 
     "test1920x1080": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print really?
         source=find_conformance_stream("test1920x1080.ivf"),
         format="I420", width=1920, height=1080, frames=7,
         metric=dict(type="md5", expect="c9d293f6106c97b2311247d8a5e4c5b5")),
 
-    # "test1920x1080_267kbit": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test1920x1080_267kbit.ivf"),
-    #     format="I420", width=1920, height=1080, frames=6,
-    #     metric=dict(type="md5", expect="f9f85aaf45162f1af5f109adb025c740")),
+    "test1920x1080_267kbit": dict(
+        source=find_conformance_stream("test1920x1080_267kbit.ivf"),
+        format="I420", width=1920, height=1080, frames=6,
+        metric=dict(type="md5", expect="f9f85aaf45162f1af5f109adb025c740")),
 
-    # "test1920x1080_667kbit": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test1920x1080_667kbit.ivf"),
-    #     format="I420", width=1920, height=1080, frames=10,
-    #     metric=dict(type="md5", expect="d8d484a4482321ee71cce325bf643c76")),
+    "test1920x1080_667kbit": dict(
+        source=find_conformance_stream("test1920x1080_667kbit.ivf"),
+        format="I420", width=1920, height=1080, frames=10,
+        metric=dict(type="md5", expect="d8d484a4482321ee71cce325bf643c76")),
 
-    # "test2048x1080": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test2048x1080.ivf"),
-    #     format="I420", width=1920, height=1080, frames=7,
-    #     metric=dict(type="md5", expect="6e61b5de5ce9c639b36a9a29132d80eb")),
+    "test2048x1080": dict(
+        source=find_conformance_stream("test2048x1080.ivf"),
+        format="I420", width=1920, height=1080, frames=7,
+        metric=dict(type="md5", expect="6e61b5de5ce9c639b36a9a29132d80eb")),
 
-    # "test3840x2160": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test3840x2160.ivf"),
-    #     format="I420", width=3840, height=2160, frames=9,
-    #     metric=dict(type="md5", expect="0392104e1cdf9fb6959a88e6d9c3c4ec")),
+    "test3840x2160": dict(
+        source=find_conformance_stream("test3840x2160.ivf"),
+        format="I420", width=3840, height=2160, frames=9,
+        metric=dict(type="md5", expect="0392104e1cdf9fb6959a88e6d9c3c4ec")),
 
-    # "test3840x2176": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test3840x2176.ivf"),
-    #     format="I420", width=3840, height=2176, frames=7,
-    #     metric=dict(type="md5", expect="d6470a418aeba4329e585f05fead01ee")),
+    "test3840x2176": dict(
+        source=find_conformance_stream("test3840x2176.ivf"),
+        format="I420", width=3840, height=2176, frames=7,
+        metric=dict(type="md5", expect="d6470a418aeba4329e585f05fead01ee")),
 
-    # "test4096x2048": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test4096x2048.ivf"),
-    #     format="I420", width=4096, height=2048, frames=6,
-    #     metric=dict(type="md5", expect="8ed1d88062e1cab9399e33263d699ff6")),
+    "test4096x2048": dict(
+        source=find_conformance_stream("test4096x2048.ivf"),
+        format="I420", width=4096, height=2048, frames=6,
+        metric=dict(type="md5", expect="8ed1d88062e1cab9399e33263d699ff6")),
 
-    # "test4096x2160": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test4096x2160.ivf"),
-    #     format="I420", width=4096, height=2160, frames=8,
-    #     metric=dict(type="md5", expect="1c5d3801b53e703ae39c1c2f137159de")),
+    "test4096x2160": dict(
+        source=find_conformance_stream("test4096x2160.ivf"),
+        format="I420", width=4096, height=2160, frames=8,
+        metric=dict(type="md5", expect="1c5d3801b53e703ae39c1c2f137159de")),
 
-    # "test4096x2160_1Mbit": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test4096x2160_1Mbit.ivf"),
-    #     format="I420", width=4096, height=2160, frames=8,
-    #     metric=dict(type="md5", expect="e59c8660fa2a6f38d839261aea834925")),
+    "test4096x2160_1Mbit": dict(
+        source=find_conformance_stream("test4096x2160_1Mbit.ivf"),
+        format="I420", width=4096, height=2160, frames=8,
+        metric=dict(type="md5", expect="e59c8660fa2a6f38d839261aea834925")),
 
-    # "test4096x2160_500kbit": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test4096x2160_500kbit.ivf"),
-    #     format="I420", width=4096, height=2160, frames=7,
-    #     metric=dict(type="md5", expect="6f7d44ddefaca2bf61d0a77a3dc82d7a")),
+    "test4096x2160_500kbit": dict(
+        source=find_conformance_stream("test4096x2160_500kbit.ivf"),
+        format="I420", width=4096, height=2160, frames=7,
+        metric=dict(type="md5", expect="6f7d44ddefaca2bf61d0a77a3dc82d7a")),
 
-    # "test4096x2176": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test4096x2176.ivf"),
-    #     format="I420", width=4096, height=2176, frames=8,
-    #     metric=dict(type="md5", expect="b8fd5181013f84bbf784fd7fa7679f94")),
+    "test4096x2176": dict(
+        source=find_conformance_stream("test4096x2176.ivf"),
+        format="I420", width=4096, height=2176, frames=8,
+        metric=dict(type="md5", expect="b8fd5181013f84bbf784fd7fa7679f94")),
 
-    # "test4096x2304": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test4096x2304.ivf"),
-    #     format="I420", width=4096, height=2304, frames=9,
-    #     metric=dict(type="md5", expect="9adbf8d983d240c67b945b90f1cbef3d")),
+    "test4096x2304": dict(
+        source=find_conformance_stream("test4096x2304.ivf"),
+        format="I420", width=4096, height=2304, frames=9,
+        metric=dict(type="md5", expect="9adbf8d983d240c67b945b90f1cbef3d")),
 
-    # "test720x480": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test720x480.ivf"),
-    #     format="I420", width=720, height=480, frames=10,
-    #     metric=dict(type="md5", expect="385b340b7fc98e2d16bf128448ff6d04")),
+    "test720x480": dict(
+        source=find_conformance_stream("test720x480.ivf"),
+        format="I420", width=720, height=480, frames=10,
+        metric=dict(type="md5", expect="385b340b7fc98e2d16bf128448ff6d04")),
 
     # "test1000_946": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #   source=find_conformance_stream("test1000_946.ivf"),
-    #    format="I420", width=384, height=512, frames=18,
+    #   format="I420", width=384, height=512, frames=18,
     #   metric=dict(type="md5", expect="930eb9a1fd8739c4838748115cefbca5")),
 
     # "test1007": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1007.ivf"),
     #     format="I420", width=424, height=216, frames=9,
     #     metric=dict(type="md5", expect="77db8b84c80ab229e68656a6b8c410d8")),
 
     # "test1010_572_1503": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1010_572_1503.ivf"),
     #     format="I420", width=224, height=368, frames=26,
     #     metric=dict(type="md5", expect="2ba6f7a8ec5601dbed40706d30935896")),
 
     # "test1012": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1012.ivf"),
     #     format="I420", width=512, height=384, frames=9,
     #     metric=dict(type="md5", expect="0eaa55607cbffcc829b1db27d175e156")),
 
-    # "test1016": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test1016.ivf"),
-    #     format="I420", width=416, height=152, frames=9,
-    #     metric=dict(type="md5", expect="e28e57e9be31906e35d1f2cc539c8dd9")),
+    "test1016": dict(
+        source=find_conformance_stream("test1016.ivf"),
+        format="I420", width=416, height=152, frames=9,
+        metric=dict(type="md5", expect="e28e57e9be31906e35d1f2cc539c8dd9")),
 
     # "test1018_689_366": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1018_689_366.ivf"),
     #     format="I420", width=448, height=224, frames=24,
     #     metric=dict(type="md5", expect="a761bb50aa2a5ee6880a46afb7909464")),
 
     # "test1020_223_195": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1020_223_195.ivf"),
     #     format="I420", width=160, height=376, frames=25,
     #     metric=dict(type="md5", expect="bb03d7edfa72127f68223f60e444800b")),
 
     # "test1023": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1023.ivf"),
     #     format="I420", width=208, height=272, frames=10,
     #     metric=dict(type="md5", expect="95ac624c441e781d39d59e8cf27a64aa")),
 
     # "test1025": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1025.ivf"),
     #     format="I420", width=400, height=304, frames=10,
     #     metric=dict(type="md5", expect="fa374b196a0c64cbd5d01f10cc27855f")),
 
     # "test1038_965": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1038_965.ivf"),
     #     format="I420", width=272, height=456, frames=19,
     #     metric=dict(type="md5", expect="b058099c5b0f41af89d6ab3c4188e796")),
 
     # "test1039_917_1419": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1039_917_1419.ivf"),
     #     format="I420", width=320, height=464, frames=26,
     #     metric=dict(type="md5", expect="71e3b38dddbbe1b7a4d5524bfb2e92ef")),
 
-    # "test103": dict(
-    # no crop
-    # note : resolution change stream, no decoded result print
-    #     source=find_conformance_stream("test103.ivf"),
-    #     format="I420", width=384, height=224, frames=9,
-    #     metric=dict(type="md5", expect="c473c98f94f9bef64d6651bff0110798")),
+    "test103": dict(
+        source=find_conformance_stream("test103.ivf"),
+        format="I420", width=384, height=224, frames=9,
+        metric=dict(type="md5", expect="c473c98f94f9bef64d6651bff0110798")),
 
     # "test1044_441_120": dict(
-    # note : resolution change stream
+    # # note : inter-resolution change stream
     #     source=find_conformance_stream("test1044_441_120.ivf"),
     #     format="I420", width=448, height=448, frames=27,
-    #     metric=dict(type="md5", expect="ac7f124f8ab57475d0a5eb0b4a090000")),
+    #     metric=dict(type="md5", expect="7ca8aafeabbe97cfdd1793c249f1f7d5", numbytes=-1)),
 
     "test1046": dict(
         source=find_conformance_stream("test1046.ivf"),
@@ -215,31 +170,31 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="62fd6765933244e82f39459a215d809a")),
 
     # "test1053_621_727": dict(
-    # note : resolution change stream
+    # note : inter-resolution change stream
     #     source=find_conformance_stream("test1053_621_727.ivf"),
     #     format="I420", width=459, height=152, frames=23,
     #     metric=dict(type="md5", expect="a823945e13c320a6647e569e40591aac")),
 
     # "test1065_813_1446": dict(
-    # note : resolution change stream
+    # note : inter-resolution change stream
     #     source=find_conformance_stream("test1065_813_1446.ivf"),
     #     format="I420", width=419, height=272, frames=25,
     #     metric=dict(type="md5", expect="a6c7e4be648acbef5c0742b06e7dccd1")),
 
     # "test1070_756_341": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1070_756_341.ivf"),
     #     format="I420", width=368, height=400, frames=25,
     #     metric=dict(type="md5", expect="e866306935b38f0ed1d4b42957f85c36")),
 
     # "test1075": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1075.ivf"),
     #     format="I420", width=264, height=160, frames=9,
     #     metric=dict(type="md5", expect="284ab70fbed25ff39516892d20fadb03")),
 
     # "test1080_1078": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1080_1078.ivf"),
     #     format="I420", width=408, height=512, frames=18,
     #     metric=dict(type="md5", expect="e7ef5666c07bee56372767a20130dab3")),
@@ -250,55 +205,55 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="cce7355bc115a4b0c9d5e03483d4f711")),
 
     # "test1082_1646": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1082_1646.ivf"),
     #     format="I420", width=432, height=160, frames=19,
     #     metric=dict(type="md5", expect="126c0015ea5fc024de353564b6fe8199")),
 
     # "test108_297_900": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test108_297_900.ivf"),
     #     format="I420", width=316, height=468, frames=28,
     #     metric=dict(type="md5", expect="ad39cf6eaa99bf04bf77c1313a5b4d26")),
 
     # "test1085_932": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1085_932.ivf"),
     #     format="I420", width=352, height=216, frames=19,
     #     metric=dict(type="md5", expect="69cd7eb9c9a352eb197db388d4e5b818")),
 
     # "test1087": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1087.ivf"),
     #     format="I420", width=168, height=186, frames=10,
     #     metric=dict(type="md5", expect="7cfb43c0b21e036d636878b81973c3a3")),
 
     # "test1088_124_1051": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1088_124_1051.ivf"),
     #     format="I420", width=467, height=175, frames=27,
     #     metric=dict(type="md5", expect="994acccc81576c3ad79063f665af5a1b")),
 
     # "test1089_936_1031": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1089_936_1031.ivf"),
     #     format="I420", width=423, height=179, frames=29,
     #     metric=dict(type="md5", expect="f458e63e379564f20e45e614fe2dbc24")),
 
     # "test1091": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1091.ivf"),
     #     format="I420", width=216, height=266, frames=10,
     #     metric=dict(type="md5", expect="e1941c663ef405cd14789a8272f63776")),
 
     # "test1093_329_1058": dict(
-    # note : resolution change stream
+    # note : inter-resolution change stream
     #     source=find_conformance_stream("test1093_329_1058.ivf"),
     #     format="I420", width=512, height=324, frames=25,
     #     metric=dict(type="md5", expect="8a0a9c1232de5c91aaf2d46b3e1445df")),
 
     # "test1094_628_1595": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1094_628_1595.ivf"),
     #     format="I420", width=374, height=252, frames=27,
     #     metric=dict(type="md5", expect="d9dbd6302efdc038de58854a382eca49")),
@@ -309,19 +264,19 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="aa1ca5e8eb3c09ee2c80947433fedfcb")),
 
     # "test1098_423_459": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1098_423_459.ivf"),
     #     format="I420", width=296, height=212, frames=25,
     #     metric=dict(type="md5", expect="c0a5650f5a740a90671a0228680ed781")),
 
     # "test110_1351_494": dict(
-    # note : resolution change stream
+    # note : inter-resolution change stream
     #     source=find_conformance_stream("test110_1351_494.ivf"),
     #     format="I420", width=367, height=150, frames=23,
     #     metric=dict(type="md5", expect="751f458520e08fafdd102c0b7addeb70")),
 
     # "test1108_1301_1348": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1108_1301_1348.ivf"),
     #     format="I420", width=392, height=471, frames=28,
     #     metric=dict(type="md5", expect="2b85584452b684a36f2bbd96474f3aa0")),
@@ -336,11 +291,11 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         format="I420", width=207, height=168, frames=7,
         metric=dict(type="md5", expect="4dd3417a87454f7f6d1e06ec8788f58a")),
 
-    # "test1116_862_980": dict(
+    "test1116_862_980": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test1116_862_980.ivf"),
-    #     format="I420", width=506, height=512, frames=30,
-    #     metric=dict(type="md5", expect="20f64e5c09130218cd14a7f08e43bebc")),
+        source=find_conformance_stream("test1116_862_980.ivf"),
+        format="I420", width=506, height=512, frames=30,
+        metric=dict(type="md5", expect="6ab7ee5b55f0825cd03bfc9a1a9e9a96", numbytes=-1)),
 
     "test1119": dict(
         source=find_conformance_stream("test1119.ivf"),
@@ -353,25 +308,25 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="1ff35d3458bd942c65b1b73138faa2ad")),
 
     # "test1123_1341": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1123_1341.ivf"),
     #     format="I420", width=328, height=333, frames=16,
     #     metric=dict(type="md5", expect="268fd753542bbc069b0e7cb407f033a3")),
 
     # "test1124_1268": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1124_1268.ivf"),
     #     format="I420", width=424, height=454, frames=17,
     #     metric=dict(type="md5", expect="36517520adba9d5f51cf164a737ee6e8")),
 
     # "test1125_384_32": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1125_384_32.ivf"),
     #     format="I420", width=204, height=1188, frames=26,
     #     metric=dict(type="md5", expect="18b4f0845a9e318cbcc9d4d436682f49")),
 
     # "test113_1266": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test113_1266.ivf"),
     #     format="I420", width=378, height=201, frames=18,
     #     metric=dict(type="md5", expect="a40a30d7c1e2b269434ed947c14a3859")),
@@ -382,97 +337,97 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="4a0f4fe94da443e029d0577088840fbf")),
 
     # "test1134_134_1701": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1134_134_1701.ivf"),
     #     format="I420", width=241, height=144, frames=25,
     #     metric=dict(type="md5", expect="9debda167cfdffda91fa68310bb307ee")),
 
     # "test1136_353_623": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1136_353_623.ivf"),
     #     format="I420", width=472, height=312, frames=25,
     #     metric=dict(type="md5", expect="56ca8cc52e8aec9bb2e8ef12d603ab30")),
 
     # "test1145_801_392": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1136_353_623.ivf"),
     #     format="I420", width=192, height=439, frames=28,
     #     metric=dict(type="md5", expect="cce8e04feb3c5fa8051ef737e72e010c")),
 
     # "test1147_705": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1147_705.ivf"),
     #     format="I420", width=512, height=313, frames=18,
     #     metric=dict(type="md5", expect="96352967a697b61833341a6379e6d800")),
 
     # "test1149": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1149.ivf"),
     #     format="I420", width=392, height=501, frames=9,
     #     metric=dict(type="md5", expect="a878d2590609d1fe41c07816b03eaeb8")),
 
     # "test1150_1688_90": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1150_1688_90.ivf"),
     #     format="I420", width=488, height=207, frames=27,
     #     metric=dict(type="md5", expect="eac03075439ce06ae6f695436a8d6aaf")),
 
     # "test1159_1017": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1159_1017.ivf"),
     #     format="I420", width=184, height=430, frames=19,
     #     metric=dict(type="md5", expect="d97b2f9316403f19a5758a0d5fd7623c")),
 
     # "test1161": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1161.ivf"),
     #     format="I420", width=250, height=371, frames=8,
     #     metric=dict(type="md5", expect="d6f35f1cbc2113b2b851f01ac0ddb48e")),
 
     # "test1162_1226": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1162_1226.ivf"),
     #     format="I420", width=432, height=421, frames=16,
     #     metric=dict(type="md5", expect="0b8e85a5d8a8f3cf5cc8ed22f8714089")),
 
     # "test1163_199_1307": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1163_199_1307.ivf"),
     #     format="I420", width=456, height=192, frames=26,
     #     metric=dict(type="md5", expect="a9c07ea8d693351a759215cee6a08e01")),
 
     # "test1166": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1166.ivf"),
     #     format="I420", width=216, height=512, frames=10,
     #     metric=dict(type="md5", expect="3cf4e963fe4f8c2e3858a63e22e98870")),
 
     # "test1170_342_278": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1170_342_278.ivf"),
     #     format="I420", width=347, height=256, frames=27,
     #     metric=dict(type="md5", expect="10568b209480c2d9410e2c2bf5212bc6")),
 
     # "test1171_1024_1370": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1171_1024_1370.ivf"),
     #     format="I420", width=186, height=328, frames=26,
     #     metric=dict(type="md5", expect="ae856aadcde314bb377a8107a8a94e1b")),
 
     # "test1173": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1173.ivf"),
     #     format="I420", width=288, height=394, frames=9,
     #     metric=dict(type="md5", expect="6acfdc81699226c2422805fb0b6b8017")),
 
     # "test1174_584": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1174_584.ivf"),
     #     format="I420", width=200, height=467, frames=16,
     #     metric=dict(type="md5", expect="3b65bb566193f083a9b682f0a4501e55")),
 
     # "test1177_793_46": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1177_793_46.ivf"),
     #     format="I420", width=493, height=211, frames=26,
     #     metric=dict(type="md5", expect="f5eac22caa0dc6f732bbcc30c19cc563")),
@@ -483,7 +438,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="5405fed856912d9b8134e4567ff2383e")),
 
     # "test1180_1371": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1180_1371.ivf"),
     #     format="I420", width=221, height=296, frames=19,
     #     metric=dict(type="md5", expect="b708cde6406d74137c8d21539d3ce165")),
@@ -493,44 +448,44 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         format="I420", width=145, height=182, frames=9,
         metric=dict(type="md5", expect="723469bf696890e34433e90a1a6a617c")),
 
-    # "test1187_1133": dict(
+    "test1187_1133": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test1187_1133.ivf"),
-    #     format="I420", width=504, height=235, frames=16,
-    #     metric=dict(type="md5", expect="464c320d7ff09fa82c43ccdde2ee65be")),
+        source=find_conformance_stream("test1187_1133.ivf"),
+        format="I420", width=504, height=235, frames=16,
+        metric=dict(type="md5", expect="7172781ef3c2fde3463080d8b1d4ea33", numbytes=-1)),
 
     # "test1188_1694": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1188_1694.ivf"),
     #     format="I420", width=461, height=213, frames=17,
     #     metric=dict(type="md5", expect="d62fa6b2b5dff6c64c2d929059bfc2e8")),
 
     # "test1189_680_435": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1189_680_435.ivf"),
     #     format="I420", width=208, height=155, frames=26,
     #     metric=dict(type="md5", expect="a92630aa1dfcbfdc914176c7b0ec0296")),
 
     # "test1194_554": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1194_554.ivf"),
     #     format="I420", width=355, height=180, frames=17,
     #     metric=dict(type="md5", expect="21d6e0631c6e680a343a11fc71272c76")),
 
     # "test1196_925": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1196_925.ivf"),
     #     format="I420", width=368, height=168, frames=20,
     #     metric=dict(type="md5", expect="074b24d88ee6147d0fc1d5ff0f77a3fb")),
 
     # "test1197_25": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1197_25.ivf"),
     #     format="I420", width=372, height=247, frames=18,
     #     metric=dict(type="md5", expect="177677e672623a7a0cb59df0984bd5a5")),
 
     # "test119": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test119.ivf"),
     #     format="I420", width=200, height=400, frames=7,
     #     metric=dict(type="md5", expect="ae8679850bdc9eb4d4d77c89b7293fcd")),
@@ -541,7 +496,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="630c35b85ee8e722e4239bd36d151f42")),
 
     # "test1202_333": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1202_333.ivf"),
     #     format="I420", width=208, height=328, frames=19,
     #     metric=dict(type="md5", expect="5b11e27643bca1ecb07f9d6aa9021c49")),
@@ -552,31 +507,31 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="2040bb1b21bf732ccb7952be30d83ec3")),
 
     # "test1206_421": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1206_421.ivf"),
     #     format="I420", width=320, height=440, frames=16,
     #     metric=dict(type="md5", expect="ad59f5e405baf9459ff7725907d38d0c")),
 
     # "test1208_616_698": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1208_616_698.ivf"),
     #     format="I420", width=424, height=247, frames=25,
     #     metric=dict(type="md5", expect="704b6c4920951afc58b7dfb2a7dcc2b9")),
 
     # "test1215_418_19": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1215_418_19.ivf"),
     #     format="I420", width=235, height=399, frames=28,
     #     metric=dict(type="md5", expect="b7a8f14adcf57cfe5fa588cf5d8ea68a")),
 
     # "test1220_78_1107": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1220_78_1107.ivf"),
     #     format="I420", width=323, height=360, frames=27,
     #     metric=dict(type="md5", expect="1ae3fbaba022ef46af4c0ab934377091")),
 
     # "test1221_414_1335": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1221_414_1335.ivf"),
     #     format="I420", width=500, height=251, frames=24,
     #     metric=dict(type="md5", expect="8d86f24efafa39a395f5ae61a1fb8782")),
@@ -592,7 +547,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="55810b0a3480eea69c39aa8100a245cc")),
 
     # "test1229_507_263": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1229_507_263.ivf"),
     #     format="I420", width=436, height=215, frames=26,
     #     metric=dict(type="md5", expect="0fe2a63a8d46dd55b9e50a8479bc7212")),
@@ -603,7 +558,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="2d85c950137f529a1c5c69b58830408d")),
 
     # "test1247_511_928": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1247_511_928.ivf"),
     #     format="I420", width=176, height=480, frames=28,
     #     metric=dict(type="md5", expect="9b6aec268215a9ab2ddb840e7846207c")),
@@ -624,73 +579,73 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="8d9473bd2728c3e7eb6b8a43ffd38e69")),
 
     # "test1265_1459_47": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1265_1459_47.ivf"),
     #     format="I420", width=152, height=424, frames=25,
     #     metric=dict(type="md5", expect="590f70e92f9ba08560706bb9ffd44f83")),
 
     # "test1267_1175_959": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1267_1175_959.ivf"),
     #     format="I420", width=224, height=320, frames=27,
     #     metric=dict(type="md5", expect="47321ee7bf7c86add815edb2e3f012fd")),
 
     # "test127_176": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test127_176.ivf"),
     #     format="I420", width=381, height=158, frames=18,
     #     metric=dict(type="md5", expect="c284a2e5723e3d0a46bdb5e7b7de8247")),
 
     # "test1276_723_1086": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1276_723_1086.ivf"),
     #     format="I420", width=256, height=291, frames=27,
     #     metric=dict(type="md5", expect="160eca24e76bff7503667f3bc17abccd")),
 
     # "test1277_1103_1711": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1277_1103_1711.ivf"),
     #     format="I420", width=296, height=274, frames=28,
     #     metric=dict(type="md5", expect="d2c40a47a81d144133055a26783af44e")),
 
     # "test1282_1040_1385": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1282_1040_1385.ivf"),
     #     format="I420", width=496, height=256, frames=26,
     #     metric=dict(type="md5", expect="a76eced4f4a91ecd35b9dd7bb01a79e5")),
 
     # "test1288_27_172": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1288_27_172.ivf"),
     #     format="I420", width=426, height=235, frames=27,
     #     metric=dict(type="md5", expect="2e8784ad6b1bd59025e59592c351971b")),
 
     # "test1291_715": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1291_715.ivf"),
     #     format="I420", width=335, height=185, frames=19,
     #     metric=dict(type="md5", expect="6fdf439940540b60e87c88548f61062d")),
 
     # "test1297_1525": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1297_1525.ivf"),
     #     format="I420", width=248, height=281, frames=17,
     #     metric=dict(type="md5", expect="aed6a3a2699f06b4e6e0b70dc6539d01")),
 
     # "test1299_667": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1299_667.ivf"),
     #     format="I420", width=208, height=308, frames=16,
     #     metric=dict(type="md5", expect="96baecc6adbeda9c6b3b94b3026822f7")),
 
     # "test130_13_344": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test130_13_344.ivf"),
     #     format="I420", width=264, height=303, frames=28,
     #     metric=dict(type="md5", expect="494bdb70542d3a02e9f8510d4fa725fe")),
 
     # "test1303_194": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1303_194.ivf"),
     #     format="I420", width=272, height=342, frames=17,
     #     metric=dict(type="md5", expect="2df408ab4ca86613cbc3b32ee0a7cac3")),
@@ -701,49 +656,49 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="8a20107694d5a3fcdc3d8e22b9774e15")),
 
     # "test1310_886_293": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1310_886_293.ivf"),
     #     format="I420", width=256, height=217, frames=28,
     #     metric=dict(type="md5", expect="40b90d5ebd6393e77c335ab1325ccda0")),
 
     # "test1648_820_964": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test1648_820_964.ivf"),
     #     format="I420", width=504, height=160, frames=26,
     #     metric=dict(type="md5", expect="a68f9012664421c0cfe681036358be7a")),
 
     # "test972_186_1942": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test972_186_1942.ivf"),
     #     format="I420", width=305, height=110, frames=28,
     #     metric=dict(type="md5", expect="c2e20c8182f1180f6ffd86ce06bb4264")),
 
     # "test96_2264": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test96_2264.ivf"),
     #     format="I420", width=41, height=104, frames=19,
     #     metric=dict(type="md5", expect="494c376a614838fd1129b5692d4f67de")),
 
     # "test950_3702": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test950_3702.ivf"),
     #     format="I420", width=105, height=253, frames=19,
     #     metric=dict(type="md5", expect="4de5631812c0e1c83f226ec43e9c4d1e")),
 
     # "test948_1777": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test948_1777.ivf"),
     #     format="I420", width=336, height=8, frames=19,
     #     metric=dict(type="md5", expect="03a827778b221c4835d730617fb99914")),
 
     # "test935_3273_2359": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test935_3273_2359.ivf"),
     #     format="I420", width=239, height=104, frames=29,
     #     metric=dict(type="md5", expect="424488ccb30bf083a116637e7de49071")),
 
     # "test934_1254": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test934_1254.ivf"),
     #     format="I420", width=59, height=156, frames=17,
     #     metric=dict(type="md5", expect="fea2414817b828813a4633bd081b5497")),
@@ -759,13 +714,13 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="2f881aab76f69e17ba284e39aa69632a")),
 
     # "test919_1403": dict(
-    # #  note : resolution change stream
+    # #  note : inter-resolution change stream
     #     source=find_conformance_stream("test919_1403.ivf"),
     #     format="I420", width=496, height=16, frames=17,
     #     metric=dict(type="md5", expect="38df7c82f8b91840737c7c5f9cd7ecdf")),
 
     # "test916_1554_4977": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test916_1554_4977.ivf"),
     #     format="I420", width=278, height=81, frames=26,
     #     metric=dict(type="md5", expect="de78394237a29673fb12afed5f3fe145")),
@@ -780,14 +735,14 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         format="I420", width=285, height=59, frames=8,
         metric=dict(type="md5", expect="074ad30af09afcf985ba82eb67ba396d")),
 
-    # "test9": dict(
+    "test9": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test9.ivf"),
-    #     format="I420", width=158, height=237, frames=9,
-    #     metric=dict(type="md5", expect="2432e5f2d4b4195916b3b8e3fc441f38")),
+        source=find_conformance_stream("test9.ivf"),
+        format="I420", width=158, height=237, frames=9,
+        metric=dict(type="md5", expect="2432e5f2d4b4195916b3b8e3fc441f38", numbytes=-1)),
 
     # "test895_761_5082": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test895_761_5082.ivf"),
     #     format="I420", width=128, height=40, frames=27,
     #     metric=dict(type="md5", expect="636d0ecbc6828215f07f8d6b36e465e2")),
@@ -798,25 +753,25 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="fcfb06cbc63c0f253ceac7305c39f001")),
 
     # "test886_1890_1138": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test886_1890_1138.ivf"),
     #     format="I420", width=50, height=82, frames=25,
     #     metric=dict(type="md5", expect="c743c2bd7adcaa8cfd9e143c1c4f91c8")),
 
     # "test879_3494_5377": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test879_3494_5377.ivf"),
     #     format="I420", width=18, height=63, frames=26,
     #     metric=dict(type="md5", expect="9f28d536e586d7b487b6fa000f221aa5")),
 
     # "test865_2539": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test865_2539.ivf"),
     #     format="I420", width=73, height=128, frames=18,
     #     metric=dict(type="md5", expect="c8167b046a06cdd49cbce031718f60f9")),
 
     # "test863_1094": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test863_1094.ivf"),
     #     format="I420", width=408, height=40, frames=19,
     #     metric=dict(type="md5", expect="041fb23e32a9ebd5c8f0848208eede51")),
@@ -827,73 +782,73 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="b4bd71b3ac07a8631aed11c087a03aba")),
 
     # "test85_3306": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test85_3306.ivf"),
     #     format="I420", width=173, height=64, frames=20,
     #     metric=dict(type="md5", expect="ab33bc685bbe589cb51e8dc733e2e47d")),
 
-    # "test842": dict(
+    "test842": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test842.ivf"),
-    #     format="I420", width=412, height=141, frames=10,
-    #     metric=dict(type="md5", expect="e2f5693add7f435885b2db122847f724")),
+        source=find_conformance_stream("test842.ivf"),
+        format="I420", width=412, height=141, frames=10,
+        metric=dict(type="md5", expect="e2f5693add7f435885b2db122847f724", numbytes=-1)),
 
     # "test841_3607": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test841_3607.ivf"),
     #     format="I420", width=280, height=178, frames=17,
     #     metric=dict(type="md5", expect="1a9ecfd9c41d3dad518b7275ab3f07c6")),
 
     # "test824_4116": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test824_4116.ivf"),
     #     format="I420", width=57, height=120, frames=17,
     #     metric=dict(type="md5", expect="4395013b5b7c16905eb9cf172f73a5c7")),
 
     # "test820_1998": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test820_1998.ivf"),
     #     format="I420", width=202, height=37, frames=20,
     #     metric=dict(type="md5", expect="7b2c03d7bd439557f77d1fec756893e6")),
 
     # "test804_2167": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test804_2167.ivf"),
     #     format="I420", width=299, height=80, frames=17,
     #     metric=dict(type="md5", expect="229cb333cde7e54907be88b9446caa9b")),
 
     # "test788_1615": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test788_1615.ivf"),
     #     format="I420", width=88, height=32, frames=19,
     #     metric=dict(type="md5", expect="96cc20e04ef727ed6013758ada7ad021")),
 
     # "test783_4747": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test783_4747.ivf"),
     #     format="I420", width=299, height=99, frames=17,
     #     metric=dict(type="md5", expect="a7f19e49678a3ae086c78392aed36e52")),
 
     # "test781_3997": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test781_3997.ivf"),
     #     format="I420", width=184, height=120, frames=16,
     #     metric=dict(type="md5", expect="fa8a47f5cad5acff5a5c125220240934")),
 
     # "test779_310": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test779_310.ivf"),
     #     format="I420", width=247, height=223, frames=15,
     #     metric=dict(type="md5", expect="8779163cde80f176ece3e30e0c972945")),
 
     # "test778_2780_1895": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test778_2780_1895.ivf"),
     #     format="I420", width=37, height=128, frames=28,
     #     metric=dict(type="md5", expect="8987a894b535b106b02bdd90e697e34")),
 
     # "test776_3170": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test776_3170.ivf"),
     #     format="I420", width=416, height=16, frames=18,
     #     metric=dict(type="md5", expect="41bfdd8b20b025046e956f8492fb5d44")),
@@ -904,30 +859,31 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="8313eef599f1b97fb34a4f8ea62ca3e0")),
 
     # "test764_5134_4074": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test764_5134_4074.ivf"),
     #     format="I420", width=376, height=104, frames=26,
     #     metric=dict(type="md5", expect="97206828ad77a619985a86fa6672df1f")),
 
     # "test760_2967": dict(
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test760_2967.ivf"),
     #     format="I420", width=112, height=48, frames=19,
     #     metric=dict(type="md5", expect="4e6a8a5e17e36aca0c3e19d55628be2a")),
 
     # "test754_4443_182": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test754_4443_182.ivf"),
     #     format="I420", width=106, height=12, frames=27,
     #     metric=dict(type="md5", expect="cae1fd0426a8f6cdab0749f412ef9c21")),
 
     # "test746_3387": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test746_3387.ivf"),
     #     format="I420", width=114, height=54, frames=16,
     #     metric=dict(type="md5", expect="5fb4498ac62a9dfc448ec37e231927ae")),
 
     # "test730_1780": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test730_1780.ivf"),
     #     format="I420", width=375, height=163, frames=19,
     #     metric=dict(type="md5", expect="ac508eba066bf79941a28e7343c4ed6c")),
@@ -937,86 +893,86 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         format="I420", width=386, height=126, frames=10,
         metric=dict(type="md5", expect="6dbe84dea76de537de05ff88c41f121f")),
 
-    # "test728": dict(
-    #     #resolution change
-    #     source=find_conformance_stream("test728.ivf"),
-    #     format="I420", width=258, height=169, frames=9,
-    #     metric=dict(type="md5", expect="265d5f6f9fbb47e602122cfeeff28d76")),
+    "test728": dict(
+        #resolution change
+        source=find_conformance_stream("test728.ivf"),
+        format="I420", width=258, height=169, frames=9,
+        metric=dict(type="md5", expect="265d5f6f9fbb47e602122cfeeff28d76")),
 
     # "test727": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test727.ivf"),
     #     format="I420", width=224, height=40, frames=10,
     #     metric=dict(type="md5", expect="8fa4543650a03c4a06fa25051afb24ea")),
 
     # "test723_3834": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test723_3834.ivf"),
     #     format="I420", width=495, height=55, frames=18,
     #     metric=dict(type="md5", expect="30ec7964f45ce22563c4381b6bdda2a2")),
 
     # "test721_1180_878": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test721_1180_878.ivf"),
     #     format="I420", width=257, height=193, frames=28,
     #     metric=dict(type="md5", expect="84cde118827712085ab2c880a6f8c53c")),
 
     # "test719_93": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test719_93.ivf"),
     #     format="I420", width=257, height=76, frames=18,
     #     metric=dict(type="md5", expect="8a52397278c9ffb5311c948a928b8eb0")),
 
     # "test718_2146_2972": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test718_2146_2972.ivf"),
     #     format="I420", width=348, height=56, frames=26,
     #     metric=dict(type="md5", expect="0191b62a4d103d224065f3c72fccdd8c")),
 
     # "test714_4445_1457": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test714_4445_1457.ivf"),
     #     format="I420", width=332, height=50, frames=25,
     #     metric=dict(type="md5", expect="d600139cb889044da3f1d53575f2cb46")),
 
     # "test700_4804": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test700_4804.ivf"),
     #     format="I420", width=56, height=125, frames=19,
     #     metric=dict(type="md5", expect="8d17f17752de6e51dd8bf2c98d93ebf5")),
 
     # "test698_1920": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test698_1920.ivf"),
     #     format="I420", width=488, height=128, frames=19,
     #     metric=dict(type="md5", expect="dff0b4b593007d9d0b80ed22bc243cd3")),
 
     # "test69": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test69.ivf"),
     #     format="I420", width=168, height=100, frames=10,
     #     metric=dict(type="md5", expect="7e10905f8cdbe221e75fbca421e25999")),
 
     # "test68": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test68.ivf"),
     #     format="I420", width=312, height=57, frames=8,
     #     metric=dict(type="md5", expect="665be739b91c07179e18057ce8cafc77")),
 
     # "test664": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test664.ivf"),
     #     format="I420", width=243, height=8, frames=10,
     #     metric=dict(type="md5", expect="b300f3324fa19361c14e064aa5d46f7a")),
 
     # "test663_3667": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test663_3667.ivf"),
     #     format="I420", width=356, height=206, frames=18,
     #     metric=dict(type="md5", expect="a23507b75220a5e344c1ff7c49aeb4f4")),
 
     # "test655_422_55": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test655_422_55.ivf"),
     #     format="I420", width=327, height=1, frames=25,
     #     metric=dict(type="md5", expect="1fc01cd9fc38e594376ed524460ee2ec")),
@@ -1027,91 +983,91 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="3b3916642e50538992762e772722decd")),
 
     # "test652": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test652.ivf"),
     #     format="I420", width=199, height=24, frames=7,
     #     metric=dict(type="md5", expect="5dc671389312f51f9683724f1e929563")),
 
     # "test638": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test638.ivf"),
     #     format="I420", width=498, height=27, frames=8,
     #     metric=dict(type="md5", expect="db576b026f6b83fef6b27a29712e4f42")),
 
     # "test635_4677": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test635_4677.ivf"),
     #     format="I420", width=81, height=80, frames=18,
     #     metric=dict(type="md5", expect="80e29e0af7ec3ae070ec57909b3792df")),
 
     # "test634_2053": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test634_2053.ivf"),
     #     format="I420", width=362, height=32, frames=19,
     #     metric=dict(type="md5", expect="46d7dc4a02e8c6dca526f3ff41f3e497")),
 
     # "test63_4019_675": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test63_4019_675.ivf"),
     #     format="I420", width=375, height=187, frames=25,
     #     metric=dict(type="md5", expect="3093fe159826d91cdb9b2f214cc20783")),
 
-    # "test624_1971_281": dict(
+    "test624_1971_281": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test624_1971_281.ivf"),
-    #     format="I420", width=499, height=226, frames=28,
-    #     metric=dict(type="md5", expect="108f10370b89da5e3ec6ef995a539dd0")),
+        source=find_conformance_stream("test624_1971_281.ivf"),
+        format="I420", width=499, height=226, frames=28,
+        metric=dict(type="md5", expect="7deaa9a48ae440700879c9e7810e61a3", numbytes=-1)),
 
     # "test617_2424_1755": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test617_2424_1755.ivf"),
     #     format="I420", width=456, height=113, frames=30,
     #     metric=dict(type="md5", expect="32a8dbbd6a5534f12c6a4266e6580949")),
 
     # "test615_2573_5199": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test615_2573_5199.ivf"),
     #     format="I420", width=208, height=17, frames=27,
     #     metric=dict(type="md5", expect="b03c70c516266a8518d0b4299eec47fb")),
 
     # "test611_2145": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test611_2145.ivf"),
     #     format="I420", width=133, height=56, frames=19,
     #     metric=dict(type="md5", expect="4758e58b80b84162055a56c9b60336d3")),
 
     # "test6_2923": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test6_2923.ivf"),
     #     format="I420", width=4, height=139, frames=19,
     #     metric=dict(type="md5", expect="8ddc0d7d3c7651e9017c1d7c0e4b121f")),
 
     # "test586": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test586.ivf"),
     #     format="I420", width=416, height=88, frames=8,
     #     metric=dict(type="md5", expect="d350686a4c280919de26564ccbeaabaf")),
 
     # "test554_3934_1128": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test554_3934_1128.ivf"),
     #     format="I420", width=483, height=24, frames=26,
     #     metric=dict(type="md5", expect="d7362eb7b66570dbcbaa662830136004")),
 
     # "test551_2179": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test551_2179.ivf"),
     #     format="I420", width=28, height=51, frames=19,
     #     metric=dict(type="md5", expect="9f47b75c1bbf974912525c1beb762cc4")),
 
-    # "test5497": dict(
+    "test5497": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test5497.ivf"),
-    #     format="I420", width=367, height=493, frames=9,
-    #     metric=dict(type="md5", expect="9d090748434014862fd3aab76249000c")),
+        source=find_conformance_stream("test5497.ivf"),
+        format="I420", width=367, height=493, frames=9,
+        metric=dict(type="md5", expect="9d090748434014862fd3aab76249000c", numbytes=-1)),
 
     # "test5493_808": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5493_808.ivf"),
     #     format="I420", width=388, height=394, frames=18,
     #     metric=dict(type="md5", expect="3b873239efed78f7ad7e3d66ac05caa5")),
@@ -1122,7 +1078,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="d6982415597f0b644cc6132747f965c7")),
 
     # "test5489_2366_1792": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5489_2366_1792.ivf"),
     #     format="I420", width=478, height=446, frames=30,
     #     metric=dict(type="md5", expect="f42c3e9013dffc9013fb901fded6e656")),
@@ -1148,28 +1104,28 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="e71eb1945cfff7d2403a330d7c00e4b5")),
 
     # "test5473_4803_4279": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5473_4803_4279.ivf"),
     #     format="I420", width=375, height=444, frames=26,
     #     metric=dict(type="md5", expect="68855ae215a081b96e85cde4013605a8")),
 
     # "test5470_1968_4024": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5470_1968_4024.ivf"),
     #     format="I420", width=418, height=463, frames=28,
     #     metric=dict(type="md5", expect="c990845d703bc045f4812034922c317c")),
 
     # "test5465_3693": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5465_3693.ivf"),
     #     format="I420", width=344, height=63, frames=17,
     #     metric=dict(type="md5", expect="a300f6cd86aa612c4f250be6a99d7b2a")),
 
-    # "test5464_3427": dict(
+    "test5464_3427": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test5464_3427.ivf"),
-    #     format="I420", width=449, height=308, frames=16,
-    #     metric=dict(type="md5", expect="7a26503732134d074960d14021b1b7e9")),
+        source=find_conformance_stream("test5464_3427.ivf"),
+        format="I420", width=449, height=308, frames=16,
+        metric=dict(type="md5", expect="8a1618d70f38211af03535a3b0325b93", numbytes=-1)),
 
     "test5461": dict(
         source=find_conformance_stream("test5461.ivf"),
@@ -1177,7 +1133,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="51d0dd2c812bc1efe160674103173955")),
 
     # "test5459_5393": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5459_5393.ivf"),
     #     format="I420", width=356, height=484, frames=15,
     #     metric=dict(type="md5", expect="8885cb3fe384e15988883bdc2ebf8b75")),
@@ -1188,28 +1144,28 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="d716e59b7f0157557334530e0f218576")),
 
     # "test5448_4282": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5448_4282.ivf"),
     #     format="I420", width=372, height=337, frames=18,
     #     metric=dict(type="md5", expect="7132959d4441d457a3d925fcecf4c764")),
 
     # "test544_4950": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test544_4950.ivf"),
     #     format="I420", width=419, height=104, frames=17,
     #     metric=dict(type="md5", expect="251bd0afeedb52769806b08a81e1a168")),
 
     # "test5437_5233_4236": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5437_5233_4236.ivf"),
     #     format="I420", width=453, height=290, frames=26,
     #     metric=dict(type="md5", expect="596805220605f082c19a6384938bc11d")),
 
-    # "test5434_1053_1316": dict(
+    "test5434_1053_1316": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test5434_1053_1316.ivf"),
-    #     format="I420", width=436, height=432, frames=29,
-    #     metric=dict(type="md5", expect="a82ded8ec26863295db361d42f3f69ff")),
+        source=find_conformance_stream("test5434_1053_1316.ivf"),
+        format="I420", width=436, height=432, frames=29,
+        metric=dict(type="md5", expect="a82ded8ec26863295db361d42f3f69ff")),
 
     "test5428": dict(
         source=find_conformance_stream("test5428.ivf"),
@@ -1222,7 +1178,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="7ea601ffd1d272cc5e8de74b65beeed4")),
 
     # "test5426_1824_3233": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5426_1824_3233.ivf"),
     #     format="I420", width=234, height=44, frames=23,
     #     metric=dict(type="md5", expect="fbbfd2f42377ad840150532d75b43bd4")),
@@ -1233,37 +1189,37 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="8260e2bb715a92ef0e88a500cd7f95da")),
 
     # "test5422": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5422.ivf"),
     #     format="I420", width=392, height=88, frames=8,
     #     metric=dict(type="md5", expect="2b636643106c705edc7348e1cec972e0")),
 
     # "test5420_3760": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5420_3760.ivf"),
     #     format="I420", width=330, height=428, frames=16,
     #     metric=dict(type="md5", expect="6ce4be4cef5204d3e3762891ee9d618d")),
 
     # "test5419_3044_1708": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5419_3044_1708.ivf"),
     #     format="I420", width=297, height=271, frames=26,
     #     metric=dict(type="md5", expect="ceca5d83a6fe63fda4dc99b4a1b666f7")),
 
     # "test5412_585_2559": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5412_585_2559.ivf"),
     #     format="I420", width=344, height=486, frames=27,
     #     metric=dict(type="md5", expect="7fc842e189ba63c10e37c93f1b0cc918")),
 
     # "test541": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test541.ivf"),
     #     format="I420", width=240, height=61, frames=10,
     #     metric=dict(type="md5", expect="cdb58a9fad6bd145bc85dbeb658ef3bf")),
 
     # "test5409_1985_874": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5409_1985_874.ivf"),
     #     format="I420", width=315, height=403, frames=25,
     #     metric=dict(type="md5", expect="4eac3dfc93d94132d406f8a548d1a7e7")),
@@ -1274,13 +1230,13 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="fc21e39dba4a99b4f39e1a7bd4d75a66")),
 
     # "test5401_1902_672": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5401_1902_672.ivf"),
     #     format="I420", width=431, height=447, frames=27,
     #     metric=dict(type="md5", expect="149dad76b3750103a7948058cc4ab836")),
 
     # "test5400_572": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5400_572.ivf"),
     #     format="I420", width=456, height=104, frames=16,
     #     metric=dict(type="md5", expect="6ea0d8ee8577188c3a2e4df832cfbb95")),
@@ -1291,40 +1247,40 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="ed4b49d35d158ab8945a91881b0e15f1")),
 
     # "test5385_3763": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5385_3763.ivf"),
     #     format="I420", width=80, height=11, frames=16,
     #     metric=dict(type="md5", expect="9c6bab66fb3997cb129f3cdd182f93d5")),
 
     # "test5372_2472_2024": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5372_2472_2024.ivf"),
     #     format="I420", width=298, height=65, frames=28,
     #     metric=dict(type="md5", expect="625c5f503c8f4ead09c10f86bb936feb")),
 
     # "test5365_1865": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5365_1865.ivf"),
     #     format="I420", width=421, height=354, frames=18,
     #     metric=dict(type="md5", expect="eef9363dcb33b54277e95ad78505bc39")),
 
     # "test5363": dict(
-    #  note : resolution change stream
+    #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5363.ivf"),
     #     format="I420", width=287, height=119, frames=8,
     #     metric=dict(type="md5", expect="f3731619683bf89cc3942291dfd556fc")),
 
-    # "test5361_3922": dict(
+    "test5361_3922": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test5361_3922.ivf"),
-    #     format="I420", width=309, height=373, frames=17,
-    #     metric=dict(type="md5", expect="9e60e7ba9216022db0b821d1b9c43de7")),
+        source=find_conformance_stream("test5361_3922.ivf"),
+        format="I420", width=309, height=373, frames=17,
+        metric=dict(type="md5", expect="9bd153def61674b0b5243cc5057e8783", numbytes=-1)),
 
-    # "test5358_2363_678": dict(
+    "test5358_2363_678": dict(
     #  note : resolution change stream
-    #     source=find_conformance_stream("test5358_2363_678.ivf"),
-    #     format="I420", width=464, height=296, frames=28,
-    #     metric=dict(type="md5", expect="10315969f174087d1ac8ee7fa75d94df ")),
+        source=find_conformance_stream("test5358_2363_678.ivf"),
+        format="I420", width=464, height=296, frames=28,
+        metric=dict(type="md5", expect="215a82c948e1106b1df2826d5809d429", numbytes=-1)),
     "1080p": dict(
         source=find_conformance_stream("1080p.webm.es"),
         format="I420", width=1920, height=1080, frames=50,
@@ -2505,8 +2461,13 @@ media._get_test_spec("vp9", "decode", "8bit").update({
 ###vp9 10bit###
 # AVCv1 Bitstreams
 media._get_test_spec("vp9", "decode", "10bit").update({
+    "The_Redwoods": dict(
+        source=find_conformance_stream("The_Redwoods.ivf"),
+        format="I010", width=3840, height=1620, frames=100,
+        metric=dict(type="md5", expect="11b3a51118a394bac9e2a462b1e47f40")),
+
     # "test9995": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9995.ivf"),
     #     format="I010", width=374, height=96, frames=8,
     #     metric=dict(type="md5", expect="286ccdc0f18ce1cea2588bdf2c35c647")),
@@ -2515,12 +2476,12 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=167, height=150, frames=7,
         metric=dict(type="md5", expect="683e766c02e8aace82cc49f67de8a94f")),
     # "test9971_9697_8728": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9971_9697_8728.ivf"),
     #     format="I010", width=437, height=215, frames=25,
     #     metric=dict(type="md5", expect="7652191ff1cba2ce7901bc6afcb967b6")),
     # "test9963_5593": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9963_5593.ivf"),
     #     format="I010", width=63, height=178, frames=18,
     #     metric=dict(type="md5", expect="414f92aa929ed99ca9a0f54616f43cb9")),
@@ -2529,112 +2490,112 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=400, height=493, frames=8,
         metric=dict(type="md5", expect="9ace4aae7efee4c34bdcbac5c4769ff6")),
     # "test9957_15235_1991": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9957_15235_1991.ivf"),
     #     format="I010", width=109, height=233, frames=29,
     #     metric=dict(type="md5", expect="05e7d3351ec9eb6b400f2d4c5ad52782")),
     # "test9953_15386": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9953_15386.ivf"),
     #     format="I010", width=240, height=15, frames=19,
     #     metric=dict(type="md5", expect="d6ae85a137c560de79fe450c2cd2e9c8")),
     # "test9949_8681": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9949_8681.ivf"),
     #     format="I010", width=160, height=88, frames=18,
     #     metric=dict(type="md5", expect="9d5157ea22d001d1338a82fa90061bfa")),
     # "test9927_11132_6437": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9927_11132_6437.ivf"),
     #     format="I010", width=22, height=80, frames=27,
     #     metric=dict(type="md5", expect="e57af0c5fbdff257ed96c216f8c1ce14")),
     # "test9916_9074_6349": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9916_9074_6349.ivf"),
     #     format="I010", width=237, height=39, frames=24,
     #     metric=dict(type="md5", expect="66fd0314f0e6cf4ce019a5500b5ec3d2")),
     # "test9909_9037_12755": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9909_9037_12755.ivf"),
     #     format="I010", width=416, height=104, frames=26,
     #     metric=dict(type="md5", expect="d9e94fa9fee021f2fb76de40fbd37705")),
     # "test9892_11303_10034": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9892_11303_10034.ivf"),
     #     format="I010", width=312, height=107, frames=25,
     #     metric=dict(type="md5", expect="c341f32a2c7a782ccc62c2fba6c1f652")),
     # "test9873": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9873.ivf"),
     #     format="I010", width=361, height=40, frames=9,
     #     metric=dict(type="md5", expect="fc7a637dd44f25a9aa9707fa5b0e70f1")),
     # "test9866_5671": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9866_5671.ivf"),
     #     format="I010", width=330, height=11, frames=19,
     #     metric=dict(type="md5", expect="b1277b96626ee6740f0410aab423c496")),
-    # "test985_2401_3178": dict(
-    # resolution change
-    #     source=find_conformance_stream("test985_2401_3178.ivf"),
-    #     format="I010", width=504, height=299, frames=27,
-    #     metric=dict(type="md5", expect="75a31c83aac08f166cff157cc2161028")),
+    "test985_2401_3178": dict(
+    # note : resolution change
+        source=find_conformance_stream("test985_2401_3178.ivf"),
+        format="I010", width=504, height=299, frames=27,
+        metric=dict(type="md5", expect="5fa48250031a4d1b9835a3e57b64b8bf", numbytes=-1)),
     # "test9829_14548": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9829_14548.ivf"),
     #     format="I010", width=480, height=64, frames=17,
     #     metric=dict(type="md5", expect="54ab9c7289c83fe6e46498b8e185b9ba")),
     # "test9813_609": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9813_609.ivf"),
     #     format="I010", width=304, height=76, frames=18,
     #     metric=dict(type="md5", expect="3a3ef1e1a4db81c3a1d9e802ec359717")),
     # "test9809_6289_9097": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9809_6289_9097.ivf"),
     #     format="I010", width=129, height=128, frames=27,
     #     metric=dict(type="md5", expect="b8fd48ec7fcccb0483f0642059abb5ad")),
     # "test9793": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9793.ivf"),
     #     format="I010", width=24, height=79, frames=10,
     #     metric=dict(type="md5", expect="0f58b37b053246db157b2dd2a92138c9")),
     # "test9787_474_6212": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9787_474_6212.ivf"),
     #     format="I010", width=32, height=128, frames=26,
     #     metric=dict(type="md5", expect="63a9885678921af425e9fad4e4aa1b14")),
     # "test9783_3084": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9783_3084.ivf"),
     #     format="I010", width=66, height=216, frames=18,
     #     metric=dict(type="md5", expect="97a5216742112896ac4a28875ffd8dc9")),
     # "test978_13319": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test978_13319.ivf"),
     #     format="I010", width=376, height=418, frames=17,
     #     metric=dict(type="md5", expect="77206e108ed2a68af4c0b56194c7aadc")),
     # "test9765": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9765.ivf"),
     #     format="I010", width=104, height=112, frames=9,
     #     metric=dict(type="md5", expect="1b609da63b69db5689153cb1324376b6")),
     # "test9759": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9759.ivf"),
     #     format="I010", width=56, height=34, frames=10,
     #     metric=dict(type="md5", expect="bc730be9afeaa2272ede186960d38d48")),
     # "test9741": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9741.ivf"),
     #     format="I010", width=208, height=40, frames=7,
     #     metric=dict(type="md5", expect="ae19e4bd64b680c3c2ffe4d1e8271c3f")),
     # "test9723_15252": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9723_15252.ivf"),
     #     format="I010", width=448, height=50, frames=20,
     #     metric=dict(type="md5", expect="95b4ca3a9f622e616246b89ea86e6705")),
     # "test9722": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9722.ivf"),
     #     format="I010", width=117, height=24, frames=10,
     #     metric=dict(type="md5", expect="8666cd23a4104cd43e02aeb119d4ea61")),
@@ -2647,17 +2608,17 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=486, height=36, frames=9,
         metric=dict(type="md5", expect="59b9de59d9ebf3b04f872489861e8948")),
     # "test9663_15196_14082": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9663_15196_14082.ivf"),
     #     format="I010", width=363, height=110, frames=30,
     #     metric=dict(type="md5", expect="5aa55400c45ab46e85fe886d1ad40903")),
     # "test9662": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9662.ivf"),
     #     format="I010", width=199, height=24, frames=10,
     #     metric=dict(type="md5", expect="415a7e4eea735e1eef0d1faccb671ceb")),
     # "test965": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test965.ivf"),
     #     format="I010", width=297, height=93, frames=10,
     #     metric=dict(type="md5", expect="30cdd3bd8dbf727f9573bdaa6894b020")),
@@ -2666,7 +2627,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=110, height=112, frames=10,
         metric=dict(type="md5", expect="ed2ea17e98d393455d704b1542ab565b")),
     # "test9648_2763": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9648_2763.ivf"),
     #     format="I010", width=113, height=232, frames=17,
     #     metric=dict(type="md5", expect="2458ccd9b93e3e66e759a151cfb3f8e2")),
@@ -2679,42 +2640,42 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=511, height=145, frames=8,
         metric=dict(type="md5", expect="998d5a3fa5f0bbb7fa9159fd2eb34c4d")),
     # "test9640_2205": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9640_2205.ivf"),
     #     format="I010", width=390, height=24, frames=16,
     #     metric=dict(type="md5", expect="8ddc0a7c6fad6273342d515803fc7737")),
     # "test9628_693": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9628_693.ivf"),
     #     format="I010", width=432, height=64, frames=19,
     #     metric=dict(type="md5", expect="63f7e4ab9390ddd99973b940c0d0bb60")),
     # "test962_14631": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test962_14631.ivf"),
     #     format="I010", width=445, height=452, frames=17,
     #     metric=dict(type="md5", expect="12600ee5b408f05e804bab6cbebcf5ce")),
     # "test9615": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9615.ivf"),
     #     format="I010", width=363, height=56, frames=7,
     #     metric=dict(type="md5", expect="e2aea0ab9ced65e722835a180cf4a0f8")),
-    # "test9614_12120": dict(
-    # resolution change
-    #     source=find_conformance_stream("test9614_12120.ivf"),
-    #     format="I010", width=414, height=256, frames=17,
-    #     metric=dict(type="md5", expect="cf764df74bc2236c09a3bae5d81c77fd")),
+    "test9614_12120": dict(
+    # note : resolution change
+        source=find_conformance_stream("test9614_12120.ivf"),
+        format="I010", width=414, height=256, frames=17,
+        metric=dict(type="md5", expect="4b4dc68eb868c544db839be39c0aa5ee", numbytes=-1)),
     # "test9607_8326_5125": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9607_8326_5125.ivf"),
     #     format="I010", width=256, height=125, frames=27,
     #     metric=dict(type="md5", expect="1614f026487d052131e822ba96ba8f86")),
     # "test96_8850_6267": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test96_8850_6267.ivf"),
     #     format="I010", width=103, height=8, frames=25,
     #     metric=dict(type="md5", expect="c88f3909eb5290902d9062ef6f687be8")),
     # "test9564": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9564.ivf"),
     #     format="I010", width=11, height=28, frames=9,
     #     metric=dict(type="md5", expect="4046bf27d81f337bb9dcdc6d36001ed6")),
@@ -2723,12 +2684,12 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=361, height=102, frames=9,
         metric=dict(type="md5", expect="ee11c1ca978f1279bee0f09010d1713a")),
     # "test9539": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9539.ivf"),
     #     format="I010", width=416, height=4, frames=7,
     #     metric=dict(type="md5", expect="927c3fa63a2b8527b0cf2f939654c063")),
     # "test9538_10101": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9538_10101.ivf"),
     #     format="I010", width=280, height=80, frames=19,
     #     metric=dict(type="md5", expect="093819cb195d2b4d18cd4aa2e8ab6b77")),
@@ -2737,27 +2698,27 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=110, height=61, frames=9,
         metric=dict(type="md5", expect="13531b4a0531635926e7480df84ecda5")),
     # "test9511_14707": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9511_14707.ivf"),
     #     format="I010", width=192, height=4, frames=18,
     #     metric=dict(type="md5", expect="2f1c58cd207f659b54ba154087c7f784")),
     # "test9506_9890_11648": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9506_9890_11648.ivf"),
     #     format="I010", width=466, height=48, frames=26,
     #     metric=dict(type="md5", expect="d6a80b45b29355c946143084d5e256ca")),
     # "test9497_7612_13830": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9497_7612_13830.ivf"),
     #     format="I010", width=383, height=92, frames=26,
     #     metric=dict(type="md5", expect="cc4fefbc0734a4a7964dbc92662b19eb")),
     # "test9461_2063": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9461_2063.ivf"),
     #     format="I010", width=442, height=203, frames=18,
     #     metric=dict(type="md5", expect="227d9f6d0a6c197418246e4f84c6a404")),
     # "test9449_11833_752": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9449_11833_752.ivf"),
     #     format="I010", width=377, height=64, frames=29,
     #     metric=dict(type="md5", expect="1621b16525d388f1b7ed63c121673619")),
@@ -2766,17 +2727,17 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=272, height=241, frames=10,
         metric=dict(type="md5", expect="4cf0fe8b39ae767264422a4f513c12b7")),
     # "test9420": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9420.ivf"),
     #     format="I010", width=173, height=128, frames=9,
     #     metric=dict(type="md5", expect="ccf2a31de9617ef0122524c71d679b5e")),
     # "test9416_1019": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9416_1019.ivf"),
     #     format="I010", width=59, height=56, frames=18,
     #     metric=dict(type="md5", expect="09b2b83d4c581bb8d59e22cc1d862dc4")),
     # "test9408_11193_6806": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9408_11193_6806.ivf"),
     #     format="I010", width=73, height=80, frames=24,
     #     metric=dict(type="md5", expect="09bde762a585633aab91659fd0862995")),
@@ -2785,7 +2746,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=448, height=239, frames=10,
         metric=dict(type="md5", expect="ea42c62d9ae78279d8315cb94d649e47")),
     # "test9381_12301_14909": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9381_12301_14909.ivf"),
     #     format="I010", width=355, height=56, frames=28,
     #     metric=dict(type="md5", expect="25d4d4aa661d59a7ceceb9c5bb3ec3b3")),
@@ -2798,12 +2759,12 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=480, height=116, frames=10,
         metric=dict(type="md5", expect="5f6ea3682faa1e680b5e00a82b075418")),
     # "test9346_15295_10311": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9346_15295_10311.ivf"),
     #     format="I010", width=40, height=64, frames=27,
     #     metric=dict(type="md5", expect="45559bde1655a110fec9a12049bd6839")),
     # "test9333_1578_8276": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9333_1578_8276.ivf"),
     #     format="I010", width=400, height=128, frames=27,
     #     metric=dict(type="md5", expect="4ff6f93e498626a18127dc21704308ff")),
@@ -2816,92 +2777,92 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=434, height=365, frames=8,
         metric=dict(type="md5", expect="d48cee925ffb2c4ab59fbb4c85dacce0")),
     # "test9318_15199_8683": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9318_15199_8683.ivf"),
     #     format="I010", width=296, height=120, frames=27,
     #     metric=dict(type="md5", expect="51779071ecaad327e444f84275fb04ce")),
     # "test9314_5539": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9314_5539.ivf"),
     #     format="I010", width=444, height=100, frames=18,
     #     metric=dict(type="md5", expect="e2db8823ad835870291ee1826af5aeb4")),
     # "test9297_14739": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9297_14739.ivf"),
     #     format="I010", width=253, height=48, frames=16,
     #     metric=dict(type="md5", expect="d29e837ed23407671bac43946e595689")),
     # "test929": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test929.ivf"),
     #     format="I010", width=470, height=72, frames=10,
     #     metric=dict(type="md5", expect="bc529c47a256c763a5433b0f335a4cb9")),
     # "test9281_6459": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9281_6459.ivf"),
     #     format="I010", width=296, height=223, frames=17,
     #     metric=dict(type="md5", expect="11056cc8e043afcad11970fa46575e26")),
     # "test9280_15209_5362": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9280_15209_5362.ivf"),
     #     format="I010", width=56, height=48, frames=29,
     #     metric=dict(type="md5", expect="f164a31e00815ebbd61f6dfc0904915f")),
     # "test9274": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9274.ivf"),
     #     format="I010", width=360, height=24, frames=8,
     #     metric=dict(type="md5", expect="9fa3a0ae12c9967699ff9fe4133b8bf4")),
     # "test9255_115": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9255_115.ivf"),
     #     format="I010", width=112, height=102, frames=16,
     #     metric=dict(type="md5", expect="0c40b086787f86e1be8ce99cc22ef540")),
     # "test9246_10404_4047": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9246_10404_4047.ivf"),
     #     format="I010", width=256, height=186, frames=27,
     #     metric=dict(type="md5", expect="036b27e098d16cc8400eb9c6deeef891")),
     # "test9232_10555_13658": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9232_10555_13658.ivf"),
     #     format="I010", width=232, height=42, frames=25,
     #     metric=dict(type="md5", expect="5195483d8b99d611de5c5089f3087c3d")),
     # "test9228_7643": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9228_7643.ivf"),
     #     format="I010", width=32, height=121, frames=16,
     #     metric=dict(type="md5", expect="e24ed335e26e2e58796823d5a1ab0028")),
-    # "test9213": dict(
-    # resolution change
-    #     source=find_conformance_stream("test9213.ivf"),
-    #     format="I010", width=465, height=165, frames=9,
-    #     metric=dict(type="md5", expect="a0e800706e660166fa3b8dd1af027284")),
+    "test9213": dict(
+    # note : resolution change
+        source=find_conformance_stream("test9213.ivf"),
+        format="I010", width=465, height=165, frames=9,
+        metric=dict(type="md5", expect="a0e800706e660166fa3b8dd1af027284", numbytes=-1)),
     # "test9208_294_15229": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9208_294_15229.ivf"),
     #     format="I010", width=332, height=120, frames=27,
     #     metric=dict(type="md5", expect="ba10ade921ec975bceda1d86634e3ebb")),
     # "test9200_2947": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9200_2947.ivf"),
     #     format="I010", width=366, height=104, frames=15,
     #     metric=dict(type="md5", expect="822e959f848103e2fe3a33c604cd2041")),
     # "test9182_1639_675": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9182_1639_675.ivf"),
     #     format="I010", width=128, height=96, frames=26,
     #     metric=dict(type="md5", expect="7df36e6f6726aed29f70a339f2ae75da")),
     # "test9164": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9164.ivf"),
     #     format="I010", width=56, height=16, frames=8,
     #     metric=dict(type="md5", expect="3b5e5be730f740407f0608b71d517271")),
     # "test9163": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9163.ivf"),
     #     format="I010", width=40, height=76, frames=10,
     #     metric=dict(type="md5", expect="634f3b22a2b5ba4ed41b3814efc905f1")),
     # "test9155": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9155.ivf"),
     #     format="I010", width=136, height=108, frames=9,
     #     metric=dict(type="md5", expect="11daf8dd69808282b153d3f42e7869b7")),
@@ -2914,52 +2875,52 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=492, height=38, frames=8,
         metric=dict(type="md5", expect="47b7578022dc36cf58a80002512eb44d")),
     # "test9147_15266": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9147_15266.ivf"),
     #     format="I010", width=100, height=111, frames=19,
     #     metric=dict(type="md5", expect="0fd351c4243dc1f1d3bf540768781e2d")),
     # "test9145_5341": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9145_5341.ivf"),
     #     format="I010", width=318, height=118, frames=19,
     #     metric=dict(type="md5", expect="00dca42fc10b4b64cca99e02ee01961f")),
     # "test9135_8108_5507": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9135_8108_5507.ivf"),
     #     format="I010", width=186, height=52, frames=24,
     #     metric=dict(type="md5", expect="eb3b4047635276a32f2392498d0e21ff")),
     # "test9134_7334_1335": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9134_7334_1335.ivf"),
     #     format="I010", width=432, height=108, frames=26,
     #     metric=dict(type="md5", expect="70b8632a11f135622d1a396fafd537dc")),
     # "test9091_3591_15357": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9091_3591_15357.ivf"),
     #     format="I010", width=490, height=80, frames=25,
     #     metric=dict(type="md5", expect="35c81cf77ac265e15979516d94b87748")),
     # "test9090_14201_5276": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9090_14201_5276.ivf"),
     #     format="I010", width=102, height=241, frames=26,
     #     metric=dict(type="md5", expect="a319d8f933c2552573bab5a26f3ae6df")),
     # "test9088_13266": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9088_13266.ivf"),
     #     format="I010", width=487, height=8, frames=18,
     #     metric=dict(type="md5", expect="8149b6cf863b0a5ee4690282d864b29b")),
-    # "test9076": dict(
-    # resolution change
-    #     source=find_conformance_stream("test9076.ivf"),
-    #     format="I010", width=157, height=181, frames=9,
-    #     metric=dict(type="md5", expect="237ab6baaed9bc4679cc7deac4ce3b17")),
+    "test9076": dict(
+    # note : resolution change
+        source=find_conformance_stream("test9076.ivf"),
+        format="I010", width=157, height=181, frames=9,
+        metric=dict(type="md5", expect="237ab6baaed9bc4679cc7deac4ce3b17", numbytes=-1)),
     # "test9075_2786_9933": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9075_2786_9933.ivf"),
     #     format="I010", width=301, height=182, frames=29,
     #     metric=dict(type="md5", expect="a287fcbc3dddc9c7dc7cbfa1fbf81c35")),
     # "test9070_10714": dict(
-    #     #resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9070_10714.ivf"),
     #     format="I010", width=256, height=217, frames=19,
     #     metric=dict(type="md5", expect="18c9318d8dfc4f17d5f872b9babfcbfa")),
@@ -2972,17 +2933,17 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=114, height=210, frames=8,
         metric=dict(type="md5", expect="2a66fc5ec1fbb8a0b9543fa58408faad")),
     # "test9046_13161_10871": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9046_13161_10871.ivf"),
     #     format="I010", width=483, height=111, frames=30,
     #     metric=dict(type="md5", expect="75ba2ad43d4e70d11fb89cc03c73045f")),
     # "test9036_3561_9713": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9036_3561_9713.ivf"),
     #     format="I010", width=447, height=88, frames=25,
     #     metric=dict(type="md5", expect="2910ebac17f8260950b5a3e838802e8e")),
     # "test9023_5807_14635": dict(
-    # resolution change
+    # note : inter-resolution change
     #     source=find_conformance_stream("test9023_5807_14635.ivf"),
     #     format="I010", width=96, height=61, frames=28,
     #     metric=dict(type="md5", expect="d0d44caa91a623e267ba883b349214a8")),
@@ -2990,16 +2951,15 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         source=find_conformance_stream("crowd_run_1080X504_fr30_bd10_odd_size_l3.ivf"),
         format="I010", width=1080, height=504, frames=300,
         metric=dict(type="md5", expect="d52b50b3a519531b501d3ea17fd1eacf")),
-    # "crowd_run_1080X512_fr30_bd10_8buf_l3": dict(
-    # resolution change
-    #     source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_8buf_l3.ivf"),
-    #     format="I010", width=1080, height=512, frames=300,
-    #     metric=dict(type="md5", expect="bec2d1d44025c440107eac029d5f89d7")),
-    # "crowd_run_1080X512_fr30_bd10_frm_resize_l3": dict(
-    # resolution change
-    #     source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_frm_resize_l3.ivf"),
-    #     format="I010", width=1080, height=512, frames=300,
-    #     metric=dict(type="md5", expect="e636d2789fde24813af4c8fb23465183")),
+    "crowd_run_1080X512_fr30_bd10_8buf_l3": dict(
+        source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_8buf_l3.ivf"),
+        format="I010", width=1080, height=512, frames=300,
+        metric=dict(type="md5", expect="bec2d1d44025c440107eac029d5f89d7")),
+    "crowd_run_1080X512_fr30_bd10_frm_resize_l3": dict(
+    # note : resolution change
+        source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_frm_resize_l3.ivf"),
+        format="I010", width=1080, height=512, frames=300,
+        metric=dict(type="md5", expect="aafac144bfbd6e46e558c1dbc6dbb768", numbytes=-1)),
     "crowd_run_1080X512_fr30_bd10_gf_dist_4_l3": dict(
         source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_gf_dist_4_l3.ivf"),
         format="I010", width=1080, height=512, frames=300,
@@ -3008,20 +2968,20 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_sub8X8_l3.ivf"),
         format="I010", width=1080, height=512, frames=300,
         metric=dict(type="md5", expect="32581754f403ed6409bef3121a0b4893")),
-    # "crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3": dict(
-    #     #resolution change
-    #     source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3.ivf"),
-    #     format="I010", width=1080, height=512, frames=300,
-    #     metric=dict(type="md5", expect="0e990246981d8bbcd5c0748277d2c92f")),
+    "crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3": dict(
+    # note : resolution change
+        source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3.ivf"),
+        format="I010", width=1080, height=512, frames=300,
+        metric=dict(type="md5", expect="0e990246981d8bbcd5c0748277d2c92f", numbytes=-1)),
     "crowd_run_1280X768_fr30_bd10_8buf_l31": dict(
         source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_8buf_l31.ivf"),
         format="I010", width=1280, height=768, frames=300,
         metric=dict(type="md5", expect="8912fecfa4a5186ae9b8728ffd624c22")),
-    # "crowd_run_1280X768_fr30_bd10_frm_resize_l31": dict(
-    # resolution change
-    #     source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_frm_resize_l31.ivf"),
-    #     format="I010", width=1280, height=768, frames=300,
-    #     metric=dict(type="md5", expect="454d99248b0099246383a3f0b60c6492")),
+    "crowd_run_1280X768_fr30_bd10_frm_resize_l31": dict(
+    # note : resolution change
+        source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_frm_resize_l31.ivf"),
+        format="I010", width=1280, height=768, frames=300,
+        metric=dict(type="md5", expect="477d28f6e21618755b35d783b72b16a6", numbytes=-1)),
     "crowd_run_1280X768_fr30_bd10_gf_dist_4_l31": dict(
         source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_gf_dist_4_l31.ivf"),
         format="I010", width=1280, height=768, frames=300,
@@ -3034,11 +2994,11 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_sub8X8_l31.ivf"),
         format="I010", width=1280, height=768, frames=300,
         metric=dict(type="md5", expect="393dcc7cdaaae22e17d280de5288d155")),
-    # "crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31": dict(
-    # resolution change
-    #     source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31.ivf"),
-    #     format="I010", width=1280, height=768, frames=300,
-    #     metric=dict(type="md5", expect="da6d8966def5d3f72d5bb7eda6cda22a")),
+    "crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31": dict(
+    # note : resolution change
+        source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31.ivf"),
+        format="I010", width=1280, height=768, frames=300,
+        metric=dict(type="md5", expect="32bfe608e302c2afb71c073edf96dcdd", numbytes=-1)),
     "crowd_run_4088X2168_fr30_bd10_odd_size_l5_from136": dict(
         source=find_conformance_stream("crowd_run_4088X2168_fr30_bd10_odd_size_l5_from136.ivf"),
         format="I010", width=4088, height=2168, frames=59,
