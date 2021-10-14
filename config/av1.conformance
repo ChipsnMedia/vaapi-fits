@@ -27,7 +27,7 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source = find_conformance_stream("Main_8bits_453_HighRes_1929x128_r6009.ivf"),
         format = "I420", width = 1929, height = 128, frames = 10,
-        metric = dict(type = "md5", expect = "d0303505334b0a19cd3c85f95cd09e97", numbytes=-1)),
+        metric = dict(type = "md5", expect = "c228c902d07fc6915a722eaa32a68af8", numbytes=-1)),
 
     #  "Main_8bits_454_HighRes_1929x128_r6009" : dict(
     #    # note : ffmpeg error with Error while opening decoder
@@ -39,7 +39,7 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source = find_conformance_stream("Main_8bits_455_HighRes_1929x128_r6009.ivf"),
         format = "I420", width = 1929, height = 128, frames = 10,
-        metric = dict(type = "md5", expect = "815df0ac1011cb8ac94ccfedc424104f", numbytes=-1)),
+        metric = dict(type = "md5", expect = "61aad5aac76c4badde641b90826959d7", numbytes=-1)),
 
     #  "Main_8bits_456_HighRes_1929x128_r6009" : dict(
     #  # note : ffmpeg error with Error while opening decoder
@@ -1513,6 +1513,7 @@ media._get_test_spec("av1", "decode", "10bit").update({
     source = find_conformance_stream("Main_10bits_454_HighRes_1929x128_r6009.ivf"),
     format = "I010", width = 1929, height = 128, frames = 10,
     metric = dict(type = "md5", expect = "9b291dfa984108d739714caa18ddaf51")),
+
     # "Main_10bits_455_HighRes_1929x128_r6009" : dict(
     # # ffmpeg error (Failed to read extradata.)
     # source = find_conformance_stream("Main_10bits_455_HighRes_1929x128_r6009.ivf"),
