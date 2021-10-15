@@ -199,7 +199,11 @@ class EncoderTest(slash.Test):
     self.call_ffmpeg(iopts.format(**vars(self)), oopts.format(**vars(self)))
     if get_media()._debug_with_cnm_refc() == 1 or get_media()._verify_cnm_refc() == 1:
       # convert self.source NV12 to yuv420p
-      cmd_str = "ffmpeg -pix_fmt " + str(self.mformat) + " -s:v " + str(self.width) + "x" + str(self.height) + " -i " + str(self.va_yuv_name) + " -vframes " + str(self.frames) + " -c:v rawvideo -pix_fmt yuv420p " + str(self.va_yuv_name) + ".yuv420p.yuv -y"
+      if self.height == 1080:
+        cmd_str = "ffmpeg -pix_fmt " + str(self.mformat) + " -s:v " + str(self.width) + "x1088 -i " + str(self.va_yuv_name) + " -vframes " + str(self.frames) + " -c:v rawvideo -pix_fmt yuv420p " + str(self.va_yuv_name) + ".yuv420p.yuv -y"
+      else:
+        cmd_str = "ffmpeg -pix_fmt " + str(self.mformat) + " -s:v " + str(self.width) + "x" + str(self.height) + " -i " + str(self.va_yuv_name) + " -vframes " + str(self.frames) + " -c:v rawvideo -pix_fmt yuv420p " + str(self.va_yuv_name) + ".yuv420p.yuv -y"
+      print("run nv12 to yuv420p for cmodel : " + cmd_str)
       try:
         if os.system(cmd_str) == 0:
             ret = True
