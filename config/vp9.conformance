@@ -89,7 +89,8 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="385b340b7fc98e2d16bf128448ff6d04")),
 
     # "test1000_946": dict(
-    #     # note : inter-resolution change
+    # note : inter-resolution change
+    # note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg and decoder can't know reference frame information. it makes mismatch. intel decoder also has mismatch problem  
     #   source=find_conformance_stream("test1000_946.ivf"),
     #   format="I420", width=384, height=512, frames=18,
     #   metric=dict(type="md5", expect="930eb9a1fd8739c4838748115cefbca5")),
@@ -113,7 +114,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
     #     metric=dict(type="md5", expect="0eaa55607cbffcc829b1db27d175e156")),
 
     # "test1016": dict(
-    #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    #     # note : inter-resolution change
     #     source=find_conformance_stream("test1016.ivf"),
     #     format="I420", width=416, height=152, frames=9,
     #     metric=dict(type="md5", expect="e28e57e9be31906e35d1f2cc539c8dd9")),
@@ -294,7 +295,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="4dd3417a87454f7f6d1e06ec8788f58a")),
 
     # "test1116_862_980": dict(
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    #   note : inter-resolution change stream
     #     source=find_conformance_stream("test1116_862_980.ivf"),
     #     format="I420", width=506, height=512, frames=30,
     #     metric=dict(type="md5", expect="6ab7ee5b55f0825cd03bfc9a1a9e9a96", numbytes=-1)),
@@ -896,8 +897,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
         metric=dict(type="md5", expect="6dbe84dea76de537de05ff88c41f121f")),
 
     # "test728": dict(
-    # #  note : resolution change stream
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # #  note : inter-resolution change stream
     #     source=find_conformance_stream("test728.ivf"),
     #     format="I420", width=258, height=169, frames=9,
     #     metric=dict(type="md5", expect="68295f22df84b0d722b09b26aee1546f", numbytes=-1)),
@@ -1165,8 +1165,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
     #     metric=dict(type="md5", expect="596805220605f082c19a6384938bc11d")),
 
     # "test5434_1053_1316": dict(
-    # #  note : resolution change stream
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # #  note : inter-resolution change stream
     #     source=find_conformance_stream("test5434_1053_1316.ivf"),
     #     format="I420", width=436, height=432, frames=29,
     #     metric=dict(type="md5", expect="9b9b0c0ef99b81b5eebc05288cb9443b", numbytes=-1)),
@@ -1282,7 +1281,6 @@ media._get_test_spec("vp9", "decode", "8bit").update({
 
     # "test5358_2363_678": dict(
     # #  note : resolution change stream 
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
     #     source=find_conformance_stream("test5358_2363_678.ivf"),
     #     format="I420", width=464, height=296, frames=28,
     #     metric=dict(type="md5", expect="215a82c948e1106b1df2826d5809d429", numbytes=-1)),
@@ -2540,8 +2538,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
     #     format="I010", width=330, height=11, frames=19,
     #     metric=dict(type="md5", expect="b1277b96626ee6740f0410aab423c496")),
     # "test985_2401_3178": dict(
-    # # note : resolution change
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # # note : inter-resolution change
     #     source=find_conformance_stream("test985_2401_3178.ivf"),
     #     format="I010", width=504, height=299, frames=27,
     #     metric=dict(type="md5", expect="5fa48250031a4d1b9835a3e57b64b8bf", numbytes=-1)),
@@ -2666,8 +2663,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
     #     format="I010", width=363, height=56, frames=7,
     #     metric=dict(type="md5", expect="e2aea0ab9ced65e722835a180cf4a0f8")),
     # "test9614_12120": dict(
-    # # note : resolution change
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # # note : inter-resolution change
     #     source=find_conformance_stream("test9614_12120.ivf"),
     #     format="I010", width=414, height=256, frames=17,
     #     metric=dict(type="md5", expect="4b4dc68eb868c544db839be39c0aa5ee", numbytes=-1)),
@@ -2963,8 +2959,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=1080, height=512, frames=300,
         metric=dict(type="md5", expect="bec2d1d44025c440107eac029d5f89d7")),
     # "crowd_run_1080X512_fr30_bd10_frm_resize_l3": dict(
-    # # note : resolution change
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # # note : inter-resolution change
     #     source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_frm_resize_l3.ivf"),
     #     format="I010", width=1080, height=512, frames=300,
     #     metric=dict(type="md5", expect="aafac144bfbd6e46e558c1dbc6dbb768", numbytes=-1)),
@@ -2977,8 +2972,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=1080, height=512, frames=300,
         metric=dict(type="md5", expect="32581754f403ed6409bef3121a0b4893")),
     # "crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3": dict(
-    # # note : resolution change
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # # note : inter-resolution change
     #     source=find_conformance_stream("crowd_run_1080X512_fr30_bd10_sub8x8_sf_l3.ivf"),
     #     format="I010", width=1080, height=512, frames=300,
     #     metric=dict(type="md5", expect="0e990246981d8bbcd5c0748277d2c92f", numbytes=-1)),
@@ -2987,8 +2981,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=1280, height=768, frames=300,
         metric=dict(type="md5", expect="8912fecfa4a5186ae9b8728ffd624c22")),
     # "crowd_run_1280X768_fr30_bd10_frm_resize_l31": dict(
-    # # note : resolution change
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # # note : inter-resolution change
     #     source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_frm_resize_l31.ivf"),
     #     format="I010", width=1280, height=768, frames=300,
     #     metric=dict(type="md5", expect="477d28f6e21618755b35d783b72b16a6", numbytes=-1)),
@@ -3005,8 +2998,7 @@ media._get_test_spec("vp9", "decode", "10bit").update({
         format="I010", width=1280, height=768, frames=300,
         metric=dict(type="md5", expect="393dcc7cdaaae22e17d280de5288d155")),
     # "crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31": dict(
-    # # note : resolution change
-    # #  note : ffmpeg calls vaDestroyContext flow after a frame is decoded and then calls vaCreateContext flow but because some vaapi parameter is wrong from ffmpeg. it makes mismatch. intel decoder also has mismatch problem  
+    # # note : inter-resolution change
     #     source=find_conformance_stream("crowd_run_1280X768_fr30_bd10_sub8x8_sf_l31.ivf"),
     #     format="I010", width=1280, height=768, frames=300,
     #     metric=dict(type="md5", expect="32bfe608e302c2afb71c073edf96dcdd", numbytes=-1)),
