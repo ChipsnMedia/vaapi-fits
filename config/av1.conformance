@@ -83,13 +83,13 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_463_HighRes_2048x1088_r6009.ivf"),
         format="I420", width=2048, height=544, frames=10,
-        metric=dict(type="md5", expect="4a6c35576a9b4adec7909157afb23561", numbytes=-1)),
+        metric=dict(type="md5", expect="1db9963e0589d139f5180db35a63fc03", numbytes=-1)),
 
      "Main_8bits_464_HighRes_2048x1088_r6009" : dict(
          #note : resolution change
         source = find_conformance_stream("Main_8bits_464_HighRes_2048x1088_r6009.ivf"),
         format = "I420", width = 2048, height = 1088, frames = 10,
-        metric = dict(type = "md5", expect = "e8ae0cad7154e793387a7b0951777a6c", numbytes=-1)),
+        metric=dict(type="md5", expect="aa6a18ca8ae1082211f456b98619aa7c", numbytes=-1)),
 
     "Main_8bits_465_HighRes_1088x2048_r6009": dict(
         source=find_conformance_stream("Main_8bits_465_HighRes_1088x2048_r6009.ivf"),
@@ -111,7 +111,7 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_468_HighRes_1088x2048_r6009.ivf"),
         format="I420", width=1088, height=1024, frames=10,
-        metric=dict(type="md5", expect="2682b055c6a3ba1046fabd6679d304cc", numbytes=-1)),
+        metric=dict(type="md5", expect="f2547dc9410cb45d2141f9c56eb93703", numbytes=-1)),
 
     "Main_8bits_469_HighRes_6053x128_r6009": dict(
         source=find_conformance_stream("Main_8bits_469_HighRes_6053x128_r6009.ivf"),
@@ -126,7 +126,7 @@ media._get_test_spec("av1", "decode", "8bit").update({
     "Main_8bits_471_HighRes_6144x384_r6009": dict(
         source=find_conformance_stream("Main_8bits_471_HighRes_6144x384_r6009.ivf"),
         format="I420", width=6144, height=384, frames=10,
-        metric=dict(type="md5", expect="ee4c2fadba359589d5147846c72670ca")),
+        metric=dict(type="md5", expect="fae76dbe174fe2b1642f95f3c13e1c37")),
 
     "Main_8bits_472_HighRes_6144x384_r6009": dict(
         source=find_conformance_stream("Main_8bits_472_HighRes_6144x384_r6009.ivf"),
@@ -152,13 +152,13 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_476_HighRes_6144x384_r6009.ivf"),
         format="I420", width=6144, height=384, frames=10,
-        metric=dict(type="md5", expect="c9f0050d97f8adc56798be5469b663c9", numbytes=-1)),
+        metric=dict(type="md5", expect="90f17ce4b868504b73bf550c1acac105", numbytes=-1)),
 
     "Main_8bits_477_HighRes_6144x384_r6009": dict(
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_477_HighRes_6144x384_r6009.ivf"),
         format="I420", width=6144, height=384, frames=10,
-        metric=dict(type="md5", expect="bad680d9b3d5e184d93c9a7437dd6524", numbytes=-1)),
+        metric=dict(type="md5", expect="8bed5a74ad1a1a14440668700e285c0b", numbytes=-1)),
 
     "Main_8bits_478_HighRes_682x3456_r6009": dict(
         source=find_conformance_stream("Main_8bits_478_HighRes_682x3456_r6009.ivf"),
@@ -171,21 +171,16 @@ media._get_test_spec("av1", "decode", "8bit").update({
         metric=dict(type="md5", expect="36f56c27a82e0e4c6b0589af30535a93")),
 
     "Main_8bits_480_HighRes_682x3456_r6009": dict(
-        source=find_conformance_stream("Main_8bits_480_HighRes_682x3456_r6009.ivf"),
-        format="I420", width=682, height=3456, frames=10,
-        metric=dict(type="md5", expect="36f56c27a82e0e4c6b0589af30535a93")),
-
-    "Main_8bits_480_HighRes_682x3456_r6009": dict(
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_480_HighRes_682x3456_r6009.ivf"),
         format="I420", width=682, height=1728, frames=10,
-        metric=dict(type="md5", expect="2d25d6f297db48180f2610f4f25a7dcb", numbytes=-1)),
+        metric=dict(type="md5", expect="f61ab65a6be456d818fad43729d50d3d", numbytes=-1)),
 
     "Main_8bits_481_HighRes_682x3456_r6009": dict(
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_481_HighRes_682x3456_r6009.ivf"),
         format="I420", width=682, height=1728, frames=10,
-        metric=dict(type="md5", expect="9301e75bd086ce150406c1d692b6cb94", numbytes=-1)),
+        metric=dict(type="md5", expect="6f1fcc49a362a64853d640c140689777", numbytes=-1)),
 
     # "Main_8bits_482_HighRes_3840x2160_r6009" : dict(
     # #note : ffmpeg error with Error while opening decoder
@@ -251,13 +246,13 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_493_HighRes_4096x2176_r6009.ivf"),
         format="I420", width=2048, height=2176, frames=10,
-        metric=dict(type="md5", expect="7f5a181b608c3bcb1240f3d1b786cc7c", numbytes=-1)),
+        metric=dict(type="md5", expect="32dac45497df8fabf93488e7223cce30", numbytes=-1)),
 
     "Main_8bits_494_HighRes_4096x2176_r6009": dict(
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_494_HighRes_4096x2176_r6009.ivf"),
         format="I420", width=4096, height=2176, frames=10,
-        metric=dict(type="md5", expect="55873ed2f5afb78bfe7e20fa4d162335", numbytes=-1)),
+        metric=dict(type="md5", expect="aa42cd14c668251535152f576f58e83d", numbytes=-1)),
 
     "Main_8bits_495_HighRes_2176x4096_r6009": dict(
         source=find_conformance_stream("Main_8bits_495_HighRes_2176x4096_r6009.ivf"),
@@ -273,7 +268,7 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_497_HighRes_2176x4096_r6009.ivf"),
         format="I420", width=2176, height=4096, frames=10,
-        metric=dict(type="md5", expect="a97e52ff890012146cfd66e935869543", numbytes=-1)),
+        metric=dict(type="md5", expect="0ba26c718ea9c30b64374def00c4887b", numbytes=-1)),
 
     # "Main_8bits_498_HighRes_2176x4096_r6009" : dict(
     #  #note : ffmpeg error with Error while opening decoder
@@ -325,13 +320,13 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_506_HighRes_8192x1088_r6009.ivf"),
         format="I420", width=8192, height=1088, frames=10,
-        metric=dict(type="md5", expect="e4c5232254e9463699532112d2156936", numbytes=-1)),
+        metric=dict(type="md5", expect="867ad92c65bb0cad4008999f1062829f", numbytes=-1)),
 
     "Main_8bits_507_HighRes_8192x1088_r6009": dict(
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_507_HighRes_8192x1088_r6009.ivf"),
         format="I420", width=8192, height=1088, frames=10,
-        metric=dict(type="md5", expect="088ff7ebfab589c89be0d22317eb4fed", numbytes=-1)),
+        metric=dict(type="md5", expect="a64216705efe447ac8552c1bfce2768f", numbytes=-1)),
 
     "Main_8bits_508_HighRes_2048x4352_r6009": dict(
         source=find_conformance_stream("Main_8bits_508_HighRes_2048x4352_r6009.ivf"),
@@ -347,13 +342,13 @@ media._get_test_spec("av1", "decode", "8bit").update({
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_510_HighRes_2048x4352_r6009.ivf"),
         format="I420", width=2048, height=4352, frames=10,
-        metric=dict(type="md5", expect="054a9de28a337da06d8739a7dbe83cb4", numbytes=-1)),
+        metric=dict(type="md5", expect="67ba5719ce273f0100ea245a2f6b0304", numbytes=-1)),
 
     "Main_8bits_511_HighRes_2048x4352_r6009": dict(
     # note : resolution change stream
         source=find_conformance_stream("Main_8bits_511_HighRes_2048x4352_r6009.ivf"),
         format="I420", width=2048, height=4352, frames=10,
-        metric=dict(type="md5", expect="9bc47f1fb5b1b5df2f22cbeb6a210835", numbytes=-1)),
+        metric=dict(type="md5", expect="87cde00b9a13860a105836a144126292", numbytes=-1)),
 
     "Main_8bits_545_HighRes_4096x4608_r6009": dict(
         source=find_conformance_stream("Main_8bits_545_HighRes_4096x4608_r6009.ivf"),
@@ -1510,9 +1505,10 @@ media._get_test_spec("av1", "decode", "10bit").update({
     metric = dict(type = "md5", expect = "246cb059258c325fc2888dee788cfa16")),
 
     "Main_10bits_454_HighRes_1929x128_r6009" : dict(
+    # note:resolution change
     source = find_conformance_stream("Main_10bits_454_HighRes_1929x128_r6009.ivf"),
     format = "I010", width = 1929, height = 128, frames = 10,
-    metric = dict(type = "md5", expect = "9b291dfa984108d739714caa18ddaf51")),
+    metric = dict(type = "md5", expect = "9b291dfa984108d739714caa18ddaf51", numbytes=-1)),
 
     # "Main_10bits_455_HighRes_1929x128_r6009" : dict(
     # # ffmpeg error (Failed to read extradata.)
@@ -1564,13 +1560,13 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # note:resolution change
     source = find_conformance_stream("Main_10bits_464_HighRes_2048x1088_r6009.ivf"),
     format = "I010", width = 2048, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "5d9c0382cc598f75bfbbb94df1db673c", numbytes=-1)),
+    metric = dict(type = "md5", expect = "cb808ebb03ae5047c5aca4067007015d", numbytes=-1)),
 
     "Main_10bits_465_HighRes_2048x1088_r6009" : dict(
     # note:resolution change
     source = find_conformance_stream("Main_10bits_465_HighRes_2048x1088_r6009.ivf"),
     format = "I010", width = 2048, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "3fd01bb8a1200914a79adacc0dcd94c6", numbytes=-1)),
+    metric = dict(type = "md5", expect = "6e1770577708b277588256373f5cc945", numbytes=-1)),
 
     "Main_10bits_466_HighRes_1088x2048_r6009" : dict(
     source = find_conformance_stream("Main_10bits_466_HighRes_1088x2048_r6009.ivf"),
@@ -1584,12 +1580,12 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # note:resolution change
     source = find_conformance_stream("Main_10bits_468_HighRes_1088x2048_r6009.ivf"),
     format = "I010", width = 1088, height = 1024, frames = 10,
-    metric = dict(type = "md5", expect = "5ac84fce1f83a560c0c92d527fa9de72", numbytes=-1)),
+    metric = dict(type = "md5", expect = "2a9323dd1a9e7b18d8d4a5e1fc1fd24a", numbytes=-1)),
     "Main_10bits_469_HighRes_1088x2048_r6009" : dict(
     # note:resolution change
     source = find_conformance_stream("Main_10bits_469_HighRes_1088x2048_r6009.ivf"),
     format = "I010", width = 1088, height = 1024, frames = 10,
-    metric = dict(type = "md5", expect = "06e43e6a74cc2e57af3f8ee3b49157ca", numbytes=-1)),
+    metric = dict(type = "md5", expect = "196e24822ffe3038785f076c9ed0706a", numbytes=-1)),
     "Main_10bits_470_HighRes_6053x128_r6009" : dict(
     source = find_conformance_stream("Main_10bits_470_HighRes_6053x128_r6009.ivf"),
     format = "I010", width = 6053, height = 128, frames = 10,
@@ -1643,7 +1639,7 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # note:resolution change
     source = find_conformance_stream("Main_10bits_481_HighRes_682x3456_r6009.ivf"),
     format = "I010", width = 682, height = 3456, frames = 10,
-    metric = dict(type = "md5", expect = "bd3031a1d13cf87c3c5fce234b181010", numbytes=-1)),
+    metric = dict(type = "md5", expect = "66392e77665b29021cda0936bff09ff6", numbytes=-1)),
 
     # "Main_10bits_482_HighRes_682x3456_r6009" : dict(
     # # ffmpeg error (No sequence header available)
@@ -1708,7 +1704,7 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # note:resolution change
     source = find_conformance_stream("Main_10bits_494_HighRes_4096x2176_r6009.ivf"),
     format = "I010", width = 4096, height = 2176, frames = 10,
-    metric = dict(type = "md5", expect = "dfeb4faed31c5ee2b852203ae5b846f9", numbytes=-1)),
+    metric = dict(type = "md5", expect = "700393e18f07926cddc504144f075a14", numbytes=-1)),
 
     # "Main_10bits_495_HighRes_4096x2176_r6009" : dict(
     # # ffmpeg error (Failed to read extradata.)
@@ -1728,13 +1724,13 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # note:resolution change
     source = find_conformance_stream("Main_10bits_498_HighRes_2176x4096_r6009.ivf"),
     format = "I010", width = 2176, height = 4096, frames = 10,
-    metric = dict(type = "md5", expect = "8606405eba68d9ab01c5baa2970d9f81", numbytes=-1)),
+    metric = dict(type = "md5", expect = "3ebc339bc2641d48ea17b0d921b55f66", numbytes=-1)),
 
     "Main_10bits_499_HighRes_2176x4096_r6009" : dict(
     # note:resolution change
     source = find_conformance_stream("Main_10bits_499_HighRes_2176x4096_r6009.ivf"),
     format = "I010", width = 2176, height = 2048, frames = 10,
-    metric = dict(type = "md5", expect = "8b07a935c3150da0b65e8449d25d4e99", numbytes=-1)),
+    metric = dict(type = "md5", expect = "2e8bd5df42b8982783316cffd5e5b5a0", numbytes=-1)),
 
     # "Main_10bits_500_HighRes_7061x128_r6009" : dict(
     # # ffmpeg error (Failed to read extradata.)
@@ -1773,13 +1769,13 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # note:resolution change
     source = find_conformance_stream("Main_10bits_507_HighRes_8192x1088_r6009.ivf"),
     format = "I010", width = 8192, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "fd271f9715b7f95b3cb7bc0ae1710c42", numbytes=-1)),
+    metric = dict(type = "md5", expect = "762f512903eb4cdf6629eef0f9a85b30", numbytes=-1)),
 
     "Main_10bits_508_HighRes_8192x1088_r6009" : dict(
     # note:resolution change
     source = find_conformance_stream("Main_10bits_508_HighRes_8192x1088_r6009.ivf"),
     format = "I010", width = 8192, height = 1088, frames = 10,
-    metric = dict(type = "md5", expect = "7eb01db40e04cb14a4483b4da05bd631", numbytes=-1)),
+    metric = dict(type = "md5", expect = "17c7c10ef7a38d929ca09898fad4ac13", numbytes=-1)),
 
     "Main_10bits_509_HighRes_2048x4352_r6009" : dict(
     source = find_conformance_stream("Main_10bits_509_HighRes_2048x4352_r6009.ivf"),
@@ -1793,12 +1789,12 @@ media._get_test_spec("av1", "decode", "10bit").update({
     # note:resolution change
     source = find_conformance_stream("Main_10bits_511_HighRes_2048x4352_r6009.ivf"),
     format = "I010", width = 2048, height = 4352, frames = 10,
-    metric = dict(type = "md5", expect = "5b6eec5af8d7b9f2877e12a1e9e731bd", numbytes=-1)),
+    metric = dict(type = "md5", expect = "0b757d5df447f36978af03bfcf089fe3", numbytes=-1)),
     "Main_10bits_512_HighRes_2048x4352_r6009" : dict(
     # note:resolution change
     source = find_conformance_stream("Main_10bits_512_HighRes_2048x4352_r6009.ivf"),
     format = "I010", width = 2048, height = 4352, frames = 10,
-    metric = dict(type = "md5", expect = "282cb4a589cae1f091388ea62550743b", numbytes=-1)),
+    metric = dict(type = "md5", expect = "5102d740ee085c1d1ace40b857764130", numbytes=-1)),
     "av1_noise_rand_size_10b_0" : dict(
     source = find_conformance_stream("av1_noise_rand_size_10b_0.ivf"),
     format = "I010", width = 451, height = 1465, frames = 3,
