@@ -40,7 +40,7 @@ media._get_test_spec("vp9", "decode", "8bit").update({
 
     "test2048x1080": dict(
         source=find_conformance_stream("test2048x1080.ivf"),
-        format="I420", width=1920, height=1080, frames=7,
+        format="I420", width=2048, height=1080, frames=7,
         metric=dict(type="md5", expect="6e61b5de5ce9c639b36a9a29132d80eb")),
 
     "test3840x2160": dict(
