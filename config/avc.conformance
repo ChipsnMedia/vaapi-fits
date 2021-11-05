@@ -426,7 +426,7 @@ media._get_test_spec("avc", "decode").update({
   #   format = "I420", width = 192, height = 128, frames = 17,
   #   metric = dict(type = "md5", expect = "e56dee215cec5912300406975ffdc56c")),
   # "FM1_BT_B" : dict(
-  #   #gregory FMO enocded 
+  #   #gregory FMO enocded, ffmpeg report an error that is related to multiple PPS 
   #   source = find_conformance_stream("FM1_BT_B.h264"),
   #   format = "I420", width = 176, height = 144, frames = 400,
   #   metric = dict(type = "md5", expect = "f21ad956409cfa237099f7ac28390614")),

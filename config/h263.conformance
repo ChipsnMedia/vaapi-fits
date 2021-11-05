@@ -1,0 +1,68 @@
+# h263 Bitstreams
+media._get_test_spec("h263", "decode").update({
+"akiyo" : dict(
+source=find_conformance_stream("akiyo.263"),
+format="I420", width=176, height=144, frames=31,
+metric=dict(type="md5", expect="0b379ff2bf482ee4a11b1e34d8c1dae0", numbytes=-1)),
+"akiyo_qcif_ptype_00" : dict(
+source=find_conformance_stream("akiyo_qcif_ptype_00.263"),
+format="I420", width=176, height=144, frames=300,
+metric=dict(type="md5", expect="fb864fed5aa239717a5f3e331f6a49d6", numbytes=-1)),
+"BUS_SD1_IJT" : dict(
+source=find_conformance_stream("BUS_SD1_IJT.263"),
+format="I420", width=720, height=480, frames=3,
+metric=dict(type="md5", expect="5a40342fd1c34672b84cb11486dd4723", numbytes=-1)),
+"COASTGUARD_CIF_IJT" : dict(
+source=find_conformance_stream("COASTGUARD_CIF_IJT.263"),
+format="I420", width=352, height=288, frames=11,
+metric=dict(type="md5", expect="da4c86fefac5a22977b0e0c5ed531982", numbytes=-1)),
+"container_qcif_ptype_00" : dict(
+source=find_conformance_stream("container_qcif_ptype_00.263"),
+format="I420", width=176, height=144, frames=300,
+metric=dict(type="md5", expect="b300129faf2b6b68d83a77de43d29283", numbytes=-1)),
+"foreman_qcif_ptype_00" : dict(
+source=find_conformance_stream("foreman_qcif_ptype_00.263"),
+format="I420", width=176, height=144, frames=300,
+metric=dict(type="md5", expect="45589425c3bd0876bf0ffc5664f62397", numbytes=-1)),
+"mobile_qcif_ptype_00" : dict(
+source=find_conformance_stream("mobile_qcif_ptype_00.263"),
+format="I420", width=176, height=144, frames=300,
+metric=dict(type="md5", expect="744d23ff6358df2d9a37adbbf8a7a116", numbytes=-1)),
+"mother_daughter_qcif_ptype_00" : dict(
+source=find_conformance_stream("mother_daughter_qcif_ptype_00.263"),
+format="I420", width=176, height=144, frames=300,
+metric=dict(type="md5", expect="2bdfca82e269295ab7fb82f36faea506", numbytes=-1)),
+"POR_VGA_IJT" : dict(
+source=find_conformance_stream("POR_VGA_IJT.263"),
+format="I420", width=640, height=480, frames=6,
+metric=dict(type="md5", expect="c3b260d1047208135e089244fe72e4dd", numbytes=-1)),
+"QP1_J_T_RESYNC" : dict(
+source=find_conformance_stream("QP1_J_T_RESYNC.263"),
+format="I420", width=176, height=144, frames=31,
+metric=dict(type="md5", expect="9f2070029049ec623aea88c1956f891d", numbytes=-1)),
+"QP3_I_J_T" : dict(
+source=find_conformance_stream("QP3_I_J_T.263"),
+format="I420", width=176, height=144, frames=31,
+metric=dict(type="md5", expect="c4d59d2243e8947791b4f93b3aa2330f", numbytes=-1)),
+"QP9_J_RESYNC" : dict(
+source=find_conformance_stream("QP9_J_RESYNC.263"),
+format="I420", width=176, height=144, frames=31,
+metric=dict(type="md5", expect="7960d7f04eec1e2a77333877d9e2317d", numbytes=-1)),
+"RAND_IMG_I_J_T_RESYNC" : dict(
+source=find_conformance_stream("RAND_IMG_I_J_T_RESYNC.263"),
+format="I420", width=176, height=144, frames=31,
+metric=dict(type="md5", expect="8984b35a6a7fbd526e0ca67ee0123187", numbytes=-1)),
+"sd2_qs1" : dict(
+source=find_conformance_stream("sd2_qs1.263"),
+format="I420", width=720, height=480, frames=30,
+metric=dict(type="md5", expect="73de762c2f53c458f4dca1932c7e1bf7", numbytes=-1)),
+"sd2_qs2" : dict(
+source=find_conformance_stream("sd2_qs2.263"),
+format="I420", width=720, height=480, frames=30,
+metric=dict(type="md5", expect="5afc0f1c05f2893d2d1b012ddc5ff7f8", numbytes=-1)),
+"T_RAND_Q" : dict(
+source=find_conformance_stream("T_RAND_Q.263"),
+format="I420", width=176, height=144, frames=30,
+metric=dict(type="md5", expect="fea8f6cadf53996a1cd876a5034b7040", numbytes=-1)),
+})
+
