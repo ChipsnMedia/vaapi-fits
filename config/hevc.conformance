@@ -748,8 +748,8 @@ media._get_test_spec("hevc", "encode", "8bit").update({
 media._get_test_spec("hevc", "encode", "10bit").update({
   "QCIF" : dict(
 # note : wave6 doesn't support small resolution than 256x128
-    source = os.path.join(assets, "yuv", "QCIF_10LE.yuv"),
-    width = 176, height = 144, format = "I010", frames = 300,
+    source = os.path.join(assets, "yuv", "QCIF_P010LE.yuv"),
+    width = 176, height = 144, format = "P010", frames = 300,
     refctx = ["driver"],
     cqp = [
       dict(gop = 1, slices = 1, bframes = 0, qp = 14, quality = 4, profile = "main10"),
@@ -760,8 +760,8 @@ media._get_test_spec("hevc", "encode", "10bit").update({
     ],
   ),
   "QVGA" : dict(
-    source = os.path.join(assets, "yuv", "QVGA_10LE.yuv"),
-    width = 320, height = 240, format = "I010", frames = 300,
+    source = os.path.join(assets, "yuv", "QVGA_P010LE.yuv"),
+    width = 320, height = 240, format = "P010", frames = 300,
     refctx = ["driver"],
     cqp = [
       dict(gop = 1, slices = 1, bframes = 0, qp = 14, quality = 4, profile = "main10"),
@@ -772,8 +772,8 @@ media._get_test_spec("hevc", "encode", "10bit").update({
     ],
   ),
   "720p" : dict(
-    source = os.path.join(assets, "yuv", "720p_10LE.yuv"),
-    width = 1280, height = 720, format = "I010", frames = 150,
+    source = os.path.join(assets, "yuv", "720p_P010LE.yuv"),
+    width = 1280, height = 720, format = "P010", frames = 150,
     refctx = ["driver"],
     cqp = [
       dict(gop = 1, slices = 1, bframes = 0, qp = 28, quality = 4, profile = "main10"),
@@ -787,8 +787,8 @@ media._get_test_spec("hevc", "encode", "10bit").update({
     ],
   ),
   "1080p" : dict(
-    source = os.path.join(assets, "yuv", "1080p_10LE.yuv"),
-    width = 1920, height = 1080, format = "I010", frames = 150,
+    source = os.path.join(assets, "yuv", "1080p_P010LE.yuv"),
+    width = 1920, height = 1080, format = "P010", frames = 150,
     refctx = ["driver"],
     cqp = [
       dict(gop = 1, slices = 1, bframes = 0, qp = 14, quality = 4, profile = "main10"),
