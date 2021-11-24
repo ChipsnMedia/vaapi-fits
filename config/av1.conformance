@@ -1160,6 +1160,14 @@ media._get_test_spec("av1", "decode", "8bit").update({
         source = find_conformance_stream("av1-1-b8-22-svc-L2T2.ivf"),
         format = "I420", width = 1280, height = 720, frames = 8,
         metric = dict(type = "md5", expect = "4d86bc8f55bae0ac0e688fb7fa2fe741"), numbytes=-1),
+    "00000527" : dict(
+        source = find_conformance_stream("00000527.ivf"),
+        format = "I420", width = 208, height = 144, frames = 20,
+        metric = dict(type = "md5", expect = "7986b9d849114e52c5159aba52789d45")),
+    "48_delayed" : dict(
+        source = find_conformance_stream("48_delayed.ivf"),
+        format = "I420", width = 240, height = 100, frames = 557,
+        metric = dict(type = "md5", expect = "c7f766b0340ed2ba1a46501ca40d64b9")),
 })
 
 media._get_test_spec("av1", "decode", "10bit").update({
