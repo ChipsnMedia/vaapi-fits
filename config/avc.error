@@ -1,0 +1,575 @@
+# AV Error Bitstreams
+media._get_test_spec("avc", "decode").update({
+"cbp_range_over_00" : dict(
+source=find_conformance_stream("cbp_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a3bb7a0d85eaec0e4d842e1a59b32d55", numbytes=-1)),
+"cbp_range_over_01" : dict(
+source=find_conformance_stream("cbp_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a3bb7a0d85eaec0e4d842e1a59b32d55", numbytes=-1)),
+"coeff_abs_level_minus1_00" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="ecde6f37a320c4c44683f88c58bdd2d6", numbytes=-1)),
+"coeff_abs_level_minus1_01" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_01.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="e1b9e23d6ecc6f0a4d66fb1e897b6351", numbytes=-1)),
+"coeff_abs_level_minus1_02" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_02.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="cee6ca3d9db8a38d9cb1ff640dc044bf", numbytes=-1)),
+"coeff_abs_level_minus1_03" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_03.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="c709ef5524e1bf7c7f3cc84ee09826c0", numbytes=-1)),
+"coeff_abs_level_minus1_04" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_04.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="097db2df89367b35ee1a9c7e394020f0", numbytes=-1)),
+"coeff_abs_level_minus1_05" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_05.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="bb8d17697b0bbb45585f40d8f110ac70", numbytes=-1)),
+"coeff_abs_level_minus1_06" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_06.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="61a305b438c2f0b2c06c2ee7efba6c7b", numbytes=-1)),
+"coeff_abs_level_minus1_07" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_07.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="ceda9be1f544b2836f9a60840c1c1eac", numbytes=-1)),
+"coeff_token_00" : dict(
+source=find_conformance_stream("coeff_token_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="9a521dd5e5c366d29bfda6020ba75a6e", numbytes=-1)),
+"coeff_token_01" : dict(
+source=find_conformance_stream("coeff_token_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a7ed127533a00b0d4a3c00bbf85601fc", numbytes=-1)),
+"eos_00" : dict(
+source=find_conformance_stream("eos_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="177890ab2d3bd83eb1a55f6149ef3afe", numbytes=-1)),
+"eos_01" : dict(
+source=find_conformance_stream("eos_01.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="bd191ad107bfbcbedc4ca4181ec4f2c7", numbytes=-1)),
+"eos_02" : dict(
+source=find_conformance_stream("eos_02.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="4843bf19e00f408f79ebad669e902ca7", numbytes=-1)),
+"eos_03" : dict(
+source=find_conformance_stream("eos_03.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="80c7f5e899dac035a8a7a185e345b079", numbytes=-1)),
+"level_prefix_range_over_00" : dict(
+source=find_conformance_stream("level_prefix_range_over_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="42b5d05f602e54753bd328e7a427448c", numbytes=-1)),
+"level_prefix_range_over_01" : dict(
+source=find_conformance_stream("level_prefix_range_over_01.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="d07e01dd9fcdf96d422b8e047f216803", numbytes=-1)),
+"mb_qp_delta_-33" : dict(
+source=find_conformance_stream("mb_qp_delta_-33.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="14ec3e2d900f15c64a60815a31814448", numbytes=-1)),
+"mb_qp_delta_08" : dict(
+source=find_conformance_stream("mb_qp_delta_08.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="f7f0ebb423ef006f10748b86ee39935b", numbytes=-1)),
+"mb_qp_delta_09" : dict(
+source=find_conformance_stream("mb_qp_delta_09.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="ad060dd52f3248247844a152834fc35d", numbytes=-1)),
+"mb_type_range_over_b" : dict(
+source=find_conformance_stream("mb_type_range_over_b.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="015d57d2b262defdcb5453c066f29085", numbytes=-1)),
+"mb_type_range_over_i" : dict(
+source=find_conformance_stream("mb_type_range_over_i.264"),
+format="I420", width=416, height=240, frames=4,
+metric=dict(type="md5", expect="eef817e1597fcf3b3a53aedfd6aa6fb4", numbytes=-1)),
+"mb_type_range_over_p_00" : dict(
+source=find_conformance_stream("mb_type_range_over_p_00.264"),
+format="I420", width=416, height=240, frames=4,
+metric=dict(type="md5", expect="317af3fdbd0ecace2e87976f0dfa64ca", numbytes=-1)),
+"mb_type_range_over_p_01" : dict(
+source=find_conformance_stream("mb_type_range_over_p_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="1ffc5159d6da678f461321c0c08b7e47", numbytes=-1)),
+"mv_00" : dict(
+source=find_conformance_stream("mv_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="f126b38a9b9c52fe3ea9a97a470cd689", numbytes=-1)),
+"mv_01" : dict(
+source=find_conformance_stream("mv_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="6437bf15171e1a91d4ec4316b2305b16", numbytes=-1)),
+"mv_02" : dict(
+source=find_conformance_stream("mv_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="bdab4c52f6091555f20a2f28f5fc1f4d", numbytes=-1)),
+"mv_03" : dict(
+source=find_conformance_stream("mv_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="161b6a55d401ee5dbadee1955ce19a3a", numbytes=-1)),
+"mv_04" : dict(
+source=find_conformance_stream("mv_04.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="e9e50a7f801e1c4f51e8f9f5be4bcda4", numbytes=-1)),
+"mv_range_over_00" : dict(
+source=find_conformance_stream("mv_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="990d81233e1c4a3430185145e292c34d", numbytes=-1)),
+"mv_range_over_01" : dict(
+source=find_conformance_stream("mv_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="8cb801cd85219647dd815670caafbaa0", numbytes=-1)),
+"mv_range_over_02" : dict(
+source=find_conformance_stream("mv_range_over_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="83b72bcdfe4008eb190d985905ba23f1", numbytes=-1)),
+"mv_range_over_03" : dict(
+source=find_conformance_stream("mv_range_over_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="867726aa838b882c081f632713da8e7a", numbytes=-1)),
+"mvd_00" : dict(
+source=find_conformance_stream("mvd_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="b732dd039918f00c78650afe65c34d0d", numbytes=-1)),
+"mvd_01" : dict(
+source=find_conformance_stream("mvd_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="8bad848f79b7fb16af4dfa58db2456ef", numbytes=-1)),
+"mvd_02" : dict(
+source=find_conformance_stream("mvd_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="d7345c25e806db90bce8c0499ee21c9e", numbytes=-1)),
+"mvd_03" : dict(
+source=find_conformance_stream("mvd_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="96ed1e67011f7e127bbc1e48dde7626d", numbytes=-1)),
+"mvd_04" : dict(
+source=find_conformance_stream("mvd_04.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="23003c8d0db3a558b0bce1ef401c437e", numbytes=-1)),
+"mvd_05" : dict(
+source=find_conformance_stream("mvd_05.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="d155084482d5afe7b12b4703c17e3b83", numbytes=-1)),
+"mvd_06" : dict(
+source=find_conformance_stream("mvd_06.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="1676449a1962cda6ad8f984f2be211f8", numbytes=-1)),
+"mvd_range_over_00" : dict(
+source=find_conformance_stream("mvd_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="67e12b6669bfa84e6aab5a60a844f669", numbytes=-1)),
+"mvd_range_over_01" : dict(
+source=find_conformance_stream("mvd_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="75acd71bb51c1d9722225246ae9b9ab7", numbytes=-1)),
+"mvd_range_over_02" : dict(
+source=find_conformance_stream("mvd_range_over_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="7c409e0e0db6aad82bb6ed79bdb74430", numbytes=-1)),
+"ref_idx_l0_00" : dict(
+source=find_conformance_stream("ref_idx_l0_00.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"ref_idx_l0_01" : dict(
+source=find_conformance_stream("ref_idx_l0_01.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"ref_idx_l0_02" : dict(
+source=find_conformance_stream("ref_idx_l0_02.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"ref_idx_l0_03" : dict(
+source=find_conformance_stream("ref_idx_l0_03.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"skip_run_range_over_02" : dict(
+source=find_conformance_stream("skip_run_range_over_02.264"),
+format="I420", width=1280, height=720, frames=3,
+metric=dict(type="md5", expect="6da0915ec073b9768609478f8aaa03f9", numbytes=-1)),
+"skip_run_range_over_03" : dict(
+source=find_conformance_stream("skip_run_range_over_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a3bb7a0d85eaec0e4d842e1a59b32d55", numbytes=-1)),
+"skip_run_range_over_04" : dict(
+source=find_conformance_stream("skip_run_range_over_04.264"),
+format="I420", width=1280, height=720, frames=3,
+metric=dict(type="md5", expect="6da0915ec073b9768609478f8aaa03f9", numbytes=-1)),
+"slice_missing_00" : dict(
+source=find_conformance_stream("slice_missing_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="0f7a2cbbb89cc872f64b8230088a09ca", numbytes=-1)),
+"sub_mb_type_range_over_00" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="b5c287fc99fd63f265b93a7ea1d5ad3f", numbytes=-1)),
+"sub_mb_type_range_over_01" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="b5c287fc99fd63f265b93a7ea1d5ad3f", numbytes=-1)),
+"sub_mb_type_range_over_02" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="015d57d2b262defdcb5453c066f29085", numbytes=-1)),
+"sub_mb_type_range_over_03" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="7e90b2c8dd401ffcd1183a9a59a4da68", numbytes=-1)),
+"total_zero_00" : dict(
+source=find_conformance_stream("total_zero_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="c7d6abee133f147e79ddf468652f15ee", numbytes=-1)),
+"CnM_ERR_QCIF_B" : dict(
+source=find_conformance_stream("CnM_ERR_QCIF_B.264"),
+format="I420", width=176, height=144, frames=298,
+metric=dict(type="md5", expect="e5d0f849e6aa032aba80a997c7c4482f", numbytes=-1)),
+"CnM_ERR_QCIF_CABAC" : dict(
+source=find_conformance_stream("CnM_ERR_QCIF_CABAC.264"),
+format="I420", width=176, height=144, frames=296,
+metric=dict(type="md5", expect="0cf9a49946dfb808a4dbce76d0a3a551", numbytes=-1)),
+"V31116_B_D-Traffic_AVC_BP_bad_ref_idc" : dict(
+source=find_conformance_stream("V31116_B_D-Traffic_AVC_BP_bad_ref_idc.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="7ad4682aa5ed4e0875d5c302ac69924c", numbytes=-1)),
+"V31123_B_D-Traffic_AVC_BP_bad_chroma_pred" : dict(
+source=find_conformance_stream("V31123_B_D-Traffic_AVC_BP_bad_chroma_pred.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="65ccdbfd236030a317ec2e973b96192d", numbytes=-1)),
+"V31124_B_D-Traffic_AVC_BP_bad_mb_type" : dict(
+source=find_conformance_stream("V31124_B_D-Traffic_AVC_BP_bad_mb_type.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="65ccdbfd236030a317ec2e973b96192d", numbytes=-1)),
+"V31135_B_D-Traffic_AVC_BP_bad_cbp" : dict(
+source=find_conformance_stream("V31135_B_D-Traffic_AVC_BP_bad_cbp.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="2e40aa6a5d8e2459f5e249e14a256ae3", numbytes=-1)),
+"CANL1_SVA_B" : dict(
+source=find_conformance_stream("CANL1_SVA_B.264"),
+format="I420", width=176, height=144, frames=17,
+metric=dict(type="md5", expect="b02defcb741c0e982313c5749f2008ed", numbytes=-1)),
+"cbp_range_over_00" : dict(
+source=find_conformance_stream("cbp_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a3bb7a0d85eaec0e4d842e1a59b32d55", numbytes=-1)),
+"cbp_range_over_01" : dict(
+source=find_conformance_stream("cbp_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a3bb7a0d85eaec0e4d842e1a59b32d55", numbytes=-1)),
+"coeff_abs_level_minus1_00" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="ecde6f37a320c4c44683f88c58bdd2d6", numbytes=-1)),
+"coeff_abs_level_minus1_01" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_01.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="e1b9e23d6ecc6f0a4d66fb1e897b6351", numbytes=-1)),
+"coeff_abs_level_minus1_02" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_02.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="cee6ca3d9db8a38d9cb1ff640dc044bf", numbytes=-1)),
+"coeff_abs_level_minus1_03" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_03.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="c709ef5524e1bf7c7f3cc84ee09826c0", numbytes=-1)),
+"coeff_abs_level_minus1_04" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_04.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="097db2df89367b35ee1a9c7e394020f0", numbytes=-1)),
+"coeff_abs_level_minus1_05" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_05.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="bb8d17697b0bbb45585f40d8f110ac70", numbytes=-1)),
+"coeff_abs_level_minus1_06" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_06.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="61a305b438c2f0b2c06c2ee7efba6c7b", numbytes=-1)),
+"coeff_abs_level_minus1_07" : dict(
+source=find_conformance_stream("coeff_abs_level_minus1_07.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="ceda9be1f544b2836f9a60840c1c1eac", numbytes=-1)),
+"coeff_token_00" : dict(
+source=find_conformance_stream("coeff_token_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="9a521dd5e5c366d29bfda6020ba75a6e", numbytes=-1)),
+"coeff_token_01" : dict(
+source=find_conformance_stream("coeff_token_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a7ed127533a00b0d4a3c00bbf85601fc", numbytes=-1)),
+"eos_00" : dict(
+source=find_conformance_stream("eos_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="177890ab2d3bd83eb1a55f6149ef3afe", numbytes=-1)),
+"eos_01" : dict(
+source=find_conformance_stream("eos_01.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="bd191ad107bfbcbedc4ca4181ec4f2c7", numbytes=-1)),
+"eos_02" : dict(
+source=find_conformance_stream("eos_02.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="4843bf19e00f408f79ebad669e902ca7", numbytes=-1)),
+"eos_03" : dict(
+source=find_conformance_stream("eos_03.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="80c7f5e899dac035a8a7a185e345b079", numbytes=-1)),
+"level_prefix_range_over_00" : dict(
+source=find_conformance_stream("level_prefix_range_over_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="42b5d05f602e54753bd328e7a427448c", numbytes=-1)),
+"level_prefix_range_over_01" : dict(
+source=find_conformance_stream("level_prefix_range_over_01.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="d07e01dd9fcdf96d422b8e047f216803", numbytes=-1)),
+"mb_qp_delta_-27" : dict(
+source=find_conformance_stream("mb_qp_delta_-27.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="aeb3c1ba9f106763fd2d96c28acb59c6", numbytes=-1)),
+"mb_qp_delta_-33" : dict(
+source=find_conformance_stream("mb_qp_delta_-33.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="14ec3e2d900f15c64a60815a31814448", numbytes=-1)),
+"mb_qp_delta_00" : dict(
+source=find_conformance_stream("mb_qp_delta_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="3fadfbe2aa60f79792e72bd2dc7c8f17", numbytes=-1)),
+"mb_qp_delta_01" : dict(
+source=find_conformance_stream("mb_qp_delta_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="93a33860ee9151dd5529ba79285cef76", numbytes=-1)),
+"mb_qp_delta_02" : dict(
+source=find_conformance_stream("mb_qp_delta_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="41e2be849013002e8aefb1dcf3007d6c", numbytes=-1)),
+"mb_qp_delta_03" : dict(
+source=find_conformance_stream("mb_qp_delta_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="ef8b759785f700dab76aa4ae02a22807", numbytes=-1)),
+"mb_qp_delta_04" : dict(
+source=find_conformance_stream("mb_qp_delta_04.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="f77a0919905e43bf6aef5b5dfe9037e2", numbytes=-1)),
+"mb_qp_delta_05" : dict(
+source=find_conformance_stream("mb_qp_delta_05.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="5cd4ae144df4a57fadbf472bf0009dbc", numbytes=-1)),
+"mb_qp_delta_06" : dict(
+source=find_conformance_stream("mb_qp_delta_06.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="be9e16f05ab6ccacd8663996d7d4e234", numbytes=-1)),
+"mb_qp_delta_07" : dict(
+source=find_conformance_stream("mb_qp_delta_07.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="4a3cb79f0035e9485215924c3f4c7d6c", numbytes=-1)),
+"mb_qp_delta_08" : dict(
+source=find_conformance_stream("mb_qp_delta_08.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="f7f0ebb423ef006f10748b86ee39935b", numbytes=-1)),
+"mb_qp_delta_09" : dict(
+source=find_conformance_stream("mb_qp_delta_09.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="ad060dd52f3248247844a152834fc35d", numbytes=-1)),
+"mb_qp_delta_26" : dict(
+source=find_conformance_stream("mb_qp_delta_26.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="fbcdf583b03447ecceb5685d87168c69", numbytes=-1)),
+"mb_qp_delta_32" : dict(
+source=find_conformance_stream("mb_qp_delta_32.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="f1dfcd2cba6e6c7e03aa5599e77f4d98", numbytes=-1)),
+"mb_type_range_over_b" : dict(
+source=find_conformance_stream("mb_type_range_over_b.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="015d57d2b262defdcb5453c066f29085", numbytes=-1)),
+"mb_type_range_over_i" : dict(
+source=find_conformance_stream("mb_type_range_over_i.264"),
+format="I420", width=416, height=240, frames=4,
+metric=dict(type="md5", expect="eef817e1597fcf3b3a53aedfd6aa6fb4", numbytes=-1)),
+"mb_type_range_over_p_00" : dict(
+source=find_conformance_stream("mb_type_range_over_p_00.264"),
+format="I420", width=416, height=240, frames=4,
+metric=dict(type="md5", expect="317af3fdbd0ecace2e87976f0dfa64ca", numbytes=-1)),
+"mb_type_range_over_p_01" : dict(
+source=find_conformance_stream("mb_type_range_over_p_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="256d690d10c6522cdec4069c65594f39", numbytes=-1)),
+"mv_00" : dict(
+source=find_conformance_stream("mv_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="f126b38a9b9c52fe3ea9a97a470cd689", numbytes=-1)),
+"mv_01" : dict(
+source=find_conformance_stream("mv_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="6437bf15171e1a91d4ec4316b2305b16", numbytes=-1)),
+"mv_02" : dict(
+source=find_conformance_stream("mv_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="bdab4c52f6091555f20a2f28f5fc1f4d", numbytes=-1)),
+"mv_03" : dict(
+source=find_conformance_stream("mv_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="161b6a55d401ee5dbadee1955ce19a3a", numbytes=-1)),
+"mv_04" : dict(
+source=find_conformance_stream("mv_04.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="e9e50a7f801e1c4f51e8f9f5be4bcda4", numbytes=-1)),
+"mv_range_over_00" : dict(
+source=find_conformance_stream("mv_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="990d81233e1c4a3430185145e292c34d", numbytes=-1)),
+"mv_range_over_01" : dict(
+source=find_conformance_stream("mv_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="8cb801cd85219647dd815670caafbaa0", numbytes=-1)),
+"mv_range_over_02" : dict(
+source=find_conformance_stream("mv_range_over_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="83b72bcdfe4008eb190d985905ba23f1", numbytes=-1)),
+"mv_range_over_03" : dict(
+source=find_conformance_stream("mv_range_over_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="867726aa838b882c081f632713da8e7a", numbytes=-1)),
+"mvd_00" : dict(
+source=find_conformance_stream("mvd_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="b732dd039918f00c78650afe65c34d0d", numbytes=-1)),
+"mvd_01" : dict(
+source=find_conformance_stream("mvd_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="8bad848f79b7fb16af4dfa58db2456ef", numbytes=-1)),
+"mvd_02" : dict(
+source=find_conformance_stream("mvd_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="fb43fd10e6fe9aa652b5c3018d645075", numbytes=-1)),
+"mvd_03" : dict(
+source=find_conformance_stream("mvd_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="96ed1e67011f7e127bbc1e48dde7626d", numbytes=-1)),
+"mvd_04" : dict(
+source=find_conformance_stream("mvd_04.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="23003c8d0db3a558b0bce1ef401c437e", numbytes=-1)),
+"mvd_05" : dict(
+source=find_conformance_stream("mvd_05.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="d155084482d5afe7b12b4703c17e3b83", numbytes=-1)),
+"mvd_06" : dict(
+source=find_conformance_stream("mvd_06.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="1676449a1962cda6ad8f984f2be211f8", numbytes=-1)),
+"mvd_range_over_00" : dict(
+source=find_conformance_stream("mvd_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="67e12b6669bfa84e6aab5a60a844f669", numbytes=-1)),
+"mvd_range_over_01" : dict(
+source=find_conformance_stream("mvd_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="75acd71bb51c1d9722225246ae9b9ab7", numbytes=-1)),
+"mvd_range_over_02" : dict(
+source=find_conformance_stream("mvd_range_over_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="7c409e0e0db6aad82bb6ed79bdb74430", numbytes=-1)),
+"ref_idx_l0_00" : dict(
+source=find_conformance_stream("ref_idx_l0_00.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"ref_idx_l0_01" : dict(
+source=find_conformance_stream("ref_idx_l0_01.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"ref_idx_l0_02" : dict(
+source=find_conformance_stream("ref_idx_l0_02.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"ref_idx_l0_03" : dict(
+source=find_conformance_stream("ref_idx_l0_03.264"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="c39e31811de42c58cb22b54c8be49bf8", numbytes=-1)),
+"skip_run_range_over_02" : dict(
+source=find_conformance_stream("skip_run_range_over_02.264"),
+format="I420", width=1280, height=720, frames=3,
+metric=dict(type="md5", expect="6da0915ec073b9768609478f8aaa03f9", numbytes=-1)),
+"skip_run_range_over_03" : dict(
+source=find_conformance_stream("skip_run_range_over_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="a3bb7a0d85eaec0e4d842e1a59b32d55", numbytes=-1)),
+"skip_run_range_over_04" : dict(
+source=find_conformance_stream("skip_run_range_over_04.264"),
+format="I420", width=1280, height=720, frames=3,
+metric=dict(type="md5", expect="6da0915ec073b9768609478f8aaa03f9", numbytes=-1)),
+"slice_missing_00" : dict(
+source=find_conformance_stream("slice_missing_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="0f7a2cbbb89cc872f64b8230088a09ca", numbytes=-1)),
+"sub_mb_type_range_over_00" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_00.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="b5c287fc99fd63f265b93a7ea1d5ad3f", numbytes=-1)),
+"sub_mb_type_range_over_01" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_01.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="b5c287fc99fd63f265b93a7ea1d5ad3f", numbytes=-1)),
+"sub_mb_type_range_over_02" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_02.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="015d57d2b262defdcb5453c066f29085", numbytes=-1)),
+"sub_mb_type_range_over_03" : dict(
+source=find_conformance_stream("sub_mb_type_range_over_03.264"),
+format="I420", width=416, height=240, frames=5,
+metric=dict(type="md5", expect="7e90b2c8dd401ffcd1183a9a59a4da68", numbytes=-1)),
+"total_zero_00" : dict(
+source=find_conformance_stream("total_zero_00.264"),
+format="I420", width=416, height=240, frames=3,
+metric=dict(type="md5", expect="c7d6abee133f147e79ddf468652f15ee", numbytes=-1)),
+"SINGLE_SLICE_QCIF_ERR" : dict(
+source=find_conformance_stream("SINGLE_SLICE_QCIF_ERR.264"),
+format="I420", width=176, height=144, frames=294,
+metric=dict(type="md5", expect="2df42d470f281aceda6ea35b08af0752", numbytes=-1)),
+"CnM_ERR_QCIF_CABAC" : dict(
+source=find_conformance_stream("CnM_ERR_QCIF_CABAC.264"),
+format="I420", width=176, height=144, frames=296,
+metric=dict(type="md5", expect="f12923f173c637dfbc15933541999f74", numbytes=-1)),
+"CnM_ERR_QCIF_SINGLE_SLICE" : dict(
+source=find_conformance_stream("CnM_ERR_QCIF_SINGLE_SLICE.264"),
+format="I420", width=176, height=144, frames=294,
+metric=dict(type="md5", expect="91eb8a184a2d70ba64fba419486c6137", numbytes=-1)),
+"SINGLE_SLICE_QCIF_ERR" : dict(
+source=find_conformance_stream("SINGLE_SLICE_QCIF_ERR.264"),
+format="I420", width=176, height=144, frames=294,
+metric=dict(type="md5", expect="9881673b810c8db3ceb2819e65497442", numbytes=-1)),
+"V31109_B_D-Traffic_AVC_BP_wrong_pic_size" : dict(
+source=find_conformance_stream("V31109_B_D-Traffic_AVC_BP_wrong_pic_size.264"),
+format="I420", width=368, height=288, frames=150,
+metric=dict(type="md5", expect="4a9fd4d42577abed3c9b1cfe6d49a164", numbytes=-1)),
+"V31116_B_D-Traffic_AVC_BP_bad_ref_idc" : dict(
+source=find_conformance_stream("V31116_B_D-Traffic_AVC_BP_bad_ref_idc.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="7ad4682aa5ed4e0875d5c302ac69924c", numbytes=-1)),
+"V31123_B_D-Traffic_AVC_BP_bad_chroma_pred" : dict(
+source=find_conformance_stream("V31123_B_D-Traffic_AVC_BP_bad_chroma_pred.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="65ccdbfd236030a317ec2e973b96192d", numbytes=-1)),
+"V31124_B_D-Traffic_AVC_BP_bad_mb_type" : dict(
+source=find_conformance_stream("V31124_B_D-Traffic_AVC_BP_bad_mb_type.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="65ccdbfd236030a317ec2e973b96192d", numbytes=-1)),
+"V31135_B_D-Traffic_AVC_BP_bad_cbp" : dict(
+source=find_conformance_stream("V31135_B_D-Traffic_AVC_BP_bad_cbp.264"),
+format="I420", width=352, height=288, frames=150,
+metric=dict(type="md5", expect="2e40aa6a5d8e2459f5e249e14a256ae3", numbytes=-1)),
+"Allegro_BdWidth_CABAC_01_L41_5x6_10_1" : dict(
+source=find_conformance_stream("Allegro_BdWidth_CABAC_01_L41_5x6_10.1.26l"),
+format="I420", width=80, height=96, frames=640,
+metric=dict(type="md5", expect="092154f91a5e704b3d6e5b6f198d825d", numbytes=-1)),
+"freh3" : dict(
+source=find_conformance_stream("freh3.264"),
+format="I420", width=352, height=288, frames=100,
+metric=dict(type="md5", expect="6f1772152386e2897b539956a5e66c6e", numbytes=-1)),
+})

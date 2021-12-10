@@ -1,0 +1,1478 @@
+# AV1 error Bitstreams
+media._get_test_spec("av1", "decode", "8bit").update({
+"Chimera-AV1-8bit-480x270-552kbps_04849_05027_SB09" : dict(
+source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_SB09.ivf"),
+format="I420", width=480, height=270, frames=120,
+metric=dict(type="md5", expect="32d7b0355214c7a64bed0219a2af3794", numbytes=-1)),
+##"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_12" : dict(
+##source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_12.ivf"),
+##format="I420", width=480, height=270, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_13" : dict(
+source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_13.ivf"),
+format="I420", width=480, height=270, frames=1,
+metric=dict(type="md5", expect="8576c81d94ab6a3b1e46ec86c4b826a4", numbytes=-1)),
+##"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_14" : dict(
+##source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_14.ivf"),
+##format="I420", width=480, height=270, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_15" : dict(
+source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_15.ivf"),
+format="I420", width=480, height=270, frames=1,
+metric=dict(type="md5", expect="8576c81d94ab6a3b1e46ec86c4b826a4", numbytes=-1)),
+##"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_16" : dict(
+##source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_16.ivf"),
+##format="I420", width=480, height=270, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_001_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_001_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="b07500770cf6e855a4be94dd0177051e", numbytes=-1)),
+##"Main_8bits_002_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_002_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_004_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_004_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="b07500770cf6e855a4be94dd0177051e", numbytes=-1)),
+##"Main_8bits_005_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_005_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_007_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_007_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="80ae57f2899b97444af1ea45c031e937", numbytes=-1)),
+##"Main_8bits_008_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_008_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_009_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_009_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=14,
+metric=dict(type="md5", expect="f589b1ebb42d4a72c7030b00ed44303a", numbytes=-1)),
+##"Main_8bits_012_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_012_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_013_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_013_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="80ae57f2899b97444af1ea45c031e937", numbytes=-1)),
+##"Main_8bits_016_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_016_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_017_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_017_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_018_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_018_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="79fcad4e94ed64b1d285c7da6bbac73c", numbytes=-1)),
+##"Main_8bits_019_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_019_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_021_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_021_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_023_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_023_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="79fcad4e94ed64b1d285c7da6bbac73c", numbytes=-1)),
+##"Main_8bits_024_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_024_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_026_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_026_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="80ae57f2899b97444af1ea45c031e937", numbytes=-1)),
+##"Main_8bits_028_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_028_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_030_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_030_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_031_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_031_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="9943be2bd30ab68cffd675421eedbea9", numbytes=-1)),
+##"Main_8bits_032_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_032_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_034_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_034_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="79fcad4e94ed64b1d285c7da6bbac73c", numbytes=-1)),
+##"Main_8bits_035_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_035_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_036_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_036_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=19,
+metric=dict(type="md5", expect="2f1f27449080d25c72a9208580251138", numbytes=-1)),
+##"Main_8bits_037_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_037_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_040_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_040_Robust_Segment_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="b07500770cf6e855a4be94dd0177051e", numbytes=-1)),
+##"Main_8bits_041_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_041_Robust_Segment_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_043_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_043_Robust_Segment_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="9943be2bd30ab68cffd675421eedbea9", numbytes=-1)),
+##"Main_8bits_044_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_044_Robust_Segment_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_045_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_045_Robust_Segment_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_047_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_047_Robust_Segment_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=18,
+metric=dict(type="md5", expect="a2634d09174bc01360c1ee22bb9321c3", numbytes=-1)),
+##"Main_8bits_049_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_049_Robust_Segment_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_050_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_050_Robust_Scaling_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_051_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_051_Robust_Scaling_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_053_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_053_Robust_Scaling_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_054_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_054_Robust_Scaling_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_056_Robust_Scaling_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_056_Robust_Scaling_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="639bed6561a4a26f80b30f1b3a709d28", numbytes=-1)),
+##"Main_8bits_057_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_057_Robust_Scaling_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_058_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_058_Robust_Scaling_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_063_Robust_FilmGrain_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_063_Robust_FilmGrain_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=14,
+metric=dict(type="md5", expect="f589b1ebb42d4a72c7030b00ed44303a", numbytes=-1)),
+##"Main_8bits_064_Robust_Monochrome_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_064_Robust_Monochrome_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_065_Robust_Monochrome_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_065_Robust_Monochrome_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="49634807f7b35f7d6f9cfb4fd91a5588", numbytes=-1)),
+##"Main_8bits_066_Robust_Monochrome_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_066_Robust_Monochrome_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_082_Robust_Frame_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_082_Robust_Frame_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_086_Robust_Frame_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_086_Robust_Frame_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="79fcad4e94ed64b1d285c7da6bbac73c", numbytes=-1)),
+##"Main_8bits_087_Robust_Frame_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_087_Robust_Frame_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_091_Robust_FrameHeader_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_091_Robust_FrameHeader_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=10,
+metric=dict(type="md5", expect="32975e1a2d10a360331de84682371277", numbytes=-1)),
+##"Main_8bits_097_Robust_FrameHeader_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_097_Robust_FrameHeader_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_099_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_099_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=16,
+metric=dict(type="md5", expect="da6a0d097e307ac52ed9b4ad551801fc", numbytes=-1)),
+##"Main_8bits_100_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_100_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_101_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_101_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=18,
+metric=dict(type="md5", expect="63b25e2fc997177866b9a2462eccef6d", numbytes=-1)),
+##"Main_8bits_102_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_102_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_104_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_104_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_105_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_105_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=19,
+metric=dict(type="md5", expect="92d84af2c6cc4f42d1b0a393eb21b381", numbytes=-1)),
+##"Main_8bits_106_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_106_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_107_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_107_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=16,
+metric=dict(type="md5", expect="da6a0d097e307ac52ed9b4ad551801fc", numbytes=-1)),
+##"Main_8bits_110_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_110_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_116_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_116_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=16,
+metric=dict(type="md5", expect="da6a0d097e307ac52ed9b4ad551801fc", numbytes=-1)),
+##"Main_8bits_117_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_117_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_118_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_118_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_119_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_119_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_120_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_120_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_121_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_121_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_122_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_122_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_123_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_123_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_124_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_124_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_125_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_125_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_126_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_126_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_127_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_127_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_128_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_128_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_129_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_129_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_130_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_130_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_131_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_131_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_132_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_132_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_133_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_133_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_134_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_134_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_135_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_135_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_136_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_8bits_136_Robust_Tile_512x512_r5785.ivf"),
+format="I420", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="107a11224699641f1366c00ddac5e06b", numbytes=-1)),
+##"Main_8bits_137_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_137_Robust_Tile_512x512_r5785.ivf"),
+##format="I420", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_141_Robust_HighRes_7680x4320_r5785" : dict(
+source=find_conformance_stream("Main_8bits_141_Robust_HighRes_7680x4320_r5785.ivf"),
+format="I420", width=7680, height=4320, frames=12,
+metric=dict(type="md5", expect="20f3b26e507cb6a1133ddc49b5db8c61", numbytes=-1)),
+##"Main_8bits_143_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_143_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=7680, height=4320, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_144_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_144_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"Main_8bits_145_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_145_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_146_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_146_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"Main_8bits_147_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_147_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_148_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_148_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"Main_8bits_149_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_149_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_150_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_150_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"Main_8bits_151_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_151_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_152_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_152_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"Main_8bits_155_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_155_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_158_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_158_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=2,
+metric=dict(type="md5", expect="311265f5f5d99e2476a28ef28431a8ce", numbytes=-1)),
+##"Main_8bits_159_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_159_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_163_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_163_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=2,
+metric=dict(type="md5", expect="311265f5f5d99e2476a28ef28431a8ce", numbytes=-1)),
+##"Main_8bits_165_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_165_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_166_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_166_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"Main_8bits_167_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_167_Concealment_1920x1080_r5785.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_168_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_168_Concealment_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"test173" : dict(
+##source=find_conformance_stream("test173.obu"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"test92" : dict(
+##source=find_conformance_stream("test92.obu"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_452_HighRes_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_452_HighRes_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+##"Chimera-AV1-8bit-480x270-552kbps_04849_05027_SB09" : dict(
+##source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_SB09.ivf"),
+##format="I420", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_12" : dict(
+source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_12.ivf"),
+format="I420", width=480, height=270, frames=120,
+metric=dict(type="md5", expect="32d7b0355214c7a64bed0219a2af3794", numbytes=-1)),
+##"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_13" : dict(
+##source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_13.ivf"),
+##format="I420", width=480, height=270, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_14" : dict(
+source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_14.ivf"),
+format="I420", width=480, height=270, frames=1,
+metric=dict(type="md5", expect="8576c81d94ab6a3b1e46ec86c4b826a4", numbytes=-1)),
+##"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_15" : dict(
+##source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_15.ivf"),
+##format="I420", width=480, height=270, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_16" : dict(
+source=find_conformance_stream("Chimera-AV1-8bit-480x270-552kbps_04849_05027_TILE_16.ivf"),
+format="I420", width=480, height=270, frames=1,
+metric=dict(type="md5", expect="8576c81d94ab6a3b1e46ec86c4b826a4", numbytes=-1)),
+##"Dolby_1280x720_10b_05114_05238_SB_03" : dict(
+##source=find_conformance_stream("Dolby_1280x720_10b_05114_05238_SB_03.ivf"),
+##format="I420", width=480, height=270, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_001_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_001_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="b07500770cf6e855a4be94dd0177051e", numbytes=-1)),
+##"Main_8bits_002_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_002_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_004_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_004_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="b07500770cf6e855a4be94dd0177051e", numbytes=-1)),
+##"Main_8bits_005_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_005_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_007_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_007_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="80ae57f2899b97444af1ea45c031e937", numbytes=-1)),
+##"Main_8bits_008_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_008_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_009_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_009_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=14,
+metric=dict(type="md5", expect="f589b1ebb42d4a72c7030b00ed44303a", numbytes=-1)),
+##"Main_8bits_012_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_012_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_013_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_013_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="80ae57f2899b97444af1ea45c031e937", numbytes=-1)),
+##"Main_8bits_016_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_016_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_017_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_017_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_018_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_018_Robust_Intra_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="79fcad4e94ed64b1d285c7da6bbac73c", numbytes=-1)),
+##"Main_8bits_019_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_019_Robust_Intra_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_021_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_021_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_023_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_023_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="79fcad4e94ed64b1d285c7da6bbac73c", numbytes=-1)),
+##"Main_8bits_024_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_024_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_026_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_026_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="80ae57f2899b97444af1ea45c031e937", numbytes=-1)),
+##"Main_8bits_028_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_028_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_8bits_030_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_030_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_031_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_031_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="9943be2bd30ab68cffd675421eedbea9", numbytes=-1)),
+##"Main_8bits_032_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_032_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_034_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_034_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="79fcad4e94ed64b1d285c7da6bbac73c", numbytes=-1)),
+##"Main_8bits_035_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_035_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_036_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_036_Robust_Inter_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=19,
+metric=dict(type="md5", expect="2f1f27449080d25c72a9208580251138", numbytes=-1)),
+##"Main_8bits_037_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_037_Robust_Inter_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_040_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_040_Robust_Segment_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="b07500770cf6e855a4be94dd0177051e", numbytes=-1)),
+##"Main_8bits_041_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_041_Robust_Segment_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_043_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_8bits_043_Robust_Segment_192x128_r5785.ivf"),
+format="I420", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="9943be2bd30ab68cffd675421eedbea9", numbytes=-1)),
+##"Main_8bits_044_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_8bits_044_Robust_Segment_192x128_r5785.ivf"),
+##format="I420", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_8bits_452_HighRes_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_8bits_452_HighRes_1920x1080_r5785.ivf"),
+format="I420", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4f0b877168d7af392aeeff4a0010bec5", numbytes=-1)),
+})
+
+media._get_test_spec("av1", "decode", "10bit").update({
+"Dolby_1280x720_10b_05114_05238_SB_03" : dict(
+source=find_conformance_stream("Dolby_1280x720_10b_05114_05238_SB_03.ivf"),
+format="I010", width=1280, height=720, frames=84,
+metric=dict(type="md5", expect="319daa6a9fcd451a6575b0d4eac2eba5", numbytes=-1)),
+##"Dolby_1280x720_10b_05114_05238_TILE_02" : dict(
+##source=find_conformance_stream("Dolby_1280x720_10b_05114_05238_TILE_02.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Dolby_1280x720_10b_05114_05238_TILE_04" : dict(
+source=find_conformance_stream("Dolby_1280x720_10b_05114_05238_TILE_04.ivf"),
+format="I010", width=1280, height=720, frames=84,
+metric=dict(type="md5", expect="319daa6a9fcd451a6575b0d4eac2eba5", numbytes=-1)),
+##"Jazz_256x144_05976_06036_10b_SB04" : dict(
+##source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB04.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Jazz_256x144_05976_06036_10b_SB05" : dict(
+source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB05.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="c36bb11e85925238fcf36f7dbc3c71b8", numbytes=-1)),
+##"Jazz_256x144_05976_06036_10b_SB06" : dict(
+##source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB06.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Jazz_256x144_05976_06036_10b_SB07" : dict(
+source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB07.ivf"),
+format="I010", width=256, height=144, frames=41,
+metric=dict(type="md5", expect="ef50bc23c7f1599eb389c2b769761b07", numbytes=-1)),
+##"Jazz_256x144_05976_06036_10b_SB08" : dict(
+##source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB08.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Jazz_256x144_05976_06036_10b_SB09" : dict(
+source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB09.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="c36bb11e85925238fcf36f7dbc3c71b8", numbytes=-1)),
+##"PATAGONIA_1280x720_04192_04433_SB_02" : dict(
+##source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_SB_02.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_1280x720_04192_04433_TILE_03" : dict(
+source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_03.ivf"),
+format="I010", width=1280, height=720, frames=162,
+metric=dict(type="md5", expect="f6ed5479c3b35b2bd0dc401e41e472da", numbytes=-1)),
+##"PATAGONIA_1280x720_04192_04433_TILE_04" : dict(
+##source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_04.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_1280x720_04192_04433_TILE_05" : dict(
+source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_05.ivf"),
+format="I010", width=1280, height=720, frames=5,
+metric=dict(type="md5", expect="b2a7da1b98046ccd080c093a74dcc7b0", numbytes=-1)),
+##"PATAGONIA_1280x720_04192_04433_TILE_07" : dict(
+##source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_07.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_1280x720_04192_04433_TILE_11" : dict(
+source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_11.ivf"),
+format="I010", width=1280, height=720, frames=162,
+metric=dict(type="md5", expect="f6ed5479c3b35b2bd0dc401e41e472da", numbytes=-1)),
+##"PATAGONIA_256x144_10828_10860_SB03" : dict(
+##source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB03.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_256x144_10828_10860_SB04" : dict(
+source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB04.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="de3ef58b75d5050ce02f7aba2d164d8f", numbytes=-1)),
+##"PATAGONIA_256x144_10828_10860_SB05" : dict(
+##source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB05.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_256x144_10828_10860_SB06" : dict(
+source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB06.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="de3ef58b75d5050ce02f7aba2d164d8f", numbytes=-1)),
+##"PATAGONIA_256x144_10828_10860_SB07" : dict(
+##source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB07.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_256x144_10828_10860_SB08" : dict(
+source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB08.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="de3ef58b75d5050ce02f7aba2d164d8f", numbytes=-1)),
+##"Main_10bits_000_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_000_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_004_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_004_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=12,
+metric=dict(type="md5", expect="c81fcdc3a94961a3e8a8b4566fbee560", numbytes=-1)),
+##"Main_10bits_005_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_005_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_010_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_010_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=10,
+metric=dict(type="md5", expect="647f14749f59be471aac04a71a079a64", numbytes=-1)),
+##"Main_10bits_011_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_011_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_012_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_012_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="b568c0a5fe8f5af12f4e450907c5c3e6", numbytes=-1)),
+##"Main_10bits_013_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_013_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_014_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_014_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_016_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_016_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="1233978151901fec21cc4bbd7942e86a", numbytes=-1)),
+##"Main_10bits_017_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_017_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_020_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_020_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=18,
+metric=dict(type="md5", expect="6941422c1b5ffd9395d7e8f6de058ba5", numbytes=-1)),
+##"Main_10bits_021_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_021_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_022_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_022_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="b568c0a5fe8f5af12f4e450907c5c3e6", numbytes=-1)),
+##"Main_10bits_024_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_024_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_025_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_025_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="42dd5d75483a829f5607a0a3e4f43536", numbytes=-1)),
+##"Main_10bits_028_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_028_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_029_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_029_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="b568c0a5fe8f5af12f4e450907c5c3e6", numbytes=-1)),
+##"Main_10bits_030_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_030_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_034_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_034_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="1d2ae0afb87db61cab7cbe1036eb6f06", numbytes=-1)),
+##"Main_10bits_036_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_036_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_037_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_037_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="1d2ae0afb87db61cab7cbe1036eb6f06", numbytes=-1)),
+##"Main_10bits_038_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_038_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_042_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_042_Robust_Segment_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_044_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_044_Robust_Segment_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="42dd5d75483a829f5607a0a3e4f43536", numbytes=-1)),
+##"Main_10bits_045_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_045_Robust_Segment_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_046_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_046_Robust_Segment_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=12,
+metric=dict(type="md5", expect="c81fcdc3a94961a3e8a8b4566fbee560", numbytes=-1)),
+##"Main_10bits_047_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_047_Robust_Segment_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_048_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_048_Robust_Segment_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="42dd5d75483a829f5607a0a3e4f43536", numbytes=-1)),
+##"Main_10bits_051_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_051_Robust_Scaling_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_053_Robust_Scaling_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_053_Robust_Scaling_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=14,
+metric=dict(type="md5", expect="9e9fe81f4b5bbcfcf96197a04d9636b1", numbytes=-1)),
+##"Main_10bits_056_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_056_Robust_Scaling_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_057_Robust_Scaling_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_057_Robust_Scaling_192x128_r5785.ivf"),
+format="I010", width=155, height=64, frames=12,
+metric=dict(type="md5", expect="ab36c8c30ce9ade9b96a08b2ccd8411d", numbytes=-1)),
+##"Main_10bits_059_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_059_Robust_Scaling_192x128_r5785.ivf"),
+##format="I010", width=155, height=64, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_060_Robust_FilmGrain_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_060_Robust_FilmGrain_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="1233978151901fec21cc4bbd7942e86a", numbytes=-1)),
+##"Main_10bits_061_Robust_FilmGrain_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_061_Robust_FilmGrain_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_063_Robust_FilmGrain_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_063_Robust_FilmGrain_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="1233978151901fec21cc4bbd7942e86a", numbytes=-1)),
+##"Main_10bits_066_Robust_Monochrome_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_066_Robust_Monochrome_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_088_Robust_FrameHeader_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_088_Robust_FrameHeader_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="42dd5d75483a829f5607a0a3e4f43536", numbytes=-1)),
+##"Main_10bits_089_Robust_FrameHeader_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_089_Robust_FrameHeader_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_091_Robust_FrameHeader_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_091_Robust_FrameHeader_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=12,
+metric=dict(type="md5", expect="c81fcdc3a94961a3e8a8b4566fbee560", numbytes=-1)),
+##"Main_10bits_097_Robust_FrameHeader_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_097_Robust_FrameHeader_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_099_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_099_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=19,
+metric=dict(type="md5", expect="6c03ecd28d2ac77bf5be456645aa8344", numbytes=-1)),
+##"Main_10bits_100_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_100_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_102_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_102_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=18,
+metric=dict(type="md5", expect="dd94b8b08f4f2e5d2251217cc1b0ca85", numbytes=-1)),
+##"Main_10bits_105_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_105_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_106_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_106_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_107_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_107_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=14,
+metric=dict(type="md5", expect="bcef7766da9455997f0618ff48bc8ce9", numbytes=-1)),
+##"Main_10bits_108_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_108_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_110_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_110_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=18,
+metric=dict(type="md5", expect="dd94b8b08f4f2e5d2251217cc1b0ca85", numbytes=-1)),
+##"Main_10bits_111_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_111_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_112_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_112_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=19,
+metric=dict(type="md5", expect="6c03ecd28d2ac77bf5be456645aa8344", numbytes=-1)),
+##"Main_10bits_117_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_117_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_118_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_118_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_119_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_119_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_120_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_120_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_121_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_121_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_122_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_122_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_123_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_123_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_124_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_124_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_125_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_125_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_126_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_126_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_127_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_127_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_128_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_128_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_129_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_129_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_130_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_130_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_131_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_131_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_132_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_132_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_133_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_133_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_134_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_134_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_135_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_135_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_136_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_136_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_137_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_137_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_139_Robust_HighRes_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_139_Robust_HighRes_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=13,
+metric=dict(type="md5", expect="0a59deef3a2ada7a50c7f0f8819996cc", numbytes=-1)),
+##"Main_10bits_141_Robust_HighRes_7680x4320_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_141_Robust_HighRes_7680x4320_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_143_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_143_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_144_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_144_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_145_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_145_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_146_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_146_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_147_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_147_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_148_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_148_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_149_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_149_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_150_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_150_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_151_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_151_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_152_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_152_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_155_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_155_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=1,
+metric=dict(type="md5", expect="311265f5f5d99e2476a28ef28431a8ce", numbytes=-1)),
+##"Main_10bits_158_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_158_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_159_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_159_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=2,
+metric=dict(type="md5", expect="848e9c4d2190c6f8d3f2ff35cf482ef3", numbytes=-1)),
+##"Main_10bits_163_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_163_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_165_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_165_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_166_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_166_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_167_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_167_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_168_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_168_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Dolby_1280x720_10b_05114_05238_TILE_02" : dict(
+source=find_conformance_stream("Dolby_1280x720_10b_05114_05238_TILE_02.ivf"),
+format="I010", width=1280, height=720, frames=84,
+metric=dict(type="md5", expect="319daa6a9fcd451a6575b0d4eac2eba5", numbytes=-1)),
+##"Dolby_1280x720_10b_05114_05238_TILE_04" : dict(
+##source=find_conformance_stream("Dolby_1280x720_10b_05114_05238_TILE_04.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Jazz_256x144_05976_06036_10b_SB04" : dict(
+source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB04.ivf"),
+format="I010", width=256, height=144, frames=41,
+metric=dict(type="md5", expect="ef50bc23c7f1599eb389c2b769761b07", numbytes=-1)),
+##"Jazz_256x144_05976_06036_10b_SB05" : dict(
+##source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB05.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Jazz_256x144_05976_06036_10b_SB06" : dict(
+source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB06.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="c36bb11e85925238fcf36f7dbc3c71b8", numbytes=-1)),
+##"Jazz_256x144_05976_06036_10b_SB07" : dict(
+##source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB07.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Jazz_256x144_05976_06036_10b_SB08" : dict(
+source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB08.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="c36bb11e85925238fcf36f7dbc3c71b8", numbytes=-1)),
+##"Jazz_256x144_05976_06036_10b_SB09" : dict(
+##source=find_conformance_stream("Jazz_256x144_05976_06036_10b_SB09.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_1280x720_04192_04433_SB_02" : dict(
+source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_SB_02.ivf"),
+format="I010", width=1280, height=720, frames=162,
+metric=dict(type="md5", expect="f6ed5479c3b35b2bd0dc401e41e472da", numbytes=-1)),
+##"PATAGONIA_1280x720_04192_04433_TILE_03" : dict(
+##source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_03.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_1280x720_04192_04433_TILE_04" : dict(
+source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_04.ivf"),
+format="I010", width=1280, height=720, frames=162,
+metric=dict(type="md5", expect="f6ed5479c3b35b2bd0dc401e41e472da", numbytes=-1)),
+##"PATAGONIA_1280x720_04192_04433_TILE_05" : dict(
+##source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_05.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_1280x720_04192_04433_TILE_07" : dict(
+source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_07.ivf"),
+format="I010", width=1280, height=720, frames=162,
+metric=dict(type="md5", expect="f6ed5479c3b35b2bd0dc401e41e472da", numbytes=-1)),
+##"PATAGONIA_1280x720_04192_04433_TILE_11" : dict(
+##source=find_conformance_stream("PATAGONIA_1280x720_04192_04433_TILE_11.ivf"),
+##format="I010", width=1280, height=720, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_256x144_10828_10860_SB03" : dict(
+source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB03.ivf"),
+format="I010", width=256, height=144, frames=25,
+metric=dict(type="md5", expect="9e3119db8898b8f610596ed99bb3e433", numbytes=-1)),
+##"PATAGONIA_256x144_10828_10860_SB04" : dict(
+##source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB04.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_256x144_10828_10860_SB05" : dict(
+source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB05.ivf"),
+format="I010", width=256, height=144, frames=1,
+metric=dict(type="md5", expect="de3ef58b75d5050ce02f7aba2d164d8f", numbytes=-1)),
+##"PATAGONIA_256x144_10828_10860_SB06" : dict(
+##source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB06.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"PATAGONIA_256x144_10828_10860_SB07" : dict(
+source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB07.ivf"),
+format="I010", width=256, height=144, frames=25,
+metric=dict(type="md5", expect="9e3119db8898b8f610596ed99bb3e433", numbytes=-1)),
+##"PATAGONIA_256x144_10828_10860_SB08" : dict(
+##source=find_conformance_stream("PATAGONIA_256x144_10828_10860_SB08.ivf"),
+##format="I010", width=256, height=144, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_000_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_000_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_004_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_004_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=12,
+metric=dict(type="md5", expect="c81fcdc3a94961a3e8a8b4566fbee560", numbytes=-1)),
+##"Main_10bits_005_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_005_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_010_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_010_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=10,
+metric=dict(type="md5", expect="647f14749f59be471aac04a71a079a64", numbytes=-1)),
+##"Main_10bits_011_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_011_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_012_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_012_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="b568c0a5fe8f5af12f4e450907c5c3e6", numbytes=-1)),
+##"Main_10bits_013_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_013_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_014_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_014_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_016_Robust_Intra_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_016_Robust_Intra_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="1233978151901fec21cc4bbd7942e86a", numbytes=-1)),
+##"Main_10bits_017_Robust_Intra_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_017_Robust_Intra_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_020_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_020_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=18,
+metric=dict(type="md5", expect="6941422c1b5ffd9395d7e8f6de058ba5", numbytes=-1)),
+##"Main_10bits_021_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_021_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_022_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_022_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="b568c0a5fe8f5af12f4e450907c5c3e6", numbytes=-1)),
+##"Main_10bits_024_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_024_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_025_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_025_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="42dd5d75483a829f5607a0a3e4f43536", numbytes=-1)),
+##"Main_10bits_028_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_028_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_029_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_029_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=16,
+metric=dict(type="md5", expect="b568c0a5fe8f5af12f4e450907c5c3e6", numbytes=-1)),
+##"Main_10bits_030_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_030_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_034_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_034_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="1d2ae0afb87db61cab7cbe1036eb6f06", numbytes=-1)),
+##"Main_10bits_036_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_036_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_037_Robust_Inter_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_037_Robust_Inter_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=15,
+metric=dict(type="md5", expect="1d2ae0afb87db61cab7cbe1036eb6f06", numbytes=-1)),
+##"Main_10bits_038_Robust_Inter_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_038_Robust_Inter_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_042_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_042_Robust_Segment_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_044_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_044_Robust_Segment_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="42dd5d75483a829f5607a0a3e4f43536", numbytes=-1)),
+##"Main_10bits_045_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_045_Robust_Segment_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_046_Robust_Segment_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_046_Robust_Segment_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=12,
+metric=dict(type="md5", expect="c81fcdc3a94961a3e8a8b4566fbee560", numbytes=-1)),
+##"Main_10bits_047_Robust_Segment_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_047_Robust_Segment_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_051_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_051_Robust_Scaling_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_053_Robust_Scaling_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_053_Robust_Scaling_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=14,
+metric=dict(type="md5", expect="9e9fe81f4b5bbcfcf96197a04d9636b1", numbytes=-1)),
+##"Main_10bits_056_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_056_Robust_Scaling_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_057_Robust_Scaling_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_057_Robust_Scaling_192x128_r5785.ivf"),
+format="I010", width=155, height=64, frames=12,
+metric=dict(type="md5", expect="ab36c8c30ce9ade9b96a08b2ccd8411d", numbytes=-1)),
+##"Main_10bits_059_Robust_Scaling_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_059_Robust_Scaling_192x128_r5785.ivf"),
+##format="I010", width=155, height=64, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_060_Robust_FilmGrain_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_060_Robust_FilmGrain_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="1233978151901fec21cc4bbd7942e86a", numbytes=-1)),
+##"Main_10bits_061_Robust_FilmGrain_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_061_Robust_FilmGrain_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_063_Robust_FilmGrain_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_063_Robust_FilmGrain_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=13,
+metric=dict(type="md5", expect="1233978151901fec21cc4bbd7942e86a", numbytes=-1)),
+##"Main_10bits_066_Robust_Monochrome_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_066_Robust_Monochrome_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_088_Robust_FrameHeader_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_088_Robust_FrameHeader_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=17,
+metric=dict(type="md5", expect="42dd5d75483a829f5607a0a3e4f43536", numbytes=-1)),
+##"Main_10bits_089_Robust_FrameHeader_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_089_Robust_FrameHeader_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_091_Robust_FrameHeader_192x128_r5785" : dict(
+source=find_conformance_stream("Main_10bits_091_Robust_FrameHeader_192x128_r5785.ivf"),
+format="I010", width=192, height=128, frames=12,
+metric=dict(type="md5", expect="c81fcdc3a94961a3e8a8b4566fbee560", numbytes=-1)),
+##"Main_10bits_097_Robust_FrameHeader_192x128_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_097_Robust_FrameHeader_192x128_r5785.ivf"),
+##format="I010", width=192, height=128, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_099_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_099_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=19,
+metric=dict(type="md5", expect="6c03ecd28d2ac77bf5be456645aa8344", numbytes=-1)),
+##"Main_10bits_100_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_100_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_102_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_102_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=18,
+metric=dict(type="md5", expect="dd94b8b08f4f2e5d2251217cc1b0ca85", numbytes=-1)),
+##"Main_10bits_105_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_105_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_106_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_106_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_107_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_107_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=14,
+metric=dict(type="md5", expect="bcef7766da9455997f0618ff48bc8ce9", numbytes=-1)),
+##"Main_10bits_108_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_108_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_110_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_110_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=18,
+metric=dict(type="md5", expect="dd94b8b08f4f2e5d2251217cc1b0ca85", numbytes=-1)),
+##"Main_10bits_111_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_111_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_112_Robust_Tile_Group_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_112_Robust_Tile_Group_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=19,
+metric=dict(type="md5", expect="6c03ecd28d2ac77bf5be456645aa8344", numbytes=-1)),
+##"Main_10bits_117_Robust_Tile_Group_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_117_Robust_Tile_Group_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_118_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_118_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_119_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_119_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_120_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_120_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_121_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_121_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_122_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_122_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_123_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_123_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_124_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_124_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_125_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_125_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_126_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_126_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_127_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_127_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_128_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_128_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_129_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_129_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_130_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_130_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+##"Main_10bits_131_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_131_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_132_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_132_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_133_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_133_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_134_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_134_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_135_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_135_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_136_Robust_Tile_512x512_r5785" : dict(
+source=find_conformance_stream("Main_10bits_136_Robust_Tile_512x512_r5785.ivf"),
+format="I010", width=512, height=512, frames=20,
+metric=dict(type="md5", expect="14b17234e237505421b6492b8d757507", numbytes=-1)),
+##"Main_10bits_137_Robust_Tile_512x512_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_137_Robust_Tile_512x512_r5785.ivf"),
+##format="I010", width=512, height=512, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_139_Robust_HighRes_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_139_Robust_HighRes_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=13,
+metric=dict(type="md5", expect="0a59deef3a2ada7a50c7f0f8819996cc", numbytes=-1)),
+##"Main_10bits_141_Robust_HighRes_7680x4320_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_141_Robust_HighRes_7680x4320_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_143_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_143_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_144_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_144_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_145_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_145_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_146_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_146_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_147_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_147_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_148_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_148_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_149_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_149_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_150_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_150_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_151_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_151_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_152_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_152_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_155_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_155_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=1,
+metric=dict(type="md5", expect="311265f5f5d99e2476a28ef28431a8ce", numbytes=-1)),
+##"Main_10bits_158_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_158_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_159_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_159_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=2,
+metric=dict(type="md5", expect="848e9c4d2190c6f8d3f2ff35cf482ef3", numbytes=-1)),
+##"Main_10bits_163_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_163_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_165_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_165_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_166_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_166_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+"Main_10bits_167_Concealment_1920x1080_r5785" : dict(
+source=find_conformance_stream("Main_10bits_167_Concealment_1920x1080_r5785.ivf"),
+format="I010", width=1920, height=1080, frames=10,
+metric=dict(type="md5", expect="4d1bb2bb20a60083b384267fc1c50c3f", numbytes=-1)),
+##"Main_10bits_168_Concealment_1920x1080_r5785" : dict(
+##source=find_conformance_stream("Main_10bits_168_Concealment_1920x1080_r5785.ivf"),
+##format="I010", width=1920, height=1080, frames=Null,
+##metric=dict(type="md5", expect="Null", numbytes=-1)),
+})

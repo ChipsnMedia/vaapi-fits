@@ -1,0 +1,87 @@
+# vp9 error Bitstreams
+media._get_test_spec("vp9", "decode", "8bit").update({
+"Golf_Test_256x144_500_3_1" : dict(
+source=find_conformance_stream("Golf_Test_256x144_500_3_1.ivf"),
+format="I420", width=256, height=144, frames=3,
+metric=dict(type="md5", expect="7138bbb7626acc967e173fa6d95bb79f", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_1-1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_1-1.ivf"),
+format="I420", width=1920, height=1080, frames=99,
+metric=dict(type="md5", expect="33562496bfd2ddf4eb3a089727d99fb4", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_2-1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_2-1.ivf"),
+format="I420", width=1920, height=1080, frames=99,
+metric=dict(type="md5", expect="95958a42e254c242cfc98b9ad3d3474c", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_tile0_err_2" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_tile0_err_2.ivf"),
+format="I420", width=1920, height=1080, frames=100,
+metric=dict(type="md5", expect="821a9c53432b12c2c52ef976772b1076", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_tile0_err_4" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_tile0_err_4.ivf"),
+format="I420", width=1920, height=1080, frames=99,
+metric=dict(type="md5", expect="a27e18bbacbe167180ba1f023cc6a7e8", numbytes=-1)),
+"RaceHorses_416x240_30_tile_err_1" : dict(
+source=find_conformance_stream("RaceHorses_416x240_30_tile_err_1.ivf"),
+format="I420", width=416, height=240, frames=2,
+metric=dict(type="md5", expect="7ceadd1316f86eaafb898359e4ce6964", numbytes=-1)),
+"crowd_run_256X144_fr15_bd8_gf_dist_4_l1" : dict(
+source=find_conformance_stream("crowd_run_256X144_fr15_bd8_gf_dist_4_l1.ivf"),
+format="I420", width=256, height=144, frames=152,
+metric=dict(type="md5", expect="1c922ea842639809ba73477ce01b05c8", numbytes=-1)),
+"Golf_Test_256x144_500_1" : dict(
+source=find_conformance_stream("Golf_Test_256x144_500_1.ivf"),
+format="I420", width=256, height=144, frames=263,
+metric=dict(type="md5", expect="4558479d70364478dac5bb6aa8e21223", numbytes=-1)),
+"Golf_Test_256x144_500_3_1" : dict(
+source=find_conformance_stream("Golf_Test_256x144_500_3_1.ivf"),
+format="I420", width=256, height=144, frames=3,
+metric=dict(type="md5", expect="7138bbb7626acc967e173fa6d95bb79f", numbytes=-1)),
+"Golf_Test_256x144_500_err" : dict(
+source=find_conformance_stream("Golf_Test_256x144_500_err.ivf"),
+format="I420", width=256, height=144, frames=263,
+metric=dict(type="md5", expect="0de58f24110c80362464a75dbd62512f", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_1-1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_1-1.ivf"),
+format="I420", width=1920, height=1080, frames=99,
+metric=dict(type="md5", expect="33562496bfd2ddf4eb3a089727d99fb4", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_2-1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_2-1.ivf"),
+format="I420", width=1920, height=1080, frames=99,
+metric=dict(type="md5", expect="95958a42e254c242cfc98b9ad3d3474c", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_2-2_1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_2-2_1.ivf"),
+format="I420", width=1920, height=1080, frames=2,
+metric=dict(type="md5", expect="e8ab40c6c501dd57e3270264e98a5771", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_3-1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_3-1.ivf"),
+format="I420", width=1920, height=1080, frames=99,
+metric=dict(type="md5", expect="61af7693b5ad2571000032e97cb68f68", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_3-3_1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_3-3_1.ivf"),
+format="I420", width=1920, height=1080, frames=3,
+metric=dict(type="md5", expect="81ba1def8836fcf865a1300eca8eafc2", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_tile0_err_1" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_tile0_err_1.ivf"),
+format="I420", width=1920, height=1080, frames=100,
+metric=dict(type="md5", expect="45424f8cf3ea5be8261f1f1550bf6392", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_tile0_err_2" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_tile0_err_2.ivf"),
+format="I420", width=1920, height=1080, frames=100,
+metric=dict(type="md5", expect="821a9c53432b12c2c52ef976772b1076", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_tile0_err_3" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_tile0_err_3.ivf"),
+format="I420", width=1920, height=1080, frames=100,
+metric=dict(type="md5", expect="a6f8209bc218297d1f9efbb2a7789477", numbytes=-1)),
+"Green_The_Oirase_Stream_1920x1080_100_tile0_err_4" : dict(
+source=find_conformance_stream("Green_The_Oirase_Stream_1920x1080_100_tile0_err_4.ivf"),
+format="I420", width=1920, height=1080, frames=99,
+metric=dict(type="md5", expect="a27e18bbacbe167180ba1f023cc6a7e8", numbytes=-1)),
+"RaceHorses_416x240_30_tile_err_1" : dict(
+source=find_conformance_stream("RaceHorses_416x240_30_tile_err_1.ivf"),
+format="I420", width=416, height=240, frames=2,
+metric=dict(type="md5", expect="7ceadd1316f86eaafb898359e4ce6964", numbytes=-1)),
+"crowd_run_256X144_fr15_bd8_gf_dist_4_l1" : dict(
+source=find_conformance_stream("crowd_run_256X144_fr15_bd8_gf_dist_4_l1.ivf"),
+format="I420", width=256, height=144, frames=152,
+metric=dict(type="md5", expect="1c922ea842639809ba73477ce01b05c8", numbytes=-1)),
+})

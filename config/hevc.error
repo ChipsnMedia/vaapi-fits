@@ -1,0 +1,333 @@
+# HEVC error Bitstreams
+
+media._get_test_spec("hevc", "decode", "8bit").update({
+"test_1080_hd" : dict(
+source=find_conformance_stream("test_1080_hd.bit"),
+format="I420", width=1920, height=1088, frames=6,
+metric=dict(type="md5", expect="1fb80bf070c75825de09f3191d405f7a", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_COEF_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_COEF_01.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="8f1a4636baef90eaa676e683bfbde7d2", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_COEF_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_COEF_02.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="4237df685aa0524209b860a260241dce", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_00.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="c3d440e24ac584df63a1df56c87ff985", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="76986feed62358afbcfc168f1a4db938", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="1cfb6f36dc3ad82e30590c37185c6eb1", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_03" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_03.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="c3d440e24ac584df63a1df56c87ff985", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_04" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_04.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="76986feed62358afbcfc168f1a4db938", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_05" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_05.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="9a91e4a79b222747ca1cd141fd0135c4", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_00.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="48c10b78109f0c0f301bebdbeabe24da", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="adb39aa6fa1b63befd4ff32331f8c0f6", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="58fb13acf548d1356bcad202c7d43431", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_MVD_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_MVD_01.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="68531e2f714ee1310dc9b9b0f4f5d162", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_MVD_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_MVD_02.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="20ba92cdf63a20d2d529265eebc50d91", numbytes=-1)),
+"test_1080_hd" : dict(
+source=find_conformance_stream("test_1080_hd.bit"),
+format="I420", width=1920, height=1088, frames=6,
+metric=dict(type="md5", expect="1fb80bf070c75825de09f3191d405f7a", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_COEF_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_COEF_01.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="8f1a4636baef90eaa676e683bfbde7d2", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_COEF_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_COEF_02.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="4237df685aa0524209b860a260241dce", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_00.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="c3d440e24ac584df63a1df56c87ff985", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="76986feed62358afbcfc168f1a4db938", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="ad065881c1fedc2cc3dfe97c8188f2ad", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_03" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_03.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="c3d440e24ac584df63a1df56c87ff985", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_04" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_04.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="76986feed62358afbcfc168f1a4db938", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_05" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_05.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="731ba408d40f4ec2f350200d1140083f", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_00.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="48c10b78109f0c0f301bebdbeabe24da", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="adb39aa6fa1b63befd4ff32331f8c0f6", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="58fb13acf548d1356bcad202c7d43431", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_MVD_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_MVD_01.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="68531e2f714ee1310dc9b9b0f4f5d162", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_MVD_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_MVD_02.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="20ba92cdf63a20d2d529265eebc50d91", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_COEF_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_COEF_01.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="8f1a4636baef90eaa676e683bfbde7d2", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_COEF_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_COEF_02.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="4237df685aa0524209b860a260241dce", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_00.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="48c10b78109f0c0f301bebdbeabe24da", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="adb39aa6fa1b63befd4ff32331f8c0f6", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOSUB_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOSUB_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="58fb13acf548d1356bcad202c7d43431", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_00.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="c3d440e24ac584df63a1df56c87ff985", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="76986feed62358afbcfc168f1a4db938", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="e907af29054f04c35f78a4b99b2ab742", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_03" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_03.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="c3d440e24ac584df63a1df56c87ff985", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_04" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_04.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="76986feed62358afbcfc168f1a4db938", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_EOS_05" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_EOS_05.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="04d4335da448ee629ed1b9d3486a5adf", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_MVD_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_MVD_01.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="68531e2f714ee1310dc9b9b0f4f5d162", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_MVD_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_MVD_02.bin"),
+format="I420", width=416, height=240, frames=16,
+metric=dict(type="md5", expect="20ba92cdf63a20d2d529265eebc50d91", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_PIC_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_PIC_00.bin"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="68e816fd757d15c3b235feee9f1b3003", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_PIC_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_PIC_01.bin"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="0ea941e9a8f7cc23688b014916035f65", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_PIC_03" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_PIC_03.bin"),
+format="I420", width=416, height=240, frames=9,
+metric=dict(type="md5", expect="a17921e0b2aa181f468a9976ff54da23", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_PIC_04" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_PIC_04.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="6373d99c6278499f05db053b67232055", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_PIC_05" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_PIC_05.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="6373d99c6278499f05db053b67232055", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_00.bin"),
+format="I420", width=416, height=240, frames=6,
+metric=dict(type="md5", expect="e7d1c6ce69638c71cf4425034cc6e787", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="ae15f205a73c6b6cbd4f0431cba60a8a", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="f2691008beba498e30947ef28b77bcab", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_03" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_03.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="c50b17ef8fcad78aead15a3232604ba6", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_04" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_04.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="06c5f9249aaa05194e15ca6bfd04abc2", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_05" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_05.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="05c1193c69e2392108ebd58f50ecca41", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_06" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_06.bin"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="16289c6ceb9cb931978fc15f2d5ee16a", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_07" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_07.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="df6e450b2cdb3fffcd52b00f8170cdc6", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_08" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_08.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="e0e8c6b0ae2a1b0dc9bcd129169c276c", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_09" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_09.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="4a195a5494b8adae0127dbf560cbeb7a", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_10" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_10.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="48d9244cb3238d70e416dea0247f60f8", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_11" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_11.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="872a99dd5c41943ec79e482d8dec52fe", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_12" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_12.bin"),
+format="I420", width=416, height=240, frames=6,
+metric=dict(type="md5", expect="e7d1c6ce69638c71cf4425034cc6e787", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_13" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_13.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="70e83154b685635462798053dd82bdf6", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_14" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_14.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="06c5f9249aaa05194e15ca6bfd04abc2", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_15" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_15.bin"),
+format="I420", width=416, height=240, frames=7,
+metric=dict(type="md5", expect="16289c6ceb9cb931978fc15f2d5ee16a", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_16" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_16.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="d33f5d7300d96fa73ecd4c32618e23b3", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_17" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_17.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="48d9244cb3238d70e416dea0247f60f8", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_18" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_18.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="d99c67935f76c44a0bab48911b56eb79", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_19" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_19.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="63dd2e583ab4ec539f30bceff743ef6b", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_20" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_20.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="a21b168db8c7c011dbd874ef54003c3c", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_21" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_21.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="b12aa429becd0545bed51744ca159fdc", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_22" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_22.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="63dd2e583ab4ec539f30bceff743ef6b", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_23" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_23.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="72ba86608aef61e74f1ead106d26d3ac", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_SLICE_24" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_SLICE_24.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="3d7e7c49b62f10111def9e9ea152e461", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_00" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_00.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="82c1e4d4685772dabffe0210b532f610", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_01" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_01.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="ed8e165ef97734eaabb45ad8163334a4", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_02" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_02.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="5b593277ad25fb9330b9923df0101878", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_03" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_03.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="d0367a1d11236988899ee34431f56bec", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_04" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_04.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="300df88cc59778438d537404305d4192", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_05" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_05.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="300df88cc59778438d537404305d4192", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_06" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_06.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="02af4a6573f42199d6fb831011e8e462", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_07" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_07.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="f2c193392f7fb29303b6d444d0e07446", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_08" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_08.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="16131c6cc4fc1ec25f41ddcbb56e7c90", numbytes=-1)),
+"basketballdrive_416x240_MA_SD_ERR_TILE_09" : dict(
+source=find_conformance_stream("basketballdrive_416x240_MA_SD_ERR_TILE_09.bin"),
+format="I420", width=416, height=240, frames=8,
+metric=dict(type="md5", expect="457ea91f93acbf07d3c680be32bbc34e", numbytes=-1)),
+"test_1080_hd" : dict(
+source=find_conformance_stream("test_1080_hd.bit"),
+format="I420", width=1920, height=1088, frames=6,
+metric=dict(type="md5", expect="1fb80bf070c75825de09f3191d405f7a", numbytes=-1)),
+})
+
