@@ -1,5 +1,5 @@
 # mpeg4 Bitstreams
-media._get_test_spec("mpeg2", "decode").update({
+media._get_test_spec("mpeg4", "decode").update({
 "AeonFlux_xvid_1_video" : dict(
 source=find_conformance_stream("AeonFlux_xvid_1_video.cmp"),
 format="I420", width=720, height=304, frames=894,
