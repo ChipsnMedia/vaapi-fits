@@ -1,927 +1,771 @@
-# mpeg2 Bitstreams
+# MP2 Bitstreams
 media._get_test_spec("mpeg2", "decode").update({
-"att_bits" : dict(
-source=find_conformance_stream("att.bits.mpeg"),
-format="I420", width=32, height=32, frames=132,
-metric=dict(type="md5", expect="59074f1e4677510405e194c3f63d9bf9", numbytes=-1)),
-"attts3b" : dict(
-source=find_conformance_stream("attts3b.mpeg"),
-format="I420", width=704, height=480, frames=4,
-metric=dict(type="md5", expect="21925d0f0f2650758745d18b6b4ebd57", numbytes=-1)),
-"bit_stream" : dict(
-source=find_conformance_stream("bit_stream.mpeg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="5ff2ab3d67e0ad0c68df678181147305", numbytes=-1)),
-"bit_stream1" : dict(
-source=find_conformance_stream("bit_stream1.mpeg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="fc171a068b741df3bb400fc9a800f065", numbytes=-1)),
-"bit_stream2" : dict(
-source=find_conformance_stream("bit_stream2.mpeg"),
-format="I420", width=720, height=480, frames=16,
-metric=dict(type="md5", expect="29ff477bf2c1216aaaccfafd63b6ffd2", numbytes=-1)),
-"conf4_bit" : dict(
-source=find_conformance_stream("conf4.bit.mpeg"),
-format="I420", width=704, height=480, frames=4,
-metric=dict(type="md5", expect="23a93c66bbc68f58c5000e2a1c9c1075", numbytes=-1)),
-"gi_v3" : dict(
-source=find_conformance_stream("gi_v3.mpeg"),
-format="I420", width=704, height=480, frames=4,
-metric=dict(type="md5", expect="b0e6ec8d7ee749092ea51771cc73535e", numbytes=-1)),
-"hhi_v1" : dict(
-source=find_conformance_stream("hhi_v1.mpeg"),
-format="I420", width=720, height=576, frames=4,
-metric=dict(type="md5", expect="23a41f1da1d3129bf93ec633417c638a", numbytes=-1)),
-"ime" : dict(
-source=find_conformance_stream("ime.mpeg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="978e61863055b77b155d954ebb2be22f", numbytes=-1)),
-"nokia6" : dict(
-source=find_conformance_stream("nokia6.mpeg"),
-format="I420", width=720, height=576, frames=4,
-metric=dict(type="md5", expect="89c4e3337416b59ea6e0fcf9c9bd1879", numbytes=-1)),
-"nokia6_dual_60_bit" : dict(
-source=find_conformance_stream("nokia6_dual_60.bit.mpeg"),
-format="I420", width=720, height=576, frames=60,
-metric=dict(type="md5", expect="cc9cb6a76c070f460620d5b4f6d6c091", numbytes=-1)),
-"sony-ct1" : dict(
-source=find_conformance_stream("sony-ct1.mpeg"),
-format="I420", width=352, height=224, frames=60,
-metric=dict(type="md5", expect="bffec778bcd035e18c674d98369146f3", numbytes=-1)),
-"tcela-6_bits" : dict(
-source=find_conformance_stream("tcela-6.bits.mpeg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="83acae45a115a56c21c0cbded6c68963", numbytes=-1)),
-"tcela-8_bits" : dict(
-source=find_conformance_stream("tcela-8.bits.mpeg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="f056dc0f5eaa91ee1db4489fc8b625bc", numbytes=-1)),
-"syncho_bin_1" : dict(
-source=find_conformance_stream("syncho.bin.1.m2v"),
-format="I420", width=352, height=288, frames=238,
-metric=dict(type="md5", expect="4784b9d8161d9abfc3e7d01595442594", numbytes=-1)),
-"syncho_bin_3" : dict(
-source=find_conformance_stream("syncho.bin.3.m2v"),
-format="I420", width=720, height=576, frames=239,
-metric=dict(type="md5", expect="1ceda50d02d87bd9f2aec5c04926ae68", numbytes=-1)),
-"tcela-14_bits" : dict(
-source=find_conformance_stream("tcela-14.bits.mpeg"),
-format="I420", width=720, height=480, frames=61,
-metric=dict(type="md5", expect="96e9620fcd8642298495f8038d951536", numbytes=-1)),
-"tcela-17_bits" : dict(
-source=find_conformance_stream("tcela-17.bits.mpeg"),
-format="I420", width=720, height=480, frames=2,
-metric=dict(type="md5", expect="e1c2f4cc094a6e831730814492171a88", numbytes=-1)),
-"toshiba_DPall-0" : dict(
-source=find_conformance_stream("toshiba_DPall-0.mpg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="7eadffe0e87be3ec4355fe8083c7c8b7", numbytes=-1)),
-"BR00500K" : dict(
-source=find_conformance_stream("BR00500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="5f575fa08bec8451ee006d796ea9b6f0", numbytes=-1)),
-"BR01500K" : dict(
-source=find_conformance_stream("BR01500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="2849ea72f2ece81f5dcb0105b957b2f9", numbytes=-1)),
-"BR01856K" : dict(
-source=find_conformance_stream("BR01856K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="8cb2d9d361c1b17d7209c4f4ef885525", numbytes=-1)),
-"BR03500K" : dict(
-source=find_conformance_stream("BR03500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="1d77fb58c58630fe40d0cfdeeb544f4e", numbytes=-1)),
-"BR05500K" : dict(
-source=find_conformance_stream("BR05500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="07d5f8aefa4715ff481dab2bdab6a3ff", numbytes=-1)),
-"BR08000K" : dict(
-source=find_conformance_stream("BR08000K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="802f1263abd6fd68bb6b293cf8da991d", numbytes=-1)),
-"BR08500K" : dict(
-source=find_conformance_stream("BR08500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="264b6bf9deb0d7c32c3331112bb6080c", numbytes=-1)),
-"BR09000K" : dict(
-source=find_conformance_stream("BR09000K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="7f39ab433c5c903fa3e1bee364791598", numbytes=-1)),
-"LQUANT" : dict(
-source=find_conformance_stream("LQUANT.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="4cf9a02af398d554488de2a4524e2fdf", numbytes=-1)),
-"MVS2_2" : dict(
-source=find_conformance_stream("MVS2_2.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="a750c6901ba18ba35a0d114f921225c8", numbytes=-1)),
-"MVS2_3" : dict(
-source=find_conformance_stream("MVS2_3.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="0e7dc1e15049690636f9d5f253df8fc6", numbytes=-1)),
-"MVS2_4" : dict(
-source=find_conformance_stream("MVS2_4.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="96ec3938592ba50f70b00f82c019ddf5", numbytes=-1)),
-"VBV" : dict(
-source=find_conformance_stream("VBV.MPG"),
-format="I420", width=352, height=240, frames=150,
-metric=dict(type="md5", expect="490ca60a593a891c57a638191e4574e3", numbytes=-1)),
-"bbc3_015" : dict(
-source=find_conformance_stream("bbc3_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="e6f3285b085c6db5ccea54a7c0855b1d", numbytes=-1)),
-"bbc3_060" : dict(
-source=find_conformance_stream("bbc3_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="bde9cec1968463922d24d64753c2a1a9", numbytes=-1)),
-"bbc3_080" : dict(
-source=find_conformance_stream("bbc3_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="c73cee21010129ad35322f752b4bdaa3", numbytes=-1)),
-"100b_015" : dict(
-source=find_conformance_stream("100b_015.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="3fdeefcf183bfc6686aa650d4e1c95cb", numbytes=-1)),
-"cact_015" : dict(
-source=find_conformance_stream("cact_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="5e954b43b1b87918f0747a551ae80ae0", numbytes=-1)),
-"cact_080" : dict(
-source=find_conformance_stream("cact_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="bb1437d30088a0f1a710f0bf1de30cee", numbytes=-1)),
-"cact_120" : dict(
-source=find_conformance_stream("cact_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="723aa569dd8853c9b22e752529db9da5", numbytes=-1)),
-"flwr_120" : dict(
-source=find_conformance_stream("flwr_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="12f98836b9de1d1ea1c8580a1fa2c1b2", numbytes=-1)),
-"mulb_060" : dict(
-source=find_conformance_stream("mulb_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="4de2a2a1a6a10986e33b1c659c3a40db", numbytes=-1)),
-"pulb_015" : dict(
-source=find_conformance_stream("pulb_015.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="c60ec1baa2468fc2992c6c9347dfc3b3", numbytes=-1)),
-"pulb_120" : dict(
-source=find_conformance_stream("pulb_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="7b6f7273bdcf3f5970cb9b9e46867bca", numbytes=-1)),
-"susi_040" : dict(
-source=find_conformance_stream("susi_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="65d8d834c91c6977bc509b40faad1c9a", numbytes=-1)),
-"susi_080" : dict(
-source=find_conformance_stream("susi_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="c41ea48fd916453da254e2c905735366", numbytes=-1)),
-"time_040" : dict(
-source=find_conformance_stream("time_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="3624c3ed5af8d6ef009ab090855b675e", numbytes=-1)),
-"bbc3_015" : dict(
-source=find_conformance_stream("bbc3_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="e6f3285b085c6db5ccea54a7c0855b1d", numbytes=-1)),
-"bbc3_120" : dict(
-source=find_conformance_stream("bbc3_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="f099a68771add87a916677ad631e98a8", numbytes=-1)),
-"100b_080" : dict(
-source=find_conformance_stream("100b_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="e1874c3cb64ec9485acbe67d7c951d89", numbytes=-1)),
-"100b_120" : dict(
-source=find_conformance_stream("100b_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="1aa080c3dc2078b4d9be57311897fbb1", numbytes=-1)),
-"cact_015" : dict(
-source=find_conformance_stream("cact_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="5e954b43b1b87918f0747a551ae80ae0", numbytes=-1)),
-"cact_120" : dict(
-source=find_conformance_stream("cact_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="723aa569dd8853c9b22e752529db9da5", numbytes=-1)),
-"mobl_015" : dict(
-source=find_conformance_stream("mobl_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="c4e69c8e4335c1b8830d541549fa55a3", numbytes=-1)),
-"mulb_040" : dict(
-source=find_conformance_stream("mulb_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="6dd3d18ca8417d48b8f5127a568c9cc2", numbytes=-1)),
-"mulb_120" : dict(
-source=find_conformance_stream("mulb_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="c8c44549d7fa7ea4507e23ca0a60d304", numbytes=-1)),
-"pulb_040" : dict(
-source=find_conformance_stream("pulb_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="6f6f660f3bd1fcc301ffc81f4404b939", numbytes=-1)),
-"pulb_080" : dict(
-source=find_conformance_stream("pulb_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="7585988170b003bfd7c9b522271477df", numbytes=-1)),
-"susi_040" : dict(
-source=find_conformance_stream("susi_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="65d8d834c91c6977bc509b40faad1c9a", numbytes=-1)),
-"susi_120" : dict(
-source=find_conformance_stream("susi_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="1db1eb242dd9d71fec59a5a8f7305d44", numbytes=-1)),
-"tens_040" : dict(
-source=find_conformance_stream("tens_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="0d7ba61595da4d49f6b553a9d94301f1", numbytes=-1)),
-"tens_060" : dict(
-source=find_conformance_stream("tens_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="ccced4508bface6a42c7e2abb6064f22", numbytes=-1)),
-"tens_120" : dict(
-source=find_conformance_stream("tens_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="da0aca86f1db1e6e914d8cffccb17777", numbytes=-1)),
-"v700_040" : dict(
-source=find_conformance_stream("v700_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="dfe8548cf7227a94fbccf29f68be1e81", numbytes=-1)),
-"v700_120" : dict(
-source=find_conformance_stream("v700_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="65b6a16a8eb388fc6a7ae615a6b719d9", numbytes=-1)),
-"ATSC_06" : dict(
-source=find_conformance_stream("ATSC_06.MPG"),
-format="I420", width=1920, height=1080, frames=363,
-metric=dict(type="md5", expect="04b41447c8a471bd47864bd16455f14f", numbytes=-1)),
-"ATSC_14" : dict(
-source=find_conformance_stream("ATSC_14.MPG"),
-format="I420", width=704, height=480, frames=291,
-metric=dict(type="md5", expect="831afad7d4c40ff85a934c2e410ceb51", numbytes=-1)),
-"ATSC_20" : dict(
-source=find_conformance_stream("ATSC_20.MPG"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="a02672473a009b7cf65d4a1a22e965cb", numbytes=-1)),
-"ATSC_21" : dict(
-source=find_conformance_stream("ATSC_21.MPG"),
-format="I420", width=704, height=480, frames=291,
-metric=dict(type="md5", expect="d11039cda5b7757b2b420920a77b88dd", numbytes=-1)),
-"ATSC_24" : dict(
-source=find_conformance_stream("ATSC_24.MPG"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="44f355acbdb47db4b1f4184716d91394", numbytes=-1)),
-"ATSC_25" : dict(
-source=find_conformance_stream("ATSC_25.MPG"),
-format="I420", width=704, height=480, frames=723,
-metric=dict(type="md5", expect="3e90443fcf8d0ca7a58e1f091db2c733", numbytes=-1)),
-"ATSC_27" : dict(
-source=find_conformance_stream("ATSC_27.MPG"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="cfa4219b269d8edd836b667b1ac15adc", numbytes=-1)),
-"ATSC_30" : dict(
-source=find_conformance_stream("ATSC_30.MPG"),
-format="I420", width=640, height=480, frames=291,
-metric=dict(type="md5", expect="08074053748fa2963e83aab1c22d909f", numbytes=-1)),
-"ATSC_32" : dict(
-source=find_conformance_stream("ATSC_32.MPG"),
-format="I420", width=640, height=480, frames=363,
-metric=dict(type="md5", expect="e020433a8d30b04bcdc521e976adf0bd", numbytes=-1)),
-"ATSC_33" : dict(
-source=find_conformance_stream("ATSC_33.MPG"),
-format="I420", width=640, height=480, frames=723,
-metric=dict(type="md5", expect="3796e56c32a00ac8ea69501dfac7cf6f", numbytes=-1)),
-"ATSC_35" : dict(
-source=find_conformance_stream("ATSC_35.MPG"),
-format="I420", width=640, height=480, frames=363,
-metric=dict(type="md5", expect="5a1d2cca39a6ae43c11733326d6fa541", numbytes=-1)),
-"ip_01_03" : dict(
-source=find_conformance_stream("ip_01_03.MPG"),
-format="I420", width=1920, height=1080, frames=654,
-metric=dict(type="md5", expect="6b6591899a715de633f0f7ef16b0bdf6", numbytes=-1)),
-"ip_01_05" : dict(
-source=find_conformance_stream("ip_01_05.MPG"),
-format="I420", width=1920, height=1080, frames=654,
-metric=dict(type="md5", expect="a80d1b2026bf5d980b81ffd419b88c53", numbytes=-1)),
-"ip_01_36_HD" : dict(
-source=find_conformance_stream("ip_01_36_HD.MPG"),
-format="I420", width=1920, height=1080, frames=291,
-metric=dict(type="md5", expect="84e1746e7890df39b0734aecbd32ecce", numbytes=-1)),
-"ip_36_01_VGA" : dict(
-source=find_conformance_stream("ip_36_01_VGA.MPG"),
-format="I420", width=640, height=480, frames=363,
-metric=dict(type="md5", expect="3409342bb6f697896206dcbc2ee79166", numbytes=-1)),
-"mvrangeout_cut" : dict(
-source=find_conformance_stream("mvrangeout.cut.m2v"),
-format="I420", width=704, height=480, frames=749,
-metric=dict(type="md5", expect="f1d182091e68971aaeb8c247b6a1fe6c", numbytes=-1)),
-"ACSCAN" : dict(
-source=find_conformance_stream("ACSCAN.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="e0161b3d4a9f3bebd40f32942d6bf48b", numbytes=-1)),
-"BR03000K" : dict(
-source=find_conformance_stream("BR03000K.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="2a9f7ad6259804c6932cb28041c4ab0d", numbytes=-1)),
-"BR18000K" : dict(
-source=find_conformance_stream("BR18000K.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="2571f2307d3db277ebbb402f5df068a5", numbytes=-1)),
-"CBP" : dict(
-source=find_conformance_stream("CBP.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="f7e8038fd00e139b3a9ace5468b68194", numbytes=-1)),
-"DYNGOP" : dict(
-source=find_conformance_stream("DYNGOP.MPG"),
-format="I420", width=1920, height=1080, frames=206,
-metric=dict(type="md5", expect="e5d48beeb01fb40d2f9d8b85757b9c03", numbytes=-1)),
-"DYNPICTS_1" : dict(
-source=find_conformance_stream("DYNPICTS_1.MPG"),
-format="I420", width=1920, height=1080, frames=30,
-metric=dict(type="md5", expect="ce98946c7298b5b13a0e5ed975b54f47", numbytes=-1)),
-"FIELDDCT" : dict(
-source=find_conformance_stream("FIELDDCT.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="e8e1103f87c9a40bce5f3d5cfc164703", numbytes=-1)),
-"FIELDMV" : dict(
-source=find_conformance_stream("FIELDMV.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="48f8f549c49070106752571cb0808614", numbytes=-1)),
-"H640_2" : dict(
-source=find_conformance_stream("H640_2.MPG"),
-format="I420", width=640, height=480, frames=30,
-metric=dict(type="md5", expect="950536fd7beef0ef6c8281c2ea5577b5", numbytes=-1)),
-"H704_2" : dict(
-source=find_conformance_stream("H704_2.MPG"),
-format="I420", width=704, height=480, frames=30,
-metric=dict(type="md5", expect="4486e7dd78e822bb22673b8c8cafbe46", numbytes=-1)),
-"H704_3" : dict(
-source=find_conformance_stream("H704_3.MPG"),
-format="I420", width=704, height=480, frames=30,
-metric=dict(type="md5", expect="ff86eac2b901ed3cd274a3e668ea22c8", numbytes=-1)),
-"MVS2_1" : dict(
-source=find_conformance_stream("MVS2_1.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="a838e6f51e745eae4bf731215241022c", numbytes=-1)),
-"MVS2_2" : dict(
-source=find_conformance_stream("MVS2_2.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="9d9204b1dc8a4b1284e566882ed4f0a4", numbytes=-1)),
-"MVS2_5" : dict(
-source=find_conformance_stream("MVS2_5.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="a4671cc677d2ab4a41a3e336dbd0536e", numbytes=-1)),
-"MVS2_6" : dict(
-source=find_conformance_stream("MVS2_6.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="35fcf6643434871fbbf84b7b0d236469", numbytes=-1)),
-"MV_DUAL" : dict(
-source=find_conformance_stream("MV_DUAL.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="c31651a7d935134407dabffc4f42387a", numbytes=-1)),
-"PULLDOWN" : dict(
-source=find_conformance_stream("PULLDOWN.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="5bddb79124ee5dea669dd588f844fc48", numbytes=-1)),
-"RPT_I" : dict(
-source=find_conformance_stream("RPT_I.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="4bf880240b7712e4040081beecd4ee21", numbytes=-1)),
-"STUFFZ" : dict(
-source=find_conformance_stream("STUFFZ.MPG"),
-format="I420", width=1920, height=1080, frames=150,
-metric=dict(type="md5", expect="fe144cc5a56806e68af75fa4844b9387", numbytes=-1)),
-"VBV" : dict(
-source=find_conformance_stream("VBV.MPG"),
-format="I420", width=1920, height=1080, frames=150,
-metric=dict(type="md5", expect="b7f54e1c046b1d94d0ebf9600999adf6", numbytes=-1)),
-"ATSC_01" : dict(
-source=find_conformance_stream("ATSC_01.mpg"),
-format="I420", width=1920, height=1080, frames=291,
-metric=dict(type="md5", expect="5726599a7300e8b2d06f4a66fa6eb43b", numbytes=-1)),
-"ATSC_02" : dict(
-source=find_conformance_stream("ATSC_02.mpg"),
-format="I420", width=1920, height=1080, frames=291,
-metric=dict(type="md5", expect="a22805b557e86fa5f70606185a035dc3", numbytes=-1)),
-"ATSC_13" : dict(
-source=find_conformance_stream("ATSC_13.mpg"),
-format="I420", width=704, height=480, frames=291,
-metric=dict(type="md5", expect="c53b1ac8143473e083d3fcc5551065f8", numbytes=-1)),
-"ATSC_14" : dict(
-source=find_conformance_stream("ATSC_14.mpg"),
-format="I420", width=704, height=480, frames=291,
-metric=dict(type="md5", expect="d85406becf25dcc957b51968ed842bea", numbytes=-1)),
-"ATSC_16" : dict(
-source=find_conformance_stream("ATSC_16.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="6e74ffbe87120db51daa1d3a492a54e9", numbytes=-1)),
-"ATSC_19" : dict(
-source=find_conformance_stream("ATSC_19.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="41fec9e0489ec4ac75c3a2d01331fb3d", numbytes=-1)),
-"ATSC_20" : dict(
-source=find_conformance_stream("ATSC_20.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="fda3507f3a2c61badc39e68d7073418f", numbytes=-1)),
-"ATSC_23" : dict(
-source=find_conformance_stream("ATSC_23.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="f620f178e41be65f98b0625199636dd4", numbytes=-1)),
-"ATSC_25" : dict(
-source=find_conformance_stream("ATSC_25.mpg"),
-format="I420", width=704, height=480, frames=723,
-metric=dict(type="md5", expect="d7399359babd8dc7b91319c68301380a", numbytes=-1)),
-"ATSC_27" : dict(
-source=find_conformance_stream("ATSC_27.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="ec95bb71191cdf626b84193d834e22e7", numbytes=-1)),
-"ATSC_28" : dict(
-source=find_conformance_stream("ATSC_28.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="97b648c9e053b4beb4df2af5a8b3f765", numbytes=-1)),
-"ATSC_32" : dict(
-source=find_conformance_stream("ATSC_32.mpg"),
-format="I420", width=640, height=480, frames=363,
-metric=dict(type="md5", expect="468cd10b91e8ec714559faa2863dde25", numbytes=-1)),
-"ATSC_33" : dict(
-source=find_conformance_stream("ATSC_33.mpg"),
-format="I420", width=640, height=480, frames=723,
-metric=dict(type="md5", expect="bf30582d79bcd0d73cdbcc1e1ddef016", numbytes=-1)),
-"ATSC_34" : dict(
-source=find_conformance_stream("ATSC_34.mpg"),
-format="I420", width=640, height=480, frames=723,
-metric=dict(type="md5", expect="b76e9994c3fcd0d8bcb11c236b638970", numbytes=-1)),
-"ATSC_35" : dict(
-source=find_conformance_stream("ATSC_35.mpg"),
-format="I420", width=640, height=480, frames=363,
-metric=dict(type="md5", expect="2e7d944cfe924be5c9299749df29003c", numbytes=-1)),
-"ATSC_36" : dict(
-source=find_conformance_stream("ATSC_36.mpg"),
-format="I420", width=640, height=480, frames=363,
-metric=dict(type="md5", expect="51cfc49771bf1b8cf19d8b18a40384dd", numbytes=-1)),
-"MVS2_8" : dict(
-source=find_conformance_stream("MVS2_8.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="047a64d16baa9c178d50565547a2d03f", numbytes=-1)),
-"MV_DUAL" : dict(
-source=find_conformance_stream("MV_DUAL.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="c31651a7d935134407dabffc4f42387a", numbytes=-1)),
-"NLQUANT" : dict(
-source=find_conformance_stream("NLQUANT.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="553f79f50d2cdb2d4fd1472a429bec78", numbytes=-1)),
-"RPT_I" : dict(
-source=find_conformance_stream("RPT_I.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="4bf880240b7712e4040081beecd4ee21", numbytes=-1)),
-"RPT_IP" : dict(
-source=find_conformance_stream("RPT_IP.MPG"),
-format="I420", width=1920, height=1080, frames=120,
-metric=dict(type="md5", expect="770fba0cbcd5382c1d8b8ede7a9eaba7", numbytes=-1)),
-"RPT_IPB" : dict(
-source=find_conformance_stream("RPT_IPB.MPG"),
-format="I420", width=1920, height=1080, frames=118,
-metric=dict(type="md5", expect="4ef0450a6fc7d8814e094877efd4e259", numbytes=-1)),
-"STUFFZ" : dict(
-source=find_conformance_stream("STUFFZ.MPG"),
-format="I420", width=1920, height=1080, frames=150,
-metric=dict(type="md5", expect="fe144cc5a56806e68af75fa4844b9387", numbytes=-1)),
-"VBV" : dict(
-source=find_conformance_stream("VBV.MPG"),
-format="I420", width=1920, height=1080, frames=150,
-metric=dict(type="md5", expect="b7f54e1c046b1d94d0ebf9600999adf6", numbytes=-1)),
-"ATSC_02" : dict(
-source=find_conformance_stream("ATSC_02.mpg"),
-format="I420", width=1920, height=1080, frames=291,
-metric=dict(type="md5", expect="a22805b557e86fa5f70606185a035dc3", numbytes=-1)),
-"ATSC_04" : dict(
-source=find_conformance_stream("ATSC_04.mpg"),
-format="I420", width=1920, height=1080, frames=363,
-metric=dict(type="md5", expect="7c363296b4a043021961194b50e44d2f", numbytes=-1)),
-"ATSC_05" : dict(
-source=find_conformance_stream("ATSC_05.mpg"),
-format="I420", width=1920, height=1080, frames=363,
-metric=dict(type="md5", expect="b17f2b7033c33defa0347e53ee3b43ba", numbytes=-1)),
-"ATSC_15" : dict(
-source=find_conformance_stream("ATSC_15.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="91d90e4b6d0487ccb51bb0c0815cddb3", numbytes=-1)),
-"ATSC_20" : dict(
-source=find_conformance_stream("ATSC_20.mpg"),
-format="I420", width=704, height=480, frames=363,
-metric=dict(type="md5", expect="fda3507f3a2c61badc39e68d7073418f", numbytes=-1)),
-"ATSC_30" : dict(
-source=find_conformance_stream("ATSC_30.mpg"),
-format="I420", width=640, height=480, frames=291,
-metric=dict(type="md5", expect="bb561250ae6e7a872560addadd9f5ee1", numbytes=-1)),
-"ATSC_31" : dict(
-source=find_conformance_stream("ATSC_31.mpg"),
-format="I420", width=640, height=480, frames=363,
-metric=dict(type="md5", expect="c3c885316a3c59c3656682a42aee8ffd", numbytes=-1)),
-"ATSC_34" : dict(
-source=find_conformance_stream("ATSC_34.mpg"),
-format="I420", width=640, height=480, frames=723,
-metric=dict(type="md5", expect="b76e9994c3fcd0d8bcb11c236b638970", numbytes=-1)),
-"bbc3_015" : dict(
-source=find_conformance_stream("bbc3_015.m2v"),
-format="I420", width=352, height=240, frames=450,
-metric=dict(type="md5", expect="425b9334bd5ba5cab294f76b052a0deb", numbytes=-1)),
-"bbc3_060" : dict(
-source=find_conformance_stream("bbc3_060.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="497061336a2eb6f34607c37612fce7d2", numbytes=-1)),
-"bbc3_080" : dict(
-source=find_conformance_stream("bbc3_080.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="2aec9a13032ec04d871fb8858a6a279a", numbytes=-1)),
-"cact_040" : dict(
-source=find_conformance_stream("cact_040.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="cf83eaadc8af8c539a37a6ca85993b78", numbytes=-1)),
-"cact_060" : dict(
-source=find_conformance_stream("cact_060.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="b2f85127b785a3abcc9f6c1414d166ec", numbytes=-1)),
-"cact_080" : dict(
-source=find_conformance_stream("cact_080.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="1cd46e49d3e1dbad4eebf33565d03454", numbytes=-1)),
-"flwr_015" : dict(
-source=find_conformance_stream("flwr_015.m2v"),
-format="I420", width=352, height=240, frames=450,
-metric=dict(type="md5", expect="01247e4dbcbffca2e4ff9a5233da6c95", numbytes=-1)),
-"mobl_120" : dict(
-source=find_conformance_stream("mobl_120.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="463be0febcab97d9e93c22596d09e3be", numbytes=-1)),
-"mulb_040" : dict(
-source=find_conformance_stream("mulb_040.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="0c8eac4309c606cffcb4e67497b1be67", numbytes=-1)),
-"pulb_015" : dict(
-source=find_conformance_stream("pulb_015.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="14ec8bd9a698e0123f5775468f7fda5e", numbytes=-1)),
-"pulb_060" : dict(
-source=find_conformance_stream("pulb_060.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="1b6f2700613411008052d2b0efffa138", numbytes=-1)),
-"pulb_080" : dict(
-source=find_conformance_stream("pulb_080.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="b26e2a25634f59b0032d65d19f3bdb93", numbytes=-1)),
-"pulb_120" : dict(
-source=find_conformance_stream("pulb_120.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="2e36097513fd716428fe224945bd1358", numbytes=-1)),
-"susi_040" : dict(
-source=find_conformance_stream("susi_040.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="60fbce57adee05f05ba08fc42aae52ec", numbytes=-1)),
-"susi_060" : dict(
-source=find_conformance_stream("susi_060.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="4e91e8edda6626ddf54b8783aaf6082b", numbytes=-1)),
-"tens_015" : dict(
-source=find_conformance_stream("tens_015.m2v"),
-format="I420", width=352, height=240, frames=450,
-metric=dict(type="md5", expect="2f80075d33b0794c175ecc5553ff9156", numbytes=-1)),
-"tens_120" : dict(
-source=find_conformance_stream("tens_120.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="3ab4f83d3b69cad026af5c57c462fd5f", numbytes=-1)),
-"time_015" : dict(
-source=find_conformance_stream("time_015.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="bc89da4ccdec4b61e4f896533b69b91e", numbytes=-1)),
-"time_080" : dict(
-source=find_conformance_stream("time_080.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="92bbef5b03d8235a32da2ff3a73ad9dc", numbytes=-1)),
-"time_120" : dict(
-source=find_conformance_stream("time_120.m2v"),
-format="I420", width=704, height=480, frames=450,
-metric=dict(type="md5", expect="f08200f63bf1f93b9a8750ac945db0e7", numbytes=-1)),
-"BR02500K" : dict(
-source=find_conformance_stream("BR02500K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="45417eda8a60f897f3d2f5c0535a6253", numbytes=-1)),
-"BR03500K" : dict(
-source=find_conformance_stream("BR03500K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="5a584101c1f804dac7ccdc45cadaa177", numbytes=-1)),
-"BR06500K" : dict(
-source=find_conformance_stream("BR06500K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="1ae2535d5bad364e6975f0aa54d5039f", numbytes=-1)),
-"BR08000K" : dict(
-source=find_conformance_stream("BR08000K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="3938fcd1676b89c2055a4d45fda8fb8f", numbytes=-1)),
-"BR09000K" : dict(
-source=find_conformance_stream("BR09000K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="614dedb3e75403f413c0f0be83d04f30", numbytes=-1)),
-"BR09500K" : dict(
-source=find_conformance_stream("BR09500K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="6f30a0c42eb46fe4ee2853cb9ac738a0", numbytes=-1)),
-"BR10000K" : dict(
-source=find_conformance_stream("BR10000K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="8e461c5f988a048c3d943a92393eb745", numbytes=-1)),
-"BR14000K" : dict(
-source=find_conformance_stream("BR14000K.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="7a4295fb9fb5364e3009ee2587366699", numbytes=-1)),
-"FIELDMV" : dict(
-source=find_conformance_stream("FIELDMV.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="1609757cb7e7ff4b8fe894a189690093", numbytes=-1)),
-"LQUANT" : dict(
-source=find_conformance_stream("LQUANT.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="57b728a78df4bd4de4b67ab956189328", numbytes=-1)),
-"MV16X8" : dict(
-source=find_conformance_stream("MV16X8.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="c807ea412bae29d41e565a0ee04f7d23", numbytes=-1)),
-"MVS2_2" : dict(
-source=find_conformance_stream("MVS2_2.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="f03a3b1175c84f9217d67ed14c221022", numbytes=-1)),
-"MVS2_6" : dict(
-source=find_conformance_stream("MVS2_6.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="a5dbc6990097690041fc030cd90f462b", numbytes=-1)),
-"MVS2_7" : dict(
-source=find_conformance_stream("MVS2_7.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="932dd00d3cc11fb1047e628103dacb9a", numbytes=-1)),
-"PAN2HOR" : dict(
-source=find_conformance_stream("PAN2HOR.mpg"),
-format="I420", width=720, height=480, frames=210,
-metric=dict(type="md5", expect="599628f5b60c65d5c7c86ca917e00ea1", numbytes=-1)),
-"PULLDOWN" : dict(
-source=find_conformance_stream("PULLDOWN.mpg"),
-format="I420", width=720, height=480, frames=120,
-metric=dict(type="md5", expect="7686132ce57082481dbc8c158e6d80e2", numbytes=-1)),
-"att" : dict(
-source=find_conformance_stream("att.mpeg"),
-format="I420", width=32, height=32, frames=132,
-metric=dict(type="md5", expect="59074f1e4677510405e194c3f63d9bf9", numbytes=-1)),
-"bit_stream" : dict(
-source=find_conformance_stream("bit_stream.mpeg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="5ff2ab3d67e0ad0c68df678181147305", numbytes=-1)),
-"bit_stream1" : dict(
-source=find_conformance_stream("bit_stream1.mpeg"),
-format="I420", width=720, height=480, frames=4,
-metric=dict(type="md5", expect="fc171a068b741df3bb400fc9a800f065", numbytes=-1)),
-"conf2_bits" : dict(
-source=find_conformance_stream("conf2.bits.mpeg"),
-format="I420", width=720, height=576, frames=31,
-metric=dict(type="md5", expect="62cc082373d8a1408e5ad5bc2d966776", numbytes=-1)),
-"ESd_P1_conf1d" : dict(
-source=find_conformance_stream("ESd_P1_conf1d.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_ESd_P1_conf1d" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_ESd_P1_conf1d.mpeg"),
 format="I420", width=720, height=576, frames=47,
 metric=dict(type="md5", expect="30e6370e6e52a4fe7cf06c97f438c51a", numbytes=-1)),
-"ime" : dict(
-source=find_conformance_stream("ime.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_att" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_att.bits.mpeg"),
+format="I420", width=32, height=32, frames=132,
+metric=dict(type="md5", expect="59074f1e4677510405e194c3f63d9bf9", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_att" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_att.mpeg"),
+format="I420", width=32, height=32, frames=132,
+metric=dict(type="md5", expect="59074f1e4677510405e194c3f63d9bf9", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_attts3b" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_attts3b.mpeg"),
+format="I420", width=704, height=480, frames=4,
+metric=dict(type="md5", expect="21925d0f0f2650758745d18b6b4ebd57", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_bit_stream" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_bit_stream.mpeg"),
+format="I420", width=720, height=480, frames=4,
+metric=dict(type="md5", expect="5ff2ab3d67e0ad0c68df678181147305", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_bit_stream1" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_bit_stream1.mpeg"),
+format="I420", width=720, height=480, frames=4,
+metric=dict(type="md5", expect="fc171a068b741df3bb400fc9a800f065", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_bit_stream2" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_bit_stream2.mpeg"),
+format="I420", width=720, height=480, frames=16,
+metric=dict(type="md5", expect="29ff477bf2c1216aaaccfafd63b6ffd2", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_conf2bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_conf2.bits.mpeg"),
+format="I420", width=720, height=576, frames=31,
+metric=dict(type="md5", expect="62cc082373d8a1408e5ad5bc2d966776", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_conf4bit" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_conf4.bit.mpeg"),
+format="I420", width=704, height=480, frames=4,
+metric=dict(type="md5", expect="23a93c66bbc68f58c5000e2a1c9c1075", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_gi_v3" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_gi_v3.mpeg"),
+format="I420", width=704, height=480, frames=4,
+metric=dict(type="md5", expect="b0e6ec8d7ee749092ea51771cc73535e", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_hhi_v1" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_hhi_v1.mpeg"),
+format="I420", width=720, height=576, frames=4,
+metric=dict(type="md5", expect="23a41f1da1d3129bf93ec633417c638a", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_ime" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_ime.mpeg"),
 format="I420", width=720, height=480, frames=4,
 metric=dict(type="md5", expect="978e61863055b77b155d954ebb2be22f", numbytes=-1)),
-"mcp10ccett_bits" : dict(
-source=find_conformance_stream("mcp10ccett.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_mcp10ccettbits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_mcp10ccett.bits.mpeg"),
 format="I420", width=720, height=576, frames=4,
 metric=dict(type="md5", expect="0706d9e882915d83a34c28308cb4a4c0", numbytes=-1)),
-"nokia6_dual_60_bit" : dict(
-source=find_conformance_stream("nokia6_dual_60.bit.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_nokia6" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_nokia6.mpeg"),
+format="I420", width=720, height=576, frames=4,
+metric=dict(type="md5", expect="89c4e3337416b59ea6e0fcf9c9bd1879", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_nokia6_dual_60bit" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_nokia6_dual_60.bit.mpeg"),
 format="I420", width=720, height=576, frames=60,
 metric=dict(type="md5", expect="cc9cb6a76c070f460620d5b4f6d6c091", numbytes=-1)),
-"tcela-10_bits" : dict(
-source=find_conformance_stream("tcela-10.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_sony-ct1" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_sony-ct1.mpeg"),
+format="I420", width=352, height=224, frames=60,
+metric=dict(type="md5", expect="bffec778bcd035e18c674d98369146f3", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_synchobin1" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_syncho.bin.1.m2v"),
+format="I420", width=352, height=288, frames=238,
+metric=dict(type="md5", expect="4784b9d8161d9abfc3e7d01595442594", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_synchobin3" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_syncho.bin.3.m2v"),
+format="I420", width=720, height=576, frames=239,
+metric=dict(type="md5", expect="1ceda50d02d87bd9f2aec5c04926ae68", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-10bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-10.bits.mpeg"),
 format="I420", width=720, height=480, frames=61,
 metric=dict(type="md5", expect="b337234fc662b49b1f5c7e11dd80983d", numbytes=-1)),
-"tcela-14_short_bits" : dict(
-source=find_conformance_stream("tcela-14.short.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14.bits.mpeg"),
+format="I420", width=720, height=480, frames=61,
+metric=dict(type="md5", expect="96e9620fcd8642298495f8038d951536", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14shortbits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14.short.bits.mpeg"),
 format="I420", width=720, height=480, frames=4,
 metric=dict(type="md5", expect="5265ee986d53e518ec4bd7b29b1d39e4", numbytes=-1)),
-"toshiba_DPall-0" : dict(
-source=find_conformance_stream("toshiba_DPall-0.mpg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-17bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-17.bits.mpeg"),
+format="I420", width=720, height=480, frames=2,
+metric=dict(type="md5", expect="e1c2f4cc094a6e831730814492171a88", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-6bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-6.bits.mpeg"),
+format="I420", width=720, height=480, frames=4,
+metric=dict(type="md5", expect="83acae45a115a56c21c0cbded6c68963", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-8bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-8.bits.mpeg"),
+format="I420", width=720, height=480, frames=4,
+metric=dict(type="md5", expect="f056dc0f5eaa91ee1db4489fc8b625bc", numbytes=-1)),
+"_nstream_qctool_mp2_Berkely_Mpeg2_toshiba_DPall-0" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_toshiba_DPall-0.mpg"),
 format="I420", width=720, height=480, frames=4,
 metric=dict(type="md5", expect="7eadffe0e87be3ec4355fe8083c7c8b7", numbytes=-1)),
-"BR00500K" : dict(
-source=find_conformance_stream("BR00500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="5f575fa08bec8451ee006d796ea9b6f0", numbytes=-1)),
-"BR03500K" : dict(
-source=find_conformance_stream("BR03500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="1d77fb58c58630fe40d0cfdeeb544f4e", numbytes=-1)),
-"BR05000K" : dict(
-source=find_conformance_stream("BR05000K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="064793e82ab78e7ff144cdc1d7044168", numbytes=-1)),
-"BR09500K" : dict(
-source=find_conformance_stream("BR09500K.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="be892b0eb0e4666c6d78d7d8791e76eb", numbytes=-1)),
-"MVS2_2" : dict(
-source=find_conformance_stream("MVS2_2.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="a750c6901ba18ba35a0d114f921225c8", numbytes=-1)),
-"MVS2_3" : dict(
-source=find_conformance_stream("MVS2_3.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="0e7dc1e15049690636f9d5f253df8fc6", numbytes=-1)),
-"MVS2_7" : dict(
-source=find_conformance_stream("MVS2_7.MPG"),
-format="I420", width=352, height=240, frames=120,
-metric=dict(type="md5", expect="aa5d74d82a81d6586865c340c218bd71", numbytes=-1)),
-"bbc3_015" : dict(
-source=find_conformance_stream("bbc3_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="e6f3285b085c6db5ccea54a7c0855b1d", numbytes=-1)),
-"bbc3_040" : dict(
-source=find_conformance_stream("bbc3_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="e3b7e08483c34e1b94b1c956f581b3bb", numbytes=-1)),
-"bbc3_080" : dict(
-source=find_conformance_stream("bbc3_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="c73cee21010129ad35322f752b4bdaa3", numbytes=-1)),
-"cact_060" : dict(
-source=find_conformance_stream("cact_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="288681f07110993cde36ee6a98375749", numbytes=-1)),
-"flwr_080" : dict(
-source=find_conformance_stream("flwr_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="7b4d102ce4ca94293fddb01ada6775f0", numbytes=-1)),
-"flwr_120" : dict(
-source=find_conformance_stream("flwr_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="12f98836b9de1d1ea1c8580a1fa2c1b2", numbytes=-1)),
-"mobl_015" : dict(
-source=find_conformance_stream("mobl_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="c4e69c8e4335c1b8830d541549fa55a3", numbytes=-1)),
-"mobl_080" : dict(
-source=find_conformance_stream("mobl_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="0fe5a2f6f17fa724a85fdaca21901bff", numbytes=-1)),
-"mobl_120" : dict(
-source=find_conformance_stream("mobl_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="2d90d391698e17e8c9d02bf6ed82a2ab", numbytes=-1)),
-"mulb_060" : dict(
-source=find_conformance_stream("mulb_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="4de2a2a1a6a10986e33b1c659c3a40db", numbytes=-1)),
-"pulb_015" : dict(
-source=find_conformance_stream("pulb_015.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="c60ec1baa2468fc2992c6c9347dfc3b3", numbytes=-1)),
-"pulb_060" : dict(
-source=find_conformance_stream("pulb_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="6c8417b9311a5c3d7ce8adca76db9d1a", numbytes=-1)),
-"pulb_080" : dict(
-source=find_conformance_stream("pulb_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="7585988170b003bfd7c9b522271477df", numbytes=-1)),
-"susi_040" : dict(
-source=find_conformance_stream("susi_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="65d8d834c91c6977bc509b40faad1c9a", numbytes=-1)),
-"susi_080" : dict(
-source=find_conformance_stream("susi_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="c41ea48fd916453da254e2c905735366", numbytes=-1)),
-"tens_015" : dict(
-source=find_conformance_stream("tens_015.m2v"),
-format="I420", width=352, height=288, frames=375,
-metric=dict(type="md5", expect="0bb1ecc0d1a5de71be4de01f02d2e189", numbytes=-1)),
-"tens_040" : dict(
-source=find_conformance_stream("tens_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="0d7ba61595da4d49f6b553a9d94301f1", numbytes=-1)),
-"tens_060" : dict(
-source=find_conformance_stream("tens_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="ccced4508bface6a42c7e2abb6064f22", numbytes=-1)),
-"tens_120" : dict(
-source=find_conformance_stream("tens_120.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="da0aca86f1db1e6e914d8cffccb17777", numbytes=-1)),
-"time_040" : dict(
-source=find_conformance_stream("time_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="3624c3ed5af8d6ef009ab090855b675e", numbytes=-1)),
-"time_060" : dict(
-source=find_conformance_stream("time_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="dd470101b7f727ceaea2af574bc2f8ba", numbytes=-1)),
-"time_080" : dict(
-source=find_conformance_stream("time_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="5e05c1d3c76b3f3bda82a050abcf9bde", numbytes=-1)),
-"v700_040" : dict(
-source=find_conformance_stream("v700_040.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="dfe8548cf7227a94fbccf29f68be1e81", numbytes=-1)),
-"v700_060" : dict(
-source=find_conformance_stream("v700_060.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="f0d7cc060e6cfb340f2c5c8b230e823f", numbytes=-1)),
-"v700_080" : dict(
-source=find_conformance_stream("v700_080.m2v"),
-format="I420", width=704, height=576, frames=375,
-metric=dict(type="md5", expect="fa7a37ed76ad629578c262e6966479d3", numbytes=-1)),
-"ATSC_02" : dict(
-source=find_conformance_stream("ATSC_02.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_02" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_02.MPG"),
 format="I420", width=1920, height=1080, frames=291,
 metric=dict(type="md5", expect="08b811fb1b64887374223c761696b783", numbytes=-1)),
-"ATSC_05" : dict(
-source=find_conformance_stream("ATSC_05.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_05" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_05.MPG"),
 format="I420", width=1920, height=1080, frames=363,
 metric=dict(type="md5", expect="cae94d1a8af55f9a11bc1e81d3eba5b4", numbytes=-1)),
-"ATSC_07" : dict(
-source=find_conformance_stream("ATSC_07.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_06" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_06.MPG"),
+format="I420", width=1920, height=1080, frames=363,
+metric=dict(type="md5", expect="04b41447c8a471bd47864bd16455f14f", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_07" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_07.MPG"),
 format="I420", width=1280, height=720, frames=291,
 metric=dict(type="md5", expect="5446caa59d9786452d4b5b75341fc7d4", numbytes=-1)),
-"ATSC_09" : dict(
-source=find_conformance_stream("ATSC_09.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_09" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_09.MPG"),
 format="I420", width=1280, height=720, frames=363,
 metric=dict(type="md5", expect="6a7a8059a38b49b6967f58905bf62b5d", numbytes=-1)),
-"ATSC_11" : dict(
-source=find_conformance_stream("ATSC_11.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_11" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_11.MPG"),
 format="I420", width=1280, height=720, frames=723,
 metric=dict(type="md5", expect="2e523add88bd5c27054c5eb567b2b7fc", numbytes=-1)),
-"ATSC_13" : dict(
-source=find_conformance_stream("ATSC_13.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_13" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_13.MPG"),
 format="I420", width=704, height=480, frames=291,
 metric=dict(type="md5", expect="e055a6d63acbf26a514493f447b3152b", numbytes=-1)),
-"ATSC_17" : dict(
-source=find_conformance_stream("ATSC_17.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_14" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_14.MPG"),
+format="I420", width=704, height=480, frames=291,
+metric=dict(type="md5", expect="831afad7d4c40ff85a934c2e410ceb51", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_17" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_17.MPG"),
 format="I420", width=704, height=480, frames=723,
 metric=dict(type="md5", expect="9c25aa78b02c167f2ce9591e7fd285ba", numbytes=-1)),
-"ATSC_18" : dict(
-source=find_conformance_stream("ATSC_18.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_18" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_18.MPG"),
 format="I420", width=704, height=480, frames=723,
 metric=dict(type="md5", expect="d2d4365427c2cc23379747e34b89d82c", numbytes=-1)),
-"ATSC_19" : dict(
-source=find_conformance_stream("ATSC_19.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_19" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_19.MPG"),
 format="I420", width=704, height=480, frames=363,
 metric=dict(type="md5", expect="a2d378fc42e1938030781c8eca186c38", numbytes=-1)),
-"ATSC_23" : dict(
-source=find_conformance_stream("ATSC_23.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_20" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_20.MPG"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="a02672473a009b7cf65d4a1a22e965cb", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_21" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_21.MPG"),
+format="I420", width=704, height=480, frames=291,
+metric=dict(type="md5", expect="d11039cda5b7757b2b420920a77b88dd", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_23" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_23.MPG"),
 format="I420", width=704, height=480, frames=363,
 metric=dict(type="md5", expect="df4e30eea73db0bd4093df547bb165f7", numbytes=-1)),
-"ATSC_24" : dict(
-source=find_conformance_stream("ATSC_24.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_24" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_24.MPG"),
 format="I420", width=704, height=480, frames=363,
 metric=dict(type="md5", expect="44f355acbdb47db4b1f4184716d91394", numbytes=-1)),
-"ATSC_31" : dict(
-source=find_conformance_stream("ATSC_31.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_25" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_25.MPG"),
+format="I420", width=704, height=480, frames=723,
+metric=dict(type="md5", expect="3e90443fcf8d0ca7a58e1f091db2c733", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_27" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_27.MPG"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="cfa4219b269d8edd836b667b1ac15adc", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_30" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_30.MPG"),
+format="I420", width=640, height=480, frames=291,
+metric=dict(type="md5", expect="08074053748fa2963e83aab1c22d909f", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_31" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_31.MPG"),
 format="I420", width=640, height=480, frames=363,
 metric=dict(type="md5", expect="f48d12726aa04c6c0007cb5b3d41b610", numbytes=-1)),
-"ATSC_33" : dict(
-source=find_conformance_stream("ATSC_33.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_32" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_32.MPG"),
+format="I420", width=640, height=480, frames=363,
+metric=dict(type="md5", expect="e020433a8d30b04bcdc521e976adf0bd", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_33" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_33.MPG"),
 format="I420", width=640, height=480, frames=723,
 metric=dict(type="md5", expect="3796e56c32a00ac8ea69501dfac7cf6f", numbytes=-1)),
-"ip_01_04" : dict(
-source=find_conformance_stream("ip_01_04.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_35" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ATSC_35.MPG"),
+format="I420", width=640, height=480, frames=363,
+metric=dict(type="md5", expect="5a1d2cca39a6ae43c11733326d6fa541", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_03" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_03.MPG"),
+format="I420", width=1920, height=1080, frames=654,
+metric=dict(type="md5", expect="6b6591899a715de633f0f7ef16b0bdf6", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_04" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_04.MPG"),
 format="I420", width=1920, height=1080, frames=654,
 metric=dict(type="md5", expect="56aec04f1b3459b9e9eb3faa081d7827", numbytes=-1)),
-"ip_01_05" : dict(
-source=find_conformance_stream("ip_01_05.MPG"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_05" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_05.MPG"),
 format="I420", width=1920, height=1080, frames=654,
 metric=dict(type="md5", expect="a80d1b2026bf5d980b81ffd419b88c53", numbytes=-1)),
-"mvrangeout_cut" : dict(
-source=find_conformance_stream("mvrangeout.cut.m2v"),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_36_HD" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_01_36_HD.MPG"),
+format="I420", width=1920, height=1080, frames=291,
+metric=dict(type="md5", expect="84e1746e7890df39b0734aecbd32ecce", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_36_01_VGA" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IP_ip_36_01_VGA.MPG"),
+format="I420", width=640, height=480, frames=363,
+metric=dict(type="md5", expect="3409342bb6f697896206dcbc2ee79166", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_01" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_01.mpg"),
+format="I420", width=1920, height=1080, frames=291,
+metric=dict(type="md5", expect="5726599a7300e8b2d06f4a66fa6eb43b", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_02" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_02.mpg"),
+format="I420", width=1920, height=1080, frames=291,
+metric=dict(type="md5", expect="a22805b557e86fa5f70606185a035dc3", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_04" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_04.mpg"),
+format="I420", width=1920, height=1080, frames=363,
+metric=dict(type="md5", expect="7c363296b4a043021961194b50e44d2f", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_05" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_05.mpg"),
+format="I420", width=1920, height=1080, frames=363,
+metric=dict(type="md5", expect="b17f2b7033c33defa0347e53ee3b43ba", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_13" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_13.mpg"),
+format="I420", width=704, height=480, frames=291,
+metric=dict(type="md5", expect="c53b1ac8143473e083d3fcc5551065f8", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_14" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_14.mpg"),
+format="I420", width=704, height=480, frames=291,
+metric=dict(type="md5", expect="d85406becf25dcc957b51968ed842bea", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_15" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_15.mpg"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="91d90e4b6d0487ccb51bb0c0815cddb3", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_16" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_16.mpg"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="6e74ffbe87120db51daa1d3a492a54e9", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_19" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_19.mpg"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="41fec9e0489ec4ac75c3a2d01331fb3d", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_20" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_20.mpg"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="fda3507f3a2c61badc39e68d7073418f", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_23" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_23.mpg"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="f620f178e41be65f98b0625199636dd4", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_25" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_25.mpg"),
+format="I420", width=704, height=480, frames=723,
+metric=dict(type="md5", expect="d7399359babd8dc7b91319c68301380a", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_27" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_27.mpg"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="ec95bb71191cdf626b84193d834e22e7", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_28" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_28.mpg"),
+format="I420", width=704, height=480, frames=363,
+metric=dict(type="md5", expect="97b648c9e053b4beb4df2af5a8b3f765", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_30" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_30.mpg"),
+format="I420", width=640, height=480, frames=291,
+metric=dict(type="md5", expect="bb561250ae6e7a872560addadd9f5ee1", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_31" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_31.mpg"),
+format="I420", width=640, height=480, frames=363,
+metric=dict(type="md5", expect="c3c885316a3c59c3656682a42aee8ffd", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_32" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_32.mpg"),
+format="I420", width=640, height=480, frames=363,
+metric=dict(type="md5", expect="468cd10b91e8ec714559faa2863dde25", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_33" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_33.mpg"),
+format="I420", width=640, height=480, frames=723,
+metric=dict(type="md5", expect="bf30582d79bcd0d73cdbcc1e1ddef016", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_34" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_34.mpg"),
+format="I420", width=640, height=480, frames=723,
+metric=dict(type="md5", expect="b76e9994c3fcd0d8bcb11c236b638970", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_35" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_35.mpg"),
+format="I420", width=640, height=480, frames=363,
+metric=dict(type="md5", expect="2e7d944cfe924be5c9299749df29003c", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_36" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_ATSC_IPB_ATSC_36.mpg"),
+format="I420", width=640, height=480, frames=363,
+metric=dict(type="md5", expect="51cfc49771bf1b8cf19d8b18a40384dd", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_ACSCAN" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_ACSCAN.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="e0161b3d4a9f3bebd40f32942d6bf48b", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_BR03000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_BR03000K.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="2a9f7ad6259804c6932cb28041c4ab0d", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_BR18000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_BR18000K.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="2571f2307d3db277ebbb402f5df068a5", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_CBP" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_CBP.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="f7e8038fd00e139b3a9ace5468b68194", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_DYNGOP" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_DYNGOP.MPG"),
+format="I420", width=1920, height=1080, frames=206,
+metric=dict(type="md5", expect="e5d48beeb01fb40d2f9d8b85757b9c03", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_DYNPICTS_1" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_DYNPICTS_1.MPG"),
+format="I420", width=1920, height=1080, frames=30,
+metric=dict(type="md5", expect="ce98946c7298b5b13a0e5ed975b54f47", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_FIELDDCT" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_FIELDDCT.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="e8e1103f87c9a40bce5f3d5cfc164703", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_FIELDMV" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_FIELDMV.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="48f8f549c49070106752571cb0808614", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_H640_2" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_H640_2.MPG"),
+format="I420", width=640, height=480, frames=30,
+metric=dict(type="md5", expect="950536fd7beef0ef6c8281c2ea5577b5", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_H704_2" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_H704_2.MPG"),
+format="I420", width=704, height=480, frames=30,
+metric=dict(type="md5", expect="4486e7dd78e822bb22673b8c8cafbe46", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_H704_3" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_H704_3.MPG"),
+format="I420", width=704, height=480, frames=30,
+metric=dict(type="md5", expect="ff86eac2b901ed3cd274a3e668ea22c8", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_1" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_1.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="a838e6f51e745eae4bf731215241022c", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_2" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_2.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="9d9204b1dc8a4b1284e566882ed4f0a4", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_5" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_5.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="a4671cc677d2ab4a41a3e336dbd0536e", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_6" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_6.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="35fcf6643434871fbbf84b7b0d236469", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_8" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MVS2_8.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="047a64d16baa9c178d50565547a2d03f", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MV_DUAL" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_MV_DUAL.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="c31651a7d935134407dabffc4f42387a", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_NLQUANT" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_NLQUANT.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="553f79f50d2cdb2d4fd1472a429bec78", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_PULLDOWN" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_PULLDOWN.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="5bddb79124ee5dea669dd588f844fc48", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_RPT_I" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_RPT_I.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="4bf880240b7712e4040081beecd4ee21", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_RPT_IP" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_RPT_IP.MPG"),
+format="I420", width=1920, height=1080, frames=120,
+metric=dict(type="md5", expect="770fba0cbcd5382c1d8b8ede7a9eaba7", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_RPT_IPB" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_RPT_IPB.MPG"),
+format="I420", width=1920, height=1080, frames=118,
+metric=dict(type="md5", expect="4ef0450a6fc7d8814e094877efd4e259", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_STUFFZ" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_STUFFZ.MPG"),
+format="I420", width=1920, height=1080, frames=150,
+metric=dict(type="md5", expect="fe144cc5a56806e68af75fa4844b9387", numbytes=-1)),
+"_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_VBV" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_HD_ATSC-Test_dsrc4_VBV.MPG"),
+format="I420", width=1920, height=1080, frames=150,
+metric=dict(type="md5", expect="b7f54e1c046b1d94d0ebf9600999adf6", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR02500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR02500K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="45417eda8a60f897f3d2f5c0535a6253", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR03500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR03500K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="5a584101c1f804dac7ccdc45cadaa177", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR06500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR06500K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="1ae2535d5bad364e6975f0aa54d5039f", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR08000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR08000K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="3938fcd1676b89c2055a4d45fda8fb8f", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR09000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR09000K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="614dedb3e75403f413c0f0be83d04f30", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR09500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR09500K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="6f30a0c42eb46fe4ee2853cb9ac738a0", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR10000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR10000K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="8e461c5f988a048c3d943a92393eb745", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR14000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_BR14000K.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="7a4295fb9fb5364e3009ee2587366699", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_FIELDMV" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_FIELDMV.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="1609757cb7e7ff4b8fe894a189690093", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_LQUANT" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_LQUANT.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="57b728a78df4bd4de4b67ab956189328", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MV16X8" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MV16X8.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="c807ea412bae29d41e565a0ee04f7d23", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MVS2_2" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MVS2_2.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="f03a3b1175c84f9217d67ed14c221022", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MVS2_6" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MVS2_6.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="a5dbc6990097690041fc030cd90f462b", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MVS2_7" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MVS2_7.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="932dd00d3cc11fb1047e628103dacb9a", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_PAN2HOR" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_PAN2HOR.mpg"),
+format="I420", width=720, height=480, frames=210,
+metric=dict(type="md5", expect="599628f5b60c65d5c7c86ca917e00ea1", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_PULLDOWN" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_PULLDOWN.mpg"),
+format="I420", width=720, height=480, frames=120,
+metric=dict(type="md5", expect="7686132ce57082481dbc8c158e6d80e2", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR00500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR00500K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="5f575fa08bec8451ee006d796ea9b6f0", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR01500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR01500K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="2849ea72f2ece81f5dcb0105b957b2f9", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR01856K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR01856K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="8cb2d9d361c1b17d7209c4f4ef885525", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR03500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR03500K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="1d77fb58c58630fe40d0cfdeeb544f4e", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR05000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR05000K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="064793e82ab78e7ff144cdc1d7044168", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR05500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR05500K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="07d5f8aefa4715ff481dab2bdab6a3ff", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR08000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR08000K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="802f1263abd6fd68bb6b293cf8da991d", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR08500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR08500K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="264b6bf9deb0d7c32c3331112bb6080c", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR09000K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR09000K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="7f39ab433c5c903fa3e1bee364791598", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR09500K" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_BR09500K.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="be892b0eb0e4666c6d78d7d8791e76eb", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_LQUANT" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_LQUANT.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="4cf9a02af398d554488de2a4524e2fdf", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_2" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_2.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="a750c6901ba18ba35a0d114f921225c8", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_3" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_3.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="0e7dc1e15049690636f9d5f253df8fc6", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_4" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_4.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="96ec3938592ba50f70b00f82c019ddf5", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_7" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_MVS2_7.MPG"),
+format="I420", width=352, height=240, frames=120,
+metric=dict(type="md5", expect="aa5d74d82a81d6586865c340c218bd71", numbytes=-1)),
+"_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_VBV" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_SIF_MPEG2_VBV.MPG"),
+format="I420", width=352, height=240, frames=150,
+metric=dict(type="md5", expect="490ca60a593a891c57a638191e4574e3", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_bbc3_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_bbc3_015.m2v"),
+format="I420", width=352, height=240, frames=450,
+metric=dict(type="md5", expect="425b9334bd5ba5cab294f76b052a0deb", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_bbc3_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_bbc3_060.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="497061336a2eb6f34607c37612fce7d2", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_bbc3_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_bbc3_080.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="2aec9a13032ec04d871fb8858a6a279a", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_cact_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_cact_040.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="cf83eaadc8af8c539a37a6ca85993b78", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_cact_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_cact_060.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="b2f85127b785a3abcc9f6c1414d166ec", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_cact_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_cact_080.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="1cd46e49d3e1dbad4eebf33565d03454", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_flwr_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_flwr_015.m2v"),
+format="I420", width=352, height=240, frames=450,
+metric=dict(type="md5", expect="01247e4dbcbffca2e4ff9a5233da6c95", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_mobl_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_mobl_120.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="463be0febcab97d9e93c22596d09e3be", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_mulb_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_mulb_040.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="0c8eac4309c606cffcb4e67497b1be67", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_pulb_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_pulb_015.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="14ec8bd9a698e0123f5775468f7fda5e", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_pulb_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_pulb_060.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="1b6f2700613411008052d2b0efffa138", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_pulb_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_pulb_080.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="b26e2a25634f59b0032d65d19f3bdb93", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_pulb_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_pulb_120.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="2e36097513fd716428fe224945bd1358", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_susi_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_susi_040.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="60fbce57adee05f05ba08fc42aae52ec", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_susi_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_susi_060.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="4e91e8edda6626ddf54b8783aaf6082b", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_tens_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_tens_015.m2v"),
+format="I420", width=352, height=240, frames=450,
+metric=dict(type="md5", expect="2f80075d33b0794c175ecc5553ff9156", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_tens_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_tens_120.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="3ab4f83d3b69cad026af5c57c462fd5f", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_time_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_time_015.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="bc89da4ccdec4b61e4f896533b69b91e", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_time_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_time_080.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="92bbef5b03d8235a32da2ff3a73ad9dc", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_525_time_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_525_time_120.m2v"),
+format="I420", width=704, height=480, frames=450,
+metric=dict(type="md5", expect="f08200f63bf1f93b9a8750ac945db0e7", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_100b_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_100b_015.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="3fdeefcf183bfc6686aa650d4e1c95cb", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_100b_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_100b_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="e1874c3cb64ec9485acbe67d7c951d89", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_100b_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_100b_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="1aa080c3dc2078b4d9be57311897fbb1", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_bbc3_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_bbc3_015.m2v"),
+format="I420", width=352, height=288, frames=375,
+metric=dict(type="md5", expect="e6f3285b085c6db5ccea54a7c0855b1d", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_bbc3_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_bbc3_040.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="e3b7e08483c34e1b94b1c956f581b3bb", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_bbc3_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_bbc3_060.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="bde9cec1968463922d24d64753c2a1a9", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_bbc3_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_bbc3_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="c73cee21010129ad35322f752b4bdaa3", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_bbc3_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_bbc3_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="f099a68771add87a916677ad631e98a8", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_cact_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_cact_015.m2v"),
+format="I420", width=352, height=288, frames=375,
+metric=dict(type="md5", expect="5e954b43b1b87918f0747a551ae80ae0", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_cact_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_cact_060.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="288681f07110993cde36ee6a98375749", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_cact_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_cact_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="bb1437d30088a0f1a710f0bf1de30cee", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_cact_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_cact_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="723aa569dd8853c9b22e752529db9da5", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_flwr_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_flwr_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="7b4d102ce4ca94293fddb01ada6775f0", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_flwr_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_flwr_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="12f98836b9de1d1ea1c8580a1fa2c1b2", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_mobl_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_mobl_015.m2v"),
+format="I420", width=352, height=288, frames=375,
+metric=dict(type="md5", expect="c4e69c8e4335c1b8830d541549fa55a3", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_mobl_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_mobl_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="0fe5a2f6f17fa724a85fdaca21901bff", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_mobl_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_mobl_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="2d90d391698e17e8c9d02bf6ed82a2ab", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_mulb_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_mulb_040.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="6dd3d18ca8417d48b8f5127a568c9cc2", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_mulb_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_mulb_060.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="4de2a2a1a6a10986e33b1c659c3a40db", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_mulb_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_mulb_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="c8c44549d7fa7ea4507e23ca0a60d304", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_pulb_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_pulb_015.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="c60ec1baa2468fc2992c6c9347dfc3b3", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_pulb_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_pulb_040.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="6f6f660f3bd1fcc301ffc81f4404b939", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_pulb_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_pulb_060.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="6c8417b9311a5c3d7ce8adca76db9d1a", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_pulb_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_pulb_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="7585988170b003bfd7c9b522271477df", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_pulb_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_pulb_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="7b6f7273bdcf3f5970cb9b9e46867bca", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_susi_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_susi_040.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="65d8d834c91c6977bc509b40faad1c9a", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_susi_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_susi_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="c41ea48fd916453da254e2c905735366", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_susi_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_susi_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="1db1eb242dd9d71fec59a5a8f7305d44", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_tens_015" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_tens_015.m2v"),
+format="I420", width=352, height=288, frames=375,
+metric=dict(type="md5", expect="0bb1ecc0d1a5de71be4de01f02d2e189", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_tens_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_tens_040.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="0d7ba61595da4d49f6b553a9d94301f1", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_tens_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_tens_060.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="ccced4508bface6a42c7e2abb6064f22", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_tens_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_tens_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="da0aca86f1db1e6e914d8cffccb17777", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_time_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_time_040.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="3624c3ed5af8d6ef009ab090855b675e", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_time_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_time_060.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="dd470101b7f727ceaea2af574bc2f8ba", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_time_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_time_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="5e05c1d3c76b3f3bda82a050abcf9bde", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_v700_040" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_v700_040.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="dfe8548cf7227a94fbccf29f68be1e81", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_v700_060" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_v700_060.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="f0d7cc060e6cfb340f2c5c8b230e823f", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_v700_080" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_v700_080.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="fa7a37ed76ad629578c262e6966479d3", numbytes=-1)),
+"_nstream_qctool_mp2_Tektronix_625_v700_120" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_v700_120.m2v"),
+format="I420", width=704, height=576, frames=375,
+metric=dict(type="md5", expect="65b6a16a8eb388fc6a7ae615a6b719d9", numbytes=-1)),
+"_nstream_qctool_mp2_etc_CnM_mvrangeoutcut" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_etc_CnM_mvrangeout.cut.m2v"),
 format="I420", width=704, height=480, frames=749,
 metric=dict(type="md5", expect="f1d182091e68971aaeb8c247b6a1fe6c", numbytes=-1)),
-"min_field" : dict(
-source=find_conformance_stream("min_field.mpg"),
-format="I420", width=16, height=16, frames=10,
-metric=dict(type="md5", expect="d32ae63eb4c7df025a0046653199c1c3", numbytes=-1)),
-"min_4frames" : dict(
-source=find_conformance_stream("min_4frames.mpg"),
+"_nstream_qctool_mp2_etc_Vendor_min_4frames" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_etc_Vendor_min_4frames.mpg"),
 format="I420", width=16, height=16, frames=4,
 metric=dict(type="md5", expect="9d1851831c8ce1b7a0e46ea09d0bd869", numbytes=-1)),
-"min_frame" : dict(
-source=find_conformance_stream("min_frame.mpg"),
-format="I420", width=16, height=16, frames=10,
-metric=dict(type="md5", expect="2abb0e2ba3c4920214d2d66e85ac2973", numbytes=-1)),
-"min_5frames" : dict(
-source=find_conformance_stream("min_5frames.mpg"),
+"_nstream_qctool_mp2_etc_Vendor_min_5frames" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_etc_Vendor_min_5frames.mpg"),
 format="I420", width=16, height=16, frames=5,
 metric=dict(type="md5", expect="095945eef3f630974bf50dfd93da3c86", numbytes=-1)),
+"_nstream_qctool_mp2_etc_Vendor_min_field" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_etc_Vendor_min_field.mpg"),
+format="I420", width=16, height=16, frames=10,
+metric=dict(type="md5", expect="d32ae63eb4c7df025a0046653199c1c3", numbytes=-1)),
 })
