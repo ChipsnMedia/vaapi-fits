@@ -288,38 +288,6 @@ metric=dict(type="md5", expect="79b275ec209e9d224eaf7927b5ca59c3", numbytes=-1))
 source=find_conformance_stream("jvc015.m4v"),
 format="I420", width=352, height=288, frames=150,
 metric=dict(type="md5", expect="827c9e46e213515d31f3e21b8b733766", numbytes=-1)),
-"foreman_qcif_ptype_00" : dict(
-source=find_conformance_stream("foreman_qcif_ptype_00.263"),
-format="I420", width=176, height=144, frames=300,
-metric=dict(type="md5", expect="be458a73b764c565627ffc98c80108c4", numbytes=-1)),
-"mobile_qcif_ptype_00" : dict(
-source=find_conformance_stream("mobile_qcif_ptype_00.263"),
-format="I420", width=176, height=144, frames=300,
-metric=dict(type="md5", expect="3672949667d4e969093cb9c5ed5cb9d7", numbytes=-1)),
-"mother_daughter_qcif_ptype_00" : dict(
-source=find_conformance_stream("mother_daughter_qcif_ptype_00.263"),
-format="I420", width=176, height=144, frames=300,
-metric=dict(type="md5", expect="0ab7032a7e8cd1ee266498584d0a727d", numbytes=-1)),
-"QP1_J_T_RESYNC" : dict(
-source=find_conformance_stream("QP1_J_T_RESYNC.263"),
-format="I420", width=176, height=144, frames=31,
-metric=dict(type="md5", expect="bccfe79b272ee1a42da0141db5ff17c1", numbytes=-1)),
-"RAND_IMG_I_J_T_RESYNC" : dict(
-source=find_conformance_stream("RAND_IMG_I_J_T_RESYNC.263"),
-format="I420", width=176, height=144, frames=31,
-metric=dict(type="md5", expect="d4ca498aa910006297eca6cc75b5f66a", numbytes=-1)),
-"sd2_qs1" : dict(
-source=find_conformance_stream("sd2_qs1.263"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="f26f827c18dd9615464b20da1c5ec4a6", numbytes=-1)),
-"sd2_qs2" : dict(
-source=find_conformance_stream("sd2_qs2.263"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="fbdd75b558d8aea0a4ab758a37793c4d", numbytes=-1)),
-"T_RAND_Q" : dict(
-source=find_conformance_stream("T_RAND_Q.263"),
-format="I420", width=176, height=144, frames=30,
-metric=dict(type="md5", expect="64bff5dc00993968ce30b8c6e737be02", numbytes=-1)),
 "jvc016" : dict(
 source=find_conformance_stream("jvc016.m4v"),
 format="I420", width=352, height=288, frames=150,
@@ -652,14 +620,6 @@ metric=dict(type="md5", expect="d678eb9e3d823613c297ccd93375efb3", numbytes=-1))
 source=find_conformance_stream("V10434_B_D-Traffic_MP4_SP_VOP_many_1.m4v"),
 format="I420", width=352, height=288, frames=501,
 metric=dict(type="md5", expect="194f2719a91f43e8ad681776cd8722ed", numbytes=-1)),
-"V10438_B_D-Traffic_MP4_SP_VOP_sh_ssi_dci_fpfr" : dict(
-source=find_conformance_stream("V10438_B_D-Traffic_MP4_SP_VOP_sh_ssi_dci_fpfr.263"),
-format="I420", width=352, height=288, frames=494,
-metric=dict(type="md5", expect="2b17ec750c95e2afa5b18c363e00a6f1", numbytes=-1)),
-"V10441_B_D-Traffic_MP4_SP_VOP_sh_quant" : dict(
-source=find_conformance_stream("V10441_B_D-Traffic_MP4_SP_VOP_sh_quant.263"),
-format="I420", width=352, height=288, frames=487,
-metric=dict(type="md5", expect="d5d2f2a2817e6b4b4a9fd6a7c802b350", numbytes=-1)),
 "VIDEO_Show-Reel" : dict(
 source=find_conformance_stream("VIDEO_Show-Reel.m4v"),
 format="I420", width=176, height=144, frames=1303,
@@ -728,26 +688,6 @@ metric=dict(type="md5", expect="7f440066f30c7ad32ef35739501c86db", numbytes=-1))
 source=find_conformance_stream("V10436_B_D-Traffic_MP4_SP_VOP_no_vos_many_2.m4v"),
 format="I420", width=352, height=288, frames=501,
 metric=dict(type="md5", expect="e7d3a0a0c65a3966dc4b7fce7ec791e8", numbytes=-1)),
-"V10439_B_D-Traffic_MP4_SP_VOP_sh_psupp_0" : dict(
-source=find_conformance_stream("V10439_B_D-Traffic_MP4_SP_VOP_sh_psupp_0.263"),
-format="I420", width=352, height=288, frames=494,
-metric=dict(type="md5", expect="c2936c97bc0b7c7f4527513b3748681e", numbytes=-1)),
-"V10440_B_D-Traffic_MP4_SP_VOP_sh_psupp_255" : dict(
-source=find_conformance_stream("V10440_B_D-Traffic_MP4_SP_VOP_sh_psupp_255.263"),
-format="I420", width=352, height=288, frames=494,
-metric=dict(type="md5", expect="c2936c97bc0b7c7f4527513b3748681e", numbytes=-1)),
-"V10442_B_D-Traffic_MP4_SP_VOP_sh_qcif" : dict(
-source=find_conformance_stream("V10442_B_D-Traffic_MP4_SP_VOP_sh_qcif.263"),
-format="I420", width=176, height=144, frames=484,
-metric=dict(type="md5", expect="1016d417f19e185c1c1a42dff25e98ed", numbytes=-1)),
-"V10443_B_D-Traffic_MP4_SP_VOP_sh_all_p" : dict(
-source=find_conformance_stream("V10443_B_D-Traffic_MP4_SP_VOP_sh_all_p.263"),
-format="I420", width=352, height=288, frames=295,
-metric=dict(type="md5", expect="cb50ed2fd44a04c4578cf84f6829aa0a", numbytes=-1)),
-"V10444_B_D-Traffic_MP4_SP_VOP_sh_all_i" : dict(
-source=find_conformance_stream("V10444_B_D-Traffic_MP4_SP_VOP_sh_all_i.263"),
-format="I420", width=352, height=288, frames=65,
-metric=dict(type="md5", expect="fdd734a682bb54c598b624308a752089", numbytes=-1)),
 "a1ge2_ace_L3" : dict(
 source=find_conformance_stream("a1ge2_ace_L3.bits"),
 format="I420", width=720, height=576, frames=101,
