@@ -79,18 +79,6 @@ metric=dict(type="md5", expect="0ab7032a7e8cd1ee266498584d0a727d", numbytes=-1))
 source=find_conformance_stream("V10438_B_D-Traffic_MP4_SP_VOP_sh_ssi_dci_fpfr.263"),
 format="I420", width=352, height=288, frames=494,
 metric=dict(type="md5", expect="2b17ec750c95e2afa5b18c363e00a6f1", numbytes=-1)),
-"foreman_qcif_ptype_00" : dict(
-source=find_conformance_stream("foreman_qcif_ptype_00.263"),
-format="I420", width=176, height=144, frames=300,
-metric=dict(type="md5", expect="be458a73b764c565627ffc98c80108c4", numbytes=-1)),
-"mobile_qcif_ptype_00" : dict(
-source=find_conformance_stream("mobile_qcif_ptype_00.263"),
-format="I420", width=176, height=144, frames=300,
-metric=dict(type="md5", expect="3672949667d4e969093cb9c5ed5cb9d7", numbytes=-1)),
-"mother_daughter_qcif_ptype_00" : dict(
-source=find_conformance_stream("mother_daughter_qcif_ptype_00.263"),
-format="I420", width=176, height=144, frames=300,
-metric=dict(type="md5", expect="0ab7032a7e8cd1ee266498584d0a727d", numbytes=-1)),
 "V10441_B_D-Traffic_MP4_SP_VOP_sh_quant" : dict(
 source=find_conformance_stream("V10441_B_D-Traffic_MP4_SP_VOP_sh_quant.263"),
 format="I420", width=352, height=288, frames=487,
