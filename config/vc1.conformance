@@ -96,46 +96,56 @@ metric=dict(type="md5", expect="a8e0a226b357f8a44943ed2af1ecfd98", numbytes=-1))
 source=find_conformance_stream("art6vc1sd097.rcv"),
 format="I420", width=176, height=144, frames=150,
 metric=dict(type="md5", expect="c16fc77aee300067b80798b151f32abb", numbytes=-1)),
-"art7vc1ap000" : dict(
-source=find_conformance_stream("art7vc1ap000.vc1"),
-format="I420", width=160, height=160, frames=216,
-metric=dict(type="md5", expect="bf33b18a89d784f6b90f52a248db5e05", numbytes=-1)),
-"art7vc1ap001" : dict(
-source=find_conformance_stream("art7vc1ap001.vc1"),
-format="I420", width=176, height=144, frames=216,
-metric=dict(type="md5", expect="67922b7f36aef6523ed1986af3d55179", numbytes=-1)),
-"art7vc1ap002" : dict(
-source=find_conformance_stream("art7vc1ap002.vc1"),
-format="I420", width=192, height=144, frames=216,
-metric=dict(type="md5", expect="e25f705b163f3c59e999b29efc536db9", numbytes=-1)),
-"art7vc1ap004" : dict(
-source=find_conformance_stream("art7vc1ap004.vc1"),
-format="I420", width=176, height=144, frames=216,
-metric=dict(type="md5", expect="1bb8211e54466a475e831d6d9c0daf23", numbytes=-1)),
-"art7vc1ap007" : dict(
-source=find_conformance_stream("art7vc1ap007.vc1"),
-format="I420", width=192, height=176, frames=216,
-metric=dict(type="md5", expect="c3fcea77e666c7fc8a9d22935ff407b8", numbytes=-1)),
-"art7vc1ap009" : dict(
-source=find_conformance_stream("art7vc1ap009.vc1"),
-format="I420", width=176, height=144, frames=216,
-metric=dict(type="md5", expect="6e6b1afa2d0d479d70a32727f7033e7a", numbytes=-1)),
-"art7vc1ap014" : dict(
-source=find_conformance_stream("art7vc1ap014.vc1"),
-format="I420", width=192, height=144, frames=432,
-metric=dict(type="md5", expect="8b3ffade9efa53c7d30a02ecb1e8256e", numbytes=-1)),
-"art7vc1ap016" : dict(
-source=find_conformance_stream("art7vc1ap016.vc1"),
-format="I420", width=176, height=144, frames=216,
-metric=dict(type="md5", expect="75713a82463bf84b01bf0c61e88d83f2", numbytes=-1)),
-"art7vc1ap017" : dict(
-source=find_conformance_stream("art7vc1ap017.vc1"),
-format="I420", width=176, height=144, frames=216,
-metric=dict(type="md5", expect="75713a82463bf84b01bf0c61e88d83f2", numbytes=-1)),
-"art7vc1ap021" : dict(
-source=find_conformance_stream("art7vc1ap021.vc1"),
-format="I420", width=176, height=144, frames=216,
-metric=dict(type="md5", expect="0f677b3c0c989161a8cef8a3ab4e568c", numbytes=-1)),
+# "art7vc1ap000" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap000.vc1"),
+# format="I420", width=160, height=160, frames=216,
+# metric=dict(type="md5", expect="bf33b18a89d784f6b90f52a248db5e05", numbytes=-1)),
+# "art7vc1ap001" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap001.vc1"),
+# format="I420", width=176, height=144, frames=216,
+# metric=dict(type="md5", expect="67922b7f36aef6523ed1986af3d55179", numbytes=-1)),
+# "art7vc1ap002" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap002.vc1"),
+# format="I420", width=192, height=144, frames=216,
+# metric=dict(type="md5", expect="e25f705b163f3c59e999b29efc536db9", numbytes=-1)),
+# "art7vc1ap004" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap004.vc1"),
+# format="I420", width=176, height=144, frames=216,
+# metric=dict(type="md5", expect="1bb8211e54466a475e831d6d9c0daf23", numbytes=-1)),
+# "art7vc1ap007" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap007.vc1"),
+# format="I420", width=192, height=176, frames=216,
+# metric=dict(type="md5", expect="c3fcea77e666c7fc8a9d22935ff407b8", numbytes=-1)),
+# "art7vc1ap009" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap009.vc1"),
+# format="I420", width=176, height=144, frames=216,
+# metric=dict(type="md5", expect="6e6b1afa2d0d479d70a32727f7033e7a", numbytes=-1)),
+# "art7vc1ap014" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap014.vc1"),
+# format="I420", width=192, height=144, frames=432,
+# metric=dict(type="md5", expect="8b3ffade9efa53c7d30a02ecb1e8256e", numbytes=-1)),
+# "art7vc1ap016" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap016.vc1"),
+# format="I420", width=176, height=144, frames=216,
+# metric=dict(type="md5", expect="75713a82463bf84b01bf0c61e88d83f2", numbytes=-1)),
+# "art7vc1ap017" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap017.vc1"),
+# format="I420", width=176, height=144, frames=216,
+# metric=dict(type="md5", expect="75713a82463bf84b01bf0c61e88d83f2", numbytes=-1)),
+# "art7vc1ap021" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap021.vc1"),
+# format="I420", width=176, height=144, frames=216,
+# metric=dict(type="md5", expect="0f677b3c0c989161a8cef8a3ab4e568c", numbytes=-1)),
 "art7vc1ap023" : dict(
 source=find_conformance_stream("art7vc1ap023.vc1"),
 format="I420", width=160, height=160, frames=216,
@@ -148,18 +158,21 @@ metric=dict(type="md5", expect="1b32ccafccba132bbbb10967f23b27dc", numbytes=-1))
 source=find_conformance_stream("art7vc1ap031.vc1"),
 format="I420", width=176, height=144, frames=216,
 metric=dict(type="md5", expect="8b4966132f01ed6b901230adadddcf1a", numbytes=-1)),
-"art7vc1ap037" : dict(
-source=find_conformance_stream("art7vc1ap037.vc1"),
-format="I420", width=192, height=176, frames=205,
-metric=dict(type="md5", expect="56ca47975c354a1bd1fbd11a6f468209", numbytes=-1)),
-"art7vc1ap038" : dict(
-source=find_conformance_stream("art7vc1ap038.vc1"),
-format="I420", width=160, height=160, frames=210,
-metric=dict(type="md5", expect="1a948ab1ce15286be2c750f6230aafed", numbytes=-1)),
-"art7vc1ap040" : dict(
-source=find_conformance_stream("art7vc1ap040.vc1"),
-format="I420", width=192, height=144, frames=210,
-metric=dict(type="md5", expect="56fa4b3c4315980a2bcc8de838e43001", numbytes=-1)),
+# "art7vc1ap037" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap037.vc1"),
+# format="I420", width=192, height=176, frames=205,
+# metric=dict(type="md5", expect="56ca47975c354a1bd1fbd11a6f468209", numbytes=-1)),
+# "art7vc1ap038" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap038.vc1"),
+# format="I420", width=160, height=160, frames=210,
+# metric=dict(type="md5", expect="1a948ab1ce15286be2c750f6230aafed", numbytes=-1)),
+# "art7vc1ap040" : dict(
+# Field Encoded
+# source=find_conformance_stream("art7vc1ap040.vc1"),
+# format="I420", width=192, height=144, frames=210,
+# metric=dict(type="md5", expect="56fa4b3c4315980a2bcc8de838e43001", numbytes=-1)),
 "art7vc1ap043" : dict(
 source=find_conformance_stream("art7vc1ap043.vc1"),
 format="I420", width=160, height=160, frames=216,
@@ -468,38 +481,44 @@ metric=dict(type="md5", expect="feaa76e47ac1309a46e0bf95a07b772c", numbytes=-1))
 source=find_conformance_stream("sa10098.vc1"),
 format="I420", width=720, height=480, frames=900,
 metric=dict(type="md5", expect="598b407d810e6f90a677935736ed9582", numbytes=-1)),
-"sa10105" : dict(
-source=find_conformance_stream("sa10105.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="f580a6b47e9a3b207fe9903b2fbd6ed2", numbytes=-1)),
+# "sa10105" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10105.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="f580a6b47e9a3b207fe9903b2fbd6ed2", numbytes=-1)),
 "sa10106" : dict(
 source=find_conformance_stream("sa10106.vc1"),
 format="I420", width=720, height=480, frames=30,
 metric=dict(type="md5", expect="bc12fa6d1bea0093cb72976d70bf4ab6", numbytes=-1)),
-"sa10107" : dict(
-source=find_conformance_stream("sa10107.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="f580a6b47e9a3b207fe9903b2fbd6ed2", numbytes=-1)),
-"sa10114" : dict(
-source=find_conformance_stream("sa10114.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="30b2726da46a7399a04f7db99ec03461", numbytes=-1)),
+# "sa10107" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10107.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="f580a6b47e9a3b207fe9903b2fbd6ed2", numbytes=-1)),
+# "sa10114" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10114.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="30b2726da46a7399a04f7db99ec03461", numbytes=-1)),
 "sa10119" : dict(
 source=find_conformance_stream("sa10119.vc1"),
 format="I420", width=720, height=576, frames=25,
 metric=dict(type="md5", expect="ca5181fa54234538259c3f1fb9cd578e", numbytes=-1)),
-"sa10128" : dict(
-source=find_conformance_stream("sa10128.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="35ef82d873f2be57cd5b7c8b5cd10408", numbytes=-1)),
-"sa10132" : dict(
-source=find_conformance_stream("sa10132.vc1"),
-format="I420", width=720, height=480, frames=897,
-metric=dict(type="md5", expect="adc87e27f2a86e8e37a4c720586e9d71", numbytes=-1)),
-"sa10133" : dict(
-source=find_conformance_stream("sa10133.vc1"),
-format="I420", width=352, height=576, frames=25,
-metric=dict(type="md5", expect="8f9357cccf72ceadacc7753e98c83947", numbytes=-1)),
+# "sa10128" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10128.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="35ef82d873f2be57cd5b7c8b5cd10408", numbytes=-1)),
+# "sa10132" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10132.vc1"),
+# format="I420", width=720, height=480, frames=897,
+# metric=dict(type="md5", expect="adc87e27f2a86e8e37a4c720586e9d71", numbytes=-1)),
+# "sa10133" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10133.vc1"),
+# format="I420", width=352, height=576, frames=25,
+# metric=dict(type="md5", expect="8f9357cccf72ceadacc7753e98c83947", numbytes=-1)),
 "sa10135" : dict(
 source=find_conformance_stream("sa10135.vc1"),
 format="I420", width=720, height=480, frames=30,
@@ -508,34 +527,40 @@ metric=dict(type="md5", expect="960ba6fde7f0c5bdf619c89061feb8ba", numbytes=-1))
 source=find_conformance_stream("sa10141.vc1"),
 format="I420", width=720, height=576, frames=25,
 metric=dict(type="md5", expect="7d686e572803b3a212b2e012ff4b1ea0", numbytes=-1)),
-"sa10143" : dict(
-source=find_conformance_stream("sa10143.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="7e7af6ef8ab2d1e8e8e7cc834f51745f", numbytes=-1)),
-"sa10144" : dict(
-source=find_conformance_stream("sa10144.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="dc385001eec262d17bd8f7eb4c2e6b84", numbytes=-1)),
-"sa10145" : dict(
-source=find_conformance_stream("sa10145.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="acc2aa63808d67de99c4e490c7b7993c", numbytes=-1)),
+# "sa10143" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10143.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="7e7af6ef8ab2d1e8e8e7cc834f51745f", numbytes=-1)),
+# "sa10144" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10144.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="dc385001eec262d17bd8f7eb4c2e6b84", numbytes=-1)),
+# "sa10145" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10145.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="acc2aa63808d67de99c4e490c7b7993c", numbytes=-1)),
 "sa10150" : dict(
 source=find_conformance_stream("sa10150.vc1"),
 format="I420", width=540, height=480, frames=30,
 metric=dict(type="md5", expect="a52ff3120e5e169c03101fa35f27110e", numbytes=-1)),
-"sa10152" : dict(
-source=find_conformance_stream("sa10152.vc1"),
-format="I420", width=480, height=480, frames=30,
-metric=dict(type="md5", expect="7951e9328a73d552c146aca922045aa8", numbytes=-1)),
-"sa10155" : dict(
-source=find_conformance_stream("sa10155.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="11a07ae673ddf1dbe6ec6c42e29e3304", numbytes=-1)),
-"sa10156" : dict(
-source=find_conformance_stream("sa10156.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="6d320a18dffa5b28a693cfc8dc0b67b2", numbytes=-1)),
+# "sa10152" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10152.vc1"),
+# format="I420", width=480, height=480, frames=30,
+# metric=dict(type="md5", expect="7951e9328a73d552c146aca922045aa8", numbytes=-1)),
+# "sa10155" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10155.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="11a07ae673ddf1dbe6ec6c42e29e3304", numbytes=-1)),
+# "sa10156" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa10156.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="6d320a18dffa5b28a693cfc8dc0b67b2", numbytes=-1)),
 "sa10165" : dict(
 source=find_conformance_stream("sa10165.vc1"),
 format="I420", width=720, height=576, frames=24,
@@ -572,78 +597,92 @@ metric=dict(type="md5", expect="e6a04ec81618e838c224760006e0d640", numbytes=-1))
 source=find_conformance_stream("sa30031.vc1"),
 format="I420", width=1280, height=1080, frames=900,
 metric=dict(type="md5", expect="ac8716c98a5a0c4847be70fe2ef90876", numbytes=-1)),
-"sa30046" : dict(
-source=find_conformance_stream("sa30046.vc1"),
-format="I420", width=1920, height=1080, frames=30,
-metric=dict(type="md5", expect="5b743a350071f07f4c4049a582cd4e49", numbytes=-1)),
-"sa30049" : dict(
-source=find_conformance_stream("sa30049.vc1"),
-format="I420", width=1920, height=1080, frames=30,
-metric=dict(type="md5", expect="6116d35d0d4313cddb8efbda45242b13", numbytes=-1)),
-"sa30051" : dict(
-source=find_conformance_stream("sa30051.vc1"),
-format="I420", width=1920, height=1080, frames=30,
-metric=dict(type="md5", expect="d9e310606388ba244d2419c41b5dffdb", numbytes=-1)),
-"sa40008" : dict(
-source=find_conformance_stream("sa40008.vc1"),
-format="I420", width=1920, height=1080, frames=60,
-metric=dict(type="md5", expect="582bc62f942007617343c0157c5048ba", numbytes=-1)),
+# "sa30046" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa30046.vc1"),
+# format="I420", width=1920, height=1080, frames=30,
+# metric=dict(type="md5", expect="5b743a350071f07f4c4049a582cd4e49", numbytes=-1)),
+# "sa30049" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa30049.vc1"),
+# format="I420", width=1920, height=1080, frames=30,
+# metric=dict(type="md5", expect="6116d35d0d4313cddb8efbda45242b13", numbytes=-1)),
+# "sa30051" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa30051.vc1"),
+# format="I420", width=1920, height=1080, frames=30,
+# metric=dict(type="md5", expect="d9e310606388ba244d2419c41b5dffdb", numbytes=-1)),
+# "sa40008" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa40008.vc1"),
+# format="I420", width=1920, height=1080, frames=60,
+# metric=dict(type="md5", expect="582bc62f942007617343c0157c5048ba", numbytes=-1)),
 "sa40009" : dict(
 source=find_conformance_stream("sa40009.vc1"),
 format="I420", width=1920, height=1080, frames=50,
 metric=dict(type="md5", expect="d168076e8151d57e87d80265ec9b06a8", numbytes=-1)),
-"sa40014" : dict(
-source=find_conformance_stream("sa40014.vc1"),
-format="I420", width=1920, height=1080, frames=901,
-metric=dict(type="md5", expect="d7e7c384d3a9dc5fec875dd4b5cc963c", numbytes=-1)),
-"ma10103" : dict(
-source=find_conformance_stream("ma10103.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="cf02ccb5c0e2a9dbad7b4dbf13f6fec4", numbytes=-1)),
+# "sa40014" : dict(
+# Field Encoded
+# source=find_conformance_stream("sa40014.vc1"),
+# format="I420", width=1920, height=1080, frames=901,
+# metric=dict(type="md5", expect="d7e7c384d3a9dc5fec875dd4b5cc963c", numbytes=-1)),
+# "ma10103" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10103.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="cf02ccb5c0e2a9dbad7b4dbf13f6fec4", numbytes=-1)),
 "ma10104" : dict(
 source=find_conformance_stream("ma10104.vc1"),
 format="I420", width=720, height=480, frames=18,
 metric=dict(type="md5", expect="1573e6695a378e79fd635bc775b43ce2", numbytes=-1)),
-"ma10114" : dict(
-source=find_conformance_stream("ma10114.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="325012117eb553d988221df7aa03a141", numbytes=-1)),
+# "ma10114" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10114.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="325012117eb553d988221df7aa03a141", numbytes=-1)),
 "ma10116" : dict(
 source=find_conformance_stream("ma10116.vc1"),
 format="I420", width=720, height=576, frames=25,
 metric=dict(type="md5", expect="4d4ec5ca636c071537607b4be14f6d3c", numbytes=-1)),
-"ma10120" : dict(
-source=find_conformance_stream("ma10120.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="4de2e4d4e846641d8b60f444e37ae6c3", numbytes=-1)),
+# "ma10120" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10120.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="4de2e4d4e846641d8b60f444e37ae6c3", numbytes=-1)),
 "ma10124" : dict(
 source=find_conformance_stream("ma10124.vc1"),
 format="I420", width=720, height=480, frames=30,
 metric=dict(type="md5", expect="000216d73543645fdb3c8a495e671e7d", numbytes=-1)),
-"ma10125" : dict(
-source=find_conformance_stream("ma10125.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="a441de984686453c76635f2ebd4722c4", numbytes=-1)),
-"ma10128" : dict(
-source=find_conformance_stream("ma10128.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="63b16aaead977573986886a7a252bc8c", numbytes=-1)),
-"ma10129" : dict(
-source=find_conformance_stream("ma10129.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="e02843509a5b22d020b55b643c8d75fe", numbytes=-1)),
-"ma10130" : dict(
-source=find_conformance_stream("ma10130.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="51533263f3aa8b614edcce8bd4b68bec", numbytes=-1)),
-"ma10131" : dict(
-source=find_conformance_stream("ma10131.vc1"),
-format="I420", width=720, height=576, frames=25,
-metric=dict(type="md5", expect="1326747091905c9428bd98b533bca2a0", numbytes=-1)),
-"ma10134" : dict(
-source=find_conformance_stream("ma10134.vc1"),
-format="I420", width=720, height=480, frames=30,
-metric=dict(type="md5", expect="77cd8c81f4a62e8ca93445662f6ba9f6", numbytes=-1)),
+# "ma10125" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10125.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="a441de984686453c76635f2ebd4722c4", numbytes=-1)),
+# "ma10128" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10128.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="63b16aaead977573986886a7a252bc8c", numbytes=-1)),
+# "ma10129" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10129.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="e02843509a5b22d020b55b643c8d75fe", numbytes=-1)),
+# "ma10130" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10130.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="51533263f3aa8b614edcce8bd4b68bec", numbytes=-1)),
+# "ma10131" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10131.vc1"),
+# format="I420", width=720, height=576, frames=25,
+# metric=dict(type="md5", expect="1326747091905c9428bd98b533bca2a0", numbytes=-1)),
+# "ma10134" : dict(
+# Field Encoded
+# source=find_conformance_stream("ma10134.vc1"),
+# format="I420", width=720, height=480, frames=30,
+# metric=dict(type="md5", expect="77cd8c81f4a62e8ca93445662f6ba9f6", numbytes=-1)),
 "ma20085" : dict(
 source=find_conformance_stream("ma20085.vc1"),
 format="I420", width=1280, height=720, frames=654,
