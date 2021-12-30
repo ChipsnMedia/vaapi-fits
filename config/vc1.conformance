@@ -80,10 +80,11 @@ metric=dict(type="md5", expect="e19879da472688aa5dfee5fd36c0ea86", numbytes=-1))
 source=find_conformance_stream("art6vc1sd079.rcv"),
 format="I420", width=96, height=80, frames=420,
 metric=dict(type="md5", expect="4d463f8b9011c864f6aae2dd808fdd6c", numbytes=-1)),
-"art6vc1sd082" : dict(
-source=find_conformance_stream("art6vc1sd082.rcv"),
-format="I420", width=96, height=80, frames=300,
-metric=dict(type="md5", expect="b4a74c3c477f11d4c2afaf575816b355", numbytes=-1)),
+# "art6vc1sd082" : dict(
+# range_reduction_frame enabled. can't be supported becuase surface_id of VAPictureParameterBufferVC1.inloop_decoded_picture is not assigned by ffmpeg. inloop_decoded_picture is designed to store(output) range reduction image.
+# source=find_conformance_stream("art6vc1sd082.rcv"),
+# format="I420", width=96, height=80, frames=300,
+# metric=dict(type="md5", expect="b4a74c3c477f11d4c2afaf575816b355", numbytes=-1)),
 "art6vc1sd085" : dict(
 source=find_conformance_stream("art6vc1sd085.rcv"),
 format="I420", width=176, height=144, frames=200,
