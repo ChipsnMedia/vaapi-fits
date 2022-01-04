@@ -1,12 +1,12 @@
 # MP2 Bitstreams
 media._get_test_spec("mpeg2", "decode").update({
 # "_nstream_qctool_mp2_Berkely_Mpeg2_ESd_P1_conf1d" : dict(
-# Field encoded
+# Field Encoded
 # source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_ESd_P1_conf1d.mpeg"),
 # format="I420", width=720, height=576, frames=47,
 # metric=dict(type="md5", expect="30e6370e6e52a4fe7cf06c97f438c51a", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_att" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_att.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_att_bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_att_bits.mpeg"),
 format="I420", width=32, height=32, frames=132,
 metric=dict(type="md5", expect="59074f1e4677510405e194c3f63d9bf9", numbytes=-1)),
 "_nstream_qctool_mp2_Berkely_Mpeg2_att" : dict(
@@ -29,12 +29,12 @@ metric=dict(type="md5", expect="fc171a068b741df3bb400fc9a800f065", numbytes=-1))
 source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_bit_stream2.mpeg"),
 format="I420", width=720, height=480, frames=16,
 metric=dict(type="md5", expect="29ff477bf2c1216aaaccfafd63b6ffd2", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_conf2bits" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_conf2.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_conf2_bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_conf2_bits.mpeg"),
 format="I420", width=720, height=576, frames=31,
 metric=dict(type="md5", expect="62cc082373d8a1408e5ad5bc2d966776", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_conf4bit" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_conf4.bit.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_conf4_bit" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_conf4_bit.mpeg"),
 format="I420", width=704, height=480, frames=4,
 metric=dict(type="md5", expect="23a93c66bbc68f58c5000e2a1c9c1075", numbytes=-1)),
 "_nstream_qctool_mp2_Berkely_Mpeg2_gi_v3" : dict(
@@ -49,55 +49,55 @@ metric=dict(type="md5", expect="23a41f1da1d3129bf93ec633417c638a", numbytes=-1))
 source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_ime.mpeg"),
 format="I420", width=720, height=480, frames=4,
 metric=dict(type="md5", expect="978e61863055b77b155d954ebb2be22f", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_mcp10ccettbits" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_mcp10ccett.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_mcp10ccett_bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_mcp10ccett_bits.mpeg"),
 format="I420", width=720, height=576, frames=4,
 metric=dict(type="md5", expect="0706d9e882915d83a34c28308cb4a4c0", numbytes=-1)),
 "_nstream_qctool_mp2_Berkely_Mpeg2_nokia6" : dict(
 source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_nokia6.mpeg"),
 format="I420", width=720, height=576, frames=4,
 metric=dict(type="md5", expect="89c4e3337416b59ea6e0fcf9c9bd1879", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_nokia6_dual_60bit" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_nokia6_dual_60.bit.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_nokia6_dual_60_bit" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_nokia6_dual_60_bit.mpeg"),
 format="I420", width=720, height=576, frames=60,
 metric=dict(type="md5", expect="cc9cb6a76c070f460620d5b4f6d6c091", numbytes=-1)),
 # "_nstream_qctool_mp2_Berkely_Mpeg2_sony-ct1" : dict(
-# Filed encoded
+# Field Encoded
 # source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_sony-ct1.mpeg"),
 # format="I420", width=352, height=224, frames=60,
 # metric=dict(type="md5", expect="bffec778bcd035e18c674d98369146f3", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_synchobin1" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_syncho.bin.1.m2v"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_syncho_bin_1" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_syncho_bin_1.m2v"),
 format="I420", width=352, height=288, frames=238,
 metric=dict(type="md5", expect="4784b9d8161d9abfc3e7d01595442594", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_synchobin3" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_syncho.bin.3.m2v"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_syncho_bin_3" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_syncho_bin_3.m2v"),
 format="I420", width=720, height=576, frames=239,
 metric=dict(type="md5", expect="1ceda50d02d87bd9f2aec5c04926ae68", numbytes=-1)),
-# "_nstream_qctool_mp2_Berkely_Mpeg2_tcela-10bits" : dict(
+# "_nstream_qctool_mp2_Berkely_Mpeg2_tcela-10_bits" : dict(
 # Field Encoded
-# source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-10.bits.mpeg"),
+# source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-10_bits.mpeg"),
 # format="I420", width=720, height=480, frames=61,
 # metric=dict(type="md5", expect="b337234fc662b49b1f5c7e11dd80983d", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14bits" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14_bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14_bits.mpeg"),
 format="I420", width=720, height=480, frames=61,
 metric=dict(type="md5", expect="96e9620fcd8642298495f8038d951536", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14shortbits" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14.short.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14_short_bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-14_short_bits.mpeg"),
 format="I420", width=720, height=480, frames=4,
 metric=dict(type="md5", expect="5265ee986d53e518ec4bd7b29b1d39e4", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-17bits" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-17.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-17_bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-17_bits.mpeg"),
 format="I420", width=720, height=480, frames=2,
 metric=dict(type="md5", expect="e1c2f4cc094a6e831730814492171a88", numbytes=-1)),
-"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-6bits" : dict(
-source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-6.bits.mpeg"),
+"_nstream_qctool_mp2_Berkely_Mpeg2_tcela-6_bits" : dict(
+source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-6_bits.mpeg"),
 format="I420", width=720, height=480, frames=4,
 metric=dict(type="md5", expect="83acae45a115a56c21c0cbded6c68963", numbytes=-1)),
-# "_nstream_qctool_mp2_Berkely_Mpeg2_tcela-8bits" : dict(
-# Filed Encoded
-# source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-8.bits.mpeg"),
+# "_nstream_qctool_mp2_Berkely_Mpeg2_tcela-8_bits" : dict(
+# Field Encoded
+# source=find_conformance_stream("_nstream_qctool_mp2_Berkely_Mpeg2_tcela-8_bits.mpeg"),
 # format="I420", width=720, height=480, frames=4,
 # metric=dict(type="md5", expect="f056dc0f5eaa91ee1db4489fc8b625bc", numbytes=-1)),
 "_nstream_qctool_mp2_Berkely_Mpeg2_toshiba_DPall-0" : dict(
@@ -433,7 +433,7 @@ source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_LQUAN
 format="I420", width=720, height=480, frames=120,
 metric=dict(type="md5", expect="57b728a78df4bd4de4b67ab956189328", numbytes=-1)),
 # "_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MV16X8" : dict(
-# Filed Encoded
+# Field Encoded
 # source=find_conformance_stream("_nstream_qctool_mp2_Sarnoff_CCIR601_MPEG-2_MV16X8.mpg"),
 # format="I420", width=720, height=480, frames=120,
 # metric=dict(type="md5", expect="c807ea412bae29d41e565a0ee04f7d23", numbytes=-1)),
@@ -757,9 +757,9 @@ metric=dict(type="md5", expect="fa7a37ed76ad629578c262e6966479d3", numbytes=-1))
 source=find_conformance_stream("_nstream_qctool_mp2_Tektronix_625_v700_120.m2v"),
 format="I420", width=704, height=576, frames=375,
 metric=dict(type="md5", expect="65b6a16a8eb388fc6a7ae615a6b719d9", numbytes=-1)),
-# "_nstream_qctool_mp2_etc_CnM_mvrangeoutcut" : dict(
-# error stream
-# source=find_conformance_stream("_nstream_qctool_mp2_etc_CnM_mvrangeout.cut.m2v"),
+# "_nstream_qctool_mp2_etc_CnM_mvrangeout_cut" : dict(
+# Field Encoded
+# source=find_conformance_stream("_nstream_qctool_mp2_etc_CnM_mvrangeout_cut.m2v"),
 # format="I420", width=704, height=480, frames=749,
 # metric=dict(type="md5", expect="f1d182091e68971aaeb8c247b6a1fe6c", numbytes=-1)),
 "_nstream_qctool_mp2_etc_Vendor_min_4frames" : dict(
@@ -771,7 +771,7 @@ source=find_conformance_stream("_nstream_qctool_mp2_etc_Vendor_min_5frames.mpg")
 format="I420", width=16, height=16, frames=5,
 metric=dict(type="md5", expect="095945eef3f630974bf50dfd93da3c86", numbytes=-1)),
 # "_nstream_qctool_mp2_etc_Vendor_min_field" : dict(
-# Filed Encoded
+# Field Encoded
 # source=find_conformance_stream("_nstream_qctool_mp2_etc_Vendor_min_field.mpg"),
 # format="I420", width=16, height=16, frames=10,
 # metric=dict(type="md5", expect="d32ae63eb4c7df025a0046653199c1c3", numbytes=-1)),
