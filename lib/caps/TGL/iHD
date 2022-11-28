@@ -12,6 +12,7 @@
 caps = dict(
   decode  = dict(
     avc     = dict(maxres = res4k , fmts = ["NV12"]),
+    avc_10  = dict(maxres = res4k , fmts = ["P010"]),
     mpeg2   = dict(maxres = res2k , fmts = ["NV12"]),
     mpeg4   = dict(maxres = res2k , fmts = ["NV12"]),
     h263    = dict(maxres = res2k , fmts = ["NV12"]),
