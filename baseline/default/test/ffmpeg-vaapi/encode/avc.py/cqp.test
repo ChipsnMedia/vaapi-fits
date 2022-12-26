@@ -152,5 +152,115 @@
         47.4167
       ]
     }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cqp.test(bframes=0,case=1080p,gop=1,profile=high10,qp=14,quality=4,slices=1)": {
+    "drv.i965": {
+      "psnr": [
+        59.4208,
+        65.4136,
+        64.0855,
+        59.4567,
+        65.4136,
+        64.0855
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        59.4208,
+        65.4136,
+        64.0855,
+        59.4567,
+        65.4136,
+        64.0855
+      ]
+    }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cqp.test(bframes=0,case=720p,gop=1,profile=high10,qp=28,quality=4,slices=1)": {
+    "drv.i965": { 
+      "psnr": [
+        45.2972,
+        50.4273,
+        52.0932,
+        45.3496,
+        50.4273,
+        52.0932
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        45.2972,
+        50.4273,
+        52.0932,
+        45.3496,
+        50.4273,
+        52.0932
+      ]
+    }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cqp.test(bframes=0,case=QVGA,gop=1,profile=high10,qp=14,quality=4,slices=1)": {
+    "drv.i965": { 
+      "psnr": [
+        58.8136,
+        61.7511,
+        61.4385,
+        58.9808,
+        61.7511,
+        61.4385
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        58.8136,
+        61.7511,
+        61.4385,
+        58.9808,
+        61.7511,
+        61.4385
+      ]
+    }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cqp.test(bframes=2,case=1080p,gop=30,profile=high10,qp=28,quality=4,slices=4)": {
+    "drv.i965": {
+      "psnr": [
+        37.785,
+        52.9495,
+        52.7955,
+        39.9158,
+        53.1426,
+        52.9833
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        37.785,
+        52.9495,
+        52.7955,
+        39.9158,
+        53.1426,
+        52.9833
+      ]
+    }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cqp.test(bframes=2,case=QVGA,gop=30,profile=high10,qp=28,quality=4,slices=4)": {
+    "drv.i965": {
+      "psnr": [
+        37.4767,
+        47.1409,
+        47.8842,
+        39.6459,
+        47.2199,
+        47.9854
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        37.4767,
+        47.1409,
+        47.8842,
+        39.6459,
+        47.2199,
+        47.9854
+      ]
+    }
   }
 }

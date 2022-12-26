@@ -86,5 +86,71 @@
         51.0431
       ]
     }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cbr.test(bframes=0,bitrate=500,case=QVGA,fps=25,gop=30,profile=high10,slices=1)": {
+    "drv.i965": {
+      "psnr": [
+        40.995, 
+        47.2207, 
+        45.5891, 
+        41.4075, 
+        47.4011, 
+        47.7779
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        40.995, 
+        47.2207, 
+        45.5891, 
+        41.4075, 
+        47.4011, 
+        47.7779
+      ]
+    }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cbr.test(bframes=0,bitrate=6000,case=1080p,fps=30,gop=30,profile=high10,slices=1)": {
+    "drv.i965": {
+      "psnr": [
+        29.4117, 
+        43.3273, 
+        43.8126, 
+        30.6704, 
+        45.4775, 
+        45.1421
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        29.4117, 
+        43.3273, 
+        43.8126, 
+        30.6704, 
+        45.4775, 
+        45.1421
+      ]
+    }
+  },
+  "test/ffmpeg-vaapi/encode/10bit/avc.py:cbr.test(bframes=2,bitrate=4000,case=720p,fps=30,gop=30,profile=high10,slices=4)": {
+    "drv.i965": {
+      "psnr": [
+        30.0389, 
+        45.5032, 
+        44.9339, 
+        34.3055, 
+        47.2103, 
+        47.038
+      ]
+    },
+    "drv.iHD": {
+      "psnr": [
+        30.0389, 
+        45.5032, 
+        44.9339, 
+        34.3055, 
+        47.2103, 
+        47.038
+      ]
+    }
   }
 }
