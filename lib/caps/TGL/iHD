@@ -31,6 +31,8 @@ caps = dict(
     vp9_12  = dict(maxres = res8k , fmts = ["P012", "Y412"]),
     av1_8   = dict(maxres = res8k , fmts = ["NV12"]),
     av1_10  = dict(maxres = res8k , fmts = ["P010"]),
+    avs2_8   = dict(maxres = res8k , fmts = ["NV12"]),
+    avs2_10  = dict(maxres = res8k , fmts = ["P010"]),
   ),
   encode  = dict(
     avc     = dict(maxres = res4k , fmts = ["NV12"]),
