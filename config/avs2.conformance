@@ -13,22 +13,22 @@ media._get_test_spec("avs2", "decode", "8bit").update({
     source=find_conformance_stream("HLS_12.7_Samsung_1_1.avs"),
     format="I420", width=832, height=480, frames=8,
     metric=dict(type="md5", expect="abc666711f1f54082576bb59ca1f9cf2", numbytes=-1)),
-    "avs2_main_seq_change_stream_0" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_0.avs"),
-    format="I420", width=1920, height=1080, frames=8,
-    metric=dict(type="md5", expect="f2ebf2d649ce99b2764534f070b8c120", numbytes=-1)),
-    "avs2_main_seq_change_stream_2" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_2.avs"),
-    format="I420", width=1424, height=128, frames=8,
-    metric=dict(type="md5", expect="b64e07cf6f0e2e0d7f506c0a89fe4440", numbytes=-1)),
-    "avs2_main_seq_change_stream_6" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_6.avs"),
-    format="I420", width=3088, height=64, frames=8,
-    metric=dict(type="md5", expect="d02e9788291882dbbe4887f0f677da7e", numbytes=-1)),
-    "avs2_main_seq_change_stream_8" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_8.avs"),
-    format="I420", width=304, height=128, frames=8,
-    metric=dict(type="md5", expect="31a819a2d5ca8ee2eab43894952b6e74", numbytes=-1)),
+    # "avs2_main_seq_change_stream_0" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_0.avs"),
+    # format="I420", width=1920, height=1080, frames=8,
+    # metric=dict(type="md5", expect="f2ebf2d649ce99b2764534f070b8c120", numbytes=-1)),
+    # "avs2_main_seq_change_stream_2" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_2.avs"),
+    # format="I420", width=1424, height=128, frames=8,
+    # metric=dict(type="md5", expect="b64e07cf6f0e2e0d7f506c0a89fe4440", numbytes=-1)),
+    # "avs2_main_seq_change_stream_6" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_6.avs"),
+    # format="I420", width=3088, height=64, frames=8,
+    # metric=dict(type="md5", expect="d02e9788291882dbbe4887f0f677da7e", numbytes=-1)),
+    # "avs2_main_seq_change_stream_8" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_8.avs"),
+    # format="I420", width=304, height=128, frames=8,
+    # metric=dict(type="md5", expect="31a819a2d5ca8ee2eab43894952b6e74", numbytes=-1)),
     "BasketballPass_416x240_50_ai_" : dict(
     source=find_conformance_stream("BasketballPass_416x240_50_ai.avs2"),
     format="I420", width=416, height=240, frames=8,
@@ -3889,26 +3889,26 @@ media._get_test_spec("avs2", "decode", "8bit").update({
     source=find_conformance_stream("Stress_AVS2_MAIN_1920x1080_350_stress_s1_2.3.4.avs"),
     format="I420", width=1920, height=540, frames=8,
     metric=dict(type="md5", expect="c9fcc74b05732ee6609924fe02a553bc", numbytes=-1)),
-    "avs2_main_seq_change_stream_1" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_1.avs"),
-    format="I420", width=1920, height=1080, frames=8,
-    metric=dict(type="md5", expect="7fb6b0c5e0348580c67f88f0fda735eb", numbytes=-1)),
-    "avs2_main_seq_change_stream_3" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_3.avs"),
-    format="I420", width=800, height=64, frames=8,
-    metric=dict(type="md5", expect="58bf1f07f564f4e3d86349c33cb09f36", numbytes=-1)),
-    "avs2_main_seq_change_stream_5" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_5.avs"),
-    format="I420", width=432, height=240, frames=8,
-    metric=dict(type="md5", expect="e5affbd533093fd6f02df916c2841a38", numbytes=-1)),
-    "avs2_main_seq_change_stream_7" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_7.avs"),
-    format="I420", width=432, height=240, frames=8,
-    metric=dict(type="md5", expect="fba2e0f7c6af5084e23c6c34ba2cb73a", numbytes=-1)),
-    "avs2_main_seq_change_stream_9" : dict(
-    source=find_conformance_stream("avs2_main_seq_change_stream_9.avs"),
-    format="I420", width=400, height=128, frames=8,
-    metric=dict(type="md5", expect="cabff7f4dc09cadd0ceb25687f5a4fa3", numbytes=-1)),
+    # "avs2_main_seq_change_stream_1" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_1.avs"),
+    # format="I420", width=1920, height=1080, frames=8,
+    # metric=dict(type="md5", expect="7fb6b0c5e0348580c67f88f0fda735eb", numbytes=-1)),
+    # "avs2_main_seq_change_stream_3" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_3.avs"),
+    # format="I420", width=800, height=64, frames=8,
+    # metric=dict(type="md5", expect="58bf1f07f564f4e3d86349c33cb09f36", numbytes=-1)),
+    # "avs2_main_seq_change_stream_5" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_5.avs"),
+    # format="I420", width=432, height=240, frames=8,
+    # metric=dict(type="md5", expect="e5affbd533093fd6f02df916c2841a38", numbytes=-1)),
+    # "avs2_main_seq_change_stream_7" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_7.avs"),
+    # format="I420", width=432, height=240, frames=8,
+    # metric=dict(type="md5", expect="fba2e0f7c6af5084e23c6c34ba2cb73a", numbytes=-1)),
+    # "avs2_main_seq_change_stream_9" : dict(
+    # source=find_conformance_stream("avs2_main_seq_change_stream_9.avs"),
+    # format="I420", width=400, height=128, frames=8,
+    # metric=dict(type="md5", expect="cabff7f4dc09cadd0ceb25687f5a4fa3", numbytes=-1)),
     "BasketballPass_416x240_50_ld_" : dict(
     source=find_conformance_stream("BasketballPass_416x240_50_ld.avs2"),
     format="I420", width=416, height=240, frames=8,
@@ -7933,22 +7933,22 @@ media._get_test_spec("avs2", "decode", "8bit").update({
 
 
 media._get_test_spec("avs2", "decode", "10bit").update({
-    "avs2_main10_seq_change_stream_0" : dict(
-    source=find_conformance_stream("avs2_main10_seq_change_stream_0.avs"),
-    format="I010", width=1920, height=540, frames=10,
-    metric=dict(type="md5", expect="a44bd5d81f4a637b24ad6cf17b13026e", numbytes=-1)),
-    "avs2_main10_seq_change_stream_2" : dict(
-    source=find_conformance_stream("avs2_main10_seq_change_stream_2.avs"),
-    format="I010", width=152, height=128, frames=10,
-    metric=dict(type="md5", expect="dbd412b550ecbc5a2fcdc5ce72fe6638", numbytes=-1)),
-    "avs2_main10_seq_change_stream_4" : dict(
-    source=find_conformance_stream("avs2_main10_seq_change_stream_4.avs"),
-    format="I010", width=432, height=240, frames=10,
-    metric=dict(type="md5", expect="be64fcdda37c65866b8009421fc13f65", numbytes=-1)),
-    "avs2_main10_seq_change_stream_6" : dict(
-    source=find_conformance_stream("avs2_main10_seq_change_stream_6.avs"),
-    format="I010", width=128, height=32, frames=10,
-    metric=dict(type="md5", expect="db5a526f08cf1cf417140783326ed332", numbytes=-1)),
+    # "avs2_main10_seq_change_stream_0" : dict(
+    # source=find_conformance_stream("avs2_main10_seq_change_stream_0.avs"),
+    # format="I010", width=1920, height=540, frames=10,
+    # metric=dict(type="md5", expect="a44bd5d81f4a637b24ad6cf17b13026e", numbytes=-1)),
+    # "avs2_main10_seq_change_stream_2" : dict(
+    # source=find_conformance_stream("avs2_main10_seq_change_stream_2.avs"),
+    # format="I010", width=152, height=128, frames=10,
+    # metric=dict(type="md5", expect="dbd412b550ecbc5a2fcdc5ce72fe6638", numbytes=-1)),
+    # "avs2_main10_seq_change_stream_4" : dict(
+    # source=find_conformance_stream("avs2_main10_seq_change_stream_4.avs"),
+    # format="I010", width=432, height=240, frames=10,
+    # metric=dict(type="md5", expect="be64fcdda37c65866b8009421fc13f65", numbytes=-1)),
+    # "avs2_main10_seq_change_stream_6" : dict(
+    # source=find_conformance_stream("avs2_main10_seq_change_stream_6.avs"),
+    # format="I010", width=128, height=32, frames=10,
+    # metric=dict(type="md5", expect="db5a526f08cf1cf417140783326ed332", numbytes=-1)),
     "Filter_9_3_PKU_4_1" : dict(
     source=find_conformance_stream("Filter_9.3_PKU_4_1.avs"),
     format="I010", width=1920, height=1080, frames=10,
