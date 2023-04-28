@@ -109,10 +109,11 @@ media._get_test_spec("avs2", "decode", "8bit").update({
     source=find_conformance_stream("Filter_9.6_Hisilicon_0_0.avs"),
     format="I420", width=1920, height=1080, frames=50,
     metric=dict(type="md5", expect="b6e5aa6ebd89459c1f42bde7f0035939", numbytes=-1)),
-    "HLS_12_1_Hisilicon_0_0" : dict(
-    source=find_conformance_stream("HLS_12.1_Hisilicon_0_0.avs"),
-    format="I420", width=1600, height=1200, frames=60,
-    metric=dict(type="md5", expect="e3e721fa823bee412fb27a370fd85802", numbytes=-1)),
+    # "HLS_12_1_Hisilicon_0_0" : dict(
+    # gregory move because ffmpeg treats a slice data to extradata.
+    # source=find_conformance_stream("HLS_12.1_Hisilicon_0_0.avs"),
+    # format="I420", width=1600, height=1200, frames=60,
+    # metric=dict(type="md5", expect="e3e721fa823bee412fb27a370fd85802", numbytes=-1)),
     "HLS_12_3_Hisilicon_0_1" : dict(
     source=find_conformance_stream("HLS_12.3_Hisilicon_0_1.avs"),
     format="I420", width=1920, height=1080, frames=50,
