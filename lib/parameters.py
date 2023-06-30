@@ -98,6 +98,8 @@ def gen_hevc_cbr_level_parameters( spec, profiles):
   params = gen_hevc_cbr_level_variants(spec, profiles)
   return keys, params
 
+gen_av1_cbr_level_parameters = gen_hevc_cbr_level_parameters
+
 def gen_avc_vbr_variants(spec, profiles):
   for case, params in spec.items():
     for variant in copy.deepcopy(params.get("vbr", [])):
@@ -187,6 +189,13 @@ gen_hevc_vbr_parameters = gen_avc_vbr_parameters
 gen_hevc_cqp_lp_parameters = gen_avc_cqp_lp_parameters
 gen_hevc_cbr_lp_parameters = gen_avc_cbr_lp_parameters
 gen_hevc_vbr_lp_parameters = gen_avc_vbr_lp_parameters
+
+gen_av1_cqp_parameters = gen_avc_cqp_parameters
+gen_av1_cbr_parameters = gen_avc_cbr_parameters
+gen_av1_vbr_parameters = gen_avc_vbr_parameters
+gen_av1_cqp_lp_parameters = gen_avc_cqp_lp_parameters
+gen_av1_cbr_lp_parameters = gen_avc_cbr_lp_parameters
+gen_av1_vbr_lp_parameters = gen_avc_vbr_lp_parameters
 
 def gen_mpeg2_cqp_variants(spec):
   for case, params in spec.items():
