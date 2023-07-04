@@ -1,5 +1,5 @@
 {
-  "test/ffmpeg-vaapi/encode/hevc.py:cqp.test(bframes=0,case=1080p,gop=1,profile=main,qp=14,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/av1.py:cqp.test(bframes=0,case=1080p,gop=1,profile=main,qp=14,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         58.6991,
@@ -21,7 +21,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/hevc.py:cqp.test(bframes=0,case=720p,gop=1,profile=main,qp=28,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/av1.py:cqp.test(bframes=0,case=720p,gop=1,profile=main,qp=28,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         45.6774,
@@ -43,7 +43,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/hevc.py:cqp.test(bframes=0,case=QCIF,gop=1,profile=main,qp=14,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/av1.py:cqp.test(bframes=0,case=QCIF,gop=1,profile=main,qp=14,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         56.3969,
@@ -65,7 +65,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/hevc.py:cqp.test(bframes=0,case=QCIF,gop=30,profile=main,qp=28,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/av1.py:cqp.test(bframes=0,case=QCIF,gop=30,profile=main,qp=28,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         41.6939,
@@ -87,7 +87,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/hevc.py:cqp.test(bframes=0,case=QVGA,gop=1,profile=main,qp=14,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/av1.py:cqp.test(bframes=0,case=QVGA,gop=1,profile=main,qp=14,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         57.5066,
@@ -109,7 +109,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/hevc.py:cqp.test(bframes=2,case=1080p,gop=30,profile=main,qp=28,quality=4,slices=4)": {
+  "test/ffmpeg-vaapi/encode/av1.py:cqp.test(bframes=2,case=1080p,gop=30,profile=main,qp=28,quality=4,slices=4)": {
     "drv.i965": {
       "psnr": [
         35.7765,
@@ -131,7 +131,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/hevc.py:cqp.test(bframes=2,case=QVGA,gop=30,profile=main,qp=28,quality=4,slices=4)": {
+  "test/ffmpeg-vaapi/encode/av1.py:cqp.test(bframes=2,case=QVGA,gop=30,profile=main,qp=28,quality=4,slices=4)": {
     "drv.i965": {
       "psnr": [
         35.3727,
@@ -153,7 +153,7 @@
       ]
     }
   },
-    "test/ffmpeg-vaapi/encode/10bit/hevc.py:cqp.test(bframes=0,case=1080p,gop=1,profile=main10,qp=14,quality=4,slices=1)": {
+    "test/ffmpeg-vaapi/encode/10bit/av1.py:cqp.test(bframes=0,case=1080p,gop=1,profile=main,qp=14,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         58.6991,
@@ -175,7 +175,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/hevc.py:cqp.test(bframes=0,case=720p,gop=1,profile=main10,qp=28,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cqp.test(bframes=0,case=720p,gop=1,profile=main,qp=28,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         45.6774,
@@ -197,7 +197,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/hevc.py:cqp.test(bframes=0,case=QCIF,gop=1,profile=main10,qp=14,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cqp.test(bframes=0,case=QCIF,gop=1,profile=main,qp=14,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         56.3969,
@@ -219,7 +219,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/hevc.py:cqp.test(bframes=0,case=QCIF,gop=30,profile=main10,qp=28,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cqp.test(bframes=0,case=QCIF,gop=30,profile=main,qp=28,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         41.6939,
@@ -241,7 +241,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/hevc.py:cqp.test(bframes=0,case=QVGA,gop=1,profile=main10,qp=14,quality=4,slices=1)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cqp.test(bframes=0,case=QVGA,gop=1,profile=main,qp=14,quality=4,slices=1)": {
     "drv.i965": {
       "psnr": [
         57.5066,
@@ -263,7 +263,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/hevc.py:cqp.test(bframes=2,case=1080p,gop=30,profile=main10,qp=28,quality=4,slices=4)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cqp.test(bframes=2,case=1080p,gop=30,profile=main,qp=28,quality=4,slices=4)": {
     "drv.i965": {
       "psnr": [
         35.7765,
@@ -285,7 +285,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/hevc.py:cqp.test(bframes=2,case=QVGA,gop=30,profile=main10,qp=28,quality=4,slices=4)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cqp.test(bframes=2,case=QVGA,gop=30,profile=main,qp=28,quality=4,slices=4)": {
     "drv.i965": {
       "psnr": [
         35.3727,

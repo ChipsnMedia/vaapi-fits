@@ -87,7 +87,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=0,bitrate=250,case=QCIF,fps=30,gop=30,profile=main10,slices=1)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=0,bitrate=250,case=QCIF,fps=30,gop=30,profile=main,slices=1)": {
     "drv.i965": {
       "psnr": [
         40.7489,
@@ -109,7 +109,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=0,bitrate=500,case=QVGA,fps=25,gop=30,profile=main10,slices=1)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=0,bitrate=500,case=QVGA,fps=25,gop=30,profile=main,slices=1)": {
     "drv.i965": {
       "psnr": [
         35.5949,
@@ -131,7 +131,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=0,bitrate=6000,case=1080p,fps=30,gop=30,profile=main10,slices=1)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=0,bitrate=6000,case=1080p,fps=30,gop=30,profile=main,slices=1)": {
     "drv.i965": {
       "psnr": [
         26.7004,
@@ -153,7 +153,7 @@
       ]
     }
   },
-  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=2,bitrate=4000,case=720p,fps=30,gop=30,profile=main10,slices=4)": {
+  "test/ffmpeg-vaapi/encode/10bit/av1.py:cbr.test(bframes=2,bitrate=4000,case=720p,fps=30,gop=30,profile=main,slices=4)": {
     "drv.i965": {
       "psnr": [
         28.4885,
